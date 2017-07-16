@@ -9,7 +9,7 @@ do
     then
         if [ $battery_level -lt "15" ]
         then
-            mpg321 -frames 30 /media/toran/ExternalHDD/E/workspace/LinuxTweaks/LowBatterySound/gentex_cammander_3_code_3_horn-Brandon-938131891.mp3
+            mpg321 --frames 30 gentex_cammander_3_code_3_horn-Brandon-938131891.mp3
             sleep 2m
         fi
     fi
