@@ -1,0 +1,105 @@
+[/]
+panels-autohide=['1:false', '2:false']
+panels-resizable=['1:true', '2:true']
+panels-scale-text-icons=['1:true', '2:true']
+panels-show-delay=['1:0', '2:0']
+panels-hide-delay=['1:0', '2:0']
+panel-edit-mode=false
+enabled-applets=['panel1:left:2:panel-launchers@cinnamon.org:2', 'panel1:right:0:notifications@cinnamon.org:4', 'panel1:right:1:user@cinnamon.org:5', 'panel1:right:2:removable-drives@cinnamon.org:6', 'panel1:right:3:keyboard@cinnamon.org:7', 'panel1:right:4:network@cinnamon.org:9', 'panel1:right:5:sound@cinnamon.org:10', 'panel1:right:7:systray@cinnamon.org:12', 'panel1:right:8:windows-quick-list@cinnamon.org:14', 'panel2:left:0:0dyseus@CustomCinnamonMenu:16', 'panel2:left:0:window-list@cinnamon.org:3', 'panel2:right:1:power@cinnamon.org:11', 'panel2:right:2:separator@cinnamon.org:15', 'panel2:right:3:calendar@cinnamon.org:13']
+next-applet-id=17
+enabled-desklets=@as []
+panel-launchers=['DEPRECATED']
+panels-enabled=['1:0:right', '2:0:bottom']
+panels-height=['1:25', '2:23']
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=true
+menus-have-icons=true
+
+[settings-daemon/peripherals/keyboard]
+repeat-interval=uint32 30
+delay=uint32 500
+
+[desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[desktop/a11y/mouse]
+secondary-click-enabled=false
+secondary-click-time=1.2
+dwell-time=1.2
+dwell-threshold=10
+dwell-click-enabled=false
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Super>t']
+command='gnome-terminal'
+name='Terminal'
+
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Super>t']
+command='gnome-terminal'
+name='Terminal'
+
+[desktop/keybindings/custom-keybindings/custom2]
+binding=['<Super>c']
+command='gnome-calculator'
+name='Calc'
+
+[desktop/keybindings/custom-keybindings/custom3]
+binding=['<Super>Print']
+command='spectacle'
+name='Screenshot'
+
+[desktop/keybindings/custom-keybindings/custom4]
+binding=['<Super>e']
+command='nemo'
+name='Home'
+
+[desktop/keybindings/custom-keybindings/custom5]
+binding=['<Primary><Super>h']
+command='systemctl hibernate'
+name='Hibernate'
+
+[desktop/keybindings/custom-keybindings/custom6]
+binding=['<Primary><Super>s']
+command='systemctl suspend'
+name='Suspend systemctl suspend'
+
+[desktop/keybindings/custom-keybindings/custom7]
+binding=['<Primary><Super>Escape']
+command='systemctl poweroff'
+name='Shutdown'
+
+[desktop/keybindings/custom-keybindings/custom8]
+binding=['PowerOff']
+command='sudo pm-suspend&'
+name='Suspend pm-suspend&'
+
+[desktop/keybindings]
+custom-list=['custom0']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/applications/terminal]
+exec='gnome-terminal'
+
+[desktop/interface]
+first-day-of-week=1
+clock-use-24h=false
+toolkit-accessibility=false
+clock-show-seconds=true
+cursor-blink-time=1200
+icon-theme='gnome-brave'
+gtk-theme='Kali-X'
+clock-show-date=true
+
+[desktop/sound]
+event-sounds=false
+
+[desktop/wm/preferences]
+theme='Blackbird'
+
+[theme]
+name='cinnamon'
