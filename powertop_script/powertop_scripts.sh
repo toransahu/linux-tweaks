@@ -30,5 +30,6 @@ echo 'auto' > '/sys/bus/pci/devices/0000:00:1b.0/power/control';
 echo 'auto' > '/sys/bus/pci/devices/0000:00:14.0/power/control';
 echo 'auto' > '/sys/bus/pci/devices/0000:00:02.0/power/control';
 ethtool -s enp0s25 wol d; 
-
-
+iw dev wlan0 set power_save on;
+echo 'auto' > '/sys/bus/pci/devices/0000:00:1c.0/power/control';
+echo 'auto' > '/sys/bus/pci/devices/0000:00:1c.1/power/control';
