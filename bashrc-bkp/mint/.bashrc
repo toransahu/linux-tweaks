@@ -193,3 +193,4 @@ alias pgadmin4='. ~/.virtualenvs/pgadmin4/bin/activate &&  sudo python3 ~/.virtu
 alias bashrc-bkp='cp ~/.bashrc /mnt/ExternalHDD/E/workspace/linux-tweaks/bashrc-bkp/mint/'
 alias gits='git status'
 alias django='. ~/.virtualenvs/djangodev/bin/activate'
+alias pycharm='/mnt/ExternalHDD/E/sw/pycharm/pycharm-community-2017.3/bin/pycharm.sh $1'
