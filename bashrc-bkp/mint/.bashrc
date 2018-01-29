@@ -194,3 +194,4 @@ alias bashrc-bkp='cp ~/.bashrc /mnt/ExternalHDD/E/workspace/linux-tweaks/bashrc-
 alias gits='git status'
 alias django='. ~/.virtualenvs/djangodev/bin/activate'
 alias pycharm='/mnt/ExternalHDD/E/sw/pycharm/pycharm-community-2017.3/bin/pycharm.sh $1'
+alias anaconda='. ~/anaconda/bin/activate'
