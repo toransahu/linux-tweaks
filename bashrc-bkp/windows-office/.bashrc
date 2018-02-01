@@ -23,3 +23,4 @@ alias djangovenv='. /d/Toran//WorkSpace/venv/virtualenv/djangovenv/Scripts/activ
 alias django='. /d/Toran//WorkSpace/venv/virtualenv/djangovenv/Scripts/activate'
 
 alias bashrc-bkp='cp ~/.bashrc /d/Toran/WorkSpace/linux-tweaks/bashrc-bkp/windows-office/'
+alias cdss='cd /d/Toran/P\ Docs/Salary\ Slip/'
