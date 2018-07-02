@@ -103,7 +103,7 @@ clock-show-date=true
 
 [desktop/keybindings/custom-keybindings/custom0]
 binding=['<Super>w']
-command='nemo /mnt/ExternalHDD/'
+command='nemo /mnt/Other/toran/'
 name='Seagate'
 
 [desktop/keybindings/custom-keybindings/custom1]
@@ -133,7 +133,7 @@ name='Hibernate'
 
 [desktop/keybindings/custom-keybindings/custom10]
 binding=['<Super>space']
-command='/mnt/ExternalHDD/E/workspace/linux-tweaks/scripts/rightclick.sh'
+command='/mnt/Other/toran/E/workspace/linux-tweaks/scripts/rightclick.sh'
 name='Right Click Keyboard'
 
 [desktop/keybindings/custom-keybindings/custom6]
@@ -143,7 +143,7 @@ name='Suspend systemctl suspend'
 
 [desktop/keybindings/custom-keybindings/custom7]
 binding=['<Primary><Super>space']
-command='/mnt/ExternalHDD/E/workspace/linux-tweaks/scripts/mouserightclick.sh'
+command='/mnt/Other/toran/E/workspace/linux-tweaks/scripts/mouserightclick.sh'
 name='Right Click Mouse Cursor Based'
 
 [desktop/keybindings/custom-keybindings/custom8]
