@@ -3,7 +3,7 @@ Description=hdparm sleep
 
 [Service]
 Type=oneshot
-ExecStart=/sbin/hdparm -q -S 120 -y /dev/sda
+ExecStart=/sbin/hdparm -q -S 120 -Y /dev/sda
 
 [Install]
 WantedBy=multi-user.target
