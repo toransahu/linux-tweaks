@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. "/home/toran/paths.sh"
+. ~/paths.sh
 HOSTNAME=$(hostname)
 echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Configs backup started.'
 
