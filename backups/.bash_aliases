@@ -69,6 +69,7 @@ alias flaskvenv='. ~/.virtualenvs/flaskvenv/bin/activate'
 
 # routine jobs
 alias bak='$WORKSPACE/linux-tweaks/scripts/backup_confs.sh'
+alias res='$WORKSPACE/linux-tweaks/scripts/restore_confs.sh'
 alias bkp='$WORKSPACE/linux-tweaks/scripts/backup_confs.sh'
 alias bashrc-bkp='cp ~/.bashrc $WORKSPACE/linux-tweaks/bashrc-bkp/mint/'
 
