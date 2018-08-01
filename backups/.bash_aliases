@@ -44,9 +44,9 @@ alias lsA='ls -A'
 alias lsa='ls -a'
 alias rdi='rmdir --ignore-fail-on-non-empty '
 
-alias cdd='cd /mnt/Other/toran/D/'
+alias cdd='cd $DROOT/'
 alias cdw='cd $WORKSPACE/'
-alias cdresume='cd /mnt/Other/toran/D/Clouds/Dropbox/Toran/Resume'
+alias cdresume='cd $DROOT/Clouds/Dropbox/Toran/Resume'
 alias cde='cd $EROOT'
 
 # personalized dir ops

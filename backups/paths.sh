@@ -23,6 +23,7 @@ BAK_DIR="backups"
 
 if  [ "$(hostname)" = mint-ThinkPad-L440 ]; then
     EROOT="/mnt/ExternalHDD/E"
+    DROOT="/mnt/ExternalHDD/D"
     WORKSPACE="$EROOT/workspace"
     # TARGET_DIR="$WORKSPACE/linux-tweaks/configs/mint/$BAK_DIR"
     TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
