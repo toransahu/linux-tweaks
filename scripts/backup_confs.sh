@@ -8,7 +8,7 @@ echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Configs backup started.'
 mkdir -p $TARGET_DIR
 
 # backups following items
-cp "$SOURCE_DIR/paths.sh" "$TARGET_DIR/"
+# cp "$SOURCE_DIR/paths.sh" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.bashrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.bash_aliases" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.bashitrc" "$TARGET_DIR/"
