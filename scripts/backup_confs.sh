@@ -19,6 +19,11 @@ cp "$SOURCE_DIR/.tmux.conf" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.vimrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.zshrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.commonrc" "$TARGET_DIR/"
-dconf dump /org/cinnamon/ > "$TARGET_DIR/cinnamon_backup_$HOSTNAME"
-                                                                                                                                                                     
+
+string="$(hostname)"
+substr="mint"
+if [ -z "${string##*$substr*}" ]; then
+	dconf dump /org/cinnamon/ > "$TARGET_DIR/cinnamon_backup_$HOSTNAME"
+fi	
+
 echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Files backed up at' $TARGET_DIR'.'
