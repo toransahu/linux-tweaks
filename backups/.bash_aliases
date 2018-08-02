@@ -64,6 +64,7 @@ alias djangodev='. ~/.virtualenvs/djangodev/bin/activate'
 alias pycharm='$EROOT/sw/pycharm/pycharm-community-2018.1/bin/pycharm.sh $1'
 alias anaconda='. ~/anaconda3/bin/activate'
 alias miniconda='. ~/miniconda3/bin/activate'
+alias winconda='. /c/ProgramData/Miniconda3/Scripts/activate'
 alias django='. ~/.virtualenvs/djangovenv/bin/activate'
 alias flaskvenv='. ~/.virtualenvs/flaskvenv/bin/activate'
 #eval $(thefuck --alias)
