@@ -131,4 +131,5 @@ if [ -f ~/.commonrc ]; then
 fi
 
 # added by Anaconda3 installer
-export PATH="/home/toran/anaconda3/bin:$PATH"
+export PATH="~/anaconda3/bin:$PATH"
+export PATH="~/miniconda3/bin:$PATH"
