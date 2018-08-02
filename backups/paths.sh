@@ -48,6 +48,12 @@ elif [ "$(hostname)" = DESKTOP-35VDAC5 ]; then
 	# TARGET_DIR="$WORKSPACE/linux-tweaks/configs/windows"
     TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
     echo "All seems good. You're on computer: $(hostname)"
+elif [ "$(hostname)" = ip-172-31-18-37 ]; then
+    SOURCE_DIR="/home/ubuntu"
+    EROOT="/home/ubuntu/toran"
+    WORKSPACE="$EROOT/workspace"
+    TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
+    echo "All seems good. You're on computer: $(hostname)"    
 else
     echo "New device found. Make entry in the script.."
 fi
