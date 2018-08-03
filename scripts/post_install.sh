@@ -10,7 +10,10 @@
 ##
 # packages
 ##
-sudo apt install vim zsh git evolution sublime-text3 xdotool
+sudo apt install vim zsh git 
+
+# TODO: only if mint or desktop env present
+# sudo apt install evolution sublime-text3 xdotool
 
 
 ##
