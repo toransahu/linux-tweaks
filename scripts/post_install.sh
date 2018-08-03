@@ -42,4 +42,16 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 # copy configurations files
 ##
 cp -r ../backups/. ~/
+
+. ~/.zshrc
 echo "Configuration files copied successfully"
+
+
+##
+# python packages
+##
+
+
+
+pip install --upgrade pip
+pip install pipenv
