@@ -10,24 +10,33 @@
 ##
 # packages
 ##
-apt install vim zsh git evolution sublime-text3 xdotool
+sudo apt install vim zsh git evolution sublime-text3 xdotool
 
 
 ##
 # python env
 ##
 
+cd ~/
+
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 
 bash Miniconda3-latest-Linux-x86_64.sh
 
 
-
 ##
 # personalization
 ##
+
+cd -
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 
+##
+# copy configurations files
+##
+cp -r ../backups/. ~/
+echo "Configuration files copied successfully"
