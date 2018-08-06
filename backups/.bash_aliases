@@ -96,4 +96,5 @@ aliasit()
 alias cdww='cd $WORKSPACE/'
 alias hdp='sudo hdparm -q -S 120 -Y /dev/sda'
 alias zbinon='subst z: /g/toran/E/workspace/zbin'
+alias zbin='subst z: /g/toran/E/workspace/zbin'
 alias zbinoff='subst /D z:'
