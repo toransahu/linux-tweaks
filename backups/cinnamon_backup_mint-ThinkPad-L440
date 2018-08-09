@@ -97,7 +97,7 @@ edge-tiling=true
 cursor-size=24
 first-day-of-week=1
 clock-use-24h=false
-toolkit-accessibility=false
+toolkit-accessibility=true
 clock-show-seconds=true
 cursor-blink-time=1200
 icon-theme='Mint-X-Dark'
@@ -194,7 +194,7 @@ min-window-opacity=30
 theme='Mint-Y-Dark'
 
 [desktop/a11y/applications]
-screen-keyboard-enabled=false
+screen-keyboard-enabled=true
 screen-reader-enabled=false
 
 [desktop/a11y/keyboard]
