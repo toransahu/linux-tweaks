@@ -122,7 +122,7 @@ name='Calc'
 
 [desktop/keybindings/custom-keybindings/custom3]
 binding=['<Super>Print']
-command='spectacle'
+command='gnome-screenshot'
 name='Screenshot'
 
 [desktop/keybindings/custom-keybindings/custom4]
