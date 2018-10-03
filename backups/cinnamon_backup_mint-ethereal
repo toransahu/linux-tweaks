@@ -157,11 +157,13 @@ command='sudo reboot 00'
 name='Reboot'
 
 [desktop/keybindings]
+looking-glass-keybinding=@as []
 custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10']
 
 [desktop/keybindings/media-keys]
-screenshot=@as []
+screensaver=['<Control><Alt>l', '<Super>l']
 home=['XF86Explorer']
+screenshot=@as []
 
 [desktop/media-handling]
 autorun-x-content-start-app=@as []
