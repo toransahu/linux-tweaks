@@ -27,7 +27,7 @@ Plugin 'itchyny/lightline.vim'
 " lightline uses it
 Plugin 'itchyny/vim-gitbranch'
 
-" VCS diff 
+" VCS - git, svn diff 
 Plugin 'mhinz/vim-signify'
 
 " CLI File Manager 
@@ -53,7 +53,14 @@ Plugin 'aperezdc/vim-template'
 " Plugin 'toransahu/vim-template' " using upstream
 
 " Syntax Checking
-Plugin 'vim-syntastic/syntastic'
+"Plugin 'vim-syntastic/syntastic'
+"Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
+"Plugin 'ambv/black'
+"Plugin 'Chiel92/vim-autoformat'
+"Plugin 'google/vim-codefmt'
+
+" Asynchronous Linting Enging - ALE
+Plugin 'w0rp/ale'
 
 " Snippet Engine
 Plugin 'SirVer/ultisnips'
@@ -102,6 +109,7 @@ let g:lightline = {
 
 " NERDTree shortcut
 map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeFind<CR>
 
 " Customize the settings for vim-template plugin
 let g:email = "toran.sahu@yahoo.com"
@@ -120,17 +128,40 @@ nnoremap <F6> :YcmCompleter GoToReferences<CR>
 nnoremap <F7> :YcmCompleter GoToDeclaration<CR>
 
 " Syntastic configs
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0 " dont run on open
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 0 " dont run on open
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_mode_map = { 'mode': 'passive' }
 
-" linters
-let g:syntastic_python_checkers = ['pylint', 'flake8', 'yapf']
+"" linters
+"let g:syntastic_python_checkers = ['pylint', 'flake8', 'yapf']
+""let g:syntastic_python_checkers = ['black']
+""let g:syntastic_python_checkers = []
+
+"" yapf linter
+"map <C-Y> :call yapf#YAPF()<cr>
+"imap <C-Y> <c-o>:call yapf#YAPF()<cr>
+
+
+" Vim AutoFormat
+"let g:formatterpath = ['~/black']
+
+" ALE COnfig
+"Check Python files with flake8 and pylint.
+let b:ale_linters = ['flake8', 'pylint']
+" Fix Python files with autopep8 and yapf.
+"let b:ale_fixers = ['black', 'autopep8', 'yapf']
+let b:ale_fixers = ['black']
+" Disable warnings about trailing whitespace for Python files.
+let b:ale_warn_about_trailing_whitespace = 0
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
+
 
 " untisnip configs
 " Trigger configuration. Do not use <tab> if you use
@@ -139,10 +170,14 @@ let g:UltiSnipsExpandTrigger="<c-t>"
 let g:UltiSnipsJumpForwardTrigger="<c-f>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 
+"autocmd BufWritePre *.py execute ':Black'
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
 
 "============= TODO
-"1. syntastic venv 
-"2. try google/vim-codefmt
+"1. syntastic venv [x]
+"2. try google/vim-codefmt [x]
+"3. status for vim-signify
+"4. fuzzy finder
+"5. colorize
