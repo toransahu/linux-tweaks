@@ -2,7 +2,7 @@
 desktop-effects-unmaximize-transition='easeNone'
 desktop-effects-maximize-transition='easeInExpo'
 desktop-effects-map-effect='traditional'
-command-history=['gconf-editor', 'cinnamon', 'XKILL', 'xkill']
+command-history=['gconf-editor', 'cinnamon', 'XKILL', 'xkill', 'gnome-terminal']
 alttab-switcher-show-all-workspaces=false
 desktop-effects-close-effect='traditional'
 workspace-osd-duration=400
