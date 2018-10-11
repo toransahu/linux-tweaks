@@ -153,7 +153,9 @@ nnoremap <F7> :YcmCompleter GoToDeclaration<CR>
 
 " ALE COnfig
 "Check Python files with flake8 and pylint.
-let b:ale_linters = ['flake8', 'pylint']
+"let b:ale_linters = ['flake8', 'pylint']
+let b:ale_linters = ['flake8']
+"let b:ale_linters = ['pylint']
 " Fix Python files with autopep8 and yapf.
 "let b:ale_fixers = ['black', 'autopep8', 'yapf']
 let b:ale_fixers = ['black']
@@ -161,7 +163,12 @@ let b:ale_fixers = ['black']
 let b:ale_warn_about_trailing_whitespace = 0
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
+let g:ale_python_auto_pipenv = 1
+let g:ale_python_flake8_auto_pipenv = 1
+"let g:ale_python_pylint_options = '--load-plugins pylint_django'
 
+
+let g:ale_python_flake8_executable = $VIRTUAL_ENV . '/bin/flake8'
 
 " untisnip configs
 " Trigger configuration. Do not use <tab> if you use
