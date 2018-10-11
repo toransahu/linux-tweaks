@@ -35,8 +35,8 @@ alias tmux='tmux -u'
 alias tmux='TERM=screen-256color tmux -u'
 alias cpy='xclip -sel clip'
 alias ls='ls -ltrhFa'
-alias t='mate-terminal'
-alias terminal='mate-terminal'
+alias t='gnome-terminal'
+alias terminal='gnome-terminal'
 
 # dir ops
 alias ls='ls -la'
