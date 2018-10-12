@@ -118,3 +118,5 @@ fi
 # added by Anaconda3 installer
 export PATH=~/anaconda3/bin:$PATH
 export PATH=~/miniconda3/bin:$PATH
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
