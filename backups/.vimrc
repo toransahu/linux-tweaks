@@ -42,6 +42,11 @@ Plugin 'tpope/vim-abolish'
 " GOTO PWD via file Manager or Terminal
 Plugin 'justinmk/vim-gtfo'
 
+" markdown live preview in mini server browser
+"Plugin 'shime/vim-livedown'
+Plugin 'suan/vim-instant-markdown'
+
+
 "==================== Prog utils
 
 " Auto completion engine
@@ -183,6 +188,19 @@ let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+
+"" vim-livedown configs
+"" should markdown preview get shown automatically upon opening markdown buffer
+"let g:livedown_autorun = 1
+
+"" should the browser window pop-up upon previewing
+"let g:livedown_open = 1
+
+"" the port on which Livedown server will run
+"let g:livedown_port = 1337
+
+"" the browser to use
+"let g:livedown_browser = "firefox"
 
 "============= TODO
 "1. syntastic venv [x]
