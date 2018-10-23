@@ -71,6 +71,8 @@ Plugin 'honza/vim-snippets'
 " for easy comments
 Plugin 'scrooloose/nerdcommenter'
 
+" git commands in VIM
+Plugin 'tpope/vim-fugitive'
 
 " stop - all plugins above
 call vundle#end()
