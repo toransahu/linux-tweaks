@@ -1,6 +1,9 @@
 " ~/.vimrc
 "
 
+" encoding
+set encoding=utf-8
+
 " no vi compat
 set nocompatible
 
@@ -54,8 +57,8 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'Valloric/YouCompleteMe'
 
 " Template System
-Plugin 'aperezdc/vim-template'
-" Plugin 'toransahu/vim-template' " using upstream
+"Plugin 'aperezdc/vim-template'
+Plugin 'toransahu/vim-template' 
 
 " Syntax Checking
 "Plugin 'vim-syntastic/syntastic'
