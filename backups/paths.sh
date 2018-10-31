@@ -59,6 +59,12 @@ elif [ "$(hostname)" = ip-172-31-18-37 ]; then
     WORKSPACE="$EROOT/workspace"
     TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
     echo "All seems good. You're on computer: $(hostname)"    
+elif [ "$(hostname)" = ToranS-PC ]; then
+    SOURCE_DIR="/c/Users/torans"
+    EROOT="/e/E"
+    WORKSPACE="$EROOT/workspace"
+    TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
+    echo "All seems good. You're on computer: $(hostname)"
 else
     echo "New device found. Make entry in the script.."
 fi
