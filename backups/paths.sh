@@ -67,7 +67,7 @@ elif [ "$(hostname)" = ToranS-PC ]; then
     echo "All seems good. You're on computer: $(hostname)"
 elif [ "$(hostname)" = ToranS-UB ]; then
     SOURCE_DIR="/home/torans"
-    EROOT="/media/torans/Other/E"
+    EROOT="/mnt/Other/E"
     WORKSPACE="$EROOT/workspace"
     TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
     echo "All seems good. You're on computer: $(hostname)"
