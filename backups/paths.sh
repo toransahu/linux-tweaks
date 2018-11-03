@@ -71,6 +71,12 @@ elif [ "$(hostname)" = ToranS-UB ]; then
     WORKSPACE="$EROOT/workspace"
     TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
     echo "All seems good. You're on computer: $(hostname)"
+elif [ "$(hostname)" = raspberrypi ]; then
+    SOURCE_DIR="/home/pi"
+    EROOT="/home/pi/main-storage/E"
+    WORKSPACE="$EROOT/workspace"
+    TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
+    echo "All seems good. You're on computer: $(hostname)"
 else
     echo "New device found. Make entry in the script.."
 fi
