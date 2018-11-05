@@ -100,7 +100,7 @@ call vundle#end()
 " filetype func on
 filetype plugin indent on
 
-set clipboard=unnamedplus
+set clipboard=unnamedplus "this supports only vim-gnome not vim or vim-tiny
 
 
 " execute python code usin F9
