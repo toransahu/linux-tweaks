@@ -78,6 +78,9 @@ Plugin 'SirVer/ultisnips'
 " Snippet files - Snippets are separated from the engine
 Plugin 'honza/vim-snippets'
 
+" Python docstring gen
+Plugin 'heavenshell/vim-pydocstring'
+
 " for easy comments
 Plugin 'scrooloose/nerdcommenter'
 
