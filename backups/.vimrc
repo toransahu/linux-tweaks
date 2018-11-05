@@ -49,6 +49,8 @@ Plugin 'justinmk/vim-gtfo'
 "Plugin 'shime/vim-livedown'
 Plugin 'suan/vim-instant-markdown'
 
+" fuzzy finder
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 "==================== Prog utils
 
