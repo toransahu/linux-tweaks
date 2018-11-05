@@ -84,6 +84,13 @@ Plugin 'scrooloose/nerdcommenter'
 " git commands in VIM
 Plugin 'tpope/vim-fugitive'
 
+
+" surround text with something manually
+Plugin 'tpope/vim-surround'
+
+" auto close
+Plugin 'raimondi/delimitmate'
+
 " stop - all plugins above
 call vundle#end()
 
