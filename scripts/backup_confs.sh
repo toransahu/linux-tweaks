@@ -19,6 +19,7 @@ cp "$SOURCE_DIR/.tmux.conf" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.vimrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.zshrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.commonrc" "$TARGET_DIR/"
+cp "$SOURCE_DIR/.gitrepo" "$TARGET_DIR/"
 
 string="$(hostname)"
 substr="mint"

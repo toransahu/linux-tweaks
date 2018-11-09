@@ -56,6 +56,7 @@ cp "$TARGET_DIR/.tmux.conf" "$SOURCE_DIR/"
 cp "$TARGET_DIR/.vimrc" "$SOURCE_DIR/"
 cp "$TARGET_DIR/.zshrc" "$SOURCE_DIR/"
 cp "$TARGET_DIR/.commonrc" "$SOURCE_DIR/"
+cp "$TARGET_DIR/.gitrepo" "$SOURCE_DIR/"
 
 
 echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Configs Restore Completed.'
