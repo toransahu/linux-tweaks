@@ -1,5 +1,5 @@
-curl --header "Content-Type: application/json" \
-         --request POST \
-        --data '{"name": "post-linux-install", "private" : false}' \
-        --user toransahu \
+curl --header "Content-Type: application/json" \\
+         --request POST \\
+        --data '{"name": "post-linux-install", "private" : false}' \\
+        --user toransahu \\
         https://api.github.com/user/repos

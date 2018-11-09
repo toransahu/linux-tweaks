@@ -31,7 +31,7 @@ alias gpush='git push origin master'
 alias glogo='git log --graph --oneline'
 alias glog='git log --graph'
 alias py.gi='wget https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -O .gitignore'
-alias gitrepo='print -z "$(<.gitrepo)"'
+alias gitrepo='print -z "$(<~/.gitrepo)"'
 
 gsize(){
 #curl https://api.github.com/repos/$1/$2 | grep size
