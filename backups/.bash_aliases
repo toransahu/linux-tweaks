@@ -35,14 +35,15 @@ alias gitrepo='print -z "$(<.gitrepo)"'
 
 gsize(){
 #curl https://api.github.com/repos/$1/$2 | grep size
+if [ "$3" = -a ]; then
+    curl -u toransahu -s https://api.github.com/repos/$1/$2 | \
+    python -c 'import sys, json; size = json.load(sys.stdin)["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+else
 curl -s https://api.github.com/repos/$1/$2 | \
-python -c 'import sys, json; size = json.load(sys.stdin)["parent"]["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+python -c 'import sys, json; size = json.load(sys.stdin)["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+fi
 }
 
-gsme(){
-curl -s https://api.github.com/repos/toransahu/$1 | \
-python -c 'import sys, json; size = json.load(sys.stdin)["parent"]["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
-}
 
 # utils
 alias pdf='evince'
