@@ -28,6 +28,21 @@
 alias gits='git status'
 alias gpull='git pull origin master'
 alias gpush='git push origin master'
+alias glogo='git log --graph --oneline'
+alias glog='git log --graph'
+alias py.gi='wget https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -O .gitignore'
+alias gitrepo='print -z "$(<.gitrepo)"'
+
+gsize(){
+#curl https://api.github.com/repos/$1/$2 | grep size
+curl -s https://api.github.com/repos/$1/$2 | \
+python -c 'import sys, json; size = json.load(sys.stdin)["parent"]["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+}
+
+gsme(){
+curl -s https://api.github.com/repos/toransahu/$1 | \
+python -c 'import sys, json; size = json.load(sys.stdin)["parent"]["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+}
 
 # utils
 alias pdf='evince'
@@ -98,9 +113,6 @@ alias hdp='sudo hdparm -q -S 120 -Y /dev/sda'
 alias zbinon='subst z: /g/toran/E/workspace/zbin'
 alias zbin='subst z: /g/toran/E/workspace/zbin'
 alias zbinoff='subst /D z:'
-alias glogo='git log --graph --oneline'
-alias glog='git log --graph'
 alias rmbuild='rm -r build dist *.egg-info'
 alias cdl='cd /mnt/Other/toran/E/workspace/linux-tweaks'
-alias py.gi='wget https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -O .gitignore'
-alias gitrepo='print -z "$(<.gitrepo)"'
+
