@@ -31,6 +31,7 @@ cp "$SOURCE_DIR/.tmux.conf" "$TMP_BAK_DIR/"
 cp "$SOURCE_DIR/.vimrc" "$TMP_BAK_DIR/"
 cp "$SOURCE_DIR/.zshrc" "$TMP_BAK_DIR/"
 cp "$SOURCE_DIR/.commonrc" "$TMP_BAK_DIR/"
+cp "$SOURCE_DIR/.gitrepo" "$TMP_BAK_DIR/"
 
 string="$(hostname)"
 substr="mint"
