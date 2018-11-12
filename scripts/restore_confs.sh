@@ -64,7 +64,7 @@ cp -r "$TARGET_DIR/.personalized" "$SOURCE_DIR/"
 substr="cinnamon"
 
 if [ "$DESKTOP_SESSION" = $substr ]; then
-	echo Found $DESKTOP_SESSION desktop environment, restoring configs...
+	echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " Found $DESKTOP_SESSION desktop environment, restoring configs...
 	dconf load /org/cinnamon/ < "$TARGET_DIR/cinnamon_backup"
 fi
 
