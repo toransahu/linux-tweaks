@@ -44,7 +44,9 @@ python -c 'import sys, json; size = json.load(sys.stdin)["size"]; print(size/102
 fi
 }
 
-
+grepo(){
+    python ~/.gitrepo.py $1
+}
 # utils
 alias pdf='evince'
 alias tmux='tmux -u'
