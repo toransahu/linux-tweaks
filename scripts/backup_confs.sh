@@ -23,9 +23,8 @@ cp "$SOURCE_DIR/.gitrepo" "$TARGET_DIR/"
 cp -r "$SOURCE_DIR/.personalized" "$TARGET_DIR/"
 
 substr="cinnamon"
-desktop_env="$(DESKTOP_SESSION)"
 
-if [ -z "${desktop_env##*$substr*}" ]; then
+if [ "$DESKTOP_SESSION" = $substr ]; then
 	echo Found $DESKTOP_SESSION desktop environment, backing up configs...
 	dconf dump /org/cinnamon/ > "$TARGET_DIR/cinnamon_backup"
 fi	

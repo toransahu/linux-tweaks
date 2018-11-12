@@ -35,9 +35,8 @@ cp "$SOURCE_DIR/.gitrepo" "$TMP_BAK_DIR/"
 cp -r "$SOURCE_DIR/.personalized" "$TMP_BAK_DIR/"
 
 substr="cinnamon"
-desktop_env="$(DESKTOP_SESSION)"
 
-if [ -z "${desktop_env##*$substr*}" ]; then	
+if [ "$DESKTOP_SESSION" = $substr ]; then
 	dconf dump /org/cinnamon/ > "$TMP_BAK_DIR/cinnamon_backup_$HOSTNAME"
 fi	
 
@@ -63,9 +62,8 @@ cp "$TARGET_DIR/.gitrepo" "$SOURCE_DIR/"
 cp -r "$TARGET_DIR/.personalized" "$SOURCE_DIR/"
 
 substr="cinnamon"
-desktop_env="$(DESKTOP_SESSION)"
 
-if [ -z "${desktop_env##*$substr*}" ]; then
+if [ "$DESKTOP_SESSION" = $substr ]; then
 	echo Found $DESKTOP_SESSION desktop environment, restoring configs...
 	dconf load /org/cinnamon/ < "$TARGET_DIR/cinnamon_backup"
 fi
