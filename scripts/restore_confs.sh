@@ -33,9 +33,10 @@ cp "$SOURCE_DIR/.zshrc" "$TMP_BAK_DIR/"
 cp "$SOURCE_DIR/.commonrc" "$TMP_BAK_DIR/"
 cp "$SOURCE_DIR/.gitrepo" "$TMP_BAK_DIR/"
 
-string="$(hostname)"
-substr="mint"
-if [ -z "${string##*$substr*}" ]; then
+substr="cinnamon"
+desktop_env="$(DESKTOP_SESSION)"
+
+if [ -z "${desktop_env##*$substr*}" ]; then	
 	dconf dump /org/cinnamon/ > "$TMP_BAK_DIR/cinnamon_backup_$HOSTNAME"
 fi	
 
@@ -59,5 +60,12 @@ cp "$TARGET_DIR/.zshrc" "$SOURCE_DIR/"
 cp "$TARGET_DIR/.commonrc" "$SOURCE_DIR/"
 cp "$TARGET_DIR/.gitrepo" "$SOURCE_DIR/"
 
+substr="cinnamon"
+desktop_env="$(DESKTOP_SESSION)"
+
+if [ -z "${desktop_env##*$substr*}" ]; then
+	echo Found $DESKTOP_SESSION desktop environment, restoring configs...
+	dconf load /org/cinnamon/ < "$TARGET_DIR/cinnamon_backup"
+fi
 
 echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Configs Restore Completed.'

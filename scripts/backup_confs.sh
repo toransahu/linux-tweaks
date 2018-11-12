@@ -21,10 +21,12 @@ cp "$SOURCE_DIR/.zshrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.commonrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.gitrepo" "$TARGET_DIR/"
 
-string="$(hostname)"
-substr="mint"
-if [ -z "${string##*$substr*}" ]; then
-	dconf dump /org/cinnamon/ > "$TARGET_DIR/cinnamon_backup_$HOSTNAME"
+substr="cinnamon"
+desktop_env="$(DESKTOP_SESSION)"
+
+if [ -z "${desktop_env##*$substr*}" ]; then
+	echo Found $DESKTOP_SESSION desktop environment, backing up configs...
+	dconf dump /org/cinnamon/ > "$TARGET_DIR/cinnamon_backup"
 fi	
 
 echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Files backed up at' $TARGET_DIR'.'
