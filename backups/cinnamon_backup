@@ -1,6 +1,7 @@
 [/]
 desktop-effects-unmaximize-transition='easeNone'
 desktop-effects-maximize-transition='easeInExpo'
+applet-cache-updated=1530100032
 desktop-effects-map-effect='traditional'
 command-history=['gconf-editor', 'cinnamon', 'XKILL', 'xkill', 'gnome-terminal']
 alttab-switcher-show-all-workspaces=false
@@ -30,8 +31,8 @@ desktop-effects-minimize-transition='easeInQuad'
 panel-edit-mode=false
 panels-show-delay=['1:0', '2:0']
 panels-hide-delay=['1:0', '2:0']
-desktop-effects-close-time=175
 no-adjacent-panel-barriers=true
+desktop-effects-close-time=175
 workspace-osd-y=50
 workspace-osd-x=50
 desktop-effects-tile-time=100
@@ -73,6 +74,8 @@ numlock-state='off'
 
 [settings-daemon/peripherals/mouse]
 drag-threshold=8
+custom-acceleration=false
+motion-acceleration=3.7565922920892492
 motion-threshold=1
 double-click=400
 middle-button-enabled=false
@@ -107,8 +110,8 @@ clock-show-date=true
 
 [desktop/keybindings/custom-keybindings/custom0]
 binding=['<Super>w']
-command='nemo /mnt/ExternalHDD/'
-name='Seagate'
+command='/home/torans/.personalized/workspace_nemo.sh'
+name='Workspace'
 
 [desktop/keybindings/custom-keybindings/custom1]
 binding=['<Super>t']
@@ -127,7 +130,7 @@ name='Screenshot'
 
 [desktop/keybindings/custom-keybindings/custom4]
 binding=['<Super>e']
-command='nemo /home/toran'
+command='nemo '
 name='Home'
 
 [desktop/keybindings/custom-keybindings/custom5]
@@ -155,6 +158,11 @@ binding=['<Primary><Super>space']
 command='/mnt/ExternalHDD/E/workspace/linux-tweaks/scripts/mouserightclick.sh'
 name='Right Click Mouse Cursor Based'
 
+[desktop/keybindings/custom-keybindings/custom12]
+binding=['<Super>z']
+command='nemo $HOME'
+name='test'
+
 [desktop/keybindings/custom-keybindings/custom8]
 binding=['PowerOff']
 command='sudo pm-suspend&'
@@ -166,11 +174,13 @@ command='sudo reboot 00'
 name='Reboot'
 
 [desktop/keybindings]
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11']
+looking-glass-keybinding=@as []
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12']
 
 [desktop/keybindings/media-keys]
-screenshot=@as []
+screensaver=['<Control><Alt>l', '<Super>l']
 home=['XF86Explorer']
+screenshot=@as []
 
 [desktop/media-handling]
 autorun-x-content-start-app=@as []
@@ -188,6 +198,10 @@ exec='gnome-terminal'
 
 [desktop/session]
 idle-delay=uint32 0
+
+[desktop/privacy]
+recent-files-max-age=5
+remember-recent-files=true
 
 [desktop/wm/preferences]
 min-window-opacity=30
