@@ -20,6 +20,7 @@ cp "$SOURCE_DIR/.vimrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.zshrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.commonrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.gitrepo" "$TARGET_DIR/"
+cp -r "$SOURCE_DIR/.personalized" "$TARGET_DIR/"
 
 substr="cinnamon"
 desktop_env="$(DESKTOP_SESSION)"
