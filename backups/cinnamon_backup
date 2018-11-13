@@ -66,6 +66,7 @@ scrolling-method=3
 disable-while-typing=true
 horizontal-two-finger-scrolling=false
 motion-threshold=9
+touchpad-enabled=true
 
 [settings-daemon/peripherals/keyboard]
 repeat-interval=uint32 30
