@@ -197,6 +197,9 @@ lock-enabled=true
 [desktop/applications/terminal]
 exec='gnome-terminal'
 
+[desktop/notifications]
+bottom-notifications=false
+
 [desktop/session]
 idle-delay=uint32 0
 
