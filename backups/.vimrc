@@ -97,6 +97,9 @@ Plugin 'raimondi/delimitmate'
 "code fold
 Plugin 'tmhedberg/SimpylFold'
 
+"search
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " stop - all plugins above
 call vundle#end()
 
