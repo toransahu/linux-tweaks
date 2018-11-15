@@ -112,6 +112,9 @@ nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
 "============= Plugin Configs
 
+" highlight search patterns
+set hlsearch
+
 " set color
 colorscheme gruvbox
 set background=dark
