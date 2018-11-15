@@ -94,6 +94,9 @@ Plugin 'tpope/vim-surround'
 " auto close
 Plugin 'raimondi/delimitmate'
 
+"code fold
+Plugin 'tmhedberg/SimpylFold'
+
 " stop - all plugins above
 call vundle#end()
 
