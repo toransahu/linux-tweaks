@@ -87,7 +87,6 @@ Plugin 'scrooloose/nerdcommenter'
 " git commands in VIM
 Plugin 'tpope/vim-fugitive'
 
-
 " surround text with something manually
 Plugin 'tpope/vim-surround'
 
@@ -95,9 +94,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'raimondi/delimitmate'
 
 "code fold
-Plugin 'tmhedberg/SimpylFold'
+"Plugin 'tmhedberg/SimpylFold'
 
-"search
+"super search
 Plugin 'ctrlpvim/ctrlp.vim'
 
 " stop - all plugins above
