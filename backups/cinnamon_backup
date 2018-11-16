@@ -111,7 +111,7 @@ clock-show-date=true
 
 [desktop/keybindings/custom-keybindings/custom0]
 binding=['<Super>w']
-command='/home/torans/.personalized/workspace_nemo.sh'
+command="sh -c '~/.personalized/workspace_nemo.sh'"
 name='Workspace'
 
 [desktop/keybindings/custom-keybindings/custom1]
@@ -141,7 +141,7 @@ name='Hibernate'
 
 [desktop/keybindings/custom-keybindings/custom10]
 binding=['<Super>space']
-command='/mnt/ExternalHDD/E/workspace/linux-tweaks/scripts/rightclick.sh'
+command="sh -c '~/.personalized/rightclick.sh'"
 name='Right Click Keyboard'
 
 [desktop/keybindings/custom-keybindings/custom6]
@@ -156,7 +156,7 @@ name='gnome-do'
 
 [desktop/keybindings/custom-keybindings/custom7]
 binding=['<Primary><Super>space']
-command='/mnt/ExternalHDD/E/workspace/linux-tweaks/scripts/mouserightclick.sh'
+command="sh -c '~/.personalized/mouserightclick.sh'"
 name='Right Click Mouse Cursor Based'
 
 [desktop/keybindings/custom-keybindings/custom12]
