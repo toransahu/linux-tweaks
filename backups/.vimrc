@@ -184,7 +184,7 @@ nnoremap <F7> :YcmCompleter GoToDeclaration<CR>
 " ALE COnfig
 "Check Python files with flake8 and pylint.
 "let b:ale_linters = ['flake8', 'pylint']
-let b:ale_linters = {'python': ['flake8']}
+let g:ale_linters = {'python': ['flake8']}
 "let b:ale_linters = {'python': ['pylint']}
 " Fix Python files with autopep8 and yapf.
 "let b:ale_fixers = ['black', 'autopep8', 'yapf']
