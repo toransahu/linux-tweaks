@@ -30,7 +30,7 @@ alias gpull='git pull origin master'
 alias gpush='git push origin master'
 alias glogo='git log --graph --oneline'
 alias glog='git log --graph'
-alias py.gi='wget https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -O .gitignore'
+alias py.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -O .gitignore'
 alias gitrepo='print -z "$(<~/.personalized/.gitrepo)"'
 
 gsize(){
