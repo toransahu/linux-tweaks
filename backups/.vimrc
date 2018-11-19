@@ -198,7 +198,7 @@ let g:ale_fix_on_save = 1
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_flake8_auto_pipenv = 1
 "let g:ale_python_pylint_options = '--load-plugins pylint_django'
-let g:ale_python_black_options = '--line-length 80'
+let g:ale_python_black_options = '--line-length 79'
 let g:ale_python_flake8_executable = $VIRTUAL_ENV . '/bin/flake8'
 "let g:ale_python_black_executable = $VIRTUAL_ENV . '/bin/black'
 
