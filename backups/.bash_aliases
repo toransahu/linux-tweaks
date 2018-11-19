@@ -123,3 +123,4 @@ alias cdl='cd /mnt/Other/toran/E/workspace/linux-tweaks'
 
 alias installvundle='git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
 alias installohmyzsh='sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
+alias fixcinnamon='export DISPLAY=:0; cinnamon --replace &'
