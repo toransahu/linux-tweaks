@@ -4,6 +4,9 @@
 " encoding
 set encoding=utf-8
 
+" set line number
+set number
+
 " no vi compat
 set nocompatible
 
