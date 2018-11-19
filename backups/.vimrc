@@ -183,6 +183,7 @@ nnoremap <F7> :YcmCompleter GoToDeclaration<CR>
 
 " ALE COnfig
 "Check Python files with flake8 and others
+" for docstring lints: pip install flake8-docstrings
 let g:ale_linters = {'python': ['flake8', ]}
 "let g:ale_linters = {'python': ['flake8','mypy']}
 "let g:ale_linters = {'python': ['flake8','pylint']}
