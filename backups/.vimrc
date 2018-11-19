@@ -242,6 +242,8 @@ let g:UltiSnipsEditSplit="vertical"
   "exec(open(activate_this).read(), dict(__file__=activate_this))
 "EOF
 
+"" vim fugative config
+"set statusline+=%{FugitiveStatusline()}
 
 
 "============= TODO
