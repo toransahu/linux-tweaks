@@ -68,6 +68,9 @@ horizontal-two-finger-scrolling=false
 motion-threshold=9
 touchpad-enabled=true
 
+[settings-daemon/peripherals/touchscreen]
+orientation-lock=false
+
 [settings-daemon/peripherals/keyboard]
 repeat-interval=uint32 30
 delay=uint32 500
@@ -169,14 +172,34 @@ binding=['PowerOff']
 command='sudo pm-suspend&'
 name='Suspend pm-suspend&'
 
+[desktop/keybindings/custom-keybindings/custom13]
+binding=['<Alt><Super>Up']
+command='xrandr -o 0'
+name='Rotate 0'
+
 [desktop/keybindings/custom-keybindings/custom9]
 binding=['<Primary><Super>r']
 command='sudo reboot 00'
 name='Reboot'
 
+[desktop/keybindings/custom-keybindings/custom14]
+binding=['<Alt><Super>Left']
+command='xrandr -o 1'
+name='Rotate 270'
+
+[desktop/keybindings/custom-keybindings/custom15]
+binding=['<Alt><Super>Down']
+command='xrandr -o 2'
+name='Rotate 180'
+
+[desktop/keybindings/custom-keybindings/custom16]
+binding=['<Alt><Super>Right']
+command='xrandr -o 3'
+name='Rotate 90'
+
 [desktop/keybindings]
 looking-glass-keybinding=@as []
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16']
 
 [desktop/keybindings/media-keys]
 screensaver=['<Control><Alt>l', '<Super>l']
