@@ -198,7 +198,7 @@ let g:ale_fixers = {'python': ['black', 'isort']}
 let b:ale_warn_about_trailing_whitespace = 0
 
 " Set this variable to 1 to fix files when you save them.
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
 let g:ale_python_auto_pipenv = 1
 let g:ale_python_flake8_auto_pipenv = 1
 "let g:ale_python_pylint_options = '--load-plugins pylint_django'
