@@ -125,3 +125,4 @@ alias installvundle='git clone https://github.com/VundleVim/Vundle.vim.git ~/.vi
 alias installohmyzsh='sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
 alias fixcinnamon='export DISPLAY=:0; cinnamon --replace &'
 alias installsublime='sh -c "~/.personalized/installsublime.sh"'
+alias pm='python manage.py'
