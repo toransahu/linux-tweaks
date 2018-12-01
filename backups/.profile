@@ -18,4 +18,9 @@ fi
 
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
-export PATH=/home/toran/miniconda3/bin:/home/toran/anaconda3/bin:/home/toran/anaconda/bin:/home/toran/bin:/home/toran/.local/bin:/home/toran/bin:/usr/local/bin:/home/toran/bin:/home/toran/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
+
+# set GO paths
+export PATH=$HOME/miniconda3/bin:$HOME/anaconda3/bin:$HOME/anaconda/bin:$HOME/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$HOME/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
+
+export GOPATH=$HOME/go/
+export GOBIN=$HOME/go/bin
