@@ -102,6 +102,9 @@ Plugin 'raimondi/delimitmate'
 "super search
 Plugin 'ctrlpvim/ctrlp.vim'
 
+"go support
+Plugin 'fatih/vim-go'
+
 " stop - all plugins above
 call vundle#end()
 
@@ -218,6 +221,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+"eclim configs for java and other langs using eclipse
+let g:EclimCompletionMethod = 'omnifunc'
 
 "" vim-livedown configs
 "" should markdown preview get shown automatically upon opening markdown buffer
