@@ -24,3 +24,6 @@ export PATH=$HOME/miniconda3/bin:$HOME/anaconda3/bin:$HOME/anaconda/bin:$HOME/bi
 
 export GOPATH=$HOME/go/
 export GOBIN=$HOME/go/bin
+
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
