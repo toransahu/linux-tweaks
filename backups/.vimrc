@@ -202,12 +202,15 @@ let b:ale_warn_about_trailing_whitespace = 0
 
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 0
-let g:ale_python_auto_pipenv = 1
-let g:ale_python_flake8_auto_pipenv = 1
-"let g:ale_python_pylint_options = '--load-plugins pylint_django'
 let g:ale_python_black_options = '--line-length 79'
-let g:ale_python_flake8_executable = $VIRTUAL_ENV . '/bin/flake8'
+
+" Virtualenv/pipenv related
+"let g:ale_python_auto_pipenv = 1
+"let g:ale_python_flake8_auto_pipenv = 1
+"let g:ale_python_flake8_executable = $VIRTUAL_ENV . '/bin/flake8'
+
 "let g:ale_python_black_executable = $VIRTUAL_ENV . '/bin/black'
+"let g:ale_python_pylint_options = '--load-plugins pylint_django'
 
 
 " untisnip configs
