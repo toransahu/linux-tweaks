@@ -46,6 +46,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'tpope/vim-abolish'
 
 " GOTO PWD via file Manager or Terminal
+" Usage: got; gof; goT; goF
 Plugin 'justinmk/vim-gtfo'
 
 " markdown live preview in mini server browser
