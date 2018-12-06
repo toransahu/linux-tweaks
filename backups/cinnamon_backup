@@ -1,7 +1,7 @@
 [/]
 desktop-effects-unmaximize-transition='easeNone'
 desktop-effects-maximize-transition='easeInExpo'
-applet-cache-updated=1530100032
+applet-cache-updated=1544081380
 desktop-effects-map-effect='traditional'
 command-history=['gconf-editor', 'cinnamon', 'XKILL', 'gnome-terminal', 'xkill']
 alttab-switcher-show-all-workspaces=false
@@ -13,7 +13,7 @@ desktop-effects-map-time=175
 panels-scale-text-icons=['1:true', '2:true']
 desktop-effects-minimize-effect='traditional'
 panels-height=['1:25', '2:25']
-next-applet-id=16
+next-applet-id=18
 panel-launchers=['DEPRECATED']
 desktop-effects-map-transition='easeOutQuad'
 desktop-effects-unmaximize-effect='none'
@@ -22,7 +22,7 @@ desktop-effects-maximize-time=100
 desktop-effects-tile-transition='easeInQuad'
 desktop-effects-maximize-effect='none'
 panels-resizable=['1:true', '2:true']
-enabled-applets=['panel1:left:0:panel-launchers@cinnamon.org:3', 'panel1:right:0:systray@cinnamon.org:0', 'panel1:right:1:sound@cinnamon.org:13', 'panel1:right:3:removable-drives@cinnamon.org:7', 'panel1:right:4:notifications@cinnamon.org:6', 'panel1:right:5:user@cinnamon.org:8', 'panel1:right:6:network@cinnamon.org:9', 'panel2:left:1:window-list@cinnamon.org:4', 'panel2:left:0:menu@cinnamon.org:1', 'panel2:right:0:power@cinnamon.org:11', 'panel2:right:1:separator@cinnamon.org:15', 'panel2:right:2:calendar@cinnamon.org:12', 'panel2:right:7:show-desktop@cinnamon.org:2']
+enabled-applets=['panel1:left:0:panel-launchers@cinnamon.org:3', 'panel1:right:1:systray@cinnamon.org:0', 'panel1:right:2:sound@cinnamon.org:13', 'panel1:right:4:removable-drives@cinnamon.org:7', 'panel1:right:5:notifications@cinnamon.org:6', 'panel1:right:6:user@cinnamon.org:8', 'panel1:right:7:network@cinnamon.org:9', 'panel2:left:0:menu@cinnamon.org:1', 'panel2:right:1:power@cinnamon.org:11', 'panel2:right:2:separator@cinnamon.org:15', 'panel2:right:3:calendar@cinnamon.org:12', 'panel2:right:8:show-desktop@cinnamon.org:2', 'panel2:center:0:IcingTaskManager@json:17']
 desktop-effects-minimize-time=200
 alttab-switcher-delay=100
 desktop-effects-tile-effect='none'
