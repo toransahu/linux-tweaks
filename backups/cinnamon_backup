@@ -1,4 +1,5 @@
 [/]
+extension-cache-updated=1544028495
 desktop-effects-unmaximize-transition='easeNone'
 desktop-effects-maximize-transition='easeInExpo'
 applet-cache-updated=1544081380
@@ -31,8 +32,8 @@ desktop-effects-minimize-transition='easeInQuad'
 panel-edit-mode=false
 panels-show-delay=['1:0', '2:0']
 panels-hide-delay=['1:0', '2:0']
-no-adjacent-panel-barriers=true
 desktop-effects-close-time=175
+no-adjacent-panel-barriers=true
 workspace-osd-y=50
 workspace-osd-x=50
 desktop-effects-tile-time=100
