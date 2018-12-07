@@ -122,5 +122,5 @@ export PATH=~/miniconda3/bin:$PATH
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/torans/.sdkman"
-[[ -s "/home/torans/.sdkman/bin/sdkman-init.sh" ]] && source "/home/torans/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
