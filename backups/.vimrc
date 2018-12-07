@@ -203,7 +203,8 @@ let b:ale_warn_about_trailing_whitespace = 0
 
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 0
-let g:ale_python_black_options = '--line-length 79'
+let g:ale_python_black_options = '--line-length 120'
+let g:ale_python_flake8_options = '--max-line-length 120'
 
 " Virtualenv/pipenv related
 "let g:ale_python_auto_pipenv = 1
