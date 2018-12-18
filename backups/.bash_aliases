@@ -126,3 +126,4 @@ alias installohmyzsh='sh -c "$(curl -fsSL https://raw.githubusercontent.com/robb
 alias fixcinnamon='export DISPLAY=:0; cinnamon --replace &'
 alias installsublime='sh -c "~/.personalized/installsublime.sh"'
 alias pm='python manage.py'
+alias gch='git checkout'
