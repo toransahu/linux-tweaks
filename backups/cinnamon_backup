@@ -207,6 +207,12 @@ screensaver=['<Control><Alt>l', '<Super>l']
 home=['XF86Explorer']
 screenshot=@as []
 
+[desktop/keybindings/wm]
+switch-to-workspace-right=['<Primary><Super>Right']
+push-snap-right=@as []
+switch-to-workspace-left=['<Primary><Super>Left']
+push-snap-left=@as []
+
 [desktop/media-handling]
 autorun-x-content-start-app=@as []
 autorun-never=false
