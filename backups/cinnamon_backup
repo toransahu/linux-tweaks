@@ -13,6 +13,7 @@ enabled-desklets=@as []
 desktop-effects-map-time=175
 panels-scale-text-icons=['1:true', '2:true']
 desktop-effects-minimize-effect='traditional'
+desklet-snap-interval=25
 panels-height=['1:25', '2:25']
 next-applet-id=18
 panel-launchers=['DEPRECATED']
@@ -33,57 +34,13 @@ panel-edit-mode=false
 panels-show-delay=['1:0', '2:0']
 panels-hide-delay=['1:0', '2:0']
 desktop-effects-close-time=175
-no-adjacent-panel-barriers=true
+next-desklet-id=1
 workspace-osd-y=50
+no-adjacent-panel-barriers=true
 workspace-osd-x=50
 desktop-effects-tile-time=100
 panels-autohide=['1:false', '2:false']
 device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=SANYO 45N1159']
-
-[settings-daemon/plugins/power]
-button-power='hibernate'
-lid-close-suspend-with-external-monitor=true
-sleep-inactive-battery-timeout=0
-lid-close-ac-action='nothing'
-lid-close-battery-action='nothing'
-sleep-inactive-ac-timeout=0
-sleep-display-ac=600
-sleep-display-battery=600
-
-[settings-daemon/plugins/xsettings]
-buttons-have-icons=true
-menus-have-icons=true
-
-[settings-daemon/peripherals/touchpad]
-tap-to-click=true
-natural-scroll=false
-horizontal-edge-scrolling=true
-horizontal-scrolling=true
-motion-acceleration=3.0276679841897232
-custom-acceleration=true
-clickpad-click=2
-custom-threshold=false
-scrolling-method=3
-disable-while-typing=true
-horizontal-two-finger-scrolling=false
-motion-threshold=9
-touchpad-enabled=true
-
-[settings-daemon/peripherals/touchscreen]
-orientation-lock=false
-
-[settings-daemon/peripherals/keyboard]
-repeat-interval=uint32 30
-delay=uint32 500
-numlock-state='on'
-
-[settings-daemon/peripherals/mouse]
-drag-threshold=8
-custom-acceleration=false
-motion-acceleration=3.7565922920892492
-motion-threshold=1
-double-click=400
-middle-button-enabled=false
 
 [sounds]
 tile-enabled=false
@@ -288,6 +245,51 @@ translate-from-selection-keybinding=['<Shift><Super>g']
 [theme]
 theme-cache-updated=1531229134
 name='Mint-Y-Dark'
+
+[settings-daemon/plugins/power]
+button-power='hibernate'
+lid-close-suspend-with-external-monitor=true
+sleep-inactive-battery-timeout=0
+lid-close-ac-action='nothing'
+lid-close-battery-action='nothing'
+sleep-inactive-ac-timeout=0
+sleep-display-ac=600
+sleep-display-battery=600
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=true
+menus-have-icons=true
+
+[settings-daemon/peripherals/touchpad]
+tap-to-click=true
+natural-scroll=false
+horizontal-edge-scrolling=true
+horizontal-scrolling=true
+motion-acceleration=3.0276679841897232
+custom-acceleration=true
+clickpad-click=2
+custom-threshold=false
+scrolling-method=3
+disable-while-typing=true
+horizontal-two-finger-scrolling=false
+motion-threshold=9
+touchpad-enabled=true
+
+[settings-daemon/peripherals/touchscreen]
+orientation-lock=false
+
+[settings-daemon/peripherals/keyboard]
+repeat-interval=uint32 30
+delay=uint32 500
+numlock-state='on'
+
+[settings-daemon/peripherals/mouse]
+drag-threshold=8
+custom-acceleration=false
+motion-acceleration=3.7565922920892492
+motion-threshold=1
+double-click=400
+middle-button-enabled=false
 
 [cinnamon-session]
 prefer-hybrid-sleep=true
