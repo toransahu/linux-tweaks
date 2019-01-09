@@ -113,7 +113,7 @@ command='systemctl suspend'
 name='Suspend systemctl suspend'
 
 [desktop/keybindings/custom-keybindings/custom11]
-binding=['<Super>f']
+binding=@as []
 command='gnome-do'
 name='gnome-do'
 
@@ -157,9 +157,19 @@ binding=['<Alt><Super>Right']
 command='xrandr -o 3'
 name='Rotate 90'
 
+[desktop/keybindings/custom-keybindings/custom17]
+binding=['<Super>f']
+command='firefox'
+name='Firefox'
+
+[desktop/keybindings/custom-keybindings/custom18]
+binding=['<Super>m']
+command='thunderbird'
+name='Thuderbird Mail'
+
 [desktop/keybindings]
 looking-glass-keybinding=@as []
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18']
 
 [desktop/keybindings/media-keys]
 screensaver=['<Control><Alt>l', '<Super>l']
