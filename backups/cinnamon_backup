@@ -88,7 +88,7 @@ command='gnome-calculator'
 name='Calc'
 
 [desktop/keybindings/custom-keybindings/custom3]
-binding=['<Super>Print']
+binding=['Print']
 command='gnome-screenshot'
 name='Screenshot'
 
@@ -127,10 +127,10 @@ binding=['<Super>z']
 command='nemo $HOME'
 name='test'
 
-[desktop/keybindings/custom-keybindings/custom8]
-binding=['PowerOff']
-command='sudo pm-suspend&'
-name='Suspend pm-suspend&'
+[desktop/keybindings/custom-keybindings/custom20]
+binding=['<Super>Print']
+command='gnome-screenshot -i'
+name='Screenshot Option'
 
 [desktop/keybindings/custom-keybindings/custom13]
 binding=['<Alt><Super>Up']
@@ -152,6 +152,11 @@ binding=['<Alt><Super>Down']
 command='xrandr -o 2'
 name='Rotate 180'
 
+[desktop/keybindings/custom-keybindings/custom8]
+binding=['PowerOff']
+command='sudo pm-suspend&'
+name='Suspend pm-suspend&'
+
 [desktop/keybindings/custom-keybindings/custom16]
 binding=['<Alt><Super>Right']
 command='xrandr -o 3'
@@ -167,9 +172,15 @@ binding=['<Super>m']
 command='thunderbird'
 name='Thuderbird Mail'
 
+[desktop/keybindings/custom-keybindings/custom19]
+binding=['<Super>s']
+command='gnome-screenshot -ac'
+name='Screenshot Area + Clipboard'
+
 [desktop/keybindings]
 looking-glass-keybinding=@as []
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20']
+show-desklets=@as []
 
 [desktop/keybindings/media-keys]
 screensaver=['<Control><Alt>l', '<Super>l']
