@@ -23,7 +23,7 @@ def grepo():
     content = json.dumps({"name": sys.argv[-1], "private": False})
     username = "toransahu"
     res = requests.post(url, content, auth=(username, getpass.getpass("Password: ")))
-    print(eval(res.text)["message"])
+    print("Status:", res.status_code)
 
 if __name__ == "__main__":
     grepo()
