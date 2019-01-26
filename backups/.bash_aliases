@@ -31,6 +31,7 @@ alias gpush='git push origin master'
 alias glogo='git log --graph --oneline'
 alias glog='git log --graph'
 alias py.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -O .gitignore'
+alias java.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Java.gitignore -O .gitignore'
 alias gitrepo='print -z "$(<~/.personalized/.gitrepo)"'
 
 gsize(){
@@ -88,6 +89,9 @@ alias winconda='. /c/ProgramData/Miniconda3/Scripts/activate'
 alias django='. ~/.virtualenvs/djangovenv/bin/activate'
 alias flaskvenv='. ~/.virtualenvs/flaskvenv/bin/activate'
 #eval $(thefuck --alias)
+mvnnew(){
+     ~/.personalized/mvn_create_project.sh $1 $2
+}
 
 # routine jobs
 alias bak='$WORKSPACE/linux-tweaks/scripts/backup_confs.sh'
