@@ -50,6 +50,11 @@ grepo(){
     python ~/.personalized/.gitrepo.py $1
     echo "Done."
 }
+
+ghrepo(){
+    curl -H "Content-Type: application/json" -POST https://api.github.com/user/repos -d "{\"name\":\""$1"\", \"private\":"$2"}" -u toransahu
+}
+
 # utils
 alias pdf='evince'
 alias tmux='tmux -u'
@@ -132,5 +137,5 @@ alias installsublime='sh -c "~/.personalized/installsublime.sh"'
 alias pm='python manage.py'
 alias gch='git checkout'
 alias cdss='cd ~/cloud/Dropbox/Toran/Salary\ Slip'
-alias cdgi='/mnt/ExternalHDD/E/workspace/gitignore'
-alias ghtokencpy='cpy /mnt/ExternalHDD/E/workspace/recovery/github-access-token.txt'
+alias cdgi='$WORKSPACE/gitignore'
+alias ghtokencpy='cpy $WORKSPACE/recovery/github-access-token.txt'
