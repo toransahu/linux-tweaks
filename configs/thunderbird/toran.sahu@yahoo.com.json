@@ -1,8 +1,62 @@
 {
   "accountName": "imap://toran.sahu%40yahoo.com@imap.mail.yahoo.com",
   "rootFolderURL": "imap://toran.sahu%40yahoo.com@imap.mail.yahoo.com",
-  "date": "2019-02-06T05:32:50.423Z",
+  "date": "2019-02-06T06:23:49.331Z",
   "filters": [
+    {
+      "filterName": "toran.sahu@yahoo.com » Inbox",
+      "filterDesc": "",
+      "filterType": 17,
+      "temporary": false,
+      "actionCount": 1,
+      "enabled": true,
+      "actionList": [
+        {
+          "type": 1,
+          "targetFolderUri": "imap://toran.sahu%40yahoo.com@imap.mail.yahoo.com/Farzi"
+        }
+      ],
+      "searchTerms": [
+        {
+          "attrib": 1,
+          "op": 10,
+          "value": {
+            "attrib": 1,
+            "str": "@in4.actcorp.in"
+          },
+          "booleanAnd": false,
+          "beginsGrouping": false,
+          "endsGrouping": false
+        }
+      ]
+    },
+    {
+      "filterName": "toran.sahu@yahoo.com » Inbox",
+      "filterDesc": "",
+      "filterType": 17,
+      "temporary": false,
+      "actionCount": 1,
+      "enabled": true,
+      "actionList": [
+        {
+          "type": 1,
+          "targetFolderUri": "imap://toran.sahu%40yahoo.com@imap.mail.yahoo.com/Ads"
+        }
+      ],
+      "searchTerms": [
+        {
+          "attrib": 1,
+          "op": 10,
+          "value": {
+            "attrib": 1,
+            "str": "@flickr.com"
+          },
+          "booleanAnd": false,
+          "beginsGrouping": false,
+          "endsGrouping": false
+        }
+      ]
+    },
     {
       "filterName": "toran.sahu@yahoo.com » Inbox",
       "filterDesc": "",
