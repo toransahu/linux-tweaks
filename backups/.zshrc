@@ -115,10 +115,10 @@ if [ -f ~/.commonrc ]; then
       . ~/.commonrc
 fi
 
+export PATH=/usr/bin:$PATH  # to set python2 default
 # added by Anaconda3 installer
 export PATH=~/anaconda3/bin:$PATH
 export PATH=~/miniconda3/bin:$PATH
-#export PATH=/usr/bin:$PATH  # to set python2 default
 
 # fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
