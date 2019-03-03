@@ -188,10 +188,12 @@ home=['XF86Explorer']
 screenshot=@as []
 
 [desktop/keybindings/wm]
+push-snap-left=@as []
 switch-to-workspace-right=['<Primary><Super>Right']
 push-snap-right=@as []
 switch-to-workspace-left=['<Primary><Super>Left']
-push-snap-left=@as []
+move-to-workspace-left=['<Primary><Alt><Super>Left']
+move-to-workspace-right=['<Primary><Alt><Super>Right']
 
 [desktop/media-handling]
 autorun-x-content-start-app=@as []
