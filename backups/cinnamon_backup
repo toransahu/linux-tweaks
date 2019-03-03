@@ -67,9 +67,9 @@ clock-use-24h=false
 toolkit-accessibility=true
 clock-show-seconds=true
 cursor-blink-time=1200
-icon-theme='Mint-X-Dark'
+icon-theme='Mint-X-Teal'
 gtk-overlay-scrollbars=false
-gtk-theme='Mint-Y-Dark'
+gtk-theme='Mint-Y-Dark-Teal'
 clock-show-date=true
 
 [desktop/keybindings/custom-keybindings/custom0]
@@ -268,7 +268,7 @@ translate-from-selection-keybinding=['<Shift><Super>g']
 
 [theme]
 theme-cache-updated=1531229134
-name='Mint-Y-Dark'
+name='Mint-Y-Dark-Teal'
 
 [settings-daemon/plugins/power]
 button-power='hibernate'
