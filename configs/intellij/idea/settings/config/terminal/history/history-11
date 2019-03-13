@@ -1,0 +1,5277 @@
+: 1540990053:0;git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim\
+
+: 1540990082:0;pwd
+: 1540990117:0;cat /media/torans/Other/E/workspace/linux-tweaks/backups/paths.sh 
+: 1540990131:0;vim /media/torans/Other/E/workspace/linux-tweaks/backups/paths.sh 
+: 1540990205:0;clear
+: 1540990214:0;cp /media/torans/Other/E/workspace/linux-tweaks/backups/paths.sh ~/
+: 1540990226:0;cd /media/torans/Other/E/workspace/linux-tweaks/scripts
+: 1540990232:0;chmod +x restore_confs.sh
+: 1540990239:0;./restore_confs.sh
+: 1540990244:0;sh restore_confs.sh
+: 1540990262:0;ls ~/
+: 1540990282:0;sudo chmod +x restore_confs.sh
+: 1540990285:0;sh restore_confs.sh
+: 1540990301:0;chmod +x ~/paths.sh
+: 1540990303:0;sh restore_confs.sh
+: 1540990307:0;clear
+: 1540990327:0;cd ../backups
+: 1540990334:0;cp .zshrc ~/
+: 1540990337:0;reset
+: 1540990342:0;exit
+: 1540990397:0;clear
+: 1540990408:0;git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim\
+
+: 1540990419:0;clear
+: 1540990433:0;cat ~/.zshrc
+: 1540990454:0;cdw
+: 1540990481:0;cd /media/torans/Other/E/workspace/linux-tweaks/backups
+: 1540990491:0;cp .bash_aliases ~/
+: 1540990495:0;cp -f .bash_aliases ~/
+: 1540990508:0;cp -f .zshrc  ~/
+: 1540990514:0;. ~/.zshrc
+: 1540990529:0;cat ~/.zshrc
+: 1540990551:0;ls ~/
+: 1540990566:0;nemo . &
+: 1540990610:0;. ~/.zshrc
+: 1540991524:0;cdw
+: 1540991532:0;cd /media/torans/Other/E/workspace/linux-tweaks/backups
+: 1540991539:0;cd ../scripts
+: 1540991542:0;./restore_confs.sh
+: 1540991572:0;vim restore_confs.sh
+: 1540991584:0;./restore_confs.sh
+: 1540991593:0;vim ~/paths.sh
+: 1540991599:0;./restore_confs.sh
+: 1540991604:0;clear
+: 1540991610:0;. ~/.zshrc
+: 1540991615:0;vim ~/.zshrc
+: 1540991621:0;. ~/.zshrc
+: 1540991646:0;vim ~/.bash_aliases 
+: 1540991922:0;cd Downloads
+: 1540991923:0;ls
+: 1540991957:0;sudo dpkg -i mint*.deb
+: 1540991971:0;sudo apt update
+: 1540991987:0;sudo apt upgrade
+: 1540991998:0;sudo apt --fix-broken install
+: 1540992005:0;sudo apt upgrade
+: 1540992034:0;sudo dpkg -i mint*.deb
+: 1540992056:0;sudo apt install mint-themes 
+: 1540992065:0;sudo apt --fix-broken install
+: 1540992171:0;sudo dpkg -i mint*.deb
+: 1540992205:0;apt-cache search nemo
+: 1540992219:0;sudo add-apt-repository ppa:embrosyn/cinnamon
+: 1540992301:0;xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+: 1540992307:0;gsettings set org.gnome.desktop.background show-desktop-icons false
+: 1540992340:0;clear
+: 1540992341:0;cdw
+: 1540992343:0;cd linux-tweaks
+: 1540992345:0;gits
+: 1540992363:0;git diff backups/.bash_aliases
+: 1540992376:0;git stash
+: 1540992394:0;git config --global user.email "toran.sahu@yahoo.com"
+: 1540992409:0;git config --global user.name "Toran Sahu"
+: 1540992412:0;git stash
+: 1540992415:0;clear
+: 1540992417:0;gits
+: 1540992438:0;cat backups/paths.sh
+: 1540992453:0;bak
+: 1540992456:0;gits
+: 1540992479:0;vim
+: 1540992491:0;cdw
+: 1540992492:0;cd linux-tweaks
+: 1540992497:0;cd backups
+: 1540992511:0;cd ..
+: 1540992516:0;vim scripts/backup_confs.sh
+: 1540992543:0;vim backups/paths.sh
+: 1540992570:0;vim ~/paths.sh
+: 1540992597:0;bak
+: 1540992602:0;gits
+: 1540992617:0;git diff backups/.bash_profile
+: 1540992625:0;git stash
+: 1540992641:0;cp -f ~/paths.sh backups/
+: 1540992646:0;res
+: 1540992650:0;clear
+: 1540992657:0;cdw
+: 1540992659:0;cd linux-tweaks
+: 1540992660:0;gits
+: 1540992666:0;git diff backups/paths.sh
+: 1540992673:0;git add backups/paths.sh
+: 1540992686:0;git commit -m "[added] tal-ubuntu"
+: 1540992688:0;gpush
+: 1540992706:0;clear
+: 1540992895:0;python ~/.vim/bundle/YouCompleteMe/install.py
+: 1540992904:0;sudo apt install cmake
+: 1540993062:0;python ~/.vim/bundle/YouCompleteMe/install.py
+: 1540993149:0;cat /tmp/ycm_build_visawcc6/CMakeFiles/CMakeOutput.log
+: 1540993162:0;clear
+: 1540993174:0;vim
+: 1540993182:0;vim -v
+: 1540993189:0;vim --version
+: 1540993205:0;clear
+: 1540993242:0;sudo apt install build-essential cmake python3-dev
+: 1540993279:0;cd ~/.vim/bundle/YouCompleteMe
+: 1540993286:0;python3 install.py --clang-completer
+: 1540993312:0;cd ../talentica/assignment/photogram
+: 1540993314:0;gits
+: 1540993327:0;git diff src/manage.py
+: 1540993335:0;git stash
+: 1540993336:0;glog
+: 1540993342:0;gits
+: 1540993347:0;git add TODO.md
+: 1540993357:0;git commit -m "[TODO] added"
+: 1540993360:0;gpush
+: 1540993367:0;clear
+: 1540993373:0;pe
+: 1540993380:0;pip install pipenv
+: 1540993392:0;pip install --upgrade pip
+: 1540993395:0;pe
+: 1540993402:0;clear
+: 1540993410:0;pipenv install
+: 1540993433:0;pipenv shell
+: 1540993436:0;clear
+: 1540993437:0;gits
+: 1540993451:0;cd src
+: 1540993459:0;vim hub/models.py
+: 1540993481:0;clear
+: 1540993482:0;exit
+: 1540993499:0;sudo shutdown now
+: 1541049186:0;cdw
+: 1541049228:0;clear
+: 1541049232:0;cdw
+: 1541049364:0;cd /mnt/Other/E/workspace/linux-tweaks
+: 1541049366:0;gits
+: 1541049368:0;gpull
+: 1541049379:0;vim ~/paths.sh
+: 1541049401:0;. ~/.zshrc
+: 1541049403:0;clear
+: 1541049404:0;cdw
+: 1541049407:0;bak
+: 1541049410:0;cd -
+: 1541049412:0;gits
+: 1541049416:0;git add backups/paths.sh
+: 1541049434:0;git commit -m "[updated] mount point for tal-ubuntu"
+: 1541049437:0;gpush
+: 1541049449:0;cd ../talentica/assignment/photogram
+: 1541049452:0;gits
+: 1541049454:0;gpull
+: 1541049628:0;cdw
+: 1541049629:0;cd linux-tweaks
+: 1541049642:0;cat scripts/restore_confs.sh
+: 1541049667:0;dconf load backups/cinnamon_backup_mint-ethereal
+: 1541049675:0;dconf load ./backups/cinnamon_backup_mint-ethereal
+: 1541049712:0;dconf load /org/cinnamon/ < backups/cinnamon_backup_mint-ethereal
+: 1541049788:0;cdw
+: 1541049790:0;cd linux-tweaks
+: 1541049792:0;bak
+: 1541049795:0;gits
+: 1541049811:0;cat scripts/backup_confs.sh
+: 1541049854:0;clear
+: 1541049855:0;cdw
+: 1541049859:0;cd talentica/assignment/photogram
+: 1541049862:0;gpull
+: 1541051669:0;pes
+: 1541051678:0;clear
+: 1541051683:0;cd src
+: 1541051686:0;vim
+: 1541051743:0;pipenv sync
+: 1541051810:0;pipenv install -d
+: 1541051818:0;pipenv install -d --skip-lock
+: 1541051826:0;cat ../Pipfile
+: 1541051841:0;clear
+: 1541051845:0;vim
+: 1541051959:0;cdw
+: 1541051963:0;cd office/ethereal/ethereal-machines-backend
+: 1541051968:0;cd src
+: 1541051969:0;vim
+: 1541052366:0;cdw
+: 1541052368:0;cd talentica/assignment/photogram
+: 1541052370:0;pes
+: 1541052372:0;clear
+: 1541052389:0;pipenv run pip list
+: 1541052443:0;pipenv install --skip-lock black
+: 1541052468:0;python manage.py runserver
+: 1541052483:0;vim hub/urls.py
+: 1541052491:0;vim photogram/urls.py
+: 1541052511:0;pip install black
+: 1541052517:0;pip install flake8
+: 1541052523:0;python manage.py runserver
+: 1541052536:0;vim photogram/urls.py
+: 1541052597:0;python manage.py runserver
+: 1541052607:0;vim photogram/urls.py
+: 1541052660:0;python manage.py runserver
+: 1541052673:0;vim photogram/urls.py
+: 1541052692:0;python manage.py runserver
+: 1541052703:0;pipenv install coreapi
+: 1541052730:0;pipenv lock --clear
+: 1541052755:0;pipenv install coreapi
+: 1541052767:0;pipenv graph
+: 1541052786:0;cat ~/.vimrc
+: 1541052812:0;pipenv remove black
+: 1541052818:0;pipenv uninstall black
+: 1541052834:0;vim photogram/urls.py
+: 1541052848:0;clear
+: 1541052853:0;pipenv graph
+: 1541052861:0;pipenv install coreapi
+: 1541052869:0;clear
+: 1541052873:0;clear
+: 1541052917:0;python manage.py runserver
+: 1541052934:0;clear
+: 1541052940:0;vim hub/urls.py
+: 1541052965:0;python manage.py runserver
+: 1541052976:0;clear
+: 1541052982:0;pipenv install pillow
+: 1541053005:0;python manage.py runserver
+: 1541053024:0;clear
+: 1541053026:0;vim
+: 1541053044:0;python manage.py runserver
+: 1541053049:0;clear
+: 1541053051:0;gits
+: 1541053432:0;python manage.py runserver
+: 1541053463:0;clear
+: 1541053465:0;gits
+: 1541053473:0;git diff ../Pipfile
+: 1541053486:0;git add ../Pipfile
+: 1541053504:0;git commit -m "[dep] added coreapi & pillow; removed black"
+: 1541053511:0;git diff ../Pipfile.lock
+: 1541053535:0;git add ../Pipe.lock
+: 1541053537:0;cd ..
+: 1541053548:0;gits
+: 1541053553:0;git add Pipfile.lock
+: 1541053557:0;git commit -m "[dep] added coreapi & pillow; removed black"
+: 1541053558:0;clear
+: 1541053559:0;gits
+: 1541053564:0;cd src
+: 1541053576:0;git diff hub/models.py
+: 1541053589:0;git add hub/models.py
+: 1541053602:0;git commit -m "[fixed] typo in tuple"
+: 1541053611:0;git diff hub/urls.py
+: 1541053617:0;git add hub/urls.py
+: 1541053640:0;git commit -m "[update] added app_name"
+: 1541053642:0;clear
+: 1541053643:0;gits
+: 1541053658:0;git diff photogram/settings.py
+: 1541053665:0;git add photogram/settings.py
+: 1541053677:0;git commit -m "[added] hub in INSTALLED_APPS"
+: 1541053686:0;git diff photogram/urls.py
+: 1541053701:0;git add photogram/urls.py
+: 1541053714:0;git commit -m "[added] urls to hub app & api docs"
+: 1541053717:0;gits
+: 1541053719:0;gpush
+: 1541053726:0;clear
+: 1541053732:0;python manage.py runserver
+: 1541053759:0;clear
+: 1541053811:0;python manage.py createsuperuser 
+: 1541053843:0;clear
+: 1541053850:0;python manage.py migrate
+: 1541053862:0;python manage.py makemigrations
+: 1541053865:0;python manage.py migrate
+: 1541053868:0;clear
+: 1541054439:0;gits
+: 1541054545:0;vim
+: 1541056024:0;gits
+: 1541056036:0;git add ../TODO.md
+: 1541056050:0;git commit -m "[TODO] updated"
+: 1541056054:0;git add hub/tests.py
+: 1541056090:0;git commit -m "[test] added 1 for hub app"
+: 1541056092:0;clear
+: 1541056093:0;gpush
+: 1541056150:0;vim
+: 1541056343:0;gits
+: 1541056346:0;git add hub/tests.py
+: 1541056353:0;git commit -m "[fixed] typos"
+: 1541056355:0;gpush
+: 1541056362:0;clear
+: 1541056363:0;vim
+: 1541056846:0;clear
+: 1541056848:0;gits
+: 1541056857:0;python manage.py test
+: 1541056878:0;vim
+: 1541056897:0;python manage.py test
+: 1541056937:0;vim
+: 1541056967:0;python manage.py test
+: 1541056976:0;vim hub/tests.py
+: 1541057066:0;python manage.py test
+: 1541057071:0;vim hub/tests.py
+: 1541057089:0;python manage.py test
+: 1541057178:0;vim hub/tests.py
+: 1541057273:0;python manage.py test
+: 1541057352:0;vim hub/tests.py
+: 1541057361:0;python manage.py test
+: 1541057372:0;vim hub/tests.py
+: 1541057382:0;python manage.py test
+: 1541057437:0;vim hub/tests.py
+: 1541057450:0;python manage.py test
+: 1541057461:0;vim hub/tests.py
+: 1541057685:0;exit
+: 1541057691:0;cdw
+: 1541057693:0;cd talentica/assignment/photogram
+: 1541057694:0;pes
+: 1541057696:0;cd src
+: 1541057699:0;vim hub/tests.py
+: 1541057704:0;python manage.py test
+: 1541057722:0;vim hub/tests.py
+: 1541057754:0;python manage.py test
+: 1541057763:0;vim hub/tests.py
+: 1541057772:0;python manage.py test
+: 1541057992:0;vim hub/tests.py
+: 1541058059:0;python manage.py test
+: 1541058098:0;vim hub/tests.py
+: 1541058191:0;python manage.py test
+: 1541058239:0;vim hub/tests.py
+: 1541058423:0;python manage.py test
+: 1541058431:0;vim hub/tests.py
+: 1541058599:0;python manage.py test
+: 1541058607:0;vim hub/tests.py
+: 1541058695:0;python manage.py test
+: 1541058699:0;vim hub/tests.py
+: 1541058725:0;python manage.py test
+: 1541058734:0;vim hub/tests.py
+: 1541058984:0;python manage.py test
+: 1541058993:0;vim hub/tests.py
+: 1541059010:0;python manage.py test
+: 1541059265:0;vim hub/tests.py
+: 1541059534:0;python manage.py test
+: 1541059546:0;clear
+: 1541059549:0;vim hub/tests.py
+: 1541059861:0;python manage.py test
+: 1541059885:0;vim hub/tests.py
+: 1541059932:0;python manage.py test
+: 1541059944:0;vim hub/tests.py
+: 1541060341:0;vim
+: 1541060437:0;python manage.py test
+: 1541060450:0;vim
+: 1541060508:0;python manage.py test
+: 1541060530:0;vim hub/tests.py
+: 1541060570:0;clear
+: 1541063448:0;vim
+: 1541063531:0;clear
+: 1541063535:0;cd src
+: 1541063539:0;vim
+: 1541063546:0;python manage.py test
+: 1541064353:0;clear
+: 1541064881:0;python manage.py test
+: 1541064891:0;vim hub/tests.py
+: 1541064942:0;vim ~/.vimrc
+: 1541065082:0;python manage.py test
+: 1541065612:0;clear
+: 1541065620:0;pipenv install djoser
+: 1541065641:0;pipenv install djangorestframework-jwt
+: 1541065652:0;clear
+: 1541065654:0;gits
+: 1541065668:0;git diff photogram/permissions.py
+: 1541065697:0;git diff photogram/settings.py
+: 1541065708:0;git add photogram/settings.py
+: 1541065737:0;git commit -m "[added] REST_FRAMEWORK section for auth, permission, and api ver."
+: 1541065744:0;git add photogram/permissions.py
+: 1541065769:0;git commit -m "[added] new permission class for auth_or_read_only"
+: 1541065771:0;gits
+: 1541065778:0;git diff hub/tests.py
+: 1541065795:0;git diff hub/views.py
+: 1541065806:0;git add hub/views.py
+: 1541065837:0;git commit -m "[updated] permission classes in Photo view"
+: 1541065841:0;git add hub/tests.py 
+: 1541065858:0;git commit -m "[added] test cases for anonymous users"
+: 1541065867:0;gits
+: 1541065875:0;vim ../.gitignore
+: 1541065890:0;gits
+: 1541065896:0;cd ..
+: 1541065900:0;git add .gitignore
+: 1541065914:0;git commit -m "[gitignored] *.png"
+: 1541065916:0;clear
+: 1541065917:0;gits
+: 1541065922:0;git diff Pipfile
+: 1541065929:0;git add Pipfile*
+: 1541065949:0;git commit -m "[dep] added djoser & drf-jwt for auth"
+: 1541065951:0;gpush
+: 1541065970:0;clear
+: 1541066037:0;vim 
+: 1541066115:0;cd src
+: 1541066140:0;git mv photogram/settings.py photogram/base_settings.py
+: 1541066318:0;hostname
+: 1541066398:0;vim 
+: 1541066483:0;python manage.py runserver
+: 1541066689:0;pe install coverage
+: 1541066709:0;coverage run
+: 1541066713:0;coverage help
+: 1541066880:0;coverage run --source='.' manage.py test
+: 1541066890:0;coverage report
+: 1541067037:0;coverage run --source='.' manage.py test
+: 1541067041:0;coverage report
+: 1541067051:0;gits
+: 1541067058:0;cd ..
+: 1541067063:0;git diff Pipfile
+: 1541067067:0;git diff Pipfile*
+: 1541067075:0;git add Pipfile*
+: 1541067088:0;git commit -m "[dep] added coverage.py\
+"
+: 1541067092:0;gits
+: 1541067107:0;git diff src/photogram/base_settings.py
+: 1541067114:0;git add src/photogram/base_settings.py
+: 1541067135:0;git commit -m "[update] using token auth instead basic\
+"
+: 1541067140:0;gits
+: 1541067145:0;git add src/photogram/settings.py
+: 1541067169:0;git commit -m "[new] site level settings file"
+: 1541067171:0;gpush
+: 1541067178:0;clear
+: 1541067871:0;gits
+: 1541067874:0;python manage.py runserver
+: 1541067877:0;cd src
+: 1541067878:0;python manage.py runserver
+: 1541068099:0;vim ~/.local/share/applications/Postman.desktop
+: 1541068619:0;python manage.py migrate
+: 1541068633:0;python manage.py migrate
+: 1541068636:0;python manage.py runserver
+: 1541069246:0;cd ~/Postman
+: 1541069255:0;chmod +x Postman
+: 1541069258:0;./Postman
+: 1541069268:0;sudo chmod +x Postman
+: 1541069271:0;./Postman
+: 1541069346:0;sudo apt install libgconf-2-4
+: 1541069359:0;./Postman
+: 1541070416:0;cdw
+: 1541070418:0;cd talentica/assignment/photogram
+: 1541070420:0;pes
+: 1541070422:0;cd src
+: 1541070424:0;clear
+: 1541070425:0;vim
+: 1541072197:0;python manage.py migrate
+: 1541072207:0;python manage.py makemigrations
+: 1541072239:0;python manage.py migrate
+: 1541072247:0;python manage.py runserver
+: 1541073386:0;sudo apt install nemo-terminal
+: 1541073405:0;cdw
+: 1541073408:0;cd talentica/assignment/photogram/src
+: 1541073412:0;t .
+: 1541073421:0;sqlite3 db.sqlite3
+: 1541073491:0;pes
+: 1541073493:0;clear
+: 1541073496:0;cd src
+: 1541073504:0;python manage.py flush
+: 1541073511:0;clear
+: 1541073528:0;python manage.py runserver
+: 1541073537:0;python manage.py migrate
+: 1541073540:0;python manage.py runserver
+: 1541073590:0;python manage.py createsuperuser 
+: 1541073604:0;python manage.py runserver
+: 1541075506:0;sqlite3 db.sqlite3
+: 1541076428:0;python manage.py shell
+: 1541076628:0;python manage.py runserver
+: 1541077370:0;git branch -v
+: 1541077387:0;git checkout -b blog
+: 1541077408:0;cat careers/admin.py
+: 1541077420:0;git pull origin blog
+: 1541077447:0;cat ~/.ssh/id_rsa.pub
+: 1541077519:0;git pull origin blog
+: 1541077528:0;git pull origin blog -f
+: 1541077539:0;git stash
+: 1541077543:0;git pull origin blog -f
+: 1541077567:0;ls blog
+: 1541077576:0;cat blogs/serializers.py
+: 1541077580:0;clear
+: 1541077584:0;git stash
+: 1541077587:0;clear
+: 1541077593:0;git checkout master
+: 1541078116:0;clear
+: 1541078160:0;vim
+: 1541079129:0;clear
+: 1541079137:0;python manage.py makemigrations
+: 1541079143:0;python manage.py migrate
+: 1541079149:0;python manage.py runserver
+: 1541081071:0;python manage.py makemigrations
+: 1541081075:0;python manage.py migrate
+: 1541081079:0;python manage.py runserver
+: 1541082242:0;python manage.py makemigrations
+: 1541082245:0;python manage.py migrate
+: 1541082248:0;python manage.py runserver
+: 1541082292:0;python manage.py shell
+: 1541082302:0;sqlite3 db.sqlite3
+: 1541082464:0;python manage.py runserver
+: 1541082586:0;sqlite3 db.sqlite3
+: 1541082645:0;python manage.py runserver
+: 1541083118:0;gits
+: 1541083130:0;nemo . &
+: 1541083143:0;vim ../.gitignore
+: 1541083159:0;gits
+: 1541083168:0;git add ../.gitignore
+: 1541083179:0;git commit -m "[gitignored] images"
+: 1541083181:0;gits
+: 1541083187:0;git diff hub/models.py
+: 1541083228:0;git add hub/models.py
+: 1541083250:0;git commit -m "[update] added blank attrbt to owner field"
+: 1541083251:0;gits
+: 1541083263:0;git diff hub/serializers.py
+: 1541083283:0;git add hub/serializers.py
+: 1541083299:0;git commit -m "[updated] serializer to accept owner field"
+: 1541083302:0;gits
+: 1541083307:0;git diff hub/views.py
+: 1541083316:0;git add hub/views.py
+: 1541083348:0;git commit -m "[updated] view permission - temp"
+: 1541083350:0;gits
+: 1541083357:0;git diff photogram/base_settings.py
+: 1541083366:0;git add photogram/base_settings.py
+: 1541083382:0;git commit -m "[added] default_permission_class"
+: 1541083384:0;gits
+: 1541083389:0;git diff photogram/permissions.py
+: 1541083403:0;git diff photogram/urls.py
+: 1541083427:0;git add photogram/urls.py
+: 1541083452:0;git commit -m "[updated] urls.py to avoid auth on api doc; linted code"
+: 1541083455:0;git add photogram/permissions.py
+: 1541083477:0;git commit -m "[updated] permissions, need to update further"
+: 1541083479:0;gpush
+: 1541083487:0;gits
+: 1541136960:0;cdw
+: 1541136966:0;cd talentica/assignment/photogram
+: 1541136974:0;pes
+: 1541136980:0;clear
+: 1541136983:0;cdw
+: 1541136985:0;cd talentica/assignment/photogram
+: 1541136986:0;pes
+: 1541136995:0;cdw
+: 1541136997:0;cd talentica/assignment/photogram
+: 1541136998:0;pes
+: 1541137001:0;clear
+: 1541137014:0;cd src
+: 1541137018:0;gits
+: 1541137020:0;gpull
+: 1541137026:0;clear
+: 1541137042:0;vim
+: 1541137050:0;nemo . &
+: 1541137074:0;cdw
+: 1541137079:0;cd office/ethereal/ethereal-machines-backend/
+: 1541137082:0;cd src
+: 1541137084:0;vim
+: 1541137391:0;vim ~/.vimrc
+: 1541137858:0;cd src
+: 1541137860:0;python manage.py runserver
+: 1541137911:0;cd Postman/
+: 1541137912:0;ls
+: 1541137923:0;nemo . &
+: 1541138001:0;ls ~/.local/share/applications/ 
+: 1541138025:0;vim ~/.local/share/applications/Postman.desktop
+: 1541138059:0;pwd
+: 1541138355:0;git checkout master
+: 1541138362:0;clear
+: 1541138367:0;vim
+: 1541138708:0;gits
+: 1541138713:0;git add .
+: 1541138726:0;git commit -m "[added] media files config"
+: 1541138751:0;clear
+: 1541138761:0;cd src
+: 1541138762:0;vim
+: 1541139412:0;cdw
+: 1541139414:0;cd talentica/assignment/photogram
+: 1541139418:0;gits
+: 1541139432:0;cd src
+: 1541139440:0;git diff photogram/base_settings.py
+: 1541139448:0;git add photogram/base_settings.py
+: 1541139586:0;git diff photogram/base_settings.py
+: 1541139594:0;git add photogram/base_settings.py
+: 1541139624:0;git commit -m "[update] set APPEND_SLASH to True (default)"
+: 1541139627:0;gits
+: 1541139634:0;git diff photogram/permissions.py
+: 1541139649:0;git add photogram/permissions.py
+: 1541139671:0;git commit -m "[update] handled exception, if owner is empty"
+: 1541139673:0;clear
+: 1541139675:0;gits
+: 1541139684:0;git diff hub/views.py
+: 1541139692:0;git add hub/views.py
+: 1541139711:0;git commit -m "[update] using custom permission classes for the view"
+: 1541139713:0;git
+: 1541139715:0;gits
+: 1541139717:0;clear
+: 1541139718:0;gpush
+: 1541139739:0;clear
+: 1541141370:0;gits
+: 1541141376:0;git diff hub/views.py
+: 1541141387:0;git add hub/views.py
+: 1541141430:0;git commit -m "[updated] Photo viewset to list objects based on object permission/ownership"
+: 1541141433:0;gpush
+: 1541141440:0;clear
+: 1541142617:0;cdw
+: 1541142620:0;cd talentica/assignment/photogram
+: 1541142623:0;pes
+: 1541142626:0;which pip
+: 1541142688:0;vim ~/.local/share/virtualenvs/photogram-VaJi0Xm_/lib/python3.7/site-packages/rest_framework/permissions.py
+: 1541142987:0;gits
+: 1541146936:0;git diff hub/views.py
+: 1541146987:0;git add hub/views.py
+: 1541146997:0;git diff photogram/permissions.py
+: 1541147019:0;git add photogram/permissions.py
+: 1541147050:0;git commit -m "[update] added condition for staff, anonymous users"
+: 1541147052:0;clear
+: 1541147053:0;gits
+: 1541147055:0;gpush
+: 1541147136:0;python manage.py test
+: 1541147147:0;clear
+: 1541147151:0;vim
+: 1541148083:0;pes
+: 1541148085:0;cd src
+: 1541148088:0;python manage.py test
+: 1541148093:0;clear
+: 1541148513:0;python manage.py test
+: 1541149401:0;yapf
+: 1541149408:0;clear
+: 1541149530:0;pip show black
+: 1541149537:0;pip show flake8
+: 1541149572:0;xpipenv install --skip-lock 
+: 1541149577:0;cat ../Pipfile
+: 1541149593:0;pipenv install --skip-lock black
+: 1541149613:0;vim
+: 1541149782:0;clear
+: 1541149784:0;exit
+: 1541149786:0;pes
+: 1541149790:0;cd src
+: 1541149793:0;vim
+: 1541149815:0;vim ~/.vimrc
+: 1541149966:0;exit
+: 1541149970:0;t
+: 1541149972:0;pes
+: 1541149975:0;cd src
+: 1541149976:0;vim
+: 1541150340:0;exit
+: 1541150344:0;t
+: 1541150347:0;pes
+: 1541150352:0;cd src
+: 1541150354:0;vim
+: 1541150387:0;which pip 
+: 1541150403:0;python3.7 -m pip show black
+: 1541150411:0;python3.7 -m pip install --upgrade black
+: 1541150416:0;python3.6 -m pip install --upgrade black
+: 1541150423:0;python3.7 -m pip install --upgrade black
+: 1541150489:0;pes
+: 1541150491:0;clear
+: 1541150493:0;cd src
+: 1541150495:0;vim
+: 1541150520:0;pip install isort
+: 1541150565:0;vim
+: 1541150704:0;clear
+: 1541150718:0;pipenv uninstall black
+: 1541150735:0;exit
+: 1541150737:0;t
+: 1541150740:0;pes
+: 1541150743:0;cd src
+: 1541150745:0;vim
+: 1541150765:0;clear
+: 1541150768:0;gits
+: 1541150776:0;git diff ../Pipfile.lock
+: 1541150792:0;clear
+: 1541150793:0;gits
+: 1541150803:0;pipenv lock
+: 1541150813:0;git diff ../Pipfile.lock
+: 1541150821:0;git add ../Pipfile.lock
+: 1541150828:0;git commit -m "[dep] locked"
+: 1541150830:0;clear
+: 1541150831:0;gits
+: 1541150836:0;git diff hub/tests.py
+: 1541150848:0;clear
+: 1541150849:0;vim
+: 1541150856:0;pes
+: 1541150859:0;clear
+: 1541150860:0;cd src
+: 1541150861:0;vim
+: 1541150894:0;clear
+: 1541150898:0;python manage.py test
+: 1541151423:0;cdw
+: 1541151424:0;cd linux-tweaks
+: 1541151425:0;gits
+: 1541151428:0;gpull
+: 1541151433:0;bak
+: 1541151436:0;gits
+: 1541151445:0;git diff backups/.vimrc
+: 1541151461:0;git add backups/.vimrc
+: 1541151487:0;git commit -m "[fixed] python fixer issue with black"
+: 1541151488:0;gpush
+: 1541151588:0;python manage.py test
+: 1541152574:0;python manage.py runserver
+: 1541152577:0;python manage.py test
+: 1541155103:0;python manage.py shell
+: 1541155322:0;python manage.py test
+: 1541157984:0;vim ../TODO.md
+: 1541158020:0;gits
+: 1541158029:0;git diff photogram/base_settings.py
+: 1541158051:0;git add photogram/base_settings.py
+: 1541158076:0;git commit -m "[update] linted by black "
+: 1541158083:0;git diff hub/tests.py 
+: 1541158092:0;git add hub/tests.py 
+: 1541158142:0;git commit -m "[added] test case class PhotoAuthUserTest to test api for authenticated users"
+: 1541158143:0;gits
+: 1541158154:0;git add ../TODO.md
+: 1541158155:0;gits
+: 1541158166:0;git commit -m "[TODO] updated"
+: 1541158168:0;gpush
+: 1541158174:0;clear
+: 1541158189:0;vim
+: 1541162783:0;python manage.py runserver
+: 1541163656:0;gits
+: 1541163662:0;git diff hub/tests.py
+: 1541163671:0;git add hub/tests.py
+: 1541163682:0;git commit -m "[update] linted"
+: 1541163684:0;gits
+: 1541163689:0;git diff hub/views.py
+: 1541163722:0;git add hub/views.py
+: 1541163762:0;git commit -m "[added] get_shared() action view to access shared item"\\
+"\
+"
+: 1541163769:0;git commit --amend
+: 1541163777:0;gits
+: 1541163780:0;gpush
+: 1541163790:0;clear
+: 1541163806:0;coverage run --source='.' manage.py test
+: 1541163813:0;coverage report
+: 1541163963:0;clear
+: 1541164978:0;vim
+: 1541165619:0;python manage.py migrate
+: 1541165626:0;python manage.py makemigrations
+: 1541165727:0;python manage.py migrate
+: 1541165744:0;python manage.py runserver
+: 1541166156:0;gits
+: 1541166162:0;git diff hub/models.py
+: 1541166172:0;git add hub/models.py
+: 1541166195:0;git commit -m "[added] Shared model to store shared photo + token mappings"
+: 1541166198:0;clear
+: 1541166199:0;gits
+: 1541166203:0;git add hub/views.py
+: 1541166257:0;git commit -m "[added] share_it() action view to generate a sharable link to given Photo"\
+ 
+: 1541166260:0;clear
+: 1541166262:0;glog
+: 1541166267:0;gits
+: 1541166269:0;gpush
+: 1541393925:0;cdw
+: 1541393930:0;cd talentica/assignment/photogram
+: 1541393933:0;gits
+: 1541393935:0;gpull
+: 1541393941:0;clear
+: 1541394690:0;ifconfig
+: 1541395566:0;pes
+: 1541395570:0;clear
+: 1541395572:0;cd src
+: 1541395576:0;clear
+: 1541395584:0;python manage.py makemigrations
+: 1541395592:0;python manage.py migrate
+: 1541395597:0;python manage.py runserver
+: 1541395601:0;cdw
+: 1541395604:0;cd talentica/assignment/photogram
+: 1541395605:0;pe
+: 1541395607:0;pes
+: 1541395610:0;cd src
+: 1541395615:0;cdw
+: 1541395617:0;cd talentica/assignment/photogram
+: 1541395618:0;pes
+: 1541395620:0;cd src
+: 1541395622:0;clear
+: 1541395629:0;gits
+: 1541395632:0;vim
+: 1541397137:0;gits
+: 1541397143:0;git add photogram/permissions.py
+: 1541397158:0;git commit -m "[update] cleaned unused codes"
+: 1541397161:0;gpush
+: 1541397648:0;gits
+: 1541397652:0;git diff hub/views.py
+: 1541397692:0;clear
+: 1541397697:0;git add hub/views.py
+: 1541397717:0;git commit -m "[update] handled jwt.exceptions.ExpiredSignatureError"
+: 1541397719:0;clear
+: 1541397722:0;gpush
+: 1541397736:0;coverage run --source='.' manage.py test
+: 1541397748:0;coverage report
+: 1541397752:0;clear
+: 1541397985:0;coverage report
+: 1541398202:0;python manage.py test --with-coverage
+: 1541398211:0;coverage report
+: 1541398252:0;cdw
+: 1541398255:0;cd talentica/assignment/photogram
+: 1541398256:0;pes
+: 1541398258:0;cd src
+: 1541398260:0;vim
+: 1541398687:0;vim ~/.vimrc
+: 1541398750:0;cd **
+: 1541398863:0;git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+: 1541398879:0;~/.fzf/install
+: 1541398980:0;clear
+: 1541398987:0;vim
+: 1541398997:0;cdw
+: 1541398999:0;cd linux-tweaks
+: 1541399001:0;gits
+: 1541399002:0;gpull
+: 1541399042:0;bak
+: 1541399044:0;gits
+: 1541399055:0;git diff backups/.vimrc
+: 1541399060:0;git diff backups/paths.sh
+: 1541399077:0;git stash
+: 1541399080:0;gits
+: 1541399087:0;clear
+: 1541399091:0;res
+: 1541399093:0;clear
+: 1541399100:0;vim ~/.vimrc
+: 1541399128:0;clear
+: 1541399129:0;vim
+: 1541399143:0;clear
+: 1541399171:0;cd **
+: 1541399181:0;gits
+: 1541399183:0;bak
+: 1541399185:0;gits
+: 1541399191:0;git add backups/.vimrc
+: 1541399200:0;git commit -m "[added] fzf"
+: 1541399202:0;gpush
+: 1541399208:0;clear
+: 1541399234:0;find *
+: 1541399249:0;find * -type f | fzf > selected
+: 1541399253:0;fzf
+: 1541399266:0;~/.fzf/install
+: 1541399305:0;. ~/.zshrc
+: 1541399318:0;gits
+: 1541399324:0;rm selected
+: 1541399329:0;gits
+: 1541399331:0;bak
+: 1541399333:0;gits
+: 1541399336:0;fzf
+: 1541399351:0;clear
+: 1541399353:0;cd **
+: 1541399422:0;vim
+: 1541399696:0;gits
+: 1541399700:0;vim ~/.vimrc
+: 1541399756:0;vim
+: 1541399832:0;vim ~/.vimrc
+: 1541400088:0;vim
+: 1541400156:0;vim hub/tests.py
+: 1541400406:0;cdw
+: 1541400407:0;cd linux-tweaks
+: 1541400409:0;gits
+: 1541400411:0;bak
+: 1541400413:0;gits
+: 1541400422:0;git diff backups/.vimrc
+: 1541400440:0;git add backups/.vimrc
+: 1541400469:0;git commit -m "[added] vim-sorround & delimitmate for auto close"
+: 1541400471:0;gpush
+: 1541400478:0;cat ~/paths.sh
+: 1541400482:0;clear
+: 1541400493:0;vim ../TODO.md
+: 1541400577:0;gits
+: 1541400586:0;git add ../TODO.md
+: 1541400600:0;git commit -m "[TODO] updated"
+: 1541400606:0;gpush
+: 1541400715:0;vim hub/tests.py
+: 1541401034:0;sudo apt install gvim
+: 1541401072:0;sudo apt install vim-gnome
+: 1541401089:0;vim
+: 1541401102:0;vim hub/tests.py
+: 1541401114:0;vim hub/views.py
+: 1541401171:0;vim ~/.vimrc
+: 1541401236:0;cdw
+: 1541401238:0;cd linux-tweaks
+: 1541401240:0;gits
+: 1541401241:0;bak
+: 1541401242:0;gits
+: 1541401247:0;git add backups/.vimrc
+: 1541401257:0;git commit -m "[updated] comment"
+: 1541401259:0;gpush
+: 1541402432:0;python manage.py test
+: 1541403120:0;sudo apt update
+: 1541403132:0;sudo apt upgrade
+: 1541403181:0;gtk
+: 1541403185:0;gtk3
+: 1541403189:0;vim-gtk3
+: 1541403262:0;libgnome2
+: 1541403289:0;clear
+: 1541403301:0;sudo apt remove vim-gnome
+: 1541403335:0;vim hub/tests.py
+: 1541403368:0;sudo apt purge vim-gnome
+: 1541403377:0;cdw
+: 1541403379:0;cd talentica/assignment/photogram
+: 1541403380:0;pes
+: 1541403382:0;cd src
+: 1541403385:0;vim hub/tests.py
+: 1541403414:0;sudo apt install vim-gtk3
+: 1541403421:0;sudo apt install vim-gnome
+: 1541405376:0;clear
+: 1541405379:0;vim hub/tests.py
+: 1541406349:0;python manage.py test
+: 1541406409:0;cdw
+: 1541406415:0;cd office/ethereal/ethereal-machines-backend
+: 1541406416:0;ls
+: 1541406419:0;cd src
+: 1541406420:0;vim
+: 1541406643:0;python manage.py test
+: 1541407022:0;vim hub/views.py
+: 1541407483:0;python manage.py test
+: 1541410150:0;vim hub/views.py
+: 1541410156:0;python manage.py test
+: 1541410681:0;gits
+: 1541410717:0;git git diff hub/views.py
+: 1541410722:0;git diff hub/views.py
+: 1541410740:0;git add hub/views.py
+: 1541410776:0;git commit -m "[update] removed query parameters, now using body for data; removed ^ from url_path"
+: 1541410779:0;gpush
+: 1541410806:0;python manage.py test
+: 1541410872:0;gits
+: 1541410876:0;git add hub/tests.py
+: 1541410895:0;git commit -m "[added] test case for share_it"
+: 1541410897:0;gpush
+: 1541410949:0;gits
+: 1541410955:0;git add hub/views.py
+: 1541410999:0;git commit -m "[update] removed ^ from url_path as it is automatically considered by django"
+: 1541411002:0;gpush
+: 1541411008:0;clear
+: 1541411012:0;gits
+: 1541411323:0;python manage.py test
+: 1541411857:0;clear
+: 1541411902:0;python manage.py test
+: 1541411916:0;clear
+: 1541411918:0;gits
+: 1541411956:0;python manage.py test
+: 1541412095:0;gits
+: 1541412099:0;git add hub/tests.py
+: 1541412112:0;git commit -m "[added] test_get_shared()"
+: 1541412113:0;gpush
+: 1541412120:0;clear
+: 1541412471:0;git remote -v
+: 1541412484:0;git remote rename tal author
+: 1541412491:0;git push author master
+: 1541412763:0;sudo apt install mysql-server
+: 1541412774:0;vim
+: 1541412792:0;vim ../TODO.md
+: 1541412996:0;clear
+: 1541413028:0;mysql -u root -p
+: 1541413065:0;sudo mysql -u root -p
+: 1541413238:0;gits
+: 1541413247:0;python manage.py migrate
+: 1541413260:0;sudo apt install mysqlclient
+: 1541413344:0;sudo apt-get install python3-dev
+: 1541413357:0;sudo apt install default-libmysqlclient-dev
+: 1541413370:0;python manage.py migrate
+: 1541413453:0;sudo apt install libmysqlclient-dev
+: 1541413633:0;clear
+: 1541413637:0;python manage.py migrate
+: 1541413647:0;sudo python manage.py migrate
+: 1541413667:0;python manage.py migrate
+: 1541413671:0;clear
+: 1541413686:0;python manage.py migrate
+: 1541413802:0;mysql -u root -p
+: 1541413823:0;sudo apt remove mysql-server
+: 1541413838:0;sudo  apt purge mysql-server
+: 1541413846:0;apt install mysql-server
+: 1541413868:0;clear
+: 1541413873:0;apt install mysql-server
+: 1541413893:0;sudo python manage.py migrate
+: 1541413911:0;sudo python 
+: 1541413917:0;clear
+: 1541413922:0;sudo python3
+: 1541413929:0;sudo python3 manage.py migrate
+: 1541414820:0;apt install mysql-server
+: 1541414832:0;sudo apt purge mysql-server
+: 1541414846:0;sudo apt autoremove
+: 1541414864:0;sudo apt purge mysql-server
+: 1541414868:0;apt install mysql-server
+: 1541414910:0;cat /var/lib/dpkg/lock-frontend
+: 1541414913:0;sudo cat /var/lib/dpkg/lock-frontend
+: 1541414921:0;sudo rm /var/lib/dpkg/lock-frontend
+: 1541414924:0;apt install mysql-server
+: 1541414934:0;sudo cat /var/lib/dpkg/lock-frontend
+: 1541414960:0;apt install mysql-server
+: 1541415022:0;sudo apt install mysql-server
+: 1541415083:0;sudo mysql_secure_installation
+: 1541415192:0;mysqld
+: 1541415197:0;mysql
+: 1541415205:0;mysql -u root
+: 1541415212:0;sudo mysql -u root
+: 1541415221:0;sudo mysql -u root -p
+: 1541415295:0;cdw
+: 1541415298:0;cd talentica/assignment/photogram
+: 1541415299:0;pes
+: 1541415304:0;python manage.py migrate
+: 1541415310:0;vim
+: 1541415337:0;cdw
+: 1541415338:0;cd talentica/assignment/photogram
+: 1541415339:0;pes
+: 1541415342:0;cd src
+: 1541415343:0;clear
+: 1541415345:0;python manage.py migrate
+: 1541415372:0;cdw
+: 1541415374:0;cd talentica/assignment/photogram
+: 1541415375:0;pes
+: 1541415377:0;cd src
+: 1541415379:0;clear
+: 1541415384:0;vim ../TODO.md
+: 1541415440:0;gits
+: 1541415454:0;cd ..
+: 1541415461:0;python manage.py runserver
+: 1541415467:0;python manage.py test
+: 1541415477:0;git add Pipfile*
+: 1541415495:0;git commit -m "[dep] added mysqlclient for mysql db"
+: 1541415497:0;gits
+: 1541415642:0;python manage.py test
+: 1541415705:0;gits
+: 1541415719:0;git add src/photogram/dev_settings.py
+: 1541415731:0;git commit -m "[added] dev settings here"
+: 1541415741:0;git add src/photogram/settings.py
+: 1541415778:0;git commit -m "[update] included dev settings (default for ToranS-UB)"
+: 1541415780:0;gits
+: 1541415783:0;git add TODO.md
+: 1541415791:0;git commit -m "[TODO] updated"
+: 1541415806:0;clear
+: 1541415810:0;gpush
+: 1541415940:0;mysql -u root
+: 1541415944:0;sudo mysql -u root -p
+: 1541416065:0;sudo apt install  mysql-workbench
+: 1541416101:0;clear
+: 1541416102:0;gits
+: 1541416106:0;git add src/hub/tests.py
+: 1541416176:0;git commit -m "[update] removed owner field - cause no need, will be automatically supplied by serializer"
+: 1541416178:0;gpush
+: 1541416185:0;clear
+: 1541416207:0;coverage run --source='.' manage.py test
+: 1541416368:0;python manage.py createsuperuser
+: 1541416393:0;python manage.py runserver
+: 1541416525:0;coverage run --source='.' manage.py test
+: 1541416539:0;python manage.py test
+: 1541416550:0;coverage report
+: 1541416562:0;clear
+: 1541416574:0;python manage.py runserver
+: 1541416638:0;python manage.py test
+: 1541416675:0;pipenv install djoser
+: 1541416687:0;gits
+: 1541416697:0;git diff photogram/settings.py
+: 1541416708:0;python manage.py test
+: 1541416759:0;pipenv update djoser
+: 1541416771:0;python manage.py test
+: 1541417022:0;clear
+: 1541417024:0;gits
+: 1541417037:0;git checkout photogram/settings.py
+: 1541417040:0;gits
+: 1541417042:0;python manage.py test
+: 1541417056:0;vim photogram/settings.py
+: 1541417074:0;git push author master
+: 1541417083:0;clear
+: 1541418351:0;coverage run --source='.' manage.py test
+: 1541418664:0;coverage report
+: 1541418773:0;vim .coveragerc
+: 1541418946:0;vim
+: 1541419028:0;coverage run
+: 1541419033:0;coverage run --source='.' manage.py test
+: 1541419080:0;coverage report -m
+: 1541419414:0;coverage run --source='.' manage.py test
+: 1541419446:0;coverage report -m
+: 1541419634:0;vim src/photogram/settings.py
+: 1541419659:0;coverage run --source='.' manage.py test
+: 1541419664:0;coverage report -m
+: 1541419704:0;vim src/.coverage
+: 1541419711:0;vim src/.coveragerc
+: 1541419727:0;coverage report -m
+: 1541419829:0;clear
+: 1541419838:0;coverage report -m
+: 1541420286:0;gits
+: 1541420295:0;git diff src/photogram/settings.py
+: 1541420308:0;git checkout src/photogram/settings.py
+: 1541420310:0;gits
+: 1541420318:0;git add src/photogram/permissions.py
+: 1541420330:0;git commit -m "[update] cleaned unused code"
+: 1541420333:0;gits
+: 1541420338:0;git add src/.coveragerc
+: 1541420355:0;git commit -m "[coverage] added config file"
+: 1541420358:0;clear
+: 1541420368:0;vim TODO.md
+: 1541420446:0;git add TODO.md
+: 1541420456:0;git commit -m "[TODO] updated"
+: 1541420458:0;gpush
+: 1541420473:0;git push author master
+: 1541420486:0;clear
+: 1541420502:0;vim README.md
+: 1541420886:0;gits
+: 1541420890:0;git add README.md
+: 1541420902:0;git commit -m "[doc] updated other sections"
+: 1541420904:0;gpush
+: 1541420920:0;git push author master
+: 1541421447:0;vim ~/.vimrc
+: 1541421868:0;cat ~/.vim/bundle/vim-snippets/snippets/
+: 1541421872:0;cd ~/.vim/bundle/vim-snippets/snippets/
+: 1541421891:0;cat . 
+: 1541421894:0;cat python.snippets
+: 1541422202:0;clear
+: 1541422204:0;cd ~
+: 1541422209:0;vim ~/.vimrc
+: 1541422238:0;vim hub/tests.py
+: 1541422480:0;clear
+: 1541422484:0;vim ~/.vimrc
+: 1541422600:0;vim hub/tests.py
+: 1541422721:0;gits
+: 1541422726:0;vim hub/views.py
+: 1541422771:0;clear
+: 1541422783:0;cdw
+: 1541422784:0;cd linux-tweaks
+: 1541422788:0;gits
+: 1541422789:0;bak
+: 1541422791:0;clear
+: 1541422793:0;gits
+: 1541422800:0;git diff backups/.vimrc
+: 1541422825:0;vim ~/.vimrc
+: 1541422838:0;bak
+: 1541422840:0;gits
+: 1541422842:0;git diff backups/.vimrc
+: 1541422849:0;git add backups/.vimrc
+: 1541422880:0;vim ~/.vimrc
+: 1541422894:0;git commit -m "[added] pydocstring"
+: 1541422896:0;gpush
+: 1541482379:0;cdw
+: 1541482381:0;cd talentica/assignment/photogram
+: 1541482382:0;pes
+: 1541482387:0;cd src
+: 1541482396:0;python manage.py runserver
+: 1541482402:0;cdw
+: 1541482404:0;cd talentica/assignment/photogram
+: 1541482407:0;pes
+: 1541482411:0;cd src
+: 1541482416:0;cdw
+: 1541482418:0;cd talentica/assignment/photogram
+: 1541482421:0;pes
+: 1541482423:0;cd src
+: 1541482425:0;clear
+: 1541482430:0;vim ../README.md
+: 1541482601:0;clear
+: 1541482602:0;gits
+: 1541482613:0;git add ../README.md
+: 1541482633:0;git commit -m "[doc] updated"
+: 1541482637:0;gpush
+: 1541482711:0;git add ../README.md
+: 1541482713:0;git commit -m "[doc] updated"
+: 1541482714:0;gpush
+: 1541482810:0;git add ../README.md
+: 1541482811:0;git commit -m "[doc] updated"
+: 1541482813:0;gpush
+: 1541482904:0;git add ../README.md
+: 1541482906:0;git commit -m "[doc] updated"
+: 1541482907:0;gpush
+: 1541483105:0;git push author master
+: 1541484197:0;cp -rP ../../../../office/ethereal/ethereal-machines-backend/.circleci/config.yml ../
+: 1541484200:0;ls ../
+: 1541484210:0;cd ..
+: 1541484219:0;mkdir .circleci
+: 1541484231:0;mv config.yml .circleci
+: 1541484240:0;vim .circleci/config.yml
+: 1541484520:0;gits
+: 1541484526:0;git add .circleci/.
+: 1541484552:0;git commit -m "[ci] added circleci configs"
+: 1541484555:0;gpush
+: 1541484652:0;vim .circleci/config.yml
+: 1541484749:0;pipenv run "python manage.py runserver"
+: 1541484764:0;exit
+: 1541484784:0;pipenv run "python manage.py runserver"
+: 1541484787:0;cd src
+: 1541484788:0;pipenv run "python manage.py runserver"
+: 1541484797:0;vim .circleci/config.yml
+: 1541484834:0;git add .circleci/config.yml
+: 1541484848:0;git commit -m "[ci-fix] updated config"
+: 1541484850:0;gpush
+: 1541484927:0;vim .circleci/config.yml
+: 1541484951:0;git add .circleci/config.yml
+: 1541484953:0;git commit -m "[ci-fix] updated config"
+: 1541484955:0;gpush
+: 1541485150:0;pipenv run "python manage.py runserver"
+: 1541485155:0;pipenv run manage.py runserver
+: 1541485173:0;pipenv run "manage.py runserver"
+: 1541485186:0;pipenv run "pip show pyjwt"
+: 1541485198:0;pipenv run "pip list"
+: 1541485206:0;pipenv shell
+: 1541485210:0;cd src
+: 1541485212:0;pipenv run "pip list"
+: 1541485235:0;exit
+: 1541485241:0;pip install --upgrade pip
+: 1541485245:0;pip install --upgrade pipenv
+: 1541485255:0;pipenv run "pip list"
+: 1541485268:0;pip list
+: 1541485276:0;pes
+: 1541485280:0;pip list
+: 1541485317:0;cat Pipfile
+: 1541485324:0;clear
+: 1541485609:0;git reset b8374c0
+: 1541485612:0;glog
+: 1541485631:0;git reset 98dfb87
+: 1541485636:0;gits
+: 1541485640:0;vim .circleci/config.yml
+: 1541485653:0;glog
+: 1541485664:0;git diff .circleci/config.yml
+: 1541485683:0;vim .circleci/config.yml
+: 1541485710:0;git diff .circleci/config.yml
+: 1541485715:0;vim .circleci/config.yml
+: 1541485723:0;git diff .circleci/config.yml
+: 1541485728:0;gpush
+: 1541485742:0;git push origin master -f
+: 1541485797:0;git pull --rebase author master
+: 1541485803:0;clear
+: 1541486222:0;cdw
+: 1541486223:0;cd linux-tweaks
+: 1541486225:0;gits
+: 1541486227:0;gpull
+: 1541486232:0;bak
+: 1541486233:0;gits
+: 1541486238:0;git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+: 1541486315:0;rm -r ~/.zsh/zsh-autosuggestions
+: 1541486319:0;sudo rm -r ~/.zsh/zsh-autosuggestions
+: 1541486328:0;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+: 1541486344:0;vim ~/.zshrc
+: 1541486412:0;. ~/.zshrc
+: 1541486424:0;bak
+: 1541486429:0;gits 
+: 1541486437:0;git add backups/.zshrc
+: 1541486475:0;git commit -m "[added] zsh-autosuggestions - a fish like autocompl..."
+: 1541486481:0;gpush
+: 1541486489:0;clear
+: 1541486495:0;cd .
+: 1541486499:0;cd ..
+: 1541486637:0;pip insatll --upgrade pipenv
+: 1541486642:0;pip install --upgrade pipenv
+: 1541486654:0;gits
+: 1541486664:0;pip list
+: 1541486667:0;exit
+: 1541486669:0;cd src
+: 1541486677:0;pipenv run pip list
+: 1541486684:0;cd ..
+: 1541486686:0;pipenv run pip list
+: 1541486697:0;cat Pipfile
+: 1541486706:0;vim .circleci/config.yml
+: 1541486729:0;. ~/.zshrc
+: 1541486732:0;clear
+: 1541486746:0;gpush
+: 1541486756:0;gits
+: 1541486764:0;git add .circleci/config.yml
+: 1541486774:0;git commit -m "[ci-fix] updated config"
+: 1541486777:0;gpush
+: 1541486842:0;pipenv run "pip list"
+: 1541486850:0;vim .circleci/config.yml
+: 1541486860:0;git add .circleci/config.yml
+: 1541486875:0;git commit -m "[ci-fix] removed quotes"
+: 1541486877:0;gpush
+: 1541486959:0;vim README.md
+: 1541486968:0;vim ../README.md
+: 1541486990:0;vim ../../../office/ethereal/ethereal-machines-backend/README.md
+: 1541487090:0;git add README.md
+: 1541487121:0;git commit -m "[doc] added ci status badges"
+: 1541487123:0;gpush
+: 1541487152:0;git push author master
+: 1541487397:0;pes
+: 1541487400:0;cd src
+: 1541487403:0;clear
+: 1541487409:0;coverage run --source='.' manage.py test
+: 1541487434:0;vim
+: 1541487444:0;coverage report -m
+: 1541487475:0;ls
+: 1541487484:0;rm UltiSnips
+: 1541487488:0;rmdir UltiSnips
+: 1541487490:0;clear
+: 1541499291:0;vim ../README.md
+: 1541499317:0;vim ~/.vimrc
+: 1541499480:0;cdw
+: 1541499485:0;cd linux-tweaks/scripts
+: 1541499490:0;vim post_install.sh
+: 1541500080:0;cd -
+: 1541500353:0;npm
+: 1541500362:0;apt install npm
+: 1541500366:0;sudo apt install npm
+: 1541500715:0;git clone https://github.com/suan/vim-instant-markdown.git ~/.vim/
+: 1541500753:0;git clone https://github.com/suan/vim-instant-markdown.git ~/.vim/vim-instant-markdown/
+: 1541500772:0;mv ~/.vim/vim-instant-markdown/after ~/.vim/after
+: 1541500801:0;vim
+: 1541500811:0;vim ../README.md
+: 1541504043:0;clear
+: 1541504047:0;vim ~/.vimrc
+: 1541504187:0;sudo apt install xdg-utils curl nodejs-dev
+: 1541504211:0;npm -g install instant-markdown-d
+: 1541504225:0;sudo npm -g install instant-markdown-d
+: 1541504245:0;clear
+: 1541504250:0;vim ../README.md
+: 1541504271:0;cdw
+: 1541504279:0;cd linux-tweaks/scripts
+: 1541504281:0;gits
+: 1541504289:0;clear
+: 1541504294:0;gits
+: 1541504296:0;clear
+: 1541504299:0;gits
+: 1541504306:0;git add post_install.sh
+: 1541504351:0;git commit -m "[update] revamped - restructured, added other dependencies"
+: 1541504354:0;gpush
+: 1541504361:0;clear
+: 1541504365:0;bak
+: 1541504367:0;gits
+: 1541504374:0;clear
+: 1541505278:0;cdw
+: 1541505300:0;mkdir -P deb-default/DEBIAN
+: 1541505305:0;mkdir -p deb-default/DEBIAN
+: 1541505342:0;mkdir -p deb-default/usr/local/bin/
+: 1541505357:0;vim deb-default/usr/local/bin/install.sh
+: 1541505406:0;vim deb-default/DEBIAN/control
+: 1541505865:0;clear
+: 1541505880:0;ls
+: 1541505889:0;mv deb-default deb-setup
+: 1541505915:0;cd deb-setup/
+: 1541505918:0;vim
+: 1541505935:0;clear
+: 1541505942:0;ls
+: 1541505968:0;dpkg-deb --build deb-setup
+: 1541506007:0;vim deb-default/DEBIAN/postinst
+: 1541506037:0;vim deb-default/DEBIAN/control
+: 1541506078:0;vim DEBIAN/postinst
+: 1541506084:0;clear
+: 1541506085:0;cd ..
+: 1541506090:0;dpkg-deb --build deb-setup
+: 1541506104:0;vim deb-setup/DEBIAN/control
+: 1541506114:0;dpkg-deb --build deb-setup
+: 1541507122:0;vim deb-setup/DEBIAN/control
+: 1541507158:0;dpkg-deb --build deb-setup
+: 1541507170:0;vim deb-setup/DEBIAN/control
+: 1541507206:0;dpkg-deb --build deb-setup
+: 1541507363:0;cp -r ~/
+: 1541507373:0;cp -r deb-setup ~/
+: 1541507377:0;cd ~
+: 1541507382:0;dpkg-deb --build deb-setup
+: 1541507391:0;ls
+: 1541507412:0;dpkg -i deb-setup.deb
+: 1541507417:0;sudo dpkg -i deb-setup.deb
+: 1541507450:0;clear
+: 1541507454:0;cd ../../
+: 1541507457:0;cd deb-setup
+: 1541507472:0;git init 
+: 1541507478:0;vim README.md
+: 1541507767:0;clear
+: 1541507771:0;cd ..
+: 1541507778:0;dpkg-deb --build deb-setup
+: 1541507787:0;sudo dpkg -i deb-setup.deb
+: 1541507791:0;clear
+: 1541507800:0;cd ..
+: 1541507805:0;rm -r deb-setup
+: 1541507825:0;mv deb-setup /mnt/Other/E/workspace
+: 1541507830:0;clear
+: 1541507836:0;cd deb-setup
+: 1541507838:0;clear
+: 1541507840:0;gits
+: 1541507848:0;ls DEBIAN
+: 1541507851:0;clear
+: 1541507878:0;vim README.md
+: 1541508143:0;apt show devscripts
+: 1541508152:0;apt show debhelper
+: 1541508176:0;apt show dpkg-deb
+: 1541508513:0;gits
+: 1541508529:0;cd ..
+: 1541508531:0;ls
+: 1541508582:0;vim ~/.vim/bundle/vim-template/templates/=template=.md
+: 1541508605:0;vim README.md
+: 1541508629:0;ls
+: 1541508635:0;touch README.md
+: 1541508639:0;vim README.md
+: 1541508666:0;rm README.md
+: 1541508667:0;clear
+: 1541508675:0;gits
+: 1541508686:0;cd ~/.vim/bundle/vim-template
+: 1541508690:0;git remote -v
+: 1541508695:0;gits
+: 1541508703:0;ls doc/tags
+: 1541508708:0;cat doc/tags
+: 1541508718:0;clear
+: 1541508720:0;ls
+: 1541508750:0;vim .gitignore 
+: 1541508760:0;gits
+: 1541508767:0;git add .gitignore
+: 1541508789:0;git commit -m "[gitignored] doc/tags"
+: 1541508795:0;git add templates/\=template=.md
+: 1541508834:0;git commit -m "[template] added README template for markdown files"
+: 1541508839:0;gits
+: 1541508847:0;clear
+: 1541508860:0;git checkout me
+: 1541508868:0;git push origin me
+: 1541508883:0;gits
+: 1541508898:0;git pull --rebase origin master
+: 1541508904:0;ls
+: 1541508921:0;git chekout master
+: 1541508924:0;git checkout master
+: 1541508930:0;gits
+: 1541508932:0;clear
+: 1541508936:0;gpush
+: 1541508950:0;clear
+: 1541508957:0;git checkout me
+: 1541508961:0;git pull --rebase origin master
+: 1541508965:0;clear
+: 1541508966:0;gits
+: 1541508974:0;git push origin me
+: 1541508989:0;clear
+: 1541508999:0;git checkout master
+: 1541509035:0;git remote add author git@github.com:aperezdc/vim-template.git
+: 1541509047:0;git remote rm origin
+: 1541509060:0;git remote add origin git@github.com:toransahu/vim-template.git
+: 1541509062:0;clear
+: 1541509086:0;git pull author master -f
+: 1541509097:0;clear
+: 1541509101:0;gpush
+: 1541509107:0;gits
+: 1541509109:0;glog
+: 1541509126:0;cat templates/=template=.md
+: 1541509130:0;clear
+: 1541509133:0;gpush
+: 1541509147:0;vim templates/=template=.py
+: 1541509166:0;git pull --rebase author master
+: 1541509172:0;clear
+: 1541509176:0;gpush
+: 1541509203:0;git add .
+: 1541509212:0;git commit -m "Initial Commit"
+: 1541509245:0;cat README.md
+: 1541509276:0;git remote add origin git@github.com:toransahu/deb-setup.git
+: 1541509279:0;gpush
+: 1541509299:0;git pull --rebase origin master
+: 1541509304:0;gpush
+: 1541509311:0;clear
+: 1541509342:0;vim README.md
+: 1541509370:0;git add README.md
+: 1541509386:0;git commit -m "[doc] updated"
+: 1541509388:0;gpush
+: 1541509406:0;vim README.md
+: 1541509424:0;git add README.md
+: 1541509426:0;git commit -m "[doc] updated"
+: 1541509428:0;gpush
+: 1541509440:0;cdw
+: 1541509441:0;cd linux-tweaks
+: 1541509443:0;clear
+: 1541509444:0;gits
+: 1541509499:0;apt show debhelper
+: 1541509505:0;cd ../deb-setup
+: 1541509508:0;vim README.md
+: 1541509522:0;git add README.md
+: 1541509532:0;git commit -m "[doc] fixed typo"
+: 1541509534:0;gpush
+: 1541509701:0;clear
+: 1541509702:0;cd ..
+: 1541509707:0;wget https://github.com/github/gitignore/blob/master/Python.gitignore
+: 1541509719:0;cat Python.gitignore
+: 1541509739:0;rm Python.gitignore
+: 1541509745:0;wget https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
+: 1541509750:0;cat Python.gitignore
+: 1541509753:0;clear
+: 1541509858:0;wget https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore ~/Desktop/.gitignore
+: 1541509878:0;ls ~/Desktop
+: 1541509891:0;wget --help
+: 1541510008:0;wget https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -O ~/Desktop/.gitignore
+: 1541510011:0;ls ~/Desktop
+: 1541510021:0;cat ~/Desktop/.gitignore
+: 1541510041:0;aliasit py.gi "wget https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -O .gitignore"
+: 1541510045:0;clear
+: 1541510047:0;cd linux-tweaks
+: 1541510052:0;bak
+: 1541510054:0;gits
+: 1541510062:0;py.gi
+: 1541510064:0;ls
+: 1541510074:0;gits
+: 1541510082:0;rm .gitignore
+: 1541510083:0;clear
+: 1541510098:0;gits
+: 1541510103:0;git add backups/.bash_aliases
+: 1541510154:0;git commit -m "[added] alias to download .gitignore file for python directly from github/gitignore"
+: 1541510156:0;gpush
+: 1541510163:0;clear
+: 1541746192:0;gnome-screenshot  -w -c
+: 1541746201:0;gnome-screenshot
+: 1541746216:0;sudo apt install gnome-screenshot
+: 1541746244:0;gnome-screenshot
+: 1541755023:0;ls
+: 1541755030:0;ls .gitconfig
+: 1541755036:0;cat .gitconfig
+: 1541755048:0;rm .gitconfig
+: 1541755050:0;clear
+: 1541755066:0;gits
+: 1541755114:0;cd ..
+: 1541755116:0;ls
+: 1541755118:0;cd ..
+: 1541755120:0;ls
+: 1541755137:0;git remote -v
+: 1541755147:0;sudo rm -r .git
+: 1541755150:0;clear
+: 1541755152:0;cd~
+: 1541755155:0;cd ~
+: 1541755157:0;clear
+: 1541755166:0;cdw
+: 1541755168:0;cd linux-tweaks
+: 1541755170:0;gits
+: 1541755172:0;gpull
+: 1541755177:0;bak
+: 1541755178:0;gits
+: 1541755183:0;ls
+: 1541755186:0;ls backups
+: 1541755240:0;dconf dump /org/cinnamon/ > backups/cinnamon_backup_ubuntu-talentica
+: 1541755246:0;ls backups
+: 1541755253:0;cat backups/cinnamon_backup_ubuntu-talentica
+: 1541755261:0;clear
+: 1541755276:0;gits
+: 1541755287:0;host
+: 1541755292:0;hostname
+: 1541755296:0;clear
+: 1541755355:0;curl https://api.github.com/repositories\?since\=364
+: 1541755378:0;curl https://api.github.com/repositories\?username=toransahu
+: 1541755473:0;curl https://api.github.com/repos/toransahu/
+: 1541755477:0;curl https://api.github.com/repos/toransahu
+: 1541755490:0;curl https://api.github.com/repos/toransahu/ss
+: 1541755538:0;curl https://api.github.com/repos/toransahu/ss | grep size
+: 1541755549:0;curl https://api.github.com/repos/toransahu/Ray | grep size
+: 1541755564:0;curl https://api.github.com/repos/toransahu/photogram | grep size
+: 1541755627:0;curl --help
+: 1541755636:0;curl --help | grep post
+: 1541755652:0;curl --help
+: 1541755877:0;curl -u toransahu https://api.github.com/user
+: 1541756071:0;curl -u toransahu \\
+d '{ \\
+        "name": "post-linux-install", \\
+        "private": false \\
+      }' \\
+    https://api.github.com/user/repos
+: 1541756221:0;curl -i -u toransahu \\
+d '{ \\
+        "name": "post-linux-install", \\
+        "private": false \\
+      }' \\
+    https://api.github.com/user/repos
+: 1541756266:0;curl -i -u toransahu \\
+-d '{ \\
+        "name": "post-linux-install", \\
+        "private": false \\
+      }' \\
+    https://api.github.com/user/repos
+: 1541756391:0;curl --header "Content-Type: application/json" \\
+  --request POST \-u toransahu \\
+-d '{ \\
+        "name": "post-linux-install", \\
+        "private": false \\
+      }' \\
+    https://api.github.com/user/repos
+: 1541756405:0;clear
+: 1541756516:0;curl --user
+: 1541756523:0;curl --username
+: 1541756539:0;curl --header "Content-Type: application/json" \\
+  --request POST \\
+--data '{"name": "post-linux-install", "private" : false}' \\
+-u toransahu \\
+https://api.github.com/user/repos
+: 1541756616:0;curl --header "Content-Type: application/json" \\
+	--request POST \\
+	--data '{"name": "post-linux-install", "private" : false}' \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541756644:0;echo "curl --header "Content-Type: application/json" \\
+	--request POST \\
+	--data '{"name": "post-linux-install", "private" : false}' \\
+	--user toransahu \\
+	https://api.github.com/user/repos"
+: 1541756657:0;clear
+: 1541756661:0;echo --help
+: 1541756783:0;xdotool type "ls -a"
+: 1541756806:0;xdotool type "curl --header "Content-Type: application/json" \\
+	--request POST \\
+	--data '{"name": "post-linux-install", "private" : false}' \\
+	--user toransahu \\
+	https://api.github.com/user/repos"
+: 1541756814:0;curl --header Content-Type:application/json --request POST --data '{name: post-linux-install, private : false}' --user toransahu https://api.github.com/user/repos
+: 1541756843:0;curl --header "Content-Type: application/json" \\
+	--request POST \\
+	--data '{"name": "post-linux-install", "private" : false}' \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541756935:0;print -z curl --header "Content-Type: application/json" \\
+	--request POST \\
+	--data '{"name": "post-linux-install", "private" : false}' \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541756963:0;print -z curl --header "Content-Type: application/json" /\\
+	--request POST /\\
+	--data '{"name": "post-linux-install", "private" : false}' /\\
+	--user toransahu /\\
+	https://api.github.com/user/repos
+: 1541756966:0;curl --header Content-Type: application/json / --request POST / --data {"name": "post-linux-install", "private" : false} / --user toransahu / https://api.github.com/user/repos
+: 1541756994:0;print -z curl --header "Content-Type: application/json" \\
+	--request POST \\
+	--data /'{"name": "post-linux-install", "private" : false}/' \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541756995:0;curl --header Content-Type: application/json --request POST --data /{"name": "post-linux-install", "private" : false}/ --user toransahu https://api.github.com/user/repos
+: 1541757026:0;print -z curl --header "Content-Type: application/json" /\\
+	--request POST /\\
+	--data /'{"name": "post-linux-install", "private" : false}/' /\\
+	--user toransahu /\\
+	https://api.github.com/user/repos
+: 1541757027:0;curl --header Content-Type: application/json / --request POST / --data /{"name": "post-linux-install", "private" : false}/ / --user toransahu / https://api.github.com/user/repos
+: 1541757061:0;print -z curl --header "Content-Type: application/json" /\\
+	--request POST /\\
+	--data '''{"name": "post-linux-install", "private" : false}''' /\\
+	--user toransahu /\\
+	https://api.github.com/user/repos
+: 1541757071:0;curl --header Content-Type: application/json / --request POST / --data {"name": "post-linux-install", "private" : false} / --user toransahu / https://api.github.com/user/repos
+: 1541757080:0;print -z "'"
+: 1541757090:0;print -z '''
+: 1541757115:0;print -z curl --header "Content-Type: application/json" \\
+	--request POST \\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541757116:0;curl --header Content-Type: application/json --request POST --data '{name: post-linux-install, private : false}' --user toransahu https://api.github.com/user/repos
+: 1541757152:0;print -z curl --header "Content-Type: application/json" /\\
+	--request POST /\\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" /\\
+	--user toransahu /\\
+	https://api.github.com/user/repos
+: 1541757153:0;curl --header Content-Type: application/json / --request POST / --data '{name: post-linux-install, private : false}' / --user toransahu / https://api.github.com/user/repos
+: 1541757172:0;print -z "\n"
+: 1541757184:0;print -z "\n\"\
+
+: 1541757193:0;print -z "\n/\"\
+\
+\
+
+: 1541757196:0;print -z "\n/\fdsd"\
+\
+\
+
+: 1541757199:0;\
+/dsd
+: 1541757205:0;print -z "\n\fdsd"\
+\
+\
+
+: 1541757212:0;\
+dsd
+: 1541757226:0;print -z "/n \/ fdsd"\
+\
+\
+
+: 1541757253:0;print -z "\n \/ fdsd"\
+\
+\
+
+: 1541757305:0;print -z curl --header "Content-Type: application/json" \\ \n\
+	--request POST \\ \n\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \n\
+	--user toransahu \\ \n\
+	https://api.github.com/user/repos
+: 1541757328:0;print -z curl --header "Content-Type: application/json" \\\
+	--request POST \\ \
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \
+	--user toransahu \\ \
+	https://api.github.com/user/repos
+: 1541757331:0;curl --header Content-Type: application/json \
+: 1541757338:0;print -z curl --header "Content-Type: application/json" /\ \n\
+	--request POST \\ \n\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \n\
+	--user toransahu \\ \n\
+	https://api.github.com/user/repos
+: 1541757342:0;print -z curl --header "Content-Type: application/json" /\\
+	--request POST \\ \n\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \n\
+	--user toransahu \\ \n\
+	https://api.github.com/user/repos
+: 1541757352:0;print -z curl --header "Content-Type: application/json" \\
+	--request POST \\ \n\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \n\
+	--user toransahu \\ \n\
+	https://api.github.com/user/repos
+: 1541757365:0;print -z curl --header "Content-Type: application/json" \\\
+	--request POST \
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \n\
+	--user toransahu \\ \n\
+	https://api.github.com/user/repos
+: 1541757385:0;print -z curl --header "Content-Type: application/json" \\\
+	\n --request POST \\\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \n\
+	--user toransahu \\ \n\
+	https://api.github.com/user/repos
+: 1541757397:0;print -z curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \n\
+	--user toransahu \\ \n\
+	https://api.github.com/user/repos
+: 1541757416:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\ \n\
+	--user toransahu \\ \n\
+	https://api.github.com/user/repos'
+: 1541757455:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data "'"{"name": "post-linux-install", "private" : false}"'" \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541757460:0;curl --header "Content-Type: application/json" \\
+	 --request POST \\
+	--data "{name: post-linux-install, private : false}" \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541757495:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data {"name": "post-linux-install", "private" : false} \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541757498:0;curl --header "Content-Type: application/json" \\
+	 --request POST \\
+	--data {"name": "post-linux-install", "private" : false} \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541757536:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data ''''{"name": "post-linux-install", "private" : false}'''' \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541757567:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data ''"'"{"name": "post-linux-install", "private" : false}''"'" \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541757605:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data /'{"name": "post-linux-install", "private" : false}/' \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541757605:0;curl --header "Content-Type: application/json" \\
+	 --request POST \\
+	--data /{name: post-linux-install, private : false}/ \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541757645:0;print -z 'dfd"dfds"'
+: 1541757667:0;print -z 'df'd"dfds"gfd''
+: 1541757676:0;print -z 'df'd"df"'"ds"gfd''
+: 1541757689:0;print -z 'df'''gfd''
+: 1541757695:0;print -z 'df'/''gfd''
+: 1541757706:0;print -z 'df"'"gfd''
+: 1541757709:0;print -z 'df"'"gfd'
+: 1541757712:0;print -z 'df"''"gfd'
+: 1541757756:0;print -z 'df\'gfd'
+: 1541757765:0;print -z fsdf'df\'gfd
+: 1541757772:0;print
+: 1541757774:0;print vdfsg
+: 1541757777:0;print vdfs'g
+: 1541757779:0;print vdfs\'g
+: 1541757798:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data /'{"name": "post-linux-install", "private" : false}/' \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541757824:0;print curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \'{"name": "post-linux-install", "private" : false}\' \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos
+: 1541757836:0;print 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \'{"name": "post-linux-install", "private" : false}\' \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'\
+'
+: 1541757852:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \'{"name": "post-linux-install", "private" : false}\' \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'\
+'
+: 1541757873:0;echo curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \'{"name": "post-linux-install", "private" : false}\' \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos
+: 1541757937:0;print -z "\x27"
+: 1541757972:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data "\x27"{"name": "post-linux-install", "private" : false}"\x27" \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'\
+'
+: 1541757979:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data "\x27"{"name": "post-linux-install", "private" : false}"\x27" \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541757999:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \x27{"name": "post-linux-install", "private" : false}\x27 \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541758002:0;curl --header "Content-Type: application/json" \\
+	 --request POST \\
+	--data '{"name": "post-linux-install", "private" : false}' \\
+	--user toransahu \\
+	https://api.github.com/user/repos
+: 1541758062:0;aliasit gitrepo "print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \x27{"name": "post-linux-install", "private" : false}\x27 \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'"
+: 1541758072:0;gitrepo
+: 1541758079:0;. ~/.zshrc
+: 1541758080:0;gitrepo
+: 1541758101:0;vim ~/.bash_aliases 
+: 1541758175:0;. ~/.bash_aliases 
+: 1541758178:0;gitrepo
+: 1541758186:0;vim ~/.bash_aliases 
+: 1541758212:0;. ~/.bash_aliases 
+: 1541758219:0;vim ~/.bash_aliases 
+: 1541758291:0;. ~/.bash_aliases 
+: 1541758294:0;gitrepo
+: 1541758306:0;vim ~/.bash_aliases 
+: 1541758347:0;cat gitrepo
+: 1541758352:0;gitrepo
+: 1541758378:0;. ~/.bash_aliases 
+: 1541758384:0;$gitrepo
+: 1541758397:0;vim ~/.bash_aliases 
+: 1541758427:0;$gitrepo
+: 1541758435:0;vim ~/.bash_aliases 
+: 1541758451:0;. ~/.bash_aliases 
+: 1541758453:0;$gitrepo
+: 1541758466:0;vim ~/.bash_aliases 
+: 1541758519:0;. ~/.bash_aliases 
+: 1541758520:0;$gitrepo
+: 1541758547:0;vim ~/.bash_aliases 
+: 1541758590:0;. ~/.bash_aliases 
+: 1541758597:0;clear
+: 1541758609:0;vim ~/.bash_aliases 
+: 1541758634:0;cat $gitrepo
+: 1541758663:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \x27{"name": "post-linux-install", "private" : false}\x27 \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos'
+: 1541758704:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \x27{"name": "post-linux-install", "private" : false}\x27 \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos' > ~/.gitrepo
+: 1541758714:0;cat ~/.gitrepo
+: 1541758725:0;print -z 'curl --header "Content-Type: application/json" \\\
+	 --request POST \\\
+	--data \x27{"name": "post-linux-install", "private" : false}\x27 \\\
+	--user toransahu \\\
+	https://api.github.com/user/repos' > ~/.gitrepo
+: 1541758746:0;vim ~/.gitrepo
+: 1541758753:0;clear
+: 1541758762:0;print -z ~/.gitrepo
+: 1541758769:0;cat ~/.gitrepo
+: 1541758778:0;cat ~/.gitrepo | print -z
+: 1541758785:0;cat ~/.gitrepo > print -z
+: 1541758789:0;cat ~/.gitrepo > print
+: 1541758795:0;cat print
+: 1541758800:0;rm print
+: 1541758860:0;print -z lehho
+: 1541758877:0;print --help
+: 1541758881:0;print -h
+: 1541758884:0;man print
+: 1541758928:0;see ~/.gitrepo
+: 1541758935:0;print ~/.gitrepo
+: 1541758941:0;cat .gitrepo
+: 1541758946:0;see .gitrepo
+: 1541758963:0;print .gitrepo
+: 1541758978:0;print -f .gitrepo
+: 1541758988:0;print  "cat .gitrepo"
+: 1541758999:0;print  < .gitrepo"
+: 1541759000:0;print  < .gitrepo
+: 1541759013:0;cat .gitrepo | print
+: 1541759018:0;cat .gitrepo | grep print
+: 1541759024:0;cat .gitrepo | \
+print
+: 1541759027:0;cat .gitrepo\
+print
+: 1541759038:0;cat .gitrepo
+: 1541759077:0;less .gitrepo
+: 1541759117:0;sed .gitrepo
+: 1541759155:0;echo "$(<.gitrepo)"
+: 1541759160:0;print "$(<.gitrepo)"
+: 1541759165:0;"$(<.gitrepo)"
+: 1541759172:0;print -z "$(<.gitrepo)"
+: 1541759225:0;aliasit gitrepo 'print -z "$(<.gitrepo)"'
+: 1541759228:0;clear
+: 1541759230:0;gitrepo
+: 1541759239:0;vim ~/.bash_aliases 
+: 1541759264:0;clear
+: 1541759273:0;vim scripts/backup_confs.sh
+: 1541759311:0;vim scripts/restore_confs.sh
+: 1541759327:0;clear
+: 1541759342:0;gits
+: 1541759350:0;git add backups/cinnamon_backup_ubuntu-talentica
+: 1541759372:0;git commit -m "[added] cinnamon bkp - tal - UB"
+: 1541759393:0;vim ~/.gitinfo
+: 1541759420:0;git commit -m "[added] cinnamon bkp - tal - UB"
+: 1541759438:0;. ~/.gitinfo
+: 1541759518:0;print -z "$(<.gitinfo)"
+: 1541759531:0;\
+  git config --global user.email "toran.sahu@yahoo.com"\
+  git config --global user.name "Toran Sahu"
+: 1541759545:0;cdw
+: 1541759547:0;cd linux-tweaks
+: 1541759551:0;git commit -m "[added] cinnamon bkp - tal - UB"
+: 1541759563:0;cat ~/.gitinfo
+: 1541759615:0;print -z 'git config --global user.name "Toran Sahu" \n git config --global user.name "Toran Sahu"'
+: 1541759620:0;git config --global user.name "Toran Sahu" \
+ git config --global user.name "Toran Sahu"
+: 1541759649:0;print -z git config --global user.name "Toran Sahu" \n git config --global user.name "Toran Sahu"
+: 1541759656:0;clear
+: 1541759658:0;gits
+: 1541759673:0;git add .
+: 1541759705:0;git commit -m "[added] .gitrepo bak/res command"
+: 1541759710:0;bak
+: 1541759711:0;gits
+: 1541759723:0;git add backups/.gitrepo
+: 1541759748:0;git commit -m "[added] script file .gitrepo to create a git repo using api"
+: 1541759755:0;git add backups/.bash_aliases
+: 1541759788:0;git commit -m "[added] gitrepo alias to create git repo from cli using api\
+"
+: 1541759791:0;gpush
+: 1541759841:0;cp ~/.gitconfig ~/.configgit
+: 1541759846:0;vim ~/.configgit
+: 1541759888:0;echo 'git config --global user.name "Toran Sahu" \n git config --global user.name "Toran Sahu"' > ~/.configgit
+: 1541759891:0;vim ~/.configgit
+: 1541759948:0;clear
+: 1541759964:0;~/.gitconfig
+: 1541759978:0;~/.configgit
+: 1541759984:0;. ~/.configgit
+: 1541760018:0;clear
+: 1541760043:0;cp ~/.gitconfig backups
+: 1541760055:0;cp ~/.configgit backups/
+: 1541760059:0;ls
+: 1541760062:0;ls backups
+: 1541760073:0;cat ~/.gitconfig
+: 1541760077:0;wq
+: 1541760079:0;clear
+: 1541760083:0;gits
+: 1541760087:0;git add .
+: 1541760100:0;git commit -m "[added] git config files"
+: 1541760102:0;gpush
+: 1541760202:0;clear
+: 1541760259:0;curl https://api.github.com/repos/toransahu/photogram | grep size
+: 1541760333:0;vim ~/.bash_aliases 
+: 1541760454:0;. ~/.bash_aliases 
+: 1541760462:0;gsize toransahu ss
+: 1541760471:0;battery
+: 1541760475:0;clear
+: 1541760634:0;sed -n -e 's/^"size":' curl https://api.github.com/repos/toransahu/photogram 
+: 1541760680:0;curl https://api.github.com/repos/toransahu/photogram | grep -o 'size'
+: 1541760698:0;curl https://api.github.com/repos/toransahu/photogram | grep -o 'size*'
+: 1541760705:0;curl https://api.github.com/repos/toransahu/photogram | grep -o 'size.*'
+: 1541760716:0;curl https://api.github.com/repos/toransahu/photogram | grep -o '"size.*'
+: 1541760746:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size.*'
+: 1541760784:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '[^"size":][\d]+'
+: 1541760789:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '[^"size":][/d]+'
+: 1541760797:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '[^"size":].*'
+: 1541760804:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size":.*'
+: 1541760812:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size":[d]+'
+: 1541760816:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size":[\d]+'
+: 1541760821:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size":[/d]+'
+: 1541760846:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size":[0-9.]+'
+: 1541760860:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size":[/w][/d]+'
+: 1541760865:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size": [/d]+'
+: 1541760870:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size": [\d]+'
+: 1541760878:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size": .'
+: 1541760882:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size": ..'
+: 1541760896:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size": [0-9]+'
+: 1541760902:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o r'"size": [0-9]+'
+: 1541760911:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o r'"size": .+'
+: 1541760915:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o r'"size": .*'
+: 1541760922:0;curl -s https://api.github.com/repos/toransahu/photogram | grep -o '"size": .*'
+: 1541760956:0;curl -s https://api.github.com/repos/toransahu/photogram 
+: 1541761083:0;export PYTHONIOENCODING=utf8
+: 1541761129:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c "import sys, json; print(json.load(sys.stdin))"
+: 1541761150:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c "import sys, json; print(json.load(sys.stdin, indent=4))"
+: 1541761215:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c "import sys, json; print(json.dump(json.load(sys.stdin), indent=4)"
+: 1541761227:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c "import sys, json; print(json.dump(json.load(sys.stdin), indent=4))"
+: 1541761249:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c "import sys, json; print(json.dumps(json.load(sys.stdin), indent=4))"
+: 1541761290:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c "import sys, json; print(json.dumps(json.load(sys.stdin), indent=4)["parent"])"
+: 1541761312:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print(json.dumps(json.load(sys.stdin), indent=4)["source"])'
+: 1541761322:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print(json.dumps(json.load(sys.stdin), indent=4)[0])'
+: 1541761329:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print(json.dumps(json.load(sys.stdin), indent=4))'
+: 1541761380:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print(json.dumps(json.load(sys.stdin), indent=4)["id"])'
+: 1541761438:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print(json.load(sys.stdin)["id"])'
+: 1541761448:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print(json.load(sys.stdin)["parent"])'
+: 1541761459:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print(json.load(sys.stdin)["parent"]["size"])'
+: 1541761478:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print json.load(sys.stdin)["parent"]["size"]'
+: 1541761481:0;curl -s https://api.github.com/repos/toransahu/photogram | \\
+python -c 'import sys, json; print(json.load(sys.stdin)["parent"]["size"])'
+: 1541761553:0;curl -s https://api.github.com/repos/toransahu/iotdemo | \\
+python -c 'import sys, json; print(json.load(sys.stdin)["parent"]["size"])'
+: 1541762395:0;curl -s https://api.github.com/repos/toransahu/iotdemo | \\
+python -c 'import sys, json; size = json.load(sys.stdin)["parent"]["size"]; if size>1024: print(size/1024, "Mb") else: print(size, "Kb"))'
+: 1541762457:0;curl -s https://api.github.com/repos/toransahu/iotdemo | \\
+python -c 'import sys, json; size = json.load(sys.stdin)["parent"]["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb"))'
+: 1541762471:0;python
+: 1541762552:0;curl -s https://api.github.com/repos/toransahu/iotdemo | \\
+python -c 'import sys, json; size = json.load(sys.stdin)["parent"]["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+: 1541762571:0;vim ~/.bash_aliases 
+: 1541762614:0;. ~/.bash_aliases 
+: 1541762619:0;gsize toransahu ss
+: 1541762628:0;vim ~/.bash_aliases 
+: 1541762820:0;. ~/.bash_aliases 
+: 1541762821:0;clear
+: 1541762837:0;py.gi
+: 1541762846:0;rm .gitignore
+: 1541762848:0;clear
+: 1541762850:0;cdw
+: 1541762852:0;cd linux-tweaks
+: 1541762854:0;gits
+: 1541762856:0;gpull
+: 1541762861:0;bak
+: 1541762862:0;gits
+: 1541762869:0;git add backups/.bash_aliases
+: 1541762906:0;cat ~/.bashalias
+: 1541762916:0;cat ~/.bash_aliases
+: 1541762940:0;git commit -m "[added] gsize() & gsme() aliases"
+: 1541762942:0;gpush
+: 1541762953:0;gsme Ray
+: 1541762959:0;clear
+: 1541762996:0;gsme cod
+: 1541763013:0;gsme ss
+: 1541763023:0;gsme Ray
+: 1541763034:0;gsme "ss"
+: 1541763042:0;gsize toransahu ss
+: 1541763055:0;curl -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; size = json.load(sys.stdin)["parent"]["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+: 1541763070:0;curl -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; size = json.load(sys.stdin)["parent"];'
+: 1541763077:0;curl -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; size = json.load(sys.stdin);'
+: 1541763092:0;curl -s https://api.github.com/repos/toransahu/ss
+: 1541763136:0;curl -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; size = json.load(sys.stdin)["size"];'
+: 1541763207:0;curl -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; json.dumps(json.load(sys.stdin)["size"], indent=4);'
+: 1541763215:0;curl -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; json.dumps(json.load(sys.stdin), indent=4);'
+: 1541763231:0;curl -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; data = json.dumps(json.load(sys.stdin), indent=4); print(data)'
+: 1541763260:0;curl -u toransahu -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; data = json.dumps(json.load(sys.stdin), indent=4); print(data)'
+: 1541763296:0;curl -u toransahu -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; data = json.dumps(json.load(sys.stdin), indent=4); print(data["parent"])'
+: 1541763319:0;curl -u toransahu -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; data = json.load(sys.stdin); print(data["parent"])'
+: 1541763360:0;curl -u toransahu -s https://api.github.com/repos/toransahu/ss | \\
+python -c 'import sys, json; data = json.load(sys.stdin); print(data["size"])'
+: 1541763378:0;vim ~/.bash_aliases 
+: 1541763491:0;cdw
+: 1541763495:0;cd linux-tweaks/scripts
+: 1541763502:0;cat ~/paths.sh
+: 1541763588:0;gsize toransahu ss
+: 1541763592:0;gsize toransahu ss -a
+: 1541763609:0;vim ~/.bash_aliases 
+: 1541763616:0;. ~/.bash_aliases 
+: 1541763618:0;gsize toransahu ss -a
+: 1541763631:0;vim ~/.bash_aliases 
+: 1541763660:0;. ~/.bash_aliases 
+: 1541763661:0;gsize toransahu ss -a
+: 1541763686:0;gsize toransahu photogram
+: 1541763691:0;gsize toransahu Ray
+: 1541763706:0;gsme
+: 1541763710:0;gsize toransahu Ray -a
+: 1541763722:0;gsize toransahu ss -a
+: 1541763790:0;curl -u toransahu -s https://api.github.com/repos/toransahu/Ray | \\
+python -c 'import sys, json; data = json.load(sys.stdin); print(data["size"])'
+: 1541763807:0;vim ~/.bash_aliases 
+: 1541764241:0;. ~/.bash_aliases 
+: 1541764247:0;gsme
+: 1541764250:0;gsme -1
+: 1541764253:0;vim ~/.bash_aliases 
+: 1541764280:0;. ~/.bash_aliases 
+: 1541764284:0;vim ~/.bash_aliases 
+: 1541764351:0;. ~/.bash_aliases 
+: 1541764362:0;vim ~/.bash_aliases 
+: 1541764383:0;. ~/.bash_aliases 
+: 1541764386:0;vim ~/.bash_aliases 
+: 1541764416:0;. ~/.bash_aliases 
+: 1541764428:0;vim ~/.bash_aliases 
+: 1541764445:0;. ~/.bash_aliases 
+: 1541764448:0;vim ~/.bash_aliases 
+: 1541764456:0;. ~/.bash_aliases 
+: 1541764460:0;vim ~/.bash_aliases 
+: 1541764472:0;. ~/.bash_aliases 
+: 1541764482:0;xgsme
+: 1541764495:0;xgsme toransahu ss
+: 1541764498:0;xgsme toransahu ss -a
+: 1541764503:0;vim ~/.bash_aliases 
+: 1541764524:0;. ~/.bash_aliases 
+: 1541764528:0;xgsme toransahu ss -a
+: 1541764538:0;xgsme toransahu Ray
+: 1541764543:0;xgsme toransahu ss
+: 1541764549:0;gsize toransahu ss
+: 1541764553:0;gsize toransahu Ray
+: 1541764560:0;vim ~/.bash_aliases 
+: 1541764592:0;. ~/.bash_aliases 
+: 1541764595:0;vim ~/.bash_aliases 
+: 1541764614:0;clear
+: 1541764674:0;vim ~/.bash_aliases 
+: 1541764705:0;clear
+: 1541764707:0;. ~/.bash_aliases 
+: 1541764709:0;gs
+: 1541764715:0;gs toransahu ss
+: 1541764781:0;vim ~/.bash_aliases 
+: 1541764798:0;. ~/.bash_aliases 
+: 1541764802:0;gs
+: 1541764815:0;vim ~/.bash_aliases 
+: 1541764829:0;. ~/.bash_aliases 
+: 1541764832:0;gsme
+: 1541764837:0;. ~/.bash_aliases 
+: 1541764842:0;. ~/.zshrc
+: 1541764844:0;gsme
+: 1541764849:0;vim ~/.bash_aliases 
+: 1541764861:0;. ~/.bash_aliases 
+: 1541764864:0;gsme
+: 1541764871:0;vim ~/.bash_aliases 
+: 1541764882:0;. ~/.bash_aliases 
+: 1541764886:0;gsme ss
+: 1541764895:0;vim ~/.bash_aliases 
+: 1541764954:0;clear
+: 1541764962:0;gits
+: 1541764965:0;bak
+: 1541764967:0;gits
+: 1541764975:0;git diff ../backups/.bash_aliases
+: 1541764985:0;git add ../backups/.bash_aliases
+: 1541765016:0;git commit -m "[updated] gsize() aliases; taking -a arg"
+: 1541765018:0;gpush
+: 1541765025:0;clear
+: 1542000850:0;cdw
+: 1542000852:0;cd linux-tweaks
+: 1542000854:0;gits
+: 1542000855:0;bak
+: 1542000857:0;gits
+: 1542000860:0;gpull
+: 1542000923:0;vim backups/paths.sh
+: 1542000997:0;res
+: 1542001041:0;clear
+: 1542001053:0;vim ~/paths.sh
+: 1542001120:0;. ~/.zshrc
+: 1542001129:0;echo $EROOT
+: 1542001138:0;echo $WORKSPACE
+: 1542001285:0;nemo $WORKSPACE
+: 1542001462:0;nemo $workspace
+: 1542001468:0;nemo $(workspace)
+: 1542001478:0;nemo $WORKSPACE
+: 1542001483:0;nemo cd $WORKSPACE
+: 1542001524:0;vim backups/cinnamon_backup
+: 1542001666:0;dconf load /org/cinnamon/ < backups/cinnamon_backup
+: 1542001686:0;vim backups/cinnamon_backup
+: 1542001709:0;dconf load /org/cinnamon/ < backups/cinnamon_backup
+: 1542001719:0;vim backups/cinnamon_backup
+: 1542001734:0;dconf load /org/cinnamon/ < backups/cinnamon_backup
+: 1542001754:0;vim backups/cinnamon_backup
+: 1542001771:0;dconf load /org/cinnamon/ < backups/cinnamon_backup
+: 1542001772:0;vim backups/cinnamon_backup
+: 1542001782:0;dconf load /org/cinnamon/ < backups/cinnamon_backup
+: 1542001818:0;cdw
+: 1542001820:0;cd linux-tweaks
+: 1542001823:0;vim backups/cinnamon_backup
+: 1542001847:0;dconf load /org/cinnamon/ < backups/cinnamon_backup
+: 1542001856:0;vim backups/cinnamon_backup
+: 1542001868:0;dconf load /org/cinnamon/ < backups/cinnamon_backup
+: 1542001875:0;vim backups/cinnamon_backup
+: 1542001893:0;dconf load /org/cinnamon/ < backups/cinnamon_backup
+: 1542001968:0;vim ~/Desktop/workspace_nemo.sh
+: 1542001996:0;chmod +x ~/Desktop/workspace_nemo.sh
+: 1542002061:0;cd ~/Desktop
+: 1542002069:0;sh workspace_nemo.sh
+: 1542002134:0;nemo -h
+: 1542002257:0;bash
+: 1542002298:0;clear
+: 1542002418:0;nautilus
+: 1542002566:0;cd Desktop
+: 1542002570:0;vim workspace_nemo.sh
+: 1542002684:0;eval $WORKSPACE
+: 1542002693:0;eval echo $WORKSPACE
+: 1542002697:0;nemo eval echo $WORKSPACE
+: 1542002710:0;nemo (eval echo $WORKSPACE)
+: 1542002728:0;nemo eval 'echo $WORKSPACE'
+: 1542002778:0;nemo $(WORKSPACE)
+: 1542002797:0;nemo ${
+: 1542002810:0;nemo $(WORKSPACE)
+: 1542002872:0;nemo %WORKSPACE
+: 1542002884:0;nemo WORKSPACE
+: 1542002899:0;cd ~
+: 1542002903:0;nemo $WORKSPACE
+: 1542003045:0;cat ~/.gnome2/accels/nemo
+: 1542003071:0;which nemo
+: 1542003082:0;whereis nemo
+: 1542003154:0;gnome-terminal
+: 1542003160:0;gnome-terminal /mnt
+: 1542003168:0;gnome-terminal --help
+: 1542003216:0;gvim
+: 1542003235:0;gvim /mnt
+: 1542003384:0;vim workspace_nemo.sh
+: 1542003623:0;cd backups
+: 1542003625:0;vim cinnamon_backup
+: 1542003662:0;dconf load /org/cinnamon/ < cinnamon_backup
+: 1542003677:0;vim cinnamon_backup
+: 1542003759:0;cat ~/.profile
+: 1542003766:0;vim ~/.profile
+: 1542003798:0;. ~/.profile
+: 1542003867:0;vim /etc/profile
+: 1542003894:0;sudo vim /etc/profile
+: 1542003939:0;echo $PATH
+: 1542003946:0;echo $ROOT
+: 1542003951:0;echo $DIR
+: 1542003954:0;echo $PWD
+: 1542004065:0;echo $USER
+: 1542004132:0;env
+: 1542004159:0;env WORKSPACE=/mnt/Other/E/workspace
+: 1542004350:0;cmake cinnamon
+: 1542004369:0;which cinnamon
+: 1542004395:0;cmake /usr/bin/cinnamon
+: 1542004477:0;cinnamon-session
+: 1542004975:0;vim ~/.xsession
+: 1542005029:0;clear
+: 1542005033:0;vim ~/.profile
+: 1542005044:0;sudo vim /etc/profile
+: 1542005220:0;printenv workspace
+: 1542005227:0;printenv WORKSPACE
+: 1542005255:0;nemo (printenv WORKSPACE)
+: 1542005263:0;nemo eval $(printenv WORKSPACE)
+: 1542005274:0;nemo $(printenv WORKSPACE)
+: 1542005585:0;sudo vim /etc/profile.d/apps-bin-path.sh
+: 1542005627:0;sudo vim /etc/profile.d/gnome-env_vars,sh
+: 1542005633:0;sudo vim /etc/profile.d/gnome-env_vars.sh
+: 1542005829:0;cinnamon-settings
+: 1542005845:0;where is cinnamon-settings
+: 1542005848:0;whereis cinnamon-settings
+: 1542006002:0;ls org/cinnamon
+: 1542006006:0;ls /org/cinnamon
+: 1542006010:0;sudo ls /org/cinnamon
+: 1542006068:0;cinnamon-session
+: 1542006073:0;cinnamon-session-cinnamon
+: 1542006275:0;cdw
+: 1542006279:0;cd linux-tweaks
+: 1542006280:0;gits
+: 1542006293:0;git stash
+: 1542006294:0;gits
+: 1542006308:0;nemo . &
+: 1542006394:0;vim scripts/backup_confs.sh
+: 1542006447:0;cp -r ~/.personalized /mnt/Other/E/workspace/linux-tweaks/backups
+: 1542006540:0;clear
+: 1542006546:0;gits
+: 1542006552:0;git add .
+: 1542006565:0;git commit -m "[added] .personalized dir config"
+: 1542006573:0;gpush
+: 1542006639:0;clear
+: 1542006643:0;bak
+: 1542006661:0;vim scripts/backup_confs.sh
+: 1542006701:0;cat paths.sh
+: 1542006715:0;desktop_session
+: 1542006721:0;$desktop_session
+: 1542006727:0;$(desktop_session)
+: 1542006730:0;eval $(desktop_session)
+: 1542006771:0;cdw
+: 1542006773:0;cd linux-tweaks
+: 1542006778:0;gits
+: 1542006791:0;git diff backups/paths.sh
+: 1542006827:0;git diff backups/cinnamon_backup
+: 1542006842:0;git add backups/cinnamon_backup
+: 1542006855:0;git commit -m "[backup] updated"
+: 1542006864:0;git checkout backups/paths.sh
+: 1542006867:0;gits
+: 1542006870:0;res
+: 1542006875:0;clear
+: 1542006877:0;gits
+: 1542006880:0;gpush
+: 1542006887:0;bak
+: 1542006889:0;gits
+: 1542006891:0;clear
+: 1542006898:0;$DESKTOP_SESSION
+: 1542006901:0;echo $DESKTOP_SESSION
+: 1542006933:0;clear
+: 1542006940:0;cd Desktop
+: 1542006945:0;vim test.sh
+: 1542006954:0;vim scripts/backup_confs.sh
+: 1542007023:0;chmod +x test.sh
+: 1542007026:0;./test.sh
+: 1542007039:0;vim test.sh
+: 1542007057:0;./test.sh
+: 1542007063:0;vim test.sh
+: 1542007071:0;./test.sh
+: 1542007074:0;vim test.sh
+: 1542007100:0;./test.sh
+: 1542007107:0;vim test.sh
+: 1542007117:0;./test.sh
+: 1542007121:0;vim test.sh
+: 1542007137:0;./test.sh
+: 1542007138:0;vim test.sh
+: 1542007146:0;./test.sh
+: 1542007150:0;vim test.sh
+: 1542007162:0;./test.sh
+: 1542007163:0;vim test.sh
+: 1542007239:0;./test.sh
+: 1542007242:0;vim test.sh
+: 1542007275:0;./test.sh
+: 1542007279:0;vim test.sh
+: 1542007298:0;./test.sh
+: 1542007347:0;vim test.sh
+: 1542007425:0;./test.sh
+: 1542007427:0;vim test.sh
+: 1542007466:0;./test.sh
+: 1542007470:0;vim test.sh
+: 1542007564:0;./test.sh
+: 1542007594:0;vim test.sh
+: 1542007648:0;echo $DESKTOP_SESSION | grep "cin"
+: 1542007653:0;echo $DESKTOP_SESSION | grep -c "cin"
+: 1542007660:0;echo $DESKTOP_SESSION | grep -c "cint"
+: 1542007672:0;vim test.sh
+: 1542007790:0;./test.sh
+: 1542007830:0;vim test.sh
+: 1542007838:0;./test.sh
+: 1542007840:0;vim test.sh
+: 1542007858:0;./test.sh
+: 1542007861:0;vim test.sh
+: 1542007883:0;string1="abcmoocow"
+: 1542007888:0;string2="moo"
+: 1542007898:0;if [[ $string1 == *$string2* ]]; then echo "Match"; else echo "No Match"; fi\
+Match
+: 1542007914:0;if [[ $string1 == *$string2* ]]; then echo "Match"; else echo "No Match"; fi
+: 1542007923:0;vim test.sh
+: 1542007976:0;./test.sh
+: 1542007980:0;vim test.sh
+: 1542007988:0;./test.sh
+: 1542008008:0;vim test.sh
+: 1542008018:0;./test.sh
+: 1542008052:0;vim test.sh
+: 1542008061:0;./test.sh
+: 1542008072:0;vim test.sh
+: 1542008095:0;./test.sh
+: 1542008102:0;vim test.sh
+: 1542008116:0;cat ~/paths.sh
+: 1542008129:0;./test.sh
+: 1542008134:0;vim test.sh
+: 1542008177:0;./test.sh
+: 1542008180:0;vim test.sh
+: 1542008196:0;./test.sh
+: 1542008199:0;vim test.sh
+: 1542008208:0;./test.sh
+: 1542008210:0;vim test.sh
+: 1542008221:0;clear
+: 1542008233:0;vim scripts/backup_confs.sh
+: 1542008519:0;vim scripts/restore_confs.sh
+: 1542008528:0;cdw
+: 1542008529:0;cd linux-tweaks
+: 1542008534:0;vim scripts/backup_confs.sh
+: 1542008573:0;gits
+: 1542008577:0;git add .
+: 1542008619:0;git commit -m "[updated] str comparision updated"
+: 1542008621:0;gpush
+: 1542010743:0;clear
+: 1542010746:0;bak
+: 1542010756:0;res
+: 1542010784:0;vim scripts/backup_confs.sh
+: 1542010834:0;bak
+: 1542010840:0;vim scripts/backup_confs.sh
+: 1542010853:0;gits
+: 1542010863:0;bak
+: 1542010878:0;gits
+: 1542010886:0;vim scripts/restore_confs.sh
+: 1542010919:0;res
+: 1542010933:0;gits
+: 1542010936:0;git add .
+: 1542010966:0;git commit -m "[added] timestamp to cinnamon config line"
+: 1542010968:0;gpush
+: 1542010974:0;clear
+: 1542011050:0;cdw
+: 1542011053:0;cd talentica/assignment/photogram
+: 1542011054:0;gits
+: 1542011056:0;gpull
+: 1542011063:0;clear
+: 1542011170:0;vim .vim/bundle/vim-template/templates/=template=.md
+: 1542011439:0;cd .vim/bundle/vim-template/templates
+: 1542011441:0;gits
+: 1542011448:0;git add \=template=.md
+: 1542011469:0;git commit -m "[updated] =template=.md"
+: 1542011475:0;git remote -v
+: 1542011478:0;gpush
+: 1542011485:0;clear
+: 1542011526:0;cdw
+: 1542011548:0;git clone git@github.com:toransahu/aijaa-portal
+: 1542011555:0;cd aijaa-portal
+: 1542011557:0;clear
+: 1542011560:0;gits
+: 1542011563:0;vim README.md
+: 1542011625:0;gits
+: 1542011629:0;git add README.md
+: 1542011650:0;git commit -m "Intial Commit"
+: 1542011652:0;gpush
+: 1542011669:0;git push author master
+: 1542011694:0;git remote add author git@github.com:aijnvaa/aijaa-portal
+: 1542011697:0;git push author master
+: 1542011704:0;clear
+: 1542013295:0;gits
+: 1542013298:0;gpull
+: 1542022050:0;cd ../talentica/assignment/ws-eg
+: 1542022072:0;python wsdump.py ws://echo.websocket.org/
+: 1542022083:0;vim wsdump.py
+: 1542022278:0;pip show websockets
+: 1542022286:0;pipenv install websockets
+: 1542022499:0;ls
+: 1542022527:0;vim -p src/ws-client.py 
+: 1542022583:0;ls
+: 1542022592:0;mkdir src
+: 1542022599:0;mv wsdump.py src
+: 1542022607:0;pes
+: 1542022611:0;cd src
+: 1542022613:0;clear
+: 1542022622:0;vim ws-client.py 
+: 1542023379:0;./ws-client.py
+: 1542023647:0;clear
+: 1542023653:0;vim wss-client.py 
+: 1542024562:0;clear
+: 1542024566:0;ls
+: 1542024572:0;vim wss-client.py 
+: 1542024972:0;sudo cp /etc/ssl/certs/ca-certificates.crt /mnt/Other/E/workspace/talentica/assignment/ws-eg/src/
+: 1542025125:0;sudo ./wss-client.py
+: 1542025143:0;sudo python3 ./wss-client.py
+: 1542025150:0;./wss-client.py
+: 1542025159:0;clear
+: 1542026109:0;git init
+: 1542026123:0;gits
+: 1542026133:0;cat ca-certificates.crt
+: 1542026148:0;cd ..
+: 1542026160:0;py.gi
+: 1542026164:0;vim .gitignore
+: 1542026180:0;gits
+: 1542026206:0;mv src/.git ../
+: 1542026210:0;gits
+: 1542026232:0;mv ../.git ./
+: 1542026235:0;gits
+: 1542026243:0;git add .
+: 1542026248:0;git commit -m "Intial Commit"
+: 1542026275:0;gpush
+: 1542026294:0;gitrepo ws-eg
+: 1542026320:0;curl --header "Content-Type: application/json" \\
+         --request POST \\
+        --data '{"name": "ws-eg", "private" : false}' \\
+        --user toransahu \\
+        https://api.github.com/user/repos
+: 1542026346:0;git remote add origin git@github.com:toransahu/ws-eg
+: 1542026348:0;gpush
+: 1542026358:0;clear
+: 1542026372:0;vim ~/.bash_aliases 
+: 1542026391:0;vim ~/.gitrepo
+: 1542026423:0;vim ~/.bash_aliases 
+: 1542026684:0;exit
+: 1542026689:0;python
+: 1542026714:0;vim ~/temp.py
+: 1542027109:0;python ~/temp.py
+: 1542027131:0;vim ~/temp.py
+: 1542027165:0;python ~/temp.py
+: 1542027170:0;vim ~/temp.py
+: 1542027225:0;python ~/temp.py
+: 1542027235:0;vim ~/temp.py
+: 1542027251:0;python ~/temp.py
+: 1542027277:0;vim ~/temp.py
+: 1542027282:0;python ~/temp.py
+: 1542027301:0;vim ~/temp.py
+: 1542027320:0;python ~/temp.py
+: 1542027331:0;vim ~/temp.py
+: 1542027349:0;python ~/temp.py
+: 1542027363:0;vim ~/temp.py
+: 1542027373:0;python ~/temp.py
+: 1542027395:0;vim ~/temp.py
+: 1542027464:0;python ~/temp.py
+: 1542027662:0;cp ~/temp.py ../../../linux-tweaks/backups/.gitrepo.py
+: 1542027666:0;bak
+: 1542027669:0;gits
+: 1542027674:0;cdw
+: 1542027676:0;cd linux-tweaks
+: 1542027679:0;gits
+: 1542027690:0;git diff backups/cinnamon_backup
+: 1542027702:0;git add backups/cinnamon_backup
+: 1542027717:0;git commit -m "[bak] num caps on"
+: 1542027720:0;git add .
+: 1542027745:0;git commit -m "[update] partial grepo() alias"
+: 1542027747:0;gpush
+: 1542088360:0;cdw
+: 1542088361:0;cd linux-tweaks
+: 1542088364:0;gits
+: 1542088371:0;cd vim
+: 1542088374:0;vim
+: 1542088446:0;vim backups/.gitrepo.py
+: 1542088497:0;vim ~/.bash_aliases 
+: 1542088867:0;cdw
+: 1542088890:0;git clone git@github.com:toransahu/excel2json-3
+: 1542088898:0;cd excel2json-3
+: 1542088903:0;ls
+: 1542088918:0;cd api
+: 1542088920:0;ls
+: 1542088927:0;vim
+: 1542089952:0;cdw
+: 1542089957:0;cd talentica/assignment/photogram
+: 1542089961:0;vim README.md
+: 1542090570:0;gits
+: 1542090574:0;git add README.md
+: 1542090585:0;git commit -m "[doc] updated intro"
+: 1542090588:0;gpush
+: 1542090599:0;git push author master
+: 1542090808:0;git add README.md
+: 1542090812:0;vim README.md
+: 1542090858:0;git add README.md
+: 1542090887:0;git commit -m "[doc] fixed typo"
+: 1542090889:0;gpush
+: 1542090897:0;git push author master
+: 1542090996:0;vim README.md
+: 1542091027:0;git commit -m "[doc] fixed typo"
+: 1542091031:0;git add README.md
+: 1542091031:0;git commit -m "[doc] fixed typo"
+: 1542091034:0;gpush
+: 1542091043:0;git push author master
+: 1542091143:0;git rm src/.coverage
+: 1542091162:0;git commit -m "[removed] .coverage"
+: 1542091164:0;gpush
+: 1542091244:0;git push author master
+: 1542091253:0;exit
+: 1542091348:0;cdw
+: 1542091349:0;cd excel2json-3
+: 1542091351:0;ls
+: 1542091361:0;vim TODO.md
+: 1542091479:0;cdw
+: 1542091480:0;cd excel2json-3
+: 1542091491:0;vim
+: 1542091846:0;gits
+: 1542091853:0;ls
+: 1542091862:0;pes
+: 1542091867:0;pytest
+: 1542091882:0;py.test
+: 1542091888:0;cat Pipfile
+: 1542091902:0;pytest
+: 1542091910:0;pipenv sync
+: 1542091919:0;pytest
+: 1542091931:0;ls
+: 1542091933:0;ls tests
+: 1542091956:0;git mv tests/test.py tests/test_api.py
+: 1542091960:0;pytest
+: 1542091967:0;gits
+: 1542091975:0;git add tests/test_api.py
+: 1542091997:0;git commit -m "[updated] test case names"
+: 1542092006:0;git add TODO.md
+: 1542092018:0;git commit -m "[TODO] added"
+: 1542092020:0;gits
+: 1542092022:0;gpush
+: 1542092032:0;clear
+: 1542092036:0;exit
+: 1542092815:0;vim ~/temp.py
+: 1542092880:0;python ~/temp.py linux-tweaks
+: 1542092892:0;vim ~/temp.py
+: 1542092912:0;python ~/temp.py linux-tweaks
+: 1542092939:0;vim ~/temp.py
+: 1542092958:0;gits
+: 1542092967:0;git add backups/.gitrepo.py
+: 1542092988:0;git commit -m "[added] arg option for repo name"
+: 1542092991:0;gits
+: 1542092994:0;gpush
+: 1542093004:0;res
+: 1542093008:0;clear
+: 1542093027:0;grepo linux-tweaks
+: 1542093051:0;cp backups/.gitrepo.py ~/
+: 1542093053:0;grepo linux-tweaks
+: 1542093077:0;vim ~/.bash_aliases 
+: 1542093100:0;ls
+: 1542093175:0;. ~/.bash_aliases 
+: 1542093195:0;grepo linux-tweaks
+: 1542093206:0;vim ~/.bash_aliases 
+: 1542093249:0;. ~/.bash_aliases 
+: 1542093251:0;grepo linux-tweaks
+: 1542093313:0;python ~/.gitrepo.py linux-tweaks
+: 1542093336:0;vim ~/.gitrepo.py
+: 1542093377:0;python ~/.gitrepo.py linux-tweaks
+: 1542093388:0;grepo linux-tweaks
+: 1542093432:0;cp ~/.gitrepo.py backups/.gitrepo.py
+: 1542093444:0;cat backups/.gitrepo.py
+: 1542093452:0;clear
+: 1542093463:0;vim scripts/backup_confs.sh
+: 1542093498:0;ls .personalized
+: 1542093609:0;. ~/.bash_aliases 
+: 1542093614:0;grepo linux-tweaks
+: 1542093632:0;mv ~/.gitrepo.py ~/.personalized
+: 1542093634:0;grepo linux-tweaks
+: 1542093640:0;clear
+: 1542093648:0;gits
+: 1542093667:0;git stash
+: 1542093669:0;gits
+: 1542093680:0;vim scripts/backup_confs.sh
+: 1542093693:0;vim scripts/restore_confs.sh
+: 1542093721:0;mv ~/.gitrepo ~/.personalized
+: 1542093725:0;clear
+: 1542093727:0;gits
+: 1542093732:0;bak
+: 1542093735:0;gits
+: 1542093755:0;git add .
+: 1542093786:0;git commit -m "[added] .personalized; revamped .gitrepo.py"
+: 1542093788:0;gpush
+: 1542093806:0;clear
+: 1542093818:0;ls
+: 1542094087:0;cd ../excel2json-3
+: 1542094215:0;nemo . *
+: 1542094228:0;nemo . &
+: 1542094241:0;vim .travis.yml
+: 1542094261:0;git add .travis.yml
+: 1542094286:0;git commit -m [ci] updated script to fetch & test all cases"
+: 1542094290:0;git commit -m "[ci] updated script to fetch & test all cases"
+: 1542094292:0;gpush
+: 1542094425:0;clear
+: 1542094425:0;cdw
+: 1542097492:0;cd talentica/assignment/ws-eg
+: 1542097494:0;ls
+: 1542097502:0;pes
+: 1542097506:0;cd src
+: 1542097508:0;clear
+: 1542097510:0;ls
+: 1542098440:0;vim
+: 1542098450:0;cdw
+: 1542098454:0;cd talentica/assignment/ws-eg
+: 1542098456:0;pes
+: 1542098459:0;cd src
+: 1542098460:0;ls
+: 1542098482:0;python wss-client.py
+: 1542098499:0;gits
+: 1542098531:0;vim ../../TODO.md
+: 1542098886:0;clear
+: 1542099053:0;vim ../../TODO.md
+: 1542105260:0;sdk
+: 1542105270:0;sudo apt show sdkman
+: 1542105333:0;java -version
+: 1542105372:0;sudo apt show gradle
+: 1542105394:0;gradle --gui
+: 1542105410:0;sudo apt install gradle
+: 1542105700:0;java -version
+: 1542107756:0;sudo apt install kafka
+: 1542107764:0;sudo apt install apache-kafka
+: 1542107789:0;gradel -v
+: 1542107793:0;gradle -v
+: 1542107814:0;sudo apt install gradle
+: 1542108030:0;sudo apt show gradle
+: 1542108038:0;gradle -v
+: 1542108053:0;sudo apt purge gradle
+: 1542108232:0;curl -s "https://get.sdkman.io" | bash
+: 1542108253:0;sdk help
+: 1542108268:0;. ~/.zshrc
+: 1542108269:0;sdk help
+: 1542108294:0;sdk install jre
+: 1542108301:0;sdk install java
+: 1542108321:0;sdk list java
+: 1542108333:0;sdk help
+: 1542108351:0;sdk flush java
+: 1542108364:0;sdk java flush
+: 1542108374:0;sdk install java8
+: 1542108484:0;sdk install java 8
+: 1542108504:0;sdk install java 8u192
+: 1542108579:0;sdk list java
+: 1542108601:0;sdk install java 8.0.191-oracle
+: 1542108728:0;sdk list gradle
+: 1542108783:0;sdk install gradle 4.10.2
+: 1542108813:0;sdk list kafka
+: 1542108843:0;clear
+: 1542108846:0;cdw
+: 1542108865:0;mkdir cloned
+: 1542108867:0;cd cloned
+: 1542108869:0;clear
+: 1542108878:0;git clone git@github.com:apache/kafka.git 
+: 1542108919:0;cd kafka/
+: 1542108924:0;gradle
+: 1542108990:0;./gradlew jar
+: 1542173828:0;cdw
+: 1542173830:0;cd linux-tweaks
+: 1542173832:0;gits
+: 1542173834:0;bak
+: 1542173835:0;gits
+: 1542173851:0;git diff backups/.bashrc
+: 1542173870:0;git diff backups/.zshrc
+: 1542173879:0;git add .
+: 1542173898:0;git commit -m "[added] SDKMAN path at the EOF"
+: 1542173906:0;git pull --rebase origin master
+: 1542173913:0;clear
+: 1542173914:0;gits
+: 1542173919:0;gpush
+: 1542173930:0;res
+: 1542173942:0;clear
+: 1542173949:0;cat ~/paths.sh
+: 1542174034:0;clear
+: 1542174060:0;ls ~/.personalized
+: 1542176324:0;cdw
+: 1542176334:0;cd talentica/assignment/photogram
+: 1542176347:0;pes
+: 1542176351:0;cd src
+: 1542176356:0;vim
+: 1542176372:0;cdw
+: 1542176386:0;mkdir dj-rahul
+: 1542176389:0;cd dj-rahul
+: 1542176404:0;pipenv install
+: 1542176426:0;clear
+: 1542176439:0;which python
+: 1542176449:0;python --version
+: 1542176456:0;pipenv shell
+: 1542176460:0;clear
+: 1542176489:0;exit
+: 1542176492:0;pes
+: 1542176495:0;clear
+: 1542176505:0;pipenv install django
+: 1542176514:0;ls
+: 1542176518:0;cat Pipfile
+: 1542176535:0;cat Pipfile.lock
+: 1542176542:0;cat Pipfile
+: 1542176547:0;clear
+: 1542176558:0;django-admin 
+: 1542176560:0;clear
+: 1542176573:0;django-admin  startproject rahul
+: 1542176576:0;ls
+: 1542176582:0;ls rahul
+: 1542176593:0;mv rahul src
+: 1542176595:0;ls
+: 1542176597:0;cd src
+: 1542176598:0;ls
+: 1542176616:0;ls rahul
+: 1542176700:0;python manage.py startapp temp
+: 1542176702:0;ls
+: 1542176706:0;ls temp
+: 1542176740:0;ls rahul
+: 1542176750:0;vim rahul/settings.py
+: 1542177267:0;vim ~/.vimrc
+: 1542177631:0;clear
+: 1542178841:0;python
+: 1542180280:0;cdw
+: 1542180284:0;ls
+: 1542180292:0;mkdir ethereal
+: 1542180298:0;cd ethereal
+: 1542180300:0;mkdir halo
+: 1542180304:0;cd halo
+: 1542180318:0;git clone git@bitbucket.org:toransahu/ethereal-kmotion434.git
+: 1542180451:0;git remote add author git@bitbucket.org:etherealmachines/ethereal-kmotion434.git
+: 1542180456:0;cd ethereal-kmotion434
+: 1542180458:0;git remote add author git@bitbucket.org:etherealmachines/ethereal-kmotion434.git
+: 1542180468:0;git push author master
+: 1542180588:0;git remote rm author
+: 1542180629:0;git remote add author git@bitbucket.org:etherealmachines/ethereal-kmotion434.git
+: 1542180633:0;git push author master
+: 1542185788:0;python
+: 1542191195:0;./pycharm.sh
+: 1542191540:0;which python
+: 1542191549:0;python -v
+: 1542191625:0;cdw
+: 1542191629:0;cd talentica/assignment/photogram
+: 1542191630:0;pes
+: 1542191644:0;which python
+: 1542192782:0;vim
+: 1542192942:0;clear
+: 1542192943:0;gits
+: 1542192960:0;vim ../.gitignore
+: 1542192996:0;gits
+: 1542193005:0;git add ../.gitignore
+: 1542193021:0;git commit -m "[ignored] .idea/"
+: 1542193025:0;git add .
+: 1542193055:0;git commit -m "[update] using relative import"
+: 1542193057:0;clear
+: 1542193060:0;gits
+: 1542193062:0;gpush
+: 1542193069:0;clear
+: 1542193072:0;git push author master
+: 1542193079:0;clear
+: 1542193082:0;exit
+: 1542193215:0;clear
+: 1542193217:0;which python
+: 1542193366:0;clear
+: 1542193369:0;cdw
+: 1542193374:0;cd talentica/assignment/photogram
+: 1542193375:0;pes
+: 1542193378:0;cd src
+: 1542193388:0;python manage.py runserver
+: 1542193450:0;cdw
+: 1542193595:0;clear
+: 1542193602:0;glog
+: 1542193642:0;git reset HEAD~ 
+: 1542193655:0;glog
+: 1542193663:0;gits
+: 1542193672:0;git diff hub/views.py
+: 1542193725:0;git add hub/views.py
+: 1542193740:0;git commit -m "[update] removed unused import"
+: 1542193741:0;gits
+: 1542193783:0;gpush
+: 1542193795:0;git pull --rebase origin master
+: 1542193812:0;git rebase --abort
+: 1542193827:0;git push author master -f
+: 1542193837:0;git push origin master -f
+: 1542194227:0;python
+: 1542195264:0;clear
+: 1542195272:0;vim ~/temp.py
+: 1542196648:0;sudo apt update
+: 1542197149:0;cdw
+: 1542197151:0;cd talentica/assignment/photogram
+: 1542197152:0;pes
+: 1542197154:0;cd src
+: 1542197159:0;python manage.py runserver
+: 1542197163:0;exit
+: 1542197167:0;cdw
+: 1542197169:0;cd linux-tweaks
+: 1542197170:0;gits
+: 1542197173:0;bak
+: 1542197175:0;gits
+: 1542260775:0;cdw
+: 1542260778:0;cd talentica/assignment/photogram
+: 1542260780:0;pes
+: 1542260783:0;cd src
+: 1542260785:0;clear
+: 1542260786:0;vim
+: 1542260828:0;vim ~/.vimrc
+: 1542260859:0;pip show flake8
+: 1542260868:0;pip show django
+: 1542260875:0;clear
+: 1542260890:0;exit
+: 1542261409:0;ping fb.com
+: 1542261850:0;cdw
+: 1542261876:0;clear
+: 1542261985:0;python
+: 1542262906:0;clear
+: 1542262910:0;vim ~/temp.py
+: 1542263554:0;python
+: 1542263788:0;vim ~/temp1.py
+: 1542264173:0;python
+: 1542281335:0;vim ~/.vimrc
+: 1542281392:0;vim
+: 1542281435:0;clear
+: 1542281446:0;vim ~/temp1.py
+: 1542281453:0;cdw
+: 1542281454:0;cd linux-tweaks
+: 1542281456:0;gits
+: 1542281460:0;bak
+: 1542281461:0;gits
+: 1542281466:0;git add backups/.vimrc
+: 1542281498:0;git commit -m "[update] set hlsearch to highlight search patterns"
+: 1542281500:0;gpush
+: 1542345352:0;cdw
+: 1542345364:0;mkdir practice
+: 1542345367:0;cd practice
+: 1542345386:0;git clone git@github.com:toransahu/g4g
+: 1542345392:0;clear
+: 1542345393:0;cd g4g
+: 1542345395:0;vim
+: 1542350368:0;vim questions.md
+: 1542350544:0;clear
+: 1542350747:0;cd
+: 1542350748:0;cdw
+: 1542350750:0;cd mist
+: 1542350751:0;ls
+: 1542350754:0;vim questions.md
+: 1542350774:0;nemo . &
+: 1542352962:0;clear
+: 1542352969:0;cdw
+: 1542352971:0;cd linux-tweaks
+: 1542352972:0;gits
+: 1542352976:0;bak
+: 1542352977:0;gits
+: 1542352982:0;gpull
+: 1542352989:0;vim
+: 1542353026:0;cd ~/.vim/bundle/vim-template
+: 1542353027:0;gits
+: 1542353030:0;cd ..
+: 1542353036:0;rm -r vim-template
+: 1542353041:0;sudo rm -r vim-template
+: 1542353056:0;clear
+: 1542353446:0;cdw
+: 1542353447:0;cd mist
+: 1542353449:0;vim questions.md
+: 1542355021:0;which vim
+: 1542355026:0;vim --version
+: 1542364890:0;clear
+: 1542364907:0;cd ..
+: 1542365025:0;cd
+: 1542365027:0;cdw
+: 1542365030:0;cd talentica/assignment/photogram
+: 1542365032:0;clear
+: 1542365039:0;cd src
+: 1542365042:0;gits
+: 1542365044:0;gpull
+: 1542365059:0;vim photogram/dev_settings.py
+: 1542365164:0;pes
+: 1542365166:0;cd src
+: 1542365168:0;vim photogram/dev_settings.py
+: 1542365252:0;vim photogram
+: 1542365294:0;python manage.py migrate
+: 1542365306:0;python manage.py makemigrations
+: 1542365308:0;python manage.py migrate
+: 1542365446:0;python manage.py makemigrations
+: 1542365448:0;python manage.py migrate
+: 1542365545:0;find * -type f -name "000*.py" -delete
+: 1542365552:0;ls hub/migrations
+: 1542365555:0;clear
+: 1542365558:0;python manage.py migrate
+: 1542365607:0;python manage.py makemigrations
+: 1542365610:0;python manage.py migrate
+: 1542365637:0;cd talentica/assignment/photogram
+: 1542365638:0;pes
+: 1542365641:0;clear
+: 1542365644:0;cd src
+: 1542365647:0;vim photogram
+: 1542365828:0;find * -type f -name "000*.py" -delete
+: 1542365833:0;python manage.py migrate
+: 1542365865:0;python manage.py makemigrations
+: 1542365868:0;python manage.py migrate
+: 1542365955:0;python manage.py runserver
+: 1542365986:0;gits
+: 1542366004:0;git checkout photogram/dev_settings.py
+: 1542366008:0;clear
+: 1542366009:0;gits
+: 1542366037:0;vim ../README.md
+: 1542366149:0;vim photogram/base_settings.py
+: 1542366289:0;clear
+: 1542366290:0;gits
+: 1542366300:0;git add ../README.md
+: 1542366332:0;git commit -m "[doc] added db creations for mysql"
+: 1542366337:0;git add photogram/base_settings.py
+: 1542366355:0;git commit -m "[added] api namespace versioning"
+: 1542366357:0;gpush
+: 1542366365:0;clear
+: 1542366370:0;git push author master
+: 1542366378:0;clear
+: 1542366380:0;exit
+: 1542366466:0;clear
+: 1542366468:0;exit
+: 1542366470:0;clear
+: 1542366488:0;cdw
+: 1542366489:0;cd linux-tweaks
+: 1542366491:0;gits
+: 1542366495:0;bak
+: 1542366497:0;gits
+: 1542366504:0;git diff backups/.vimrc
+: 1542366520:0;git checkout backups/.vimrc
+: 1542366522:0;res
+: 1542366525:0;bak
+: 1542366526:0;gits
+: 1542366528:0;clear
+: 1542366530:0;gpull
+: 1542366534:0;clear
+: 1542367157:0;vim scripts/rightclick.sh
+: 1542367182:0;vim scripts/mouserightclick.sh
+: 1542367291:0;mv scripts/mouse* backups/.personalized
+: 1542367293:0;gits
+: 1542367296:0;git add .
+: 1542367321:0;git commit -m "[update] structure update - moved mouse*.sh to .per"
+: 1542367333:0;ls backups/.personalized
+: 1542367349:0;wq
+: 1542367351:0;gpush
+: 1542367360:0;res
+: 1542367473:0;echo $USER
+: 1542367494:0;cat ~/.personalized/mouserightclick.sh
+: 1542367656:0;gits
+: 1542367660:0;bak
+: 1542367662:0;gits
+: 1542367670:0;git diff backups/cinnamon_backup
+: 1542367683:0;git add backups/cinnamon_backup
+: 1542367710:0;git commit -m "[update] evaluating ENV VAR inside cinnamon"
+: 1542367713:0;gpush
+: 1542368381:0;cat ~/.personalized/rightclick.sh
+: 1542368397:0;ls ~/.personalized
+: 1542368409:0;cdw
+: 1542368417:0;cd linux-tweaks
+: 1542368440:0;git mv scripts/rightclick.sh backups/.personalized/
+: 1542368451:0;git rm backups/.personalized/mousewheel.sh
+: 1542368453:0;clear
+: 1542368454:0;gits
+: 1542368478:0;git commit -m "[fix] wrong script placement"
+: 1542368489:0;git commit -amend
+: 1542368492:0;git commit --amend
+: 1542368499:0;gpush
+: 1542368508:0;ls backups/.personalized
+: 1542368522:0;rm ~/.personalized/mousewheel.sh
+: 1542368525:0;res
+: 1542368531:0;gits
+: 1542368533:0;bak
+: 1542368534:0;gits
+: 1542368745:0;cdw
+: 1542368759:0;vim ~/Desktop/TODO.md
+: 1542605112:0;cdw
+: 1542605113:0;cd linux-tweaks
+: 1542605115:0;gits
+: 1542605118:0;bak
+: 1542605120:0;gits
+: 1542605128:0;gpull
+: 1542605134:0;clear
+: 1542605135:0;res
+: 1542605138:0;clear
+: 1542605142:0;cd..
+: 1542605143:0;cd ..
+: 1542605168:0;git clone git@github.com:toransahu/django-graphene-eg
+: 1542605174:0;clear
+: 1542605177:0;cd django-graphene-eg
+: 1542605178:0;pes
+: 1542605340:0;clear
+: 1542605349:0;cd
+: 1542605350:0;cdw
+: 1542605354:0;cd django-graphene-eg
+: 1542605356:0;t
+: 1542605359:0;pes
+: 1542605363:0;cd src
+: 1542605365:0;clear
+: 1542605378:0;python manage.py migrate
+: 1542605388:0;pipenv sync
+: 1542605393:0;clear
+: 1542605401:0;cd src
+: 1542605402:0;vim
+: 1542605412:0;clear
+: 1542605415:0;python manage.py migrate
+: 1542605428:0;python manage.py makemigrations
+: 1542605434:0;python manage.py runserver
+: 1542605981:0;cdw
+: 1542605988:0;ls
+: 1542606001:0;mkdir assignment
+: 1542606004:0;cd assignment
+: 1542606012:0;mkdir jadish
+: 1542606015:0;cd jadish
+: 1542606022:0;git clone git@github.com:jagamts1/assignment.git
+: 1542606057:0;clear
+: 1542606060:0;cd assignment
+: 1542606063:0;pes
+: 1542606070:0;clear
+: 1542606111:0;cat Pipfile
+: 1542606122:0;pe install install
+: 1542606127:0;pe install 
+: 1542606134:0;pe install -r
+: 1542606148:0;pe run pip -r requirement.txt
+: 1542606157:0;pe run pip install -r requirement.txt
+: 1542606173:0;clear
+: 1542606185:0;ls
+: 1542606192:0;cat Pipfile
+: 1542606204:0;pipenv --help
+: 1542606217:0;pipenv sync
+: 1542606224:0;pipenv install
+: 1542606247:0;mv requirement.txt requirements.txt
+: 1542606250:0;pipenv install
+: 1542606283:0;FLASK_APP=server.py flask run -p 8000 --reload
+: 1542606290:0;FLASK_APP=server.py flask run -p 8888 --reload
+: 1542606298:0;FLASK_APP=server.py flask run -p 8000 --reload
+: 1542606507:0;sudo apt update
+: 1542606525:0;sudo apt --upgradable
+: 1542606538:0;sudo apt list --upgradable
+: 1542606556:0;sudo apt upgrade
+: 1542606593:0;clear
+: 1542608584:0;python manage.py runserver
+: 1542608846:0;cdw
+: 1542608853:0;cd practice/g4g/
+: 1542608856:0;ls
+: 1542608861:0;vim
+: 1542609238:0;pip install pygorithm
+: 1542609243:0;clear
+: 1542610371:0;cdw
+: 1542610377:0;cd practice/
+: 1542610379:0;ls
+: 1542610393:0;vim ~/temp1.py
+: 1542610565:0;python ~/temp1.py
+: 1542610573:0;vim ~/temp1.py
+: 1542610581:0;python ~/temp1.py
+: 1542610583:0;vim ~/temp1.py
+: 1542610591:0;python ~/temp1.py
+: 1542610595:0;vim ~/temp1.py
+: 1542610613:0;python ~/temp1.py
+: 1542610615:0;vim ~/temp1.py
+: 1542610624:0;python ~/temp1.py
+: 1542610629:0;vim ~/temp1.py
+: 1542610634:0;python ~/temp1.py
+: 1542611037:0;cdw
+: 1542611038:0;cd linux-tweaks
+: 1542611041:0;ls configs
+: 1542611044:0;ls configs/thunderbird
+: 1542611050:0;nemo . &
+: 1542623316:0;w
+: 1542623402:0;export DISPLAY=:0; cinnamon &
+: 1542623446:0;top
+: 1542623461:0;kill firefox
+: 1542623477:0;kill 9807
+: 1542623503:0;clear
+: 1542623577:0;top
+: 1542623606:0;clear
+: 1542623615:0;sudo mdm restart
+: 1542623648:0;clear
+: 1542623667:0;killall -9 firefox
+: 1542623670:0;killall -9 firefox-bin
+: 1542623672:0;top
+: 1542623718:0;export DISPLAY=:0; cinnamon &
+: 1542623734:0;killall cinnamon
+: 1542623739:0;export DISPLAY=:0; cinnamon &
+: 1542623790:0;sudo systemctl restart cinnamon
+: 1542623832:0;export DISPLAY=:0; cinnamon --replace &
+: 1542623877:0;aliasit fixcinnamon "export DISPLAY=:0; cinnamon --replace &"
+: 1542623880:0;clear
+: 1542623885:0;cdw
+: 1542623887:0;cd linux-tweaks
+: 1542623888:0;gits
+: 1542623891:0;bak
+: 1542623894:0;gits
+: 1542623902:0;git diff backups/.bash_aliases
+: 1542623909:0;git add backups/.bash_aliases
+: 1542623941:0;git commit -m "[added] alias fixcinnamon to fix broken/freezed cinnamon from tty"
+: 1542623944:0;gpush
+: 1542623961:0;clear
+: 1542624024:0;sudo apt purge firefox
+: 1542624046:0;clear
+: 1542624109:0;vim
+: 1542624120:0;clear
+: 1542624121:0;gits
+: 1542624128:0;git diff ingredients/schema.py
+: 1542624134:0;git stash
+: 1542624136:0;gits
+: 1542624138:0;clear
+: 1542624139:0;exit
+: 1542624305:0;gits
+: 1542624314:0;git add ds/graph/.
+: 1542624329:0;git commit -m "[added] ds/graph package"
+: 1542624331:0;gpush
+: 1542624338:0;exit
+: 1542625273:0;gits
+: 1542625367:0;cdw
+: 1542625370:0;cd practice/g4g
+: 1542625371:0;clear
+: 1542625372:0;vim
+: 1542626335:0;cdw
+: 1542626338:0;cd practice/g4g
+: 1542626340:0;vim
+: 1542629588:0;vim ~/.vimrc
+: 1542629997:0;pes
+: 1542630003:0;clear
+: 1542630010:0;vim
+: 1542630073:0;pip install flake8-docs
+: 1542630507:0;pip install flake8-doc
+: 1542630522:0;pip install flake8-docstrings
+: 1542630544:0;vim ds/tree/binary_search_tree.py
+: 1542630750:0;pip install flake8
+: 1542630761:0;pip install flake8-docstrings
+: 1542630775:0;vim ds/tree/binary_search_tree.py
+: 1542630864:0;vim ~/.vimrc
+: 1542630889:0;vim ds/tree/binary_search_tree.py
+: 1542630897:0;vim 
+: 1542630932:0;cdw
+: 1542630935:0;cd talentica/assignment/photogram
+: 1542630938:0;pes
+: 1542630941:0;vim
+: 1542631133:0;bak
+: 1542631135:0;cdw
+: 1542631137:0;cd linux-tweaks
+: 1542631138:0;gits
+: 1542631149:0;git diff backups/cinnamon_backup
+: 1542631178:0;git diff backups/.vimrc
+: 1542631188:0;clear
+: 1542631194:0;git stash
+: 1542631200:0;vim ~/.vimrc
+: 1542631219:0;clear
+: 1542631223:0;bak
+: 1542631225:0;gits 
+: 1542631238:0;git add backups/.vimrc
+: 1542631279:0;git commit -m "[updated] black line length to 79"
+: 1542631284:0;git add backups/cinnamon_backup
+: 1542631304:0;git commit -m "[update] after freeze"
+: 1542631307:0;gpush
+: 1542631337:0;cd src
+: 1542631340:0;vim hub/views.py
+: 1542631523:0;clear
+: 1542631534:0;cdw
+: 1542631536:0;cd talentica/assignment/photogram
+: 1542631538:0;gits
+: 1542631541:0;cd src
+: 1542631543:0;gits
+: 1542631552:0;flake8
+: 1542631572:0;black
+: 1542631575:0;black .
+: 1542631585:0;gits
+: 1542631681:0;git add .
+: 1542631687:0;flake8
+: 1542631734:0;git commit -m "[update] formatted using black"
+: 1542631737:0;gpush
+: 1542631749:0;python manage.py runserver
+: 1542631760:0;git push author master
+: 1542631768:0;clear
+: 1542631797:0;exit
+: 1542631798:0;cdw
+: 1542631805:0;cd practice/g4g
+: 1542631817:0;vim ~/.vimrc
+: 1542631860:0;clear
+: 1542631865:0;bak
+: 1542631871:0;cdw
+: 1542631873:0;cd linux-tweaks
+: 1542631875:0;gits
+: 1542631879:0;git diff backups/.vimrc
+: 1542631886:0;git add backups/.vimrc
+: 1542631906:0;git commit -m "[update] added instruction for flake8-docstrings\
+"
+: 1542631909:0;gpush
+: 1542631916:0;clear
+: 1542631923:0;cdw
+: 1542631926:0;clear
+: 1542631970:0;vim ds/tree/binary_search_tree.py
+: 1542632011:0;flake8
+: 1542632027:0;vim ds/tree/binary_search_tree.py
+: 1542632040:0;black .
+: 1542632060:0;vim ds/tree/binary_search_tree.py
+: 1542632094:0;black .
+: 1542632101:0;clear
+: 1542632102:0;black .
+: 1542632105:0;gits
+: 1542632123:0;vim ds/tree/binary_search_tree.py
+: 1542632230:0;vim ~/.vimrc
+: 1542632252:0;bak
+: 1542632254:0;gits
+: 1542632258:0;git add backups/.vimrc
+: 1542632273:0;git commit -m "[update] set line number"
+: 1542632275:0;gpush
+: 1542632700:0;vim ~/.vimrc
+: 1542632883:0;vim ds/tree/binary_search_tree.py
+: 1542633055:0;clear
+: 1542633057:0;gits
+: 1542633067:0;git add Pipfile
+: 1542633083:0;git commit -m "[dep] added Pipfile"
+: 1542633086:0;git add .
+: 1542633099:0;git commit -m "[update] formatted using black"
+: 1542633102:0;gpush
+: 1542633112:0;clear
+: 1542633113:0;gits
+: 1542633115:0;bak
+: 1542633117:0;gits
+: 1542633122:0;git diff backups/.vimrc
+: 1542633128:0;git add backups/.vimrc
+: 1542633149:0;git commit -m "[update] commented fugative config"
+: 1542633151:0;gpush
+: 1542633158:0;clear
+: 1542690633:0;cdw
+: 1542690635:0;cd linux-tweaks
+: 1542690637:0;gits
+: 1542690641:0;bak
+: 1542690643:0;gits
+: 1542690648:0;gpull
+: 1542690653:0;cdw
+: 1542690656:0;cd django-graphene-eg
+: 1542690658:0;gits
+: 1542690660:0;gpull
+: 1542690666:0;clear
+: 1542690667:0;t
+: 1542691120:0;pes
+: 1542691128:0;pe sync
+: 1542691133:0;clear
+: 1542691137:0;cd src
+: 1542691139:0;vim
+: 1542691200:0;pes
+: 1542691202:0;cd src
+: 1542691205:0;python manage.py runserver
+: 1542691213:0;python manage.py makemigrations
+: 1542691220:0;python manage.py migrate
+: 1542691224:0;python manage.py runserver
+: 1542691229:0;clear
+: 1542691234:0;gits
+: 1542691246:0;ls .. 
+: 1542691253:0;vim ../.gitignore
+: 1542691313:0;gits
+: 1542691326:0;git add ../.gitignore
+: 1542691340:0;git commit -m "[ignored] migrations/"
+: 1542691391:0;cdw
+: 1542691393:0;ls
+: 1542691426:0;git clone git@github.com:toransahu/gitignore
+: 1542691442:0;cd gitignore
+: 1542691443:0;ls
+: 1542691472:0;cp ../.gitignore ../../../workspace/gitignore/Python.gitignore
+: 1542691478:0;clear
+: 1542691479:0;gits
+: 1542691484:0;git diff Python.gitignore
+: 1542691492:0;git add Python.gitignore
+: 1542691495:0;git commit -m "[ignored] migrations/"
+: 1542691497:0;gpush
+: 1542691508:0;clear
+: 1542691509:0;gits
+: 1542691669:0;clear
+: 1542691752:0;python manage.py shell
+: 1542691801:0;python manage.py createsuperuser
+: 1542691823:0;python manage.py shell
+: 1542691975:0;clear
+: 1542691984:0;python manage.py runserver
+: 1542692067:0;nemo . &
+: 1542692099:0;sudo apt install sublimetext3
+: 1542692104:0;sudo apt install sublime-text3
+: 1542692115:0;clear
+: 1542692194:0;vim installsublime.sh
+: 1542692230:0;chmod +x installsublime.sh
+: 1542692232:0;./installsublime.sh
+: 1542692259:0;clear
+: 1542692272:0;mv installsublime.sh ~/.personalized
+: 1542692352:0;aliasit installsublime 'sh -c "~/.personalized/installsublime.sh"'
+: 1542692361:0;installsublime
+: 1542692372:0;clear
+: 1542692373:0;cdw
+: 1542692375:0;cd linux-tweaks
+: 1542692379:0;gits
+: 1542692381:0;bak
+: 1542692383:0;gits
+: 1542692391:0;git add backups/.personalized/installsublime.sh
+: 1542692423:0;git commit -m "[added] script to add ppa of sublime-text and then install"
+: 1542692428:0;git add backups/.bash_aliases
+: 1542692456:0;git commit -m "[added] alias installsublime to install sublimetext from ppa"
+: 1542692458:0;gpush
+: 1542692467:0;clear
+: 1542692505:0;cdw
+: 1542692506:0;cd linux-tweaks
+: 1542692507:0;bak
+: 1542692509:0;gits
+: 1542693519:0;clear
+: 1542693520:0;pes
+: 1542693523:0;cd src
+: 1542693530:0;python manage.py shell
+: 1542703985:0;sudo snap install insomnia
+: 1542703995:0;man snap
+: 1542704530:0;cdw
+: 1542704562:0;mkdir -p ethereal/www
+: 1542704565:0;mkdir -p ethereal/ray
+: 1542704567:0;cd ethereal
+: 1542704569:0;cd www
+: 1542704601:0;git clone git@github.com:toransahu/ethereal-machines-backend
+: 1542704620:0;git clone git@bitbucket.com:toransahu/ethereal-machines-backend
+: 1542704628:0;cd ethereal-machines-backend
+: 1542704640:0;vim src/backend/base_settings.py
+: 1542706802:0;python manage.py loaddata ingredients
+: 1542706811:0;python manage.py runserver
+: 1542715926:0;base64
+: 1542715935:0;base64 --help
+: 1542715954:0;base64(Ship:1)
+: 1542715959:0;base64 "Ship:1"
+: 1542715963:0;base64 --help
+: 1542715974:0;base64 -
+: 1542715985:0;man base64 
+: 1542716003:0;python
+: 1542717413:0;clear
+: 1542717414:0;gits
+: 1542717427:0;git diff cookbook/settings.py
+: 1542717434:0;git add cookbook/settings.py
+: 1542717471:0;git commit -m "[update] autoformat - black"
+: 1542717480:0;git diff graphiql_queries.txt
+: 1542717488:0;graphiql_queries.txt
+: 1542717492:0;vim graphiql_queries.txt
+: 1542717544:0;git add graphiql_queries.txt
+: 1542717549:0;git commit -m 
+: 1542717555:0;clear
+: 1542717576:0;git commit -m "[update] added post related queries"
+: 1542717579:0;gits
+: 1542717584:0;git diff ingredients/schema.py
+: 1542717602:0;git add ingredients/schema.py
+: 1542717633:0;git commit -m "[added] auth check to posts node"
+: 1542717638:0;git add ingredients/serializers.py
+: 1542717666:0;git commit -m "[new] plan to add serializer to consume in graph\
+"
+: 1542717669:0;gpush
+: 1542717676:0;clear
+: 1542717679:0;exit
+: 1542717681:0;cdw
+: 1542717683:0;cd linux-tweaks
+: 1542717684:0;gits
+: 1542717686:0;bak
+: 1542717688:0;gits
+: 1542717708:0;exit
+: 1542783398:0;cdw
+: 1542783404:0;cd linux-tweaks
+: 1542784402:0;gpull
+: 1542784407:0;bak
+: 1542784408:0;gits
+: 1542784412:0;clear
+: 1542784413:0;cdw
+: 1542784418:0;cd practice/g4g
+: 1542784420:0;clear
+: 1542784421:0;ls
+: 1542784432:0;ls algo
+: 1542784442:0;mkdir algo/dp
+: 1542784453:0;clear
+: 1542784455:0;pes
+: 1542784459:0;clear
+: 1542784460:0;vim
+: 1542785112:0;cdw
+: 1542785113:0;cd practice/g4g
+: 1542785115:0;pes
+: 1542785135:0;pe install flake8
+: 1542785151:0;vim algo/dp/edit_distance.py
+: 1542785170:0;cdw
+: 1542785173:0;cd django-graphene-eg
+: 1542785176:0;vim
+: 1542785181:0;pes
+: 1542785183:0;cd src
+: 1542785184:0;vim
+: 1542785211:0;cat ../Pipfile
+: 1542785224:0;pip show flake8
+: 1542785228:0;exit
+: 1542785239:0;pe uninstall flake8
+: 1542785242:0;clear
+: 1542785246:0;exit
+: 1542785311:0;vim algo/dp/edit_distance.py
+: 1542785331:0;pes
+: 1542785342:0;which python
+: 1542785348:0;python
+: 1542785356:0;exit
+: 1542785358:0;python
+: 1542785363:0;pes
+: 1542785366:0;vim algo/dp/edit_distance.py
+: 1542785377:0;clear
+: 1542785379:0;vim algo/dp/edit_distance.py
+: 1542791907:0;cdw
+: 1542791912:0;cd practice/g4g
+: 1542791913:0;pes
+: 1542791916:0;clear
+: 1542791924:0;cd algo/dp
+: 1542791934:0;python
+: 1542792227:0;clear
+: 1542792248:0;vim test.py
+: 1542793298:0;cdw
+: 1542793310:0;cd ethereal/assignment
+: 1542793319:0;git clone git@bitbucket.com:toransahu/ethereal
+: 1542793328:0;cd ethereal
+: 1542793329:0;ls
+: 1542793339:0;vim src/server.py
+: 1542794293:0;python
+: 1542794590:0;clear
+: 1542794591:0;cdw
+: 1542794593:0;cd linux-tweaks
+: 1542794594:0;gits
+: 1542794602:0;git add configs/thunderbird/toran.sahu@yahoo.com_2018-11-21_15-32.json
+: 1542794627:0;git commit -m "[added] tb spam filters"
+: 1542794630:0;gpush
+: 1542794643:0;ls configs/thunderbird
+: 1542794674:0;clear
+: 1542794676:0;bak
+: 1542794678:0;gits
+: 1542794895:0;rm test.py
+: 1542794897:0;clear
+: 1542794898:0;gits
+: 1542794908:0;cat ../../Pipfile.lock
+: 1542794921:0;git add  ../../Pipfile.lock
+: 1542794935:0;git commit -m "[dep] Pipfile.lock added"
+: 1542794941:0;gits
+: 1542794943:0;cd ..
+: 1542794947:0;gits
+: 1542794950:0;clear
+: 1542794956:0;ls algo/dp
+: 1542794961:0;gits
+: 1542794970:0;git add algo/dp/edit_distance.py
+: 1542794984:0;git commit -m "[added] dp problems"
+: 1542794987:0;gpush
+: 1542794994:0;clear
+: 1542796189:0;vim test.py
+: 1542796340:0;python algo/dp/edit_distance.py
+: 1542796345:0;python test.py
+: 1542796842:0;yapf
+: 1542796845:0;black
+: 1542796853:0;python
+: 1542796960:0;python test.py
+: 1542797081:0;clear
+: 1542797085:0;rm test.py
+: 1542797087:0;clear
+: 1542797088:0;gits
+: 1542797094:0;ls
+: 1542797109:0;py.gi
+: 1542797113:0;ls
+: 1542797116:0;gits
+: 1542797121:0;git diff .gitignore
+: 1542797164:0;clear
+: 1542797166:0;gits
+: 1542797178:0;git add algo/dp/edit_distance.py
+: 1542797195:0;git commit -m "[updated] module docstring"
+: 1542797199:0;git add .gitignore
+: 1542797221:0;git commit -m "[gitignored] pythod stuffs"
+: 1542797224:0;gpush
+: 1542797236:0;clear
+: 1542798690:0;vim test.py
+: 1542798705:0;cd algo/dp
+: 1542798706:0;vim test.py
+: 1542799210:0;cdw
+: 1542799216:0;cd ethereal/assignment/ethereal
+: 1542799218:0;cd src
+: 1542799221:0;vim server.py
+: 1542801201:0;python test.py
+: 1542801351:0;vim test.py
+: 1542801411:0;clear
+: 1542801419:0;gits
+: 1542801427:0;clear
+: 1542801429:0;rm test.py
+: 1542801431:0;gits
+: 1542801437:0;clear
+: 1542801439:0;rm test.py
+: 1542801441:0;gits
+: 1542801446:0;git add algo/dp/edit_distance.py
+: 1542801466:0;git commit -m "[fixed] edit_distance issue"
+: 1542801468:0;gpush
+: 1542801475:0;clear
+: 1542801479:0;exit
+: 1542802825:0;gits
+: 1542802883:0;cdw
+: 1542802891:0;cd practice/g4g
+: 1542802893:0;gits
+: 1542861224:0;cdw
+: 1542861229:0;cd practice/g4g
+: 1542861231:0;clear
+: 1542861236:0;pes
+: 1542861240:0;clear
+: 1542861245:0;vim
+: 1542871094:0;vim test.py
+: 1542876408:0;cdw
+: 1542876414:0;cd talentica/assignment/photogram
+: 1542876417:0;cat Pipfile
+: 1542876420:0;cat Pipfile.lock
+: 1542876425:0;cat Pipfile.lock | grep django
+: 1542876468:0;clear
+: 1542876641:0;mv test.py /mnt/Other/E/workspace/mist/
+: 1542876644:0;clear
+: 1542891787:0;cdw
+: 1542891790:0;cd practice/g4g
+: 1542891792:0;pes
+: 1542891799:0;cd algo/dp
+: 1542891804:0;vim test.py
+: 1542892465:0;python test.py
+: 1542894696:0;vim test.py
+: 1542895186:0;clear
+: 1542895187:0;gits
+: 1542895195:0;rm algo/dp/test.py
+: 1542895200:0;git add algo/dp/knapsack_problem.py
+: 1542895231:0;git commit -m "[added] knapsack problem, need to return items"
+: 1542895233:0;gpush
+: 1542895241:0;exit
+: 1542895251:0;clear
+: 1542895254:0;exit
+: 1542895256:0;cdw
+: 1542895257:0;cd linux-tweaks
+: 1542895259:0;gits
+: 1542895263:0;bak
+: 1542895265:0;gits
+: 1542895267:0;gpull
+: 1542955938:0;cdw
+: 1542955940:0;cd practice/g4g
+: 1542955953:0;vim algo/dp/
+: 1542955974:0;cdw
+: 1542955976:0;cd linux-tweaks
+: 1542955978:0;vim
+: 1542963972:0;cdw
+: 1542963973:0;cd linux-tweaks
+: 1542963977:0;git branch
+: 1542963994:0;clear
+: 1542965010:0;copyq
+: 1542965017:0;sudo apt install copyq
+: 1543217332:0;xrandr
+: 1543217346:0;xrandr -o 0
+: 1543217353:0;xrandr -o 1
+: 1543217359:0;xrandr -o 0
+: 1543217556:0;clear
+: 1543217557:0;cdw
+: 1543217559:0;cd linux-tweaks
+: 1543217560:0;gits
+: 1543217565:0;bak
+: 1543217567:0;gits
+: 1543217571:0;stash
+: 1543217573:0;git stash
+: 1543217576:0;gpull
+: 1543217581:0;bak
+: 1543217584:0;gits
+: 1543217590:0;git diff backups/cinnamon_backup
+: 1543217602:0;git add backups/cinnamon_backup
+: 1543217630:0;git commit -m "[added] screen rotation key binding wit win+alt+arrow"
+: 1543217633:0;gpush
+: 1543217641:0;clear
+: 1543218374:0;cd practice/g4g
+: 1543218378:0;cdw
+: 1543218380:0;cd practice/g4g
+: 1543218440:0;pes
+: 1543218444:0;clear
+: 1543218447:0;tmux
+: 1543218460:0;sudo apt install tmux
+: 1543218473:0;tmux
+: 1543218494:0;:v
+: 1543218496:0;:wv
+: 1543218516:0;exit
+: 1543218519:0;tmux
+: 1543218682:0;which python
+: 1543218684:0;exit
+: 1543218690:0;clear
+: 1543218694:0;vim
+: 1543226080:0;python
+: 1543226712:0;cdw
+: 1543226713:0;cd practice/g4g
+: 1543226716:0;gits
+: 1543226720:0;git add algo/dp/knapsack_problem.py
+: 1543226749:0;git commit -m "[added] code to fetch candidate items"
+: 1543226759:0;git pull --rebase origin master
+: 1543226765:0;gpush
+: 1543226774:0;clear
+: 1543227141:0;gits
+: 1543227146:0;git add algo/dp/knapsack_problem.py
+: 1543227172:0;git commit -m "[update] added docstrings, removed un-used imports"
+: 1543227174:0;gpush
+: 1543227180:0;clear
+: 1543227888:0;git add algo/dp/knapsack_problem.py
+: 1543227899:0;git commit -m "[updated] docstrings"
+: 1543227901:0;gpush
+: 1543229448:0;gits
+: 1543229515:0;cd ~/.vim/bundle/vim-template
+: 1543229522:0;vim templates/=template=.py
+: 1543229547:0;vim 
+: 1543229878:0;vim templates/=template=.py
+: 1543229913:0;vim tej_pal.py
+: 1543230312:0;clear
+: 1543231225:0;vim
+: 1543231656:0;clear
+: 1543231658:0;gits
+: 1543231666:0;git add .
+: 1543231692:0;git commit -m "[added] %TITLE% variable"
+: 1543231698:0;git pull --rebase origin master
+: 1543231705:0;git pull --rebase author master
+: 1543231740:0;git remote add author git@github.com:aperezdc/vim-template
+: 1543231746:0;git pull --rebase author master
+: 1543231754:0;gpush
+: 1543231773:0;clear
+: 1543232275:0;cd ~/.vim/bundle/vim-template
+: 1543232280:0;vim templates/=template=.py
+: 1543232335:0;gits
+: 1543232340:0;git add templates/\=template=.py
+: 1543232368:0;git commit -m "[updated] TITLE area in single line"
+: 1543232370:0;gpush
+: 1543232380:0;git remote rm origin
+: 1543232388:0;git remote add origin git@github.com:toransahu/vim-template.git
+: 1543232390:0;gpush
+: 1543232397:0;clear
+: 1543233519:0;cdw
+: 1543233521:0;cd linux-tweaks
+: 1543233522:0;gits
+: 1543233525:0;gpull
+: 1543233529:0;bak
+: 1543233531:0;gits
+: 1543233533:0;res
+: 1543233535:0;gits
+: 1543234527:0;git add algo/dp/knapsack_problem.py
+: 1543234537:0;git commit -m "[updated] docstrings"
+: 1543234543:0;git add algo/dp/longest_common_substring.py
+: 1543234585:0;git commit -m "[initial] longest common substring sol"
+: 1543234587:0;gpush
+: 1543234595:0;exit
+: 1543234598:0;gits
+: 1543234797:0;sudo apt install chromium-browser
+: 1543303710:0;cat ~/paths.sh
+: 1543324071:0;clear
+: 1543324072:0;gits
+: 1543324074:0;cdw
+: 1543324076:0;cd linux-tweaks
+: 1543324077:0;gits
+: 1543324079:0;gpull
+: 1543401140:0;clear
+: 1543401142:0;cdw
+: 1543401144:0;cd linux-tweaks
+: 1543401148:0;gits
+: 1543401150:0;gpull
+: 1543401155:0;bak
+: 1543401157:0;gits
+: 1543401159:0;clear
+: 1543470838:0;sudo apt install postgresql redis protobuf
+: 1543471002:0;sudo apt install build-essential postgresql postgresql-client postgresql-server-dev-all python-dev redis-server libjpeg-dev libxml2-dev libxmlsec1-dev libxmlsec1-openssl elasticsearch
+: 1543471011:0;sudo apt install build-essential postgresql postgresql-client postgresql-server-dev-all python-dev redis-server libjpeg-dev libxml2-dev libxmlsec1-dev libxmlsec1-openssl 
+: 1543471081:0;wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.3.2.deb
+: 1543471112:0;dpkg -i elasticsearch-6.3.2.deb
+: 1543471115:0;sudo dpkg -i elasticsearch-6.3.2.deb
+: 1543471138:0;cdw
+: 1543471142:0;cd mist
+: 1543471143:0;ls
+: 1543471350:0;mkdir faq
+: 1543471355:0;rmdir faq
+: 1543471372:0;mkdir assignment
+: 1543471660:0;mv !(assignment) assignment
+: 1543471680:0;shopt -s extglob
+: 1543471742:0;mv !(assignment) assignment/
+: 1543471752:0;mv * assignment/
+: 1543471759:0;mv --help
+: 1543471812:0;mv * assignment
+: 1543471820:0;shopt -s extglob
+: 1543471828:0;sudo apt install shopt
+: 1543471951:0;bash
+: 1543471978:0;shopt
+: 1543471995:0;setopt
+: 1543472010:0;vim ~/.zshrc
+: 1543472019:0;vim ~/.bashrc
+: 1543472092:0;exec bash
+: 1543472102:0;setopt
+: 1543472105:0;shopt
+: 1543472184:0;clear
+: 1543472191:0;setopt -s extglob
+: 1543472225:0;setopt extendedglob
+: 1543472230:0;mv !(assignment) assignment/
+: 1543472285:0;setopt extended_glob
+: 1543472296:0;mv ^assignment assignment/
+: 1543472308:0;mv !(assignment) assignment/
+: 1543472329:0;mv -- assignment assignment/
+: 1543472359:0;clear
+: 1543472370:0;find . mindepth 1
+: 1543472384:0;ls assignment
+: 1543472387:0;ls
+: 1543472395:0;mv .idea assignment
+: 1543472397:0;clear
+: 1543472527:0;git clone git@github.com:mistsys/demoapi.git
+: 1543473398:0;cd demoapi
+: 1543473411:0;pipenv install 
+: 1543473693:0;pip install futures==3.2.0
+: 1543473842:0;pes
+: 1543473847:0;clear
+: 1543473855:0;pip install -U pip
+: 1543473861:0;pip install futures==3.2.0
+: 1543473877:0;pip install -r requirements.txt
+: 1543473934:0;clear
+: 1543473941:0;vim ../TODO.md
+: 1543474359:0;/etc/init.d/postgresql start
+: 1543474370:0;su postgres
+: 1543474383:0;sudo postgres
+: 1543474395:0;postgres
+: 1543474400:0;su postgres
+: 1543474437:0;passwd su
+: 1543474453:0;sudo -i
+: 1543474485:0;su postgres
+: 1543474551:0;su - postgres
+: 1543475430:0;sudo -i -u postgres
+: 1543475767:0;clear
+: 1543475769:0;cdw
+: 1543475772:0;cd mist
+: 1543475775:0;vim TODO.md
+: 1543476143:0;clear
+: 1543476150:0;su postgres
+: 1543476229:0;clear
+: 1543476238:0;vim /etc/postgresql/10/main/pg_hba.conf
+: 1543476245:0;sudo vim /etc/postgresql/10/main/pg_hba.conf
+: 1543476341:0;sudo -u postgres psql
+: 1543476372:0;sudo -u demoapi psql
+: 1543476378:0;sudo -u postgres psql
+: 1543476498:0;clear
+: 1543476514:0;ls tools/scripts
+: 1543476517:0;cat tools/scripts
+: 1543476602:0;clear
+: 1543476620:0;whereis postgres
+: 1543476690:0;cat /etc/postgresql/10/main/postgresql.conf
+: 1543476702:0;sudo -u postgres psql
+: 1543476720:0;ls  /var/lib/postgresql/10/main
+: 1543476729:0;sudo ls  /var/lib/postgresql/10/main
+: 1543476738:0;cat /etc/postgresql/10/main/postgresql.conf
+: 1543476783:0;cat /etc/postgresql/10/main/postgresql.conf | grep data
+: 1543476794:0;sudo ls  /var/lib/postgresql/10/main
+: 1543476839:0;cd /var/lib/postgresql/10/main/
+: 1543476841:0;sudo cd /var/lib/postgresql/10/main/
+: 1543476850:0;sudo cd /var/lib/postgresql/10/
+: 1543476852:0;cd /var/lib/postgresql/10/
+: 1543476856:0;ls
+: 1543476860:0;cd main
+: 1543476881:0;find demoapi
+: 1543476883:0;clear
+: 1543476895:0;postgres -D sb &
+: 1543476902:0;postgres -D sb
+: 1543476911:0;clear
+: 1543476914:0;ls main
+: 1543476917:0;sudo ls main
+: 1543476924:0;cd ..
+: 1543476948:0;redis-server &
+: 1543476998:0;elasticsearch
+: 1543477032:0;cdw
+: 1543477034:0;cd mist
+: 1543477043:0;sudo vim  /etc/elasticsearch/elasticsearch.yml 
+: 1543477171:0;cd demoapi
+: 1543477172:0;clear
+: 1543477181:0;wget https://github.com/google/protobuf/releases/download/v3.1.0/protobuf-python-3.1.0.tar.gz
+: 1543477192:0;tar -zxvf protobuf-python-3.1.0.tar.gz
+: 1543477197:0;cd protobuf-3.1.0
+: 1543477227:0;ln -s /usr/local/lib src/.libs
+: 1543477232:0;cd python
+: 1543477258:0;python setup.py install --cpp_implementation
+: 1543477474:0;which python
+: 1543477485:0;ls
+: 1543477489:0;ls google
+: 1543477493:0;ls google/protobuf
+: 1543477502:0;python setup.py install --cpp_implementation
+: 1543477580:0;pip install --cpp_implementation protobuf==3.1.0
+: 1543477591:0;pip install  protobuf==3.1.0
+: 1543477607:0;python setup.py install --cpp_implementation
+: 1543477741:0;cd ..
+: 1543477743:0;..
+: 1543477759:0;pm migrate
+: 1543477773:0;tools/scripts pm migrate
+: 1543477782:0;python manage.py migrate
+: 1543481615:0;su postgres
+: 1543481623:0;su
+: 1543481707:0;clear
+: 1543481873:0;postgres
+: 1543481876:0;sudo postgres
+: 1543481885:0;psql
+: 1543481894:0;su
+: 1543482368:0;clear
+: 1543482370:0;su
+: 1543482391:0;clear
+: 1543482399:0;python manage.py migrate
+: 1543482498:0;pipenv install protobuf==3.6.0
+: 1543482525:0;pipenv show 
+: 1543482540:0;pipenv run pip show protobuf
+: 1543482544:0;python manage.py migrate
+: 1543482675:0;cd protobuf-3.1.0
+: 1543482681:0;cd python
+: 1543482690:0;ls
+: 1543482699:0;python setup.py install --cpp_implementation
+: 1543482711:0;protoc
+: 1543482926:0;sudo apt-get install autoconf automake libtool curl make g++ unzip
+: 1543482950:0;ls ../
+: 1543482966:0;python setup.py install --cpp_implementation
+: 1543482970:0;cd ..
+: 1543482973:0;./autogen.sh
+: 1543483006:0;./configure
+: 1543483025:0;make
+: 1543483240:0;man make
+: 1543483477:0;sudo make
+: 1543483550:0;cdw
+: 1543483553:0;cd mist/demoapi
+: 1543483555:0;pes
+: 1543483557:0;clear
+: 1543483563:0;pm test
+: 1543484045:0;sudo make check
+: 1543484988:0;sudo make install
+: 1543485024:0;xpython setup.py install --cpp_implementation
+: 1543485027:0;cd python
+: 1543485029:0;python setup.py install --cpp_implementation
+: 1543485353:0;cd ..
+: 1543485367:0;mv -r protobuf-
+: 1543485377:0;mv -r protobuf-3.1.0 protobuf-3.1.0.bak
+: 1543485382:0;mv  protobuf-3.1.0 protobuf-3.1.0.bak
+: 1543485388:0;wget https://github.com/google/protobuf/releases/download/v3.1.0/protobuf-python-3.1.0.tar.gz
+: 1543485399:0;tar -zxvf protobuf-python-3.1.0.tar.gz
+: 1543485402:0;cd protobuf-3.1.0
+: 1543485431:0;ln -s /usr/local/lib src/.libs
+: 1543485437:0;cd python
+: 1543485441:0;python setup.py install --cpp_implementation
+: 1543485770:0;ls
+: 1543485782:0;find . -name protoc
+: 1543485826:0;pwd
+: 1543485833:0;ls
+: 1543485841:0;vim setup.cfg
+: 1543485855:0;cat setup.py
+: 1543486016:0;find . -name protoc
+: 1543486049:0;cd ../
+: 1543486052:0;ls
+: 1543486062:0;find . -name protoc
+: 1543486082:0;cd src/.libs
+: 1543486084:0;ls
+: 1543486097:0;find . -name protoc
+: 1543486123:0;cd -
+: 1543486130:0;cd python
+: 1543486130:0;ls
+: 1543486180:0;ls -ltrh
+: 1543486188:0;cd ../src
+: 1543486194:0;ls protoc
+: 1543486204:0;ls .libs/protoc
+: 1543486284:0;cd ../../
+: 1543486288:0;cd protobuf-3.1.0.bak
+: 1543486289:0;ls
+: 1543486293:0;cd src
+: 1543486295:0;ls
+: 1543486303:0;cd ..
+: 1543486314:0;mv protobuf-3.1.0 protobuf-3.1.0.bak2
+: 1543486322:0;mv protobuf-3.1.0.bak protobuf-3.1.0
+: 1543486329:0;cd protobuf-3.1.0/python
+: 1543486332:0;python setup.py install --cpp_implementation
+: 1543486423:0;vim setup.py
+: 1543486587:0;cd ..
+: 1543486610:0;mv protobuf-3.1.0 protobuf-3.1.0.bak_compiled
+: 1543486612:0;ls
+: 1543486626:0;mv protobuf-3.1.0.bak2 protobuf-3.1.0
+: 1543486678:0;export PROTOC=/mnt/Other/E/workspace/mist/demoapi/protobuf-3.1.0/src/.libs/protoc
+: 1543486684:0;cd protobuf-3.1.0/python
+: 1543486686:0;python setup.py install --cpp_implementation
+: 1543486757:0;ls /mnt/Other/E/workspace/mist/demoapi/protobuf-3.1.0/src/.libs/protoc
+: 1543486807:0;vim setup.py
+: 1543486927:0;cd ../
+: 1543486929:0;ls
+: 1543486959:0;find . -name protoc.exe
+: 1543486971:0;find . -name "protoc.exe"
+: 1543486975:0;find . -name "protoc"
+: 1543486998:0;vim README.md
+: 1543487143:0;cd /usr/local/lib
+: 1543487147:0;ls
+: 1543487196:0;export PROTOC=/usr/local/lib/protoc
+: 1543487204:0;cdw
+: 1543487207:0;cd mist/demoapi
+: 1543487214:0;cd protobuf-3.1.0/python
+: 1543487217:0;python setup.py install --cpp_implementation
+: 1543487250:0;export PROTOC=/usr/local/lib
+: 1543487252:0;python setup.py install --cpp_implementation
+: 1543487262:0;export PROTOC=/usr/local/lib/protoc
+: 1543487265:0;python setup.py install --cpp_implementation
+: 1543487302:0;ls /usr/local/lib
+: 1543487416:0;vim setup.py
+: 1543487507:0;whoami
+: 1543487579:0;chmod +u ../src/.libs/libprotoc.so.11
+: 1543487611:0;chmod +u /usr/local/lib/libprotobuf-lite.so.11
+: 1543487622:0;chmod +u /usr/local/lib/libprotobuf-lite.so.11.0.0
+: 1543487632:0;sudo
+: 1543487636:0;sudo su
+: 1543487741:0;cdw
+: 1543487744:0;cd mist/demoapi
+: 1543487746:0;pes
+: 1543488383:0;clear
+: 1543488388:0;cd ....
+: 1543488391:0;cd demoapi
+: 1543488407:0;mv protobuf-3.1.0 protobuf-3.1.0.bak2
+: 1543488428:0;mv protobuf-python-3.6.1.tar.gz /mnt/Other/E/workspace/mist/demoapi
+: 1543488435:0;tar -zxvf protobuf-python-3.6.1.tar.gz
+: 1543488476:0;cd protobuf-3.6.1
+: 1543488483:0;ln -s /usr/local/lib src/.libs
+: 1543488488:0;cd python
+: 1543488490:0;python setup.py install --cpp_implementation
+: 1543488497:0;sudo apt update
+: 1543488515:0;sudo apt upgrade
+: 1543488610:0;sudo apt install protoc
+: 1543488613:0;sudo apt install protobuf
+: 1543488694:0;cd ..
+: 1543488711:0;ls
+: 1543488732:0;ls src
+: 1543488805:0;ls apt-get install protobuf-compiler
+: 1543488810:0;apt-get install protobuf-compiler
+: 1543488812:0;sudo apt-get install protobuf-compiler
+: 1543488840:0;vim cd ..
+: 1543488845:0;exit
+: 1543488847:0;cd ..
+: 1543488850:0;vim TODO.md
+: 1543488928:0;clear
+: 1543488935:0;ls /usr/local/lib
+: 1543488944:0;clear
+: 1543488992:0;cd ..
+: 1543488995:0;pm migrate
+: 1543489001:0;pm
+: 1543489013:0;t
+: 1543489019:0;pm migrate
+: 1543489025:0;. ~/.bash_aliases 
+: 1543489026:0;pm migrate
+: 1543489029:0;clear
+: 1543489036:0;vim ~/.bash_aliases 
+: 1543489057:0;aliasit pm "python manage.py"
+: 1543489060:0;pm migrate
+: 1543489074:0;cdw
+: 1543489076:0;cd mist/demoapi
+: 1543489078:0;pes
+: 1543489080:0;clear
+: 1543489086:0;pm migrate
+: 1543489105:0;pm makemigrations
+: 1543489108:0;pm migrate
+: 1543489126:0;pm test --failfast demoapi.core.tests.TestMetrics.test_stopwatch
+: 1543489433:0;pgadmin4
+: 1543489474:0;sudo apt install pgadmin4
+: 1543489478:0;sudo apt install pgadmin3
+: 1543489521:0;sudo apt-get install curl ca-certificates
+: 1543489526:0;curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+: 1543489549:0;sudo apt-get update
+: 1543489573:0;sudo apt-get install postgresql-11 pgadmin4
+: 1543489578:0;sudo apt-get install pgadmin4
+: 1543489619:0;uname -a
+: 1543489637:0;lsb_release -c
+: 1543489659:0;sudo vim /etc/apt/sources.list.d/pgdg.list
+: 1543489682:0;sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+: 1543489687:0;sudo apt-get update
+: 1543489695:0;sudo apt-get install pgadmin4
+: 1543490650:0;pm test --failfast
+: 1543490791:0;pm runserver
+: 1543490860:0;clear
+: 1543490861:0;pm runserver
+: 1543490898:0;cd demoapi
+: 1543490900:0;pes
+: 1543490907:0;vim /mnt/Other/E/workspace/mist/demoapi/demoapi/sites/wayfinding/jibestream.py
+: 1543491041:0;pm runserver
+: 1543491064:0;clear
+: 1543491075:0;pm test --failfast
+: 1543491271:0;cd
+: 1543491272:0;cdw
+: 1543491274:0;cd mist
+: 1543491276:0;vim TODO.md
+: 1543492234:0;pes
+: 1543492240:0;pm runserver
+: 1543494164:0;vim TODO.md
+: 1543496220:0;cd demoapi
+: 1543496223:0;clear
+: 1543496435:0;gits
+: 1543496476:0;cat demoapi/sites/wayfinding/Pipfile
+: 1543496484:0;rm demoapi/sites/wayfinding/Pipfile
+: 1543496488:0;clear
+: 1543496490:0;gits
+: 1543496504:0;vim .gitignore
+: 1543496640:0;vim demoapi/auth/migrations/0020_auto_20181129_1058.py
+: 1543496667:0;git add Pipfile*
+: 1543496690:0;git commit -m "[dep] using pipenv as dependency manager"
+: 1543496692:0;gits
+: 1543496702:0;git diff demoapi/api/tests.py
+: 1543496787:0;git diff demoapi/sites/wayfinding/jibestream.py
+: 1543496805:0;vim ~/.vimrc
+: 1543496811:0;cdw
+: 1543496812:0;cd linux-tweaks
+: 1543496814:0;gits
+: 1543496818:0;bak
+: 1543496819:0;gits
+: 1543496853:0;cdw
+: 1543496855:0;cd linux-tweaks
+: 1543496856:0;gits
+: 1543496863:0;bak
+: 1543496864:0;gits
+: 1543496870:0;git add backups/.bash_aliases
+: 1543496886:0;git commit -m "[added] alias pm for python manage.py"
+: 1543496891:0;git add backups/.vimrc
+: 1543496913:0;git commit -m "[update] disabled autofix by ale/black on save"
+: 1543496915:0;gpush
+: 1543496929:0;git checkout demoapi/sites/wayfinding/jibestream.py
+: 1543496967:0;clear
+: 1543496968:0;gits
+: 1543496975:0;git diff demoapi/sites/wayfinding/jibestream.py
+: 1543497002:0;git checkout demoapi/sites/wayfinding/jibestream.py
+: 1543497005:0;clear
+: 1543497007:0;vim
+: 1543497032:0;clear
+: 1543497039:0;gits
+: 1543497042:0;git diff demoapi/sites/wayfinding/jibestream.py
+: 1543497073:0;git add demoapi/sites/wayfinding/jibestream.py
+: 1543497122:0;git commit -m "[update] changed to relative import syntax while importing vendor"
+: 1543497124:0;clear
+: 1543497125:0;gits
+: 1543497149:0;rm demoapi/auth/migrations/Pipfile
+: 1543497160:0;rm demoapi/sites/wayfinding/Pipfile
+: 1543497164:0;clear
+: 1543497165:0;gits
+: 1543497179:0;git checkout demoapi/api/tests.py
+: 1543497209:0;gits
+: 1543497222:0;git diff demoapi/api/tests.py
+: 1543497230:0;git add demoapi/api/tests.py
+: 1543497336:0;git commit -m "[updated] 1st param string in test_api_doc_eu() to bytes literaldue to python3"
+: 1543497342:0;git add demoapi/api/tests.py
+: 1543497347:0;gits
+: 1543497361:0;clear
+: 1543497364:0;gits
+: 1543497378:0;git pull --rebase origin master
+: 1543497410:0;git checkout -b explore
+: 1543497429:0;git checkout master
+: 1543497432:0;git stash
+: 1543497436:0;glog
+: 1543497469:0;git reset HEAD~ 
+: 1543497471:0;gits
+: 1543497488:0;git checkout demoapi/api/tests.py
+: 1543497491:0;glog
+: 1543497496:0;git reset HEAD~ 
+: 1543497500:0;gits
+: 1543497509:0;git checkout demoapi/sites/wayfinding/jibestream.py
+: 1543497511:0;glog
+: 1543497516:0;git reset HEAD~ 
+: 1543497518:0;gits
+: 1543497525:0;clear
+: 1543497526:0;glog
+: 1543497532:0;clear
+: 1543497541:0;git checkout explore
+: 1543497552:0;clear
+: 1543497566:0;git checkout Pipe*
+: 1543497572:0;clear
+: 1543497580:0;git checkout explore
+: 1543497594:0;rm Pipfile*
+: 1543497595:0;git checkout explore
+: 1543497597:0;clear
+: 1543559948:0;cdw
+: 1543559951:0;cd mist/demoapi
+: 1543559954:0;ls
+: 1543559958:0;clear
+: 1543559959:0;gits
+: 1543559974:0;git pull --rebase origin master
+: 1543559982:0;clear
+: 1543559988:0;git checkout explore
+: 1543559993:0;clear
+: 1543559994:0;pes
+: 1543559998:0;clear
+: 1543560001:0;gits
+: 1543560002:0;glog
+: 1543560062:0;pm test --failfast
+: 1543560078:0;cdw
+: 1543560081:0;cd mist/demoapi
+: 1543560082:0;pes
+: 1543560089:0;pm runserver
+: 1543560180:0;pm test
+: 1543560391:0;redis-server &
+: 1543560403:0;/etc/init.d/postgresql start
+: 1543560441:0;pm test --failfast demoapi.core.tests.TestMetrics.test_stopwatch
+: 1543560517:0;pm test --failfast demoapi.core.tests.TestMetrics
+: 1543560570:0;pm test --failfast
+: 1543560645:0;cdw
+: 1543560647:0;cd mist/demoapi
+: 1543560649:0;pes
+: 1543560651:0;vim
+: 1543561063:0;git checkout master
+: 1543561077:0;git pull --rebase origin master
+: 1543561084:0;git checkout master
+: 1543561087:0;clear
+: 1543561091:0;git checkout explore
+: 1543561098:0;pm test --failfast
+: 1543561205:0;git checkout master
+: 1543561213:0;pm test --failfast
+: 1543563490:0;vim failed_tests_details.md
+: 1543563890:0;vim
+: 1543563918:0;pm test --failfast
+: 1543568686:0;gits
+: 1543568696:0;git diff demoapi/sites/wayfinding/jibestream.py
+: 1543569574:0;sudo apt install openvpn
+: 1543569889:0;sudo /usr/sbin/openvpn --config ~/openVpn/toran.sahu@mistsys.com_stag.tar.gz
+: 1543569957:0;openvpn --genkey --secret static-OpenVPN.key
+: 1543570035:0;sudo /usr/sbin/openvpn --config ~/openVpn/toran.sahu@mistsys.com_stag/staging-toran.sahu@mistsys.com.ovpn
+: 1543570070:0;sudo apt-get install openvpn-systemd-resolved
+: 1543570081:0;sudo service systemd-resolved status
+: 1543570102:0;vim ~/openVpn/toran.sahu@mistsys.com_stag/staging-toran.sahu@mistsys.com.ovpn
+: 1543570194:0;sudo /usr/sbin/openvpn --config ~/openVpn/toran.sahu@mistsys.com_stag/staging-toran.sahu@mistsys.com.ovpn
+: 1543570281:0;sudo openvpn --config ~/openVpn/toran.sahu@mistsys.com_stag/staging-toran.sahu@mistsys.com.ovpn
+: 1543570302:0;cd ~/openVpn/toran.sahu@mistsys.com_stag
+: 1543570323:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1543570572:0;cd ~/openVpn/toran.sahu@mistsys.com_prod
+: 1543570583:0;sudo openvpn --config production-toran.sahu@mistsys.com.ovpn
+: 1543570599:0;vim production-toran.sahu@mistsys.com.ovpn
+: 1543570646:0;sudo openvpn --config production-toran.sahu@mistsys.com.ovpn
+: 1543572876:0;vim failed_tests_details.md
+: 1543573334:0;git checkout explore
+: 1543573384:0;gits
+: 1543573397:0;git checout demoapi/api/tests.py
+: 1543573402:0;git checkout demoapi/api/tests.py
+: 1543573407:0;git checkout demoapi/sites/wayfinding/jibestream.py
+: 1543573409:0;clear
+: 1543573410:0;gits
+: 1543573419:0;git checkout explore
+: 1543573545:0;pm test --failfast
+: 1543573927:0;python
+: 1543574138:0;pm test --failfast
+: 1543575118:0;ifconfig
+: 1543575159:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1543575240:0;kafka
+: 1543575245:0;kafkad
+: 1543575291:0;redis-cli -h redis-marvis-staging.mistsys.net
+: 1543575321:0;sudo openvpn --config production-toran.sahu@mistsys.com.ovpn
+: 1543575344:0;redis-cli -h redis-marvis-production.mistsys.net
+: 1543576155:0;pm test --failfast
+: 1543577162:0;vim failed_tests_details.md
+: 1543577243:0;pm test
+: 1543577315:0;pm test > test_out.txt
+: 1543577546:0;mv failed_tests_details.md ~/Desktop
+: 1543577574:0;clear
+: 1543577588:0;cd Desktop
+: 1543577591:0;vim failed_tests_details.md
+: 1543578702:0;pm test --failfast demoapi.core.tests.TestMetrics.test_stopwatch
+: 1543578783:0;pm test > test_out.txt
+: 1543578934:0;cdw
+: 1543578936:0;cd mist
+: 1543578940:0;git clone git@github.com:mistsys/mist-ap.git
+: 1543579029:0;cd mist-ap/cmd/kafkaclient
+: 1543579033:0;go
+: 1543579123:0;tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
+: 1543579128:0;sudo tar -C /usr/local -xzf go1.11.2.linux-amd64.tar.gz
+: 1543579160:0;vim ~/.profile
+: 1543579176:0;. ~/.profile
+: 1543579186:0;vim hello.go
+: 1543579287:0;mkdir ~/go
+: 1543579296:0;mv hello.go ~/go
+: 1543579301:0;cd ~/go
+: 1543579311:0;mkdir -p src/hello
+: 1543579317:0;mv hello.go src/hello
+: 1543579320:0;cd src/hello
+: 1543579325:0;go build
+: 1543579329:0;./hello
+: 1543579355:0;cd ..
+: 1543579375:0;mkdir -p github.com/mistsys
+: 1543579379:0;cd github.com/mistsys
+: 1543579399:0;cp -r /mnt/Other/E/workspace/mist/mist-ap ./
+: 1543579413:0;cd mist-ap/cmd/kafkaclient
+: 1543579421:0;go get -u -v
+: 1543579529:0;go install
+: 1543579561:0;sudo go install
+: 1543579565:0;go install
+: 1543579614:0;cd ..
+: 1543579622:0;rm -r mist-ap
+: 1543579639:0;mkdir -p mist-ap/cmd/kafkaclient
+: 1543579648:0;ls
+: 1543579659:0;cd mist-ap/cmd/kafkaclient
+: 1543579663:0;go get -u -v
+: 1543579685:0;cd ..
+: 1543579691:0;rm -r mist-ap
+: 1543579747:0;git clone git@github.com:mistsys/mist-ap.git
+: 1543579852:0;cd mist-ap/cmd/kafkaclient
+: 1543579856:0;go get -u -v
+: 1543580086:0;go install
+: 1543580118:0;export PATH=$PATH:/usr/local/go/bin
+: 1543580119:0;go install
+: 1543580146:0;~/go/bin/kafkaclient
+: 1543580164:0;bash
+: 1543580249:0;cd ~/openVpn/toran.sahu@mistsys.com_prod
+: 1543580257:0;sudo openvpn --config production-toran.sahu@mistsys.com.ovpn
+: 1543586744:0;pandoc
+: 1543586751:0;sudo apt install pandoc
+: 1543586848:0;exit
+: 1543586864:0;gits
+: 1543587515:0;cd ~/go/src/github.com/mistsys/mist-ap/cmd/kafkaclient
+: 1543587586:0;cd ~/go
+: 1543587588:0;ls
+: 1543587592:0;cd src
+: 1543587593:0;ls
+: 1543587600:0;cd github.com
+: 1543587601:0;ls
+: 1543587622:0;export
+: 1543587655:0;vim ~/.profile
+: 1543587775:0;sudo ls /usr/local/go/bin
+: 1543587807:0;cd mistsys/mist-ap/cmd/kafkaclient
+: 1543587809:0;ls
+: 1543587842:0;go install
+: 1543587866:0;go get ...
+: 1543587872:0;go get
+: 1543587913:0;echo $GOROOT
+: 1543587917:0;echo $GOPATH
+: 1543587967:0;export GOPATH=~/go/src
+: 1543587986:0;go install
+: 1543587993:0;go get -u -v
+: 1543588044:0;vim ~/.zshrc
+: 1543588062:0;. ~/.zshrc
+: 1543588064:0;clear
+: 1543588068:0;cd ..
+: 1543588070:0;..
+: 1543588075:0;cd mistsys
+: 1543588084:0;rm -r mist-ap
+: 1543588095:0;sudo rm -r mist-ap
+: 1543588112:0;git clone git@github.com:mistsys/mist-ap.git
+: 1543588125:0;cd mist-ap/cmd/kafkaclient
+: 1543588130:0;go get -u -v
+: 1543588160:0;go install
+: 1543588242:0;go build
+: 1543588277:0;cd ~/go/src/github.com/mistsys
+: 1543588280:0;git clone git@github.com:mistsys/mist_go_utils.git
+: 1543588290:0;go install
+: 1543588328:0;git clone git@github.com:mistsys/mist-wlc.git
+: 1543588349:0;git clone git@github.com:mistsys/raidman.git
+: 1543588355:0;go install
+: 1543588379:0;git clone git@github.com:mistsys/mist-tunterm.git
+: 1543588388:0;clear
+: 1543588393:0;go install
+: 1543588426:0;cd ..
+: 1543588429:0;git clone git@github.com:golang/protobuf.git
+: 1543588440:0;mkdir golang
+: 1543588446:0;cd golang
+: 1543588449:0;git clone git@github.com:golang/protobuf.git
+: 1543588474:0;go install
+: 1543588506:0;cd ..
+: 1543588516:0;cd nsd20463
+: 1543588520:0;git clone git@github.com:nsd20463/gmx.git
+: 1543588528:0;go install
+: 1543588545:0;git clone git@github.com:nsd20463/loghistogram.git
+: 1543588551:0;go install
+: 1543588575:0;cd ../pkg
+: 1543588579:0;cd ..
+: 1543588581:0;mkdir pkg
+: 1543588584:0;cd pkg
+: 1543588586:0;git clone git@github.com:pkg/errors.git
+: 1543588593:0;go install
+: 1543588713:0;cd ..
+: 1543588733:0;mkdir -p golang.org/x/
+: 1543588738:0;cd golang.org/x
+: 1543588742:0;git clone git@github.com:golang/net.git
+: 1543588752:0;go install
+: 1543588764:0;cd ..
+: 1543588778:0;mv github.com/golang.org ./
+: 1543588779:0;ls
+: 1543588783:0;go install
+: 1543588819:0;~/go/bin/kafkaclient
+: 1543588871:0;cd ~/openVpn/toran.sahu@mistsys.com_prod
+: 1543588879:0;sudo openvpn --config production-toran.sahu@mistsys.com.ovpn
+: 1543588887:0;~/go/bin/kafkaclient
+: 1543588903:0;~/go/bin/kafkaclient ls
+: 1543589065:0;cdw
+: 1543589067:0;cd linux-tweaks
+: 1543589068:0;gits
+: 1543589070:0;gpull
+: 1543589095:0;bak
+: 1543589096:0;gits
+: 1543589103:0;git add backups/.zshrc
+: 1543589112:0;git commit -m "[added] go path"
+: 1543589114:0;gpush
+: 1543817365:0;cdw
+: 1543817369:0;cd linux-tweaks
+: 1543817370:0;gits
+: 1543817373:0;bak
+: 1543817376:0;gits
+: 1543817378:0;clear
+: 1543817379:0;gpull
+: 1543817385:0;clear
+: 1543817387:0;gits
+: 1543817389:0;ls
+: 1543817394:0;ls configs/thunderbird
+: 1543817398:0;res
+: 1543817401:0;clear
+: 1543817403:0;gits
+: 1543817422:0;vim ~/.profile
+: 1543817434:0;sdkman
+: 1543817436:0;sdk
+: 1543817448:0;sdk install java
+: 1543817457:0;clear
+: 1543817653:0;cdw
+: 1543817656:0;cd mist
+: 1543817657:0;ls
+: 1543817667:0;mv demoapi demoapi-py3
+: 1543817670:0;clear
+: 1543817681:0;git clone git@github.com:mistsys/demoapi.git
+: 1543817736:0;cd demoapi
+: 1543817754:0;man virtualenv 
+: 1543817760:0;virtualenv --help
+: 1543817791:0;virtualenv --python=python2 venv
+: 1543817802:0;ls 
+: 1543817805:0;ls  venv
+: 1543817809:0;clear
+: 1543817818:0;./venv/bin/activate
+: 1543817824:0;clear
+: 1543817841:0;. ./venv/bin/activate
+: 1543817843:0;clear
+: 1543817855:0;pip install -r requirements.txt
+: 1543817904:0;cdw
+: 1543817907:0;cd mist
+: 1543817908:0;ls
+: 1543817919:0;git clone git@github.com:mistsys/marvis
+: 1543817958:0;cdw
+: 1543817996:0;clear
+: 1543818018:0;pm --failfast test
+: 1543818034:0;pm test --failfast
+: 1543818063:0;git clone git@github.com:mistsys/mobius.git
+: 1543818066:0;cd mist
+: 1543818069:0;cd mobius
+: 1543818110:0;ls
+: 1543818118:0;clear
+: 1543818121:0;cd marvis
+: 1543818127:0;virtualenv --python=python2 venv
+: 1543818134:0;. ./venv/bin/activate
+: 1543818138:0;pip install -r requirements.txt
+: 1543818142:0;ls
+: 1543818153:0;ls Dockerfile
+: 1543818169:0;./run-test.sh
+: 1543818174:0;cat run-test.sh
+: 1543818269:0;redis-server &
+: 1543818312:0;/etc/init.d/postgresql start
+: 1543818324:0;clear
+: 1543818327:0;pm test --failfast
+: 1543818729:0;clear
+: 1543818735:0;deactivate
+: 1543818755:0;clear
+: 1543819138:0;ls
+: 1543819141:0;gits
+: 1543819151:0;cdw
+: 1543819155:0;cd mist/demoapi
+: 1543819161:0;vim .gitignore
+: 1543819171:0;gits
+: 1543819184:0;clear
+: 1543819191:0;deactivate
+: 1543819198:0;rm -r venv
+: 1543819199:0;clear
+: 1543819213:0;cd storm/py/common
+: 1543819218:0;cd -
+: 1543819220:0;vim
+: 1543819407:0;vim ~/.vimrc
+: 1543819435:0;vim
+: 1543819664:0;mv storm/py/common/papi.py ../
+: 1543819668:0;gits
+: 1543819745:0;git checkout -b MIST-19537
+: 1543819749:0;clear
+: 1543819763:0;mv ../papi.py storm/py/common
+: 1543819765:0;vim
+: 1543819814:0;cdw
+: 1543819819:0;cd mist
+: 1543819844:0;mkdir expore-generic-cache
+: 1543819848:0;cd expore-generic-cache
+: 1543819870:0;pe --two install GenericCache
+: 1543819884:0;pes
+: 1543819886:0;clear
+: 1543819888:0;ls
+: 1543819896:0;which python
+: 1543819939:0;~/.local/share/virtualenvs/expore-generic-cache-kOLtOwGm/lib/python2.7/site-packages/GenericCache/
+: 1543819943:0;clear
+: 1543819945:0;vim
+: 1543820106:0;cd ~/.vim/bundle/vim-template
+: 1543820107:0;gits
+: 1543820111:0;gpull
+: 1543820114:0;clear
+: 1543820116:0;vim
+: 1543820859:0;python
+: 1543821031:0;clear
+: 1543821037:0;vim temp.py
+: 1543821690:0;python
+: 1543821723:0;clear
+: 1543821727:0;python temp.py
+: 1543821733:0;vim temp.py
+: 1543821757:0;python temp.py
+: 1543821762:0;vim temp.py
+: 1543821770:0;python temp.py
+: 1543821774:0;vim temp.py
+: 1543823590:0;python2
+: 1543823604:0;which python2
+: 1543823616:0;clear
+: 1543823720:0;virtualenv --python=python2 venv
+: 1543823726:0;. ./venv/bin/activate
+: 1543823731:0;vim
+: 1543823884:0;cd ~/.vim/bundle/YouCompleteMe
+: 1543823886:0;ls
+: 1543823894:0;python2 install.py
+: 1543823938:0;vim storm/py/common/papi.py
+: 1543824006:0;python2 -m pip
+: 1543824086:0;sudo easy_install pip2
+: 1543824121:0;python -m pip
+: 1543824125:0;python2.7 -m pip
+: 1543824151:0;sudo apt-get install python-pip
+: 1543824179:0;python2.7 -m pip
+: 1543824194:0;python2.7 -m pip install flake8
+: 1543824202:0;python2.7 -m pip install black
+: 1543824215:0;pip list
+: 1543824236:0;python2.7 -m pip install pydocstyle
+: 1543824245:0;python2.7 -m pip install isort
+: 1543824257:0;python2.7 -m pip install black
+: 1543824286:0;vim storm/py/common/papi.py
+: 1543824312:0;vim temp.py
+: 1543824352:0;cdw
+: 1543824369:0;cd mist
+: 1543824370:0;ls
+: 1543824373:0;cd assignment
+: 1543824373:0;ls
+: 1543824384:0;cd ../../talentica/assignment/photogram
+: 1543824386:0;pes
+: 1543824389:0;vim
+: 1543824413:0;exit
+: 1543824418:0;vim temp.py
+: 1543830777:0;python2.7 -m pip install genericcache
+: 1543831176:0;python
+: 1543831182:0;deactivate
+: 1543831185:0;. ./venv/bin/activate
+: 1543831187:0;clear
+: 1543831194:0;python -m pip
+: 1543831202:0;python -m pip install genericcache
+: 1543831210:0;clear
+: 1543831212:0;vim
+: 1543831217:0;vim storm/py/common/papi.py
+: 1543833539:0;python -m pip install requests
+: 1543833542:0;vim storm/py/common/papi.py
+: 1543834423:0;python -m pip install redis
+: 1543834426:0;vim storm/py/common/papi.py
+: 1543834696:0;python2
+: 1543836729:0;cdw
+: 1543836733:0;cd mist/marvis
+: 1543836737:0;. ./venv/bin/activate
+: 1543836740:0;python
+: 1543836858:0;cd openVpn/toran.sahu@mistsys.com_stag
+: 1543836865:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1543843404:0;clear
+: 1543843412:0;git pull --rebase origin master
+: 1543843419:0;gits
+: 1543843427:0;ls
+: 1543843448:0;git add storm/py/common/papi.py
+: 1543843548:0;git commit -m "[MIST-19537] Initial - PAPI class with caching same as mobius"
+: 1543843556:0;git push origin MIST-19537
+: 1543843661:0;deactivate
+: 1543843663:0;exit
+: 1543843686:0;cdw
+: 1543843688:0;cd linux-tweaks
+: 1543843689:0;gits
+: 1543843691:0;bak
+: 1543843693:0;gits
+: 1543843695:0;gpull
+: 1543843699:0;ls
+: 1543843701:0;gits
+: 1543899580:0;cdw
+: 1543899582:0;cd linux-tweaks
+: 1543899585:0;gits
+: 1543899589:0;bak
+: 1543899590:0;gits
+: 1543899594:0;gpull
+: 1543899600:0;clear
+: 1543899602:0;res
+: 1543899605:0;clear
+: 1543901021:0;cdw
+: 1543901024:0;cd mist/marvis
+: 1543901026:0;clear
+: 1543901032:0;. ./venv/bin/activate
+: 1543901035:0;vim
+: 1543903989:0;cdw
+: 1543903994:0;cd mist/demoapi
+: 1543903997:0;clear
+: 1543904001:0;. ./venv/bin/activate
+: 1543904007:0;gits
+: 1543904012:0;gpull
+: 1543904019:0;clear
+: 1543904040:0;git checkout -b MIST-19638
+: 1543904049:0;git pull --rebase origin master
+: 1543904065:0;git push origin MIST-19638 -u
+: 1543904081:0;clear
+: 1543904126:0;pm runserver
+: 1543904270:0;clear
+: 1543904281:0;cdw
+: 1543904284:0;cd mist/demoapi
+: 1543904286:0;. ./venv/bin/activate
+: 1543904288:0;vim
+: 1543904611:0;cd openVpn/toran.sahu@mistsys.com_stag
+: 1543904618:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1543905491:0;sudo apt-get install curl ca-certificates
+: 1543905499:0;curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+: 1543905533:0;vim /etc/apt/sources.list.d/pgdg.list
+: 1543905574:0;sudo apt update
+: 1543905602:0;sudo apt install pgadmin4
+: 1543915632:0;pm createsuperuser
+: 1543915652:0;python manage.py createsuperuser
+: 1543915661:0;python manage.py createuser
+: 1543915674:0;pm runserver
+: 1543915920:0;pm shell
+: 1543916264:0;cdw
+: 1543916266:0;cd mist/demoapi
+: 1543916268:0;. ./venv/bin/activate
+: 1543916271:0;pm runserver
+: 1543920679:0;cd ..
+: 1543920684:0;cd toran.sahu@mistsys.com_prod
+: 1543920691:0;sudo openvpn --config production-toran.sahu@mistsys.com.ovpn
+: 1543922122:0;deactivate
+: 1543922124:0;clear
+: 1543922175:0;man git 
+: 1543922333:0;git push --delete origin MIST-19638
+: 1543922371:0;clear
+: 1543922373:0;cd ..
+: 1543922381:0;cd demoapi
+: 1543922391:0;git checkout master
+: 1543922400:0;cd ../marvis
+: 1543922402:0;clear
+: 1543923482:0;cdw
+: 1543923486:0;cd mist/demoapi
+: 1543923488:0;vim
+: 1543923897:0;ping marvis.local
+: 1543923910:0;exit
+: 1543924617:0;cdw
+: 1543924619:0;cd mist
+: 1543924620:0;ls
+: 1543924900:0;deactivate
+: 1543925525:0;cd ../demoapi
+: 1543925528:0;vim
+: 1543927527:0;gits
+: 1543928509:0;cd ../toran.sahu@mistsys.com_stag
+: 1543928522:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1543928690:0;clear
+: 1543928693:0;gits
+: 1543928728:0;git diff storm/py/common/papi.py
+: 1543928768:0;git add storm/py/common/papi.py
+: 1543928835:0;git commit -m "[MIST-19537] updated TODOs"
+: 1543928842:0;gits
+: 1543928860:0;git pull --rebase origin MIST-19537
+: 1543928870:0;git pull --rebase origin master
+: 1543928899:0;git checkout -b MIST-19638-redis
+: 1543928932:0;gits
+: 1543928940:0;git add storm/py/common/papi.py
+: 1543928954:0;git commit -m "[MIST-19537-redis] updated docstring"
+: 1543928966:0;git checkout MIST-19638
+: 1543928967:0;clear
+: 1543928981:0;git checkout MIST-19638
+: 1543928999:0;git branch -v
+: 1543929020:0;git branch --help
+: 1543929066:0;git branch -v
+: 1543929079:0;git branch -m MIST-19638-redis MIST-19537-redis
+: 1543929082:0;clear
+: 1543929089:0;git checkout MIST-19537
+: 1543929092:0;clear
+: 1543929547:0;python2
+: 1543929958:0;date +%s
+: 1543932041:0;clear
+: 1543932042:0;gits
+: 1543932047:0;git add storm/py/common/papi.py
+: 1543932094:0;git commit -m "[MIST-19537] defined get() with local caching logic; a few TODOs pending"
+: 1543932108:0;git push origin MIST-19537
+: 1543932130:0;git pull --rebase origin MIST-19537
+: 1543932141:0;git pull --rebase origin master
+: 1543932150:0;git push origin MIST-19537
+: 1543932191:0;git push origin MIST-19537 -f
+: 1543932417:0;deactivate
+: 1543986427:0;./idea.sh
+: 1543986680:0;cdw
+: 1543986701:0;cd mist/marvis
+: 1543986705:0;clear
+: 1543988043:0;cd openVpn/toran.sahu@mistsys.com_stag
+: 1543988048:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1543990050:0;python
+: 1544001249:0;gits
+: 1544001251:0;ls
+: 1544001264:0;cat .gitignore
+: 1544001286:0;vim .gitignore
+: 1544001309:0;gits
+: 1544001316:0;git add .gitignore
+: 1544001356:0;git commit -m "[gitignored] .idea/; venv/"
+: 1544001360:0;git pull --rebase origin master
+: 1544001371:0;git push origin MIST-19537
+: 1544001380:0;clear
+: 1544002564:0;vim temp.py
+: 1544002635:0;python temp.py
+: 1544002638:0;vim temp.py
+: 1544002680:0;python temp.py
+: 1544002737:0;vim temp.py
+: 1544002790:0;python temp.py
+: 1544002797:0;vim temp.py
+: 1544002816:0;python temp.py
+: 1544002822:0;vim temp.py
+: 1544002836:0;python temp.py
+: 1544002841:0;vim temp.py
+: 1544002875:0;python temp.py
+: 1544075465:0;~/.ssh/id_rsa.pub or ~/.ssh/id_rsa.pub
+: 1544075472:0;sudo ~/.ssh/id_rsa.pub
+: 1544075479:0;sudo cat ~/.ssh/id_rsa.pub
+: 1544077972:0;snap install hiri
+: 1544081156:0;klist
+: 1544081167:0;kinit
+: 1544081929:0;cdw
+: 1544081950:0;cd mist/marvis/storm/py/
+: 1544081953:0;gits
+: 1544081966:0;git pull
+: 1544081984:0;clear
+: 1544082004:0;git pull origin MIST-19537
+: 1544082019:0;git pull --rebase origin master
+: 1544082030:0;clear
+: 1544082032:0;gits
+: 1544082044:0;. ./venv/bin/activate
+: 1544082046:0;vim
+: 1544082050:0;cdw
+: 1544082053:0;cd linux-tweaks
+: 1544082055:0;gits
+: 1544082058:0;bak
+: 1544082060:0;gits
+: 1544082066:0;git stash
+: 1544082068:0;gpull
+: 1544082074:0;bak
+: 1544082076:0;gits
+: 1544082082:0;git diff backups/cinnamon_backup
+: 1544082095:0;git add backups/cinnamon_backup
+: 1544082142:0;git commit -m "[added] Icing task applet; removed window list applet"
+: 1544082145:0;gpush
+: 1544082151:0;clear
+: 1544082427:0;vim ~/.vimrc
+: 1544082722:0;cdw
+: 1544082723:0;cd linux-tweaks
+: 1544082725:0;gits
+: 1544082726:0;bak
+: 1544082728:0;gits
+: 1544082735:0;git add backups/.vimrc
+: 1544082771:0;git commit -m "[added] usages instruction for vim-gtfo"
+: 1544082774:0;gpush
+: 1544082999:0;cd openVpn/toran.sahu@mistsys.com_stag
+: 1544083009:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1544083315:0;. ../venv/bin/activate
+: 1544083324:0;python papi.py
+: 1544083404:0;clear
+: 1544083495:0;python
+: 1544085750:0;vim
+: 1544089412:0;cdw
+: 1544089414:0;cd mist/marvis/storm/py/
+: 1544089417:0;. ../venv/bin/activate
+: 1544089421:0;. ./venv/bin/activate
+: 1544089423:0;clear
+: 1544089429:0;vim common/papi.py
+: 1544089605:0;gits
+: 1544089631:0;cd ../../../../
+: 1544089643:0;cp -r marvis marvis_bak
+: 1544089720:0;cde
+: 1544089722:0;cdw
+: 1544089727:0;cd mist/marvis/storm/py/
+: 1544089735:0;. ./venv/bin/activate
+: 1544089738:0;vim
+: 1544089777:0;gits
+: 1544089802:0;git checkout common/papi.py
+: 1544089804:0;gits
+: 1544089817:0;vim common/papi.py
+: 1544089869:0;vim common/papi.py\~ common/papi.py
+: 1544089945:0;vim  common/papi.py 
+: 1544089959:0;nemo  common/papi.py\~ common/ &
+: 1544089989:0;clear
+: 1544089993:0;gits
+: 1544090015:0;rm -r common/papi.py\~
+: 1544090016:0;clear
+: 1544090018:0;gits
+: 1544090033:0;cp common/test_papi.py ~/Desktop
+: 1544090038:0;clear
+: 1544090040:0;gits
+: 1544090060:0;rm common/test_papi.py
+: 1544090061:0;clear
+: 1544090063:0;gits
+: 1544090081:0;cp ~/Desktop/papi.py common
+: 1544090087:0;vim common/papi.py
+: 1544090098:0;vim ~/Desktop/papi.py
+: 1544090109:0;ls
+: 1544090179:0;glog
+: 1544090184:0;gits
+: 1544090188:0;git pull
+: 1544090199:0;git pull origin MIST-19537
+: 1544090218:0;glog
+: 1544090236:0;cd ..
+: 1544090242:0;deactivate
+: 1544090253:0;cd ..
+: 1544090261:0;rm -r marvis
+: 1544090264:0;clear
+: 1544090299:0;git clone git@github.com:mistsys/marvis
+: 1544090323:0;cd marvis
+: 1544090352:0;git checkout -b MIST-19537
+: 1544090388:0;git pull origin MIST-19537
+: 1544090398:0;cd ..
+: 1544090401:0;rm -r marvis
+: 1544090404:0;git clone git@github.com:mistsys/marvis
+: 1544090436:0;vim ~/Desktop/papi.py
+: 1544090660:0;clear
+: 1544090662:0;cd marvis
+: 1544090670:0;git checkout MIST-19537
+: 1544090672:0;gits
+: 1544090677:0;git pull origin MIST-19537
+: 1544090689:0;cd storm/py/
+: 1544090694:0;virtualenv --python=python2 venv
+: 1544090700:0;clear
+: 1544090704:0;. ./venv/bin/activate
+: 1544090709:0;pip install -r requirements.txt
+: 1544090742:0;cp ~/Desktop/papi.py /mnt/Other/E/workspace/mist/marvis/storm/py/common
+: 1544090747:0;clear
+: 1544090750:0;vim
+: 1544090786:0;cd marvis
+: 1544090788:0;gits
+: 1544090792:0;git diff storm/py/common/papi.py
+: 1544090809:0;cp ~/Desktop/test_papi.py /mnt/Other/E/workspace/mist/marvis/storm/py/common
+: 1544090820:0;cd storm/py/
+: 1544090822:0;. ./venv/bin/activate
+: 1544090833:0;python common/test_papi.py
+: 1544090850:0;cd common
+: 1544090855:0;python test_papi.py
+: 1544090875:0;which python
+: 1544090878:0;python
+: 1544090883:0;clear
+: 1544090941:0;cd openVpn/toran.sahu@mistsys.com_stag
+: 1544090944:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1544091106:0;clear
+: 1544091107:0;gits
+: 1544091117:0;git diff papi.py
+: 1544091133:0;git add papi.py
+: 1544091204:0;git commit -m "[MIST-19537] removed __ from all instance vars; logging if using default PAPI URL; log level changed to INFO"
+: 1544091206:0;gits
+: 1544091247:0;mv test_papi.py ../test/
+: 1544091294:0;gits
+: 1544091337:0;cd ..
+: 1544091342:0;git add test/test_papi.py
+: 1544091591:0;python
+: 1544091618:0;vim
+: 1544091671:0;vim ~/.vimrc
+: 1544091824:0;python2
+: 1544091903:0;gits
+: 1544091928:0;cp test/test_papi.py ~/Desktop
+: 1544091930:0;clear
+: 1544091945:0;git checkout test/test_papi.py
+: 1544091959:0;gits
+: 1544091968:0;git checkout test/test_papi.py
+: 1544091971:0;gits
+: 1544091983:0;git rm --cached test/test_papi.py
+: 1544091986:0;gits
+: 1544092011:0;clear
+: 1544092021:0;git pull --rebase origin master
+: 1544092034:0;git push origin MIST-19537
+: 1544092086:0;glog
+: 1544092175:0;git push origin MIST-19537 -f
+: 1544092185:0;clear
+: 1544092363:0;gits
+: 1544096131:0;clear
+: 1544096133:0;gits
+: 1544096142:0;git diff common/papi.py
+: 1544096409:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1544096429:0;git add common/papi.py
+: 1544096512:0;git commit -m "[MIST-19537] added redis cache logic - try fetching data from redis before hitting PAPI api"
+: 1544096514:0;gits
+: 1544096525:0;git pull --rebase origin master
+: 1544096534:0;git push origin MIST-19537
+: 1544096542:0;clear
+: 1544096691:0;gits
+: 1544096693:0;git diff common/papi.py
+: 1544096701:0;git add common/papi.py
+: 1544096725:0;git commit -m "[MIST-19537] added TODO to confirm papi url key"
+: 1544096756:0;git add common/papi.py
+: 1544096814:0;git commit -m "[MIST-19537] updated log msg - showing fully qualified url of papi"
+: 1544096887:0;git diff common/papi.py
+: 1544096890:0;git add common/papi.py
+: 1544096902:0;git commit -m "[MIST-19537] fixed typo in log"
+: 1544097035:0;git diff common/papi.py
+: 1544097047:0;git add common/papi.py
+: 1544097085:0;git commit -m "[MIST-19537] removed env argument causing geting FQ url"
+: 1544097142:0;git diff common/papi.py
+: 1544097156:0;git add common/papi.py
+: 1544097176:0;git commit -m "[MIST-19537] refactored env_config to storm_conf"
+: 1544097183:0;git pull --rebase origin master
+: 1544097196:0;git push origin MIST-19537
+: 1544097204:0;clear
+: 1544097206:0;gits
+: 1544097214:0;vim test/test_papi.py
+: 1544097230:0;clear
+: 1544097443:0;gits
+: 1544097449:0;git diff common/papi.py
+: 1544097459:0;git add common/papi.py
+: 1544097545:0;git commit -m "[MIST-19537] cleaned up un-necessary comments/TODOs"
+: 1544097547:0;gits
+: 1544097549:0;clear
+: 1544097553:0;git pull --rebase origin master
+: 1544097562:0;git push origin MIST-19537
+: 1544101055:0;deactivate
+: 1544101056:0;exit
+: 1544101067:0;deactivate
+: 1544101068:0;exit
+: 1544163279:0;cdw
+: 1544163283:0;cd mist/mobius
+: 1544163292:0;idea . &
+: 1544163348:0;gits
+: 1544163350:0;gpull
+: 1544163363:0;ls
+: 1544164040:0;HERE=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+: 1544164045:0;echo $HERE
+: 1544164069:0;BASE=$( cd $HERE/.. && pwd )
+: 1544164075:0;echo $BASE
+: 1544164422:0;ls $*
+: 1544164428:0;python $*
+: 1544164443:0;python $
+: 1544164449:0;python $*
+: 1544164455:0;python
+: 1544164762:0;java
+: 1544164769:0;which java
+: 1544165881:0;clear
+: 1544165894:0;gits
+: 1544165896:0;gpull
+: 1544167195:0;gits
+: 1544167229:0;git checkout lib/java/com/mist/mobius/topology/LeOptimalPlfService.java
+: 1544167232:0;gits
+: 1544167323:0;java
+: 1544167327:0;javac
+: 1544167565:0;nemo . &
+: 1544167577:0;gits
+: 1544173881:0;which java
+: 1544175056:0;sudo reboot now
+: 1544175632:0;cdw
+: 1544175633:0;ls
+: 1544175648:0;cd talentica/assignment/photogram
+: 1544175650:0;gits
+: 1544175654:0;gpull
+: 1544175664:0;git branch -v
+: 1544175682:0;git checkout -b dev
+: 1544175692:0;vim .gitignore
+: 1544175702:0;git add .gitignore
+: 1544175712:0;git commit -m "delete 1"
+: 1544175716:0;vim .gitignore
+: 1544175722:0;git add .gitignore
+: 1544175725:0;git commit -m "delete 2"
+: 1544175730:0;glog
+: 1544175749:0;git rebase -i HEAD~2
+: 1544175798:0;git rebase --abort
+: 1544175803:0;git rebase -i HEAD~1
+: 1544177886:0;cdw
+: 1544177888:0;cd mist/mobius
+: 1544177890:0;gits
+: 1544177893:0;cd ..
+: 1544177898:0;cd mobius
+: 1544177899:0;ls
+: 1544177905:0;rm -r .idea
+: 1544177907:0;gits
+: 1544177910:0;clear
+: 1544178032:0;gits
+: 1544178039:0;vim .gitignore
+: 1544178065:0;clear
+: 1544181371:0;uname -a
+: 1544181635:0;clear
+: 1544181644:0;cdw
+: 1544181647:0;cd mist/marvis
+: 1544181650:0;gits
+: 1544181662:0;git checkout master
+: 1544181665:0;clear
+: 1544181666:0;gits
+: 1544181686:0;git pull origin master
+: 1544181693:0;glog
+: 1544181734:0;clear
+: 1544182993:0;ls temp
+: 1544182999:0;mkdir temp
+: 1544183001:0;cd temp
+: 1544183006:0;pe --two install GenericCache
+: 1544183043:0;vim temp.py
+: 1544183127:0;pes
+: 1544183130:0;clear
+: 1544183133:0;vim temp.py
+: 1544183673:0;exit
+: 1544183728:0;cdw
+: 1544183730:0;cd talentica/assignment/photogram
+: 1544183744:0;git rebase --abort
+: 1544183747:0;clear
+: 1544188267:0;cd storm/py/
+: 1544188269:0;. ./venv/bin/activate
+: 1544188275:0;vim common/papi.py
+: 1544188315:0;vim ~/.vimrc
+: 1544188363:0;vim common/papi.py
+: 1544188390:0;vim ~/.vimrc
+: 1544188674:0;vim common/papi.py
+: 1544188720:0;cdw
+: 1544188722:0;cd linux-tweaks
+: 1544188723:0;gits
+: 1544188726:0;gpull
+: 1544188731:0;bak
+: 1544188732:0;gits
+: 1544188736:0;git add backups/.vimrc
+: 1544188761:0;git commit -m "[updated] max-line-length to 120 for flake8 + black"
+: 1544188763:0;gpush
+: 1544188770:0;clear
+: 1544189231:0;vim common/papi.py
+: 1544189323:0;python
+: 1544189576:0;cd ../../../
+: 1544189580:0;cd ../../
+: 1544189647:0;git branch -D origin MIST-19537
+: 1544189664:0;git checkout MIST-19537
+: 1544189670:0;ls
+: 1544189673:0;clear
+: 1544189675:0;gits
+: 1544189677:0;glog
+: 1544189696:0;git pull --rebase origin master
+: 1544189705:0;glog
+: 1544189761:0;clear
+: 1544189774:0;git checkout master
+: 1544189785:0;git pull origin master
+: 1544189811:0;git checkout -b MIST-19687
+: 1544189814:0;clear
+: 1544189844:0;glog
+: 1544189860:0;git rebase -i HEAD~3
+: 1544189929:0;git rebase --edit-todo
+: 1544190077:0;git hist
+: 1544190093:0;git rebase --abort
+: 1544190097:0;git bisect
+: 1544190230:0;git rebase -i HEAD~3
+: 1544190269:0;glog
+: 1544190390:0;git rebase --edit-todo
+: 1544190511:0;git rebase -i
+: 1544190541:0;glog
+: 1544190549:0;git rebase -i 62180c2f039c20710dddebac9258df9e4baefbdb
+: 1544190631:0;git rebase --abort
+: 1544190632:0;git rebase -i 62180c2f039c20710dddebac9258df9e4baefbdb
+: 1544190640:0;glog
+: 1544190661:0;git rebase -i 62180c2f039c20710dddebac9258df9e4baefbdb~
+: 1544190685:0;git reabse --continue
+: 1544190691:0;git rebase --continue
+: 1544190694:0;glog
+: 1544190718:0;git rebase -i 62180c2f039c20710dddebac9258df9e4baefbdb~
+: 1544190728:0;git reset HEAD~ 
+: 1544190737:0;git rebase --continue
+: 1544190740:0;glog
+: 1544190792:0;git rebase --continue
+: 1544190796:0;gits
+: 1544190806:0;git rebase --abort
+: 1544190810:0;gits
+: 1544190813:0;glog
+: 1544190847:0;git rebase -i 62180c2f039c20710dddebac9258df9e4baefbdb~
+: 1544190857:0;git reset HEAD~ 
+: 1544190861:0;gits
+: 1544190877:0;git rebase --abort
+: 1544190879:0;gits
+: 1544190884:0;git rebase -i 62180c2f039c20710dddebac9258df9e4baefbdb~
+: 1544190892:0;gits
+: 1544190933:0;git rebase --abort
+: 1544190939:0;git reset HEAD~ 
+: 1544190943:0;gits
+: 1544190946:0;glog
+: 1544190964:0;git rebase --abort
+: 1544190971:0;gits
+: 1544190982:0;git diff .gitignore
+: 1544190992:0;git diff src/hub/apps.py
+: 1544191266:0;gits
+: 1544191278:0;git add .
+: 1544191285:0;git commit -m "[updated] max-line-length to 120 for flake8 + black"
+: 1544191299:0;git branch -D origin MIST-19687
+: 1544191308:0;git branch -D MIST-19687
+: 1544191315:0;git checkout master
+: 1544191317:0;git branch -D MIST-19687
+: 1544191319:0;clear
+: 1544191321:0;gits
+: 1544191327:0;git checkout -b MIST-19687
+: 1544191445:0;clear
+: 1544191447:0;gits
+: 1544191453:0;git stash
+: 1544191454:0;gits
+: 1544191457:0;glog
+: 1544191494:0;git rebase -i HEAD~3
+: 1544191562:0;git rebase --edit-todo
+: 1544191642:0;git rebase --abort
+: 1544191645:0;git rebase -i HEAD~3
+: 1544191700:0;glog
+: 1544191729:0;git rebase
+: 1544191739:0;git rebase -i
+: 1544191790:0;git reflog
+: 1544191828:0;git reset --hard bd38875
+: 1544191830:0;glog
+: 1544191945:0;gits
+: 1544191947:0;git stash
+: 1544191949:0;clear
+: 1544191957:0;git tag unsquash-try
+: 1544191961:0;git tag -v
+: 1544191964:0;git tag
+: 1544191979:0;git show ORIG_HEAD
+: 1544192012:0;git reflog
+: 1544192034:0;git reset --hard HEAD@{4}
+: 1544192038:0;glog
+: 1544192047:0;gits
+: 1544192057:0;git stash
+: 1544192059:0;glog
+: 1544192075:0;git log HEAD@{4}
+: 1544192102:0;git reset HEAD@{4}
+: 1544192105:0;glog
+: 1544192118:0;gits
+: 1544192123:0;git stash
+: 1544192126:0;gits
+: 1544192128:0;glog
+: 1544192488:0;clear
+: 1544192490:0;gits
+: 1544192492:0;glog
+: 1544192507:0;git rebase -i a47ad328cf8289bdf58eb28ecf30e53010d760c6
+: 1544192518:0;git rebase -i HEAD~1
+: 1544192532:0;gits
+: 1544192536:0;glog
+: 1544192549:0;git reset HEAD^
+: 1544192554:0;gits
+: 1544192566:0;git add ...
+: 1544192592:0;git add .
+: 1544192601:0;git commit -m "1st"
+: 1544192606:0;git add .
+: 1544192613:0;git commit -m "2nd"
+: 1544192637:0;git rebase --continue
+: 1544192641:0;glog
+: 1544192678:0;gits
+: 1544192700:0;clear
+: 1544192704:0;exit
+: 1544423554:0;cdw
+: 1544423559:0;cd mist/mobius
+: 1544423566:0;gits
+: 1544423571:0;git pull origin master
+: 1544423592:0;git checkout MIST-19687
+: 1544423606:0;git branch -v
+: 1544423612:0;git checkout -b MIST-19687
+: 1544423615:0;gits
+: 1544423618:0;clear
+: 1544423629:0;git pull --rebase origin master
+: 1544423687:0;cd ../marvis
+: 1544423689:0;gits
+: 1544423700:0;git pull --rebase origin master
+: 1544423706:0;clear
+: 1544423959:0;gits
+: 1544423960:0;glog
+: 1544425847:0;cdw
+: 1544425849:0;cd linux-tweaks
+: 1544425850:0;gits
+: 1544425852:0;bak
+: 1544425853:0;gits
+: 1544425855:0;gpull
+: 1544425861:0;clear
+: 1544425866:0;res
+: 1544425873:0;clear
+: 1544425875:0;bak 
+: 1544425878:0;gits
+: 1544425879:0;clear
+: 1544431981:0;python
+: 1544431988:0;python2
+: 1544436870:0;gits
+: 1544436883:0;git rebase -i HEAD~4
+: 1544436936:0;glog
+: 1544436961:0;git pull --rebase origin master
+: 1544436976:0;git push origin MIST-19687
+: 1544436988:0;clear
+: 1544437242:0;gits
+: 1544437250:0;git pull --rebase origin master
+: 1544437837:0;gits
+: 1544437851:0;git checkout lib/java/com/mist/mobius/topology/MarvisConfigWatcherTopology.java
+: 1544437943:0;clear
+: 1544437944:0;gits
+: 1544437956:0;git diff lib/java/com/mist/mobius/topology/MarvisConfigWatcherTopology.java
+: 1544437967:0;git add lib/java/com/mist/mobius/topology/MarvisConfigWatcherTopology.java
+: 1544437982:0;clear
+: 1544437984:0;t
+: 1544438112:0;git commit -m "[MIST-19687] calling py_runner.sh instead of python files to handle updates in python dependecies using virtual env"
+: 1544438113:0;clear
+: 1544438115:0;gits
+: 1544438120:0;git pull --rebase origin master
+: 1544438134:0;git push origin MIST-19687
+: 1544438165:0;clear
+: 1544438640:0;cd openVpn/toran.sahu@mistsys.com_stag
+: 1544438645:0;sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn
+: 1544438655:0;	cd storm/py
+: 1544438657:0;. ./venv/bin/activate
+: 1544438659:0;clear
+: 1544438685:0;cd common
+: 1544438693:0;vim temp.py
+: 1544439063:0;clear
+: 1544439065:0;cd ..
+: 1544439068:0;vim
+: 1544439608:0;clear
+: 1544439622:0;python common/temp.py
+: 1544439629:0;vim
+: 1544441027:0;git diff common/papi.py
+: 1544441054:0;git add common/papi.py
+: 1544441109:0;git commit -m "[MIST-19687] fixed papi.get_org_site_for_ap(); added call to get_org_site_for_ap() in main"
+: 1544441116:0;git pull --rebase origin master
+: 1544441122:0;glog
+: 1544441129:0;git rebase -i HEAD~2
+: 1544441145:0;glog
+: 1544441153:0;git pull --rebase origin master
+: 1544441160:0;git push origin MIST-19687
+: 1544441182:0;git pull --rebase origin master
+: 1544441188:0;git push origin MIST-19687
+: 1544441195:0;git push origin MIST-19687 -f
+: 1544441203:0;gits
+: 1544443799:0;git pull --rebase origin master
+: 1544443871:0;mvn exec:exec -Dexec.args="marvis"
+: 1544443939:0;mvn package
+: 1544444357:0;cd target/classes/resources/marvis
+: 1544444364:0;gits
+: 1544444373:0;vim storm/py/py_runner.sh
+: 1544444464:0;ls
+: 1544444474:0;cd storm
+: 1544444478:0;rm -r marvis_py
+: 1544444534:0;ls
+: 1544444542:0;cat install.log
+: 1544444678:0;clear
+: 1544444682:0;vim ~/.zshrc
+: 1544444709:0;which python2
+: 1544444733:0;. ~/.zshrc
+: 1544444735:0;python
+: 1544444745:0;vim ~/.zshrc
+: 1544444770:0;. ~/.zshrc
+: 1544444772:0;python
+: 1544444779:0;vim ~/.zshrc
+: 1544444836:0;rm -r marvis_py
+: 1544444841:0;clear
+: 1544446392:0;bash
+: 1544446489:0;vim py/py_runner.sh
+: 1544446529:0;gits
+: 1544446544:0;clear
+: 1544446545:0;gits
+: 1544446556:0;rm common/temp.py
+: 1544446558:0;gits
+: 1544446559:0;clear
+: 1544446565:0;gits
+: 1544446571:0;clear
+: 1544446629:0;vim py/py_runner.sh
+: 1544446656:0;./py/py_runner.sh
+: 1544446663:0;bash
+: 1544446676:0;vim py/py_runner.sh
+: 1544446695:0;ls
+: 1544446703:0;rm .marvis_bootstrap_done
+: 1544446723:0;mvn exec:exec -Dexec.args="marvis"
+: 1544446749:0;mvn clean marvis
+: 1544446754:0;clear
+: 1544446769:0;ls
+: 1544446799:0;rm -r target/classes/resources/marvis
+: 1544446803:0;mvn exec:exec -Dexec.args="marvis"
+: 1544446821:0;mvn clean
+: 1544446828:0;mvn exec:exec -Dexec.args="marvis"
+: 1544446924:0;clear
+: 1544446996:0;python
+: 1544447057:0;ls
+: 1544447075:0;cd .
+: 1544447112:0;cd target/classes/resources/marvis
+: 1544447113:0;ls
+: 1544447116:0;cd storm
+: 1544447116:0;ls
+: 1544447121:0;cd marvis_py
+: 1544447141:0;. bin/activate
+: 1544447144:0;python
+: 1544447166:0;mvn clean
+: 1544447176:0;deactivate
+: 1544447178:0;mvn clean
+: 1544447193:0;cd ../../../
+: 1544447200:0;mvn clean
+: 1544447225:0;clear
+: 1544447290:0;cd target/classes/resources/marvis
+: 1544447313:0;mvn exec:exec -Dexec.args="marvis"
+: 1544447328:0;cd target/classes/resources/marvis
+: 1544447336:0;ls
+: 1544447471:0;clear
+: 1544447477:0;ls
+: 1544447494:0;cd target/classes/resources/marvis
+: 1544447497:0;ls
+: 1544447500:0;cd storm
+: 1544447500:0;ls
+: 1544447508:0;rm -r marvis_py
+: 1544447517:0;virtualenv --python=python2 marvis_py
+: 1544447536:0;. ./marvis_py/bin/activate
+: 1544447544:0;pip install -r requirements.txt
+: 1544447547:0;cd py
+: 1544447548:0;pip install -r requirements.txt
+: 1544447582:0;cd py
+: 1544447588:0;vim py_runner.sh
+: 1544447681:0;cd resource/resources/marvis/storm/py
+: 1544447684:0;vim py_runner.sh
+: 1544447944:0;python
+: 1544447965:0;vim ~/.bashrc
+: 1544447974:0;python
+: 1544447999:0;. ~/.bashrc
+: 1544448018:0;vim py_runner.sh
+: 1544448023:0;vim ~/.bashrc
+: 1544448093:0;pip insta;; redis
+: 1544448097:0;pip install redis
+: 1544448145:0;ls
+: 1544448149:0;cd ..
+: 1544448151:0;ls
+: 1544448155:0;cd ..
+: 1544448157:0;ls
+: 1544448162:0;cd ..
+: 1544448165:0;ls
+: 1544448168:0;cd storm
+: 1544448169:0;ls
+: 1544448203:0;pip install redis
+: 1544448322:0;virtualenv --help
+: 1544448568:0;clear
+: 1544448909:0;mvn exec:exec -Dexec.args="marvis"
+: 1544449099:0;echo
+: 1544449101:0;echo pwd
+: 1544449106:0;echo $PWD
+: 1544449122:0;echo $(pwd)
+: 1544449249:0;python
+: 1544449283:0;pip list
+: 1544449315:0;clear
+: 1544449328:0;cd storm/py
+: 1544449335:0;pip install -r requirements.txt
+: 1544449405:0;python
+: 1544449411:0;reset
+: 1544449414:0;python
+: 1544449421:0;. ~/.zshrc
+: 1544449422:0;python
+: 1544449438:0;python -m jsonfield
+: 1544449449:0;python -m jsoncompare
+: 1544449472:0;clear
+: 1544449516:0;cd ..
+: 1544449517:0;..
+: 1544449524:0;cd mist/marvis
+: 1544449546:0;cd ../mobius/target/classes/resources/marvis/storm/py
+: 1544449547:0;vim
+: 1544449629:0;chmod +x py_runner.sh
+: 1544450025:0;gits
+: 1544450042:0;git diff lib/java/com/mist/mobius/bolt/CommonShellBolt.java
+: 1544450052:0;git checkout lib/java/com/mist/mobius/bolt/CommonShellBolt.java
+: 1544450055:0;clear
+: 1544450070:0;ls
+: 1544450072:0;clear
+: 1544450073:0;gits
+: 1544450105:0;git add lib/java/com/mist/mobius/topology/MarvisConfigWatcherTopology.java
+: 1544450154:0;git commit -m "[MIST-19687] fixed python file path issue in getCommonBashBolt()"
+: 1544450157:0;git pull --rebase origin master
+: 1544450165:0;glog
+: 1544450173:0;git rebase -i HEAD~2
+: 1544450191:0;git pull --rebase origin master
+: 1544450196:0;glog
+: 1544450202:0;git push origin MIST-19687
+: 1544450209:0;git push origin MIST-19687 -f
+: 1544450336:0;exit
+: 1544450339:0;deactivate
+: 1544450341:0;exit
+: 1544450349:0;clear
+: 1544450355:0;cd ../marvis
+: 1544450356:0;gits
+: 1544511817:0;cdw
+: 1544511818:0;cd mist
+: 1544511820:0;t
+: 1544511834:0;clear
+: 1544511837:0;cd mobius
+: 1544511840:0;gits
+: 1544511862:0;git pull --rebase origin master
+: 1544511872:0;glog
+: 1544512085:0;clear
+: 1544512087:0;gits
+: 1544512101:0;vim .gitignore
+: 1544512114:0;clear
+: 1544512132:0;git checkout master
+: 1544512145:0;git pull origin master
+: 1544512155:0;clear
+: 1544512163:0;git checkout MIST-19687
+: 1544512167:0;git pull --rebase origin master
+: 1544512183:0;clear
+: 1544512184:0;git pull --rebase origin master
+: 1544515625:0;glog
+: 1544515639:0;git remote -v
