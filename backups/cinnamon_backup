@@ -137,10 +137,10 @@ binding=['<Alt><Super>Up']
 command='xrandr -o 0'
 name='Rotate 0'
 
-[desktop/keybindings/custom-keybindings/custom9]
-binding=['<Primary><Super>r']
-command='sudo reboot 00'
-name='Reboot'
+[desktop/keybindings/custom-keybindings/custom21]
+binding=['<Super>i']
+command='/usr/local/bin/idea'
+name='IntelliJ idea'
 
 [desktop/keybindings/custom-keybindings/custom14]
 binding=['<Alt><Super>Left']
@@ -162,6 +162,11 @@ binding=['<Alt><Super>Right']
 command='xrandr -o 3'
 name='Rotate 90'
 
+[desktop/keybindings/custom-keybindings/custom9]
+binding=['<Primary><Super>r']
+command='sudo reboot 00'
+name='Reboot'
+
 [desktop/keybindings/custom-keybindings/custom17]
 binding=['<Super>f']
 command='firefox'
@@ -179,7 +184,7 @@ name='Screenshot Area + Clipboard'
 
 [desktop/keybindings]
 looking-glass-keybinding=@as []
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21']
 show-desklets=@as []
 
 [desktop/keybindings/media-keys]
