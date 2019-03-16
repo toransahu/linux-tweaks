@@ -59,6 +59,9 @@ Plugin 'justinmk/vim-gtfo'
 "Plugin 'shime/vim-livedown'
 Plugin 'suan/vim-instant-markdown'
 
+"super search
+"Plugin 'ctrlpvim/ctrlp.vim'
+
 " fuzzy finder
 "Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf'
@@ -118,9 +121,6 @@ Plugin 'raimondi/delimitmate'
 
 "code fold
 "Plugin 'tmhedberg/SimpylFold'
-
-"super search
-Plugin 'ctrlpvim/ctrlp.vim'
 
 "go support
 Plugin 'fatih/vim-go'
