@@ -11,7 +11,8 @@ set number
 set nocompatible
 
 " filetype func off
-filetype off
+"filetype off
+filetype plugin indent on
 
 " initialize vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -289,8 +290,16 @@ if executable('ag')
 endif
 
 " vim-test
-let test#java#runner = 'maventest'
+let g:test#runner_commands = ['Django', 'Nose', 'Nose2', 'PyTest', 'PyUnit', 'Maven', 'Gradle']
 
+let test#java#runner = 'maventest'
+let test#java#maventest#options = {
+  \ 'nearest': '--fail-fast',
+  \ 'file':    '--fail-fast', 
+  \ 'suite':   '--fail-fast',
+\}
+
+"let test#python#runner = 'pytest'
 let test#python#djangotest#options = {
   \ 'nearest': '--failfast --keepdb',
   \ 'file':    '--failfast --keepdb',
@@ -298,8 +307,6 @@ let test#python#djangotest#options = {
 \}
 
 "============= TODO
-"1. syntastic venv [x]
 "2. try google/vim-codefmt [x]
 "3. status for vim-signify
-"4. fuzzy finder
 "5. colorize
