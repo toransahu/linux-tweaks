@@ -119,11 +119,14 @@ Plugin 'tpope/vim-surround'
 " auto close
 Plugin 'raimondi/delimitmate'
 
-"code fold
+" code fold
 "Plugin 'tmhedberg/SimpylFold'
 
-"go support
+" go support
 Plugin 'fatih/vim-go'
+
+" polyglot test runner
+Plugin 'janko-m/vim-test'
 
 " stop - all plugins above
 call vundle#end()
@@ -284,6 +287,15 @@ map <C-t><right> :tabn<cr>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+" vim-test
+let test#java#runner = 'maventest'
+
+let test#python#djangotest#options = {
+  \ 'nearest': '--failfast --keepdb',
+  \ 'file':    '--failfast --keepdb',
+  \ 'suite':   '--failfast --keepdb',
+\}
 
 "============= TODO
 "1. syntastic venv [x]
