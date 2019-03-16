@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -122,6 +122,15 @@ export PATH=~/miniconda3/bin:$PATH
 
 # fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#export FZF_DEFAULT_OPS='--extended --height=70% --preview="cat {}" --preview-window=right:60%:wrap'
+export FZF_DEFAULT_OPS="--extended --height=70% --preview 'bat --color=always --line-range :500 {}' --preview-window=right:60%:wrap"
+# if using fd an find alternative used by git"
+#export FZF_DEFAULT_COMMAND="fd --type f"
+# if using ripgrep
+#export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!{.git,venv,venv3.5}/*" 2> /dev/null'
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,venv,venv3.5}/*" 2> /dev/null'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+#export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :500 {}'"   #failing in terminal
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
