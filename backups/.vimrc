@@ -180,12 +180,18 @@ filetype plugin on
 
 
 " vim-jedi (disable)
-let g:jedi#completions_enabled = 0
+let g:jedi#completions_enabled = 1
 
 " YCM Config
 nnoremap <F5> :YcmCompleter GoToDefinition<CR>
 nnoremap <F6> :YcmCompleter GoToReferences<CR>
 nnoremap <F7> :YcmCompleter GoToDeclaration<CR>
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
+let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
+let g:ycm_complete_in_strings = 1 " Completion in string
 
 " Syntastic configs
 "set statusline+=%#warningmsg#
@@ -305,6 +311,8 @@ let test#python#djangotest#options = {
   \ 'file':    '--failfast --keepdb',
   \ 'suite':   '--failfast --keepdb',
 \}
+
+let test#vim#term_position = "belowright"
 
 "============= TODO
 "2. try google/vim-codefmt [x]
