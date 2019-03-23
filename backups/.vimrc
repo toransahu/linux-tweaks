@@ -1,4 +1,4 @@
-" ~/.vimrc
+"~/.vimrc
 "
 
 " encoding
@@ -285,6 +285,8 @@ let g:EclimCompletionMethod = 'omnifunc'
 "set statusline+=%{FugitiveStatusline()}
 
 " Tabs keybinding
+
+map <C-t><C-n> :tabnew<cr>
 map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
@@ -313,6 +315,13 @@ let test#python#djangotest#options = {
 \}
 
 let test#vim#term_position = "belowright"
+
+" FZF configs
+map <C-f><C-f> :Files<cr>
+map <C-f><C-l> :Line<cr>
+map <C-f><C-r> :Rg<cr>
+map <Space> :Files<cr>
+map <Space><Space> :Rg<cr>
 
 "============= TODO
 "2. try google/vim-codefmt [x]
