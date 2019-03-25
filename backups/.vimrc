@@ -323,6 +323,17 @@ map <C-f><C-r> :Rg<cr>
 map <Space> :Files<cr>
 map <Space><Space> :Rg<cr>
 
+" ctag configs
+"Ctrl+] - go to definition
+"Ctrl+T - Jump back from the definition.
+"Ctrl+W Ctrl+] - Open the definition in a horizontal split
+
+"Ctrl+\ - Open the definition in a new tab
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+"Alt+] - Open the definition in a vertical split
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR> 
+
 "============= TODO
 "2. try google/vim-codefmt [x]
 "3. status for vim-signify
