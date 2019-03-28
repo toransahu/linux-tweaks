@@ -283,6 +283,11 @@ let g:EclimCompletionMethod = 'omnifunc'
 
 "" vim fugative config
 "set statusline+=%{FugitiveStatusline()}
+" Fugitive Conflict Resolution
+nnoremap <leader>gd :Gvdiff<CR>
+" diffget & diffput are vim commands
+nnoremap gdh :diffget //2<CR>
+nnoremap gdl :diffget //3<CR>
 
 " Tabs keybinding
 
