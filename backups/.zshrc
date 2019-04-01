@@ -62,7 +62,7 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions tmux
+  git zsh-autosuggestions zsh-syntax-highlighting tmux redis-cli aws celery django docker mvn python supervisor systemd tmux pip
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -156,3 +156,4 @@ export GIT_EDITOR=vim
 
 # Set default term to xterm
 export TERM=xterm-256color
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

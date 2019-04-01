@@ -150,3 +150,4 @@ alias vpnprod='cd ~/openVpn/toran.sahu@mistsys.com_prod && sudo openvpn --config
 alias clearswap='sudo swapoff -a && sudo swapon -a'
 alias gbD='git checkout master && git branch -D'
 alias gfa='git fetch --all'
+alias veil='~/veil'
