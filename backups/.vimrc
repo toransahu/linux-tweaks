@@ -331,8 +331,8 @@ let test#vim#term_position = "belowright"
 map <C-f><C-f> :Files<cr>
 map <C-f><C-l> :Line<cr>
 map <C-f><C-r> :Rg<cr>
-map <Space> :Files<cr>
-map <Space><Space> :Rg<cr>
+map <Space><Space> :Files<cr>
+map <C-f> :Rg<cr>
 
 " ctag configs
 "Ctrl+] - go to definition
