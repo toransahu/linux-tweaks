@@ -42,7 +42,9 @@ alias gfa='git fetch --all'
 gfb(){
     git checkout --track origin/$1
 }
-
+gri(){
+    git rebase -i HEAD~$1
+}
 gsize(){
 #curl https://api.github.com/repos/$1/$2 | grep size
 if [ "$3" = -a ]; then
