@@ -186,12 +186,18 @@ let g:jedi#completions_enabled = 1
 nnoremap <F5> :YcmCompleter GoToDefinition<CR>
 nnoremap <F6> :YcmCompleter GoToReferences<CR>
 nnoremap <F7> :YcmCompleter GoToDeclaration<CR>
+
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
 let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
 let g:ycm_complete_in_strings = 1 " Completion in string
+
+" mimic intellij
+nnoremap <C-b> :YcmCompleter GoToDefinition<CR>
+:nnoremap <C-A-Left> <C-o>
+:nnoremap <C-A-Right> <C-i>
 
 " Syntastic configs
 "set statusline+=%#warningmsg#
