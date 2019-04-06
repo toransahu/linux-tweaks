@@ -156,3 +156,4 @@ alias vpnstag='cd ~/openVpn/toran.sahu@mistsys.com_stag && sudo openvpn --config
 alias vpnprod='cd ~/openVpn/toran.sahu@mistsys.com_prod && sudo openvpn --config production-toran.sahu@mistsys.com.ovpn'
 alias clearswap='sudo swapoff -a && sudo swapon -a'
 alias veil='~/veil'
+alias gdiff='git diff'
