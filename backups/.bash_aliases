@@ -26,13 +26,22 @@
 
 # git
 alias gits='git status'
-alias gpull='git pull origin master'
-alias gpush='git push origin master'
+alias gpull='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git pull origin $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
+alias gpush='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git push origin $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
 alias glogo='git log --graph --oneline'
 alias glog='git log --graph'
 alias py.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -O .gitignore'
 alias java.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Java.gitignore -O .gitignore'
 alias gitrepo='print -z "$(<~/.personalized/.gitrepo)"'
+alias gch='git checkout'
+alias ghtokencpy='cpy $WORKSPACE/recovery/github-access-token.txt'
+alias gbd='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git checkout master && git branch -d $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
+alias gbdf='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git checkout master && git branch -D $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
+alias gls='git log --stat'
+alias gfa='git fetch --all'
+gfb(){
+    git checkout --track origin/$1
+}
 
 gsize(){
 #curl https://api.github.com/repos/$1/$2 | grep size
@@ -135,19 +144,13 @@ alias installohmyzsh='sh -c "$(curl -fsSL https://raw.githubusercontent.com/robb
 alias fixcinnamon='export DISPLAY=:0; cinnamon --replace &'
 alias installsublime='sh -c "~/.personalized/installsublime.sh"'
 alias pm='python manage.py'
-alias gch='git checkout'
 alias cdss='cd ~/cloud/Dropbox/Toran/Salary\ Slip'
 alias cdgi='$WORKSPACE/gitignore'
-alias ghtokencpy='cpy $WORKSPACE/recovery/github-access-token.txt'
 alias show='less +F'
-alias gbd='git branch -D'
 alias cdo='$WORKSPACE/office-repos'
-alias gls='git log --stat'
 alias cleardns='sudo /etc/init.d/networking restart'
 alias master='git checkout master'
 alias vpnstag='cd ~/openVpn/toran.sahu@mistsys.com_stag && sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn'
 alias vpnprod='cd ~/openVpn/toran.sahu@mistsys.com_prod && sudo openvpn --config production-toran.sahu@mistsys.com.ovpn'
 alias clearswap='sudo swapoff -a && sudo swapon -a'
-alias gbD='git checkout master && git branch -D'
-alias gfa='git fetch --all'
 alias veil='~/veil'
