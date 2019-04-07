@@ -346,6 +346,7 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR> 
 
 "============= TODO
-"2. try google/vim-codefmt [x]
-"3. status for vim-signify
-"5. colorize
+"- try google/vim-codefmt [x]
+"- status for vim-signify
+"- colorize
+"- try int3/vim-extradite - browse git commits
