@@ -27,7 +27,11 @@
 # git
 alias gits='git status'
 alias gpull='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git pull origin $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
-alias gpush='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git push origin $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
+#alias gpush='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git push origin $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
+gpush(){
+    GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2)
+    git push origin $GIT_TEMP_BRANCH $1
+}
 alias glogo='git log --graph --oneline'
 alias glog='git log --graph'
 alias py.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -O .gitignore'
@@ -44,6 +48,13 @@ gfb(){
 }
 gri(){
     git rebase -i HEAD~$1
+}
+gclone(){
+if [ "$2" = -http ]; then
+    git clone https://github.com/$1.git
+else
+    git clone git@github.com:$1.git
+fi
 }
 gsize(){
 #curl https://api.github.com/repos/$1/$2 | grep size
