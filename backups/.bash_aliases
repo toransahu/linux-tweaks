@@ -168,3 +168,4 @@ alias vpnprod='cd ~/openVpn/toran.sahu@mistsys.com_prod && sudo openvpn --config
 alias clearswap='sudo swapoff -a && sudo swapon -a'
 alias veil='~/veil'
 alias gdiff='git diff'
+alias uninstall-go='sudo rm -rvf /usr/local/go/'
