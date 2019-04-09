@@ -124,7 +124,8 @@ Plugin 'raimondi/delimitmate'
 "Plugin 'tmhedberg/SimpylFold'
 
 " go support
-Plugin 'fatih/vim-go'
+" https://github.com/fatih/vim-go-tutorial
+Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 " polyglot test runner
 Plugin 'janko-m/vim-test'
