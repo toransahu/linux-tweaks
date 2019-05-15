@@ -23,7 +23,9 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 export PATH=$HOME/miniconda3/bin:$HOME/anaconda3/bin:$HOME/anaconda/bin:$HOME/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$HOME/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin
 
 export GOPATH=$HOME/go/
-export GOBIN=$HOME/go/bin
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+export GO111MODULE=on
 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
