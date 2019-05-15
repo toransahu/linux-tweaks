@@ -157,6 +157,3 @@ export GIT_EDITOR=vim
 # Set default term to xterm
 export TERM=xterm-256color
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Golang bin path
-export PATH=$GOPATH/bin:$PATH
