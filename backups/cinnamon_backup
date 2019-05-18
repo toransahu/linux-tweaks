@@ -293,7 +293,7 @@ menus-have-icons=true
 
 [settings-daemon/peripherals/touchpad]
 tap-to-click=true
-natural-scroll=false
+natural-scroll=true
 horizontal-edge-scrolling=true
 horizontal-scrolling=true
 motion-acceleration=3.0276679841897232
