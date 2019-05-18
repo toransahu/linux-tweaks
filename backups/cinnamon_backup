@@ -139,7 +139,7 @@ name='Rotate 0'
 
 [desktop/keybindings/custom-keybindings/custom21]
 binding=['<Super>i']
-command='/usr/local/bin/idea'
+command='idea'
 name='IntelliJ idea'
 
 [desktop/keybindings/custom-keybindings/custom14]
