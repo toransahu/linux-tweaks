@@ -215,6 +215,7 @@ lock-enabled=true
 exec='gnome-terminal'
 
 [desktop/notifications]
+fade-opacity=40
 bottom-notifications=true
 remove-old=false
 
