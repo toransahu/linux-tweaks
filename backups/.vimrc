@@ -172,7 +172,12 @@ let g:ale_python_flake8_options = '--max-line-length 120'
 "let g:ale_python_pylint_options = '--load-plugins pylint_django'
 
 
-" untisnip configs
+
+"================vim-go config============
+let g:go_template_autocreate = 0
+
+
+"===============untisnip configs
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<c-t>"
