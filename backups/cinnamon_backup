@@ -20,12 +20,12 @@ panels-height=['1:25', '2:25']
 next-applet-id=19
 panel-launchers=['DEPRECATED']
 desktop-effects-map-transition='easeOutQuad'
+desktop-effects-maximize-time=100
 desktop-effects-unmaximize-effect='none'
 panels-enabled=['1:0:left', '2:0:bottom']
-desktop-effects-maximize-time=100
 desktop-effects-tile-transition='easeInQuad'
-desktop-effects-maximize-effect='none'
 panels-resizable=['1:true', '2:true']
+desktop-effects-maximize-effect='none'
 enabled-applets=['panel1:left:0:panel-launchers@cinnamon.org:3', 'panel1:right:2:systray@cinnamon.org:0', 'panel1:right:3:sound@cinnamon.org:13', 'panel1:right:5:removable-drives@cinnamon.org:7', 'panel2:right:2:notifications@cinnamon.org:6', 'panel1:right:7:user@cinnamon.org:8', 'panel1:right:8:network@cinnamon.org:9', 'panel2:left:0:menu@cinnamon.org:1', 'panel2:right:0:power@cinnamon.org:11', 'panel2:right:1:separator@cinnamon.org:15', 'panel2:right:3:calendar@cinnamon.org:12', 'panel2:right:4:show-desktop@cinnamon.org:2', 'panel2:center:0:IcingTaskManager@json:17']
 desktop-effects-minimize-time=200
 alttab-switcher-delay=100
@@ -38,11 +38,12 @@ panels-hide-delay=['1:0', '2:0']
 desktop-effects-close-time=175
 next-desklet-id=1
 workspace-osd-y=50
-no-adjacent-panel-barriers=true
+favorite-apps=['cinnamon-settings.desktop', 'pidgin.desktop', 'org.gnome.Terminal.desktop', 'nemo.desktop', 'firefox_firefox.desktop']
 show-media-keys-osd='medium'
 desktop-effects-tile-time=100
 panels-autohide=['1:false', '2:false']
 device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=SANYO 45N1159']
+no-adjacent-panel-barriers=true
 
 [sounds]
 tile-enabled=false

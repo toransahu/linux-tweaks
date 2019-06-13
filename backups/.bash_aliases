@@ -32,6 +32,12 @@ gpush(){
     GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2)
     git push origin $GIT_TEMP_BRANCH $1
 }
+grdiff(){
+    REMOTE='origin'
+    if [ $1 ]; then REMOTE=$1; fi
+    GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2)
+    git diff $REMOTE/$GIT_TEMP_BRANCH $GIT_TEMP_BRANCH 
+}
 alias glogo='git log --graph --oneline'
 alias glog='git log --graph'
 alias py.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -O .gitignore'
