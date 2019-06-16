@@ -186,7 +186,32 @@ alias gpager-less='git config --global core.pager "less"'
 alias vim-mode-on='set -o vi'
 alias vim-mode-off='set -o emacs'
 alias cdt='cd ~/.temp'
-alias gomsync='rsync -r _vendor/src $GOPATH && rm -rf _vendor'
+gomsync() {
+    for i in "$@"
+    do 
+        case $i in
+            -p|--populate)
+                local POPULATE="Y"
+                ;;
+            -d|--delete)
+                local DELETE_VENDOR="Y"
+                ;;
+            *)
+                echo "\nUnknown Command!"
+                ;;
+        esac
+    done
+    if [ "$POPULATE" = "Y" ]; then
+        gom populate
+        echo "\nPopulated.." 
+    fi
+    rsync -r _vendor/src $GOPATH
+    echo "Synced.."
+    if [ "$DELETE_VENDOR" = "Y" ]; then 
+        rm -rf _vendor
+        echo "Deleted.."
+    fi
+}
 alias todo='vim ~/TODO.md'
 alias reload='. ~/.zshrc'
 alias cdoc='cd /home/toransahu/go//src/github.com/mistsys/mist-openconfig'
