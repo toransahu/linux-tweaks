@@ -148,6 +148,11 @@ binding=['<Alt><Super>Left']
 command='xrandr -o 1'
 name='Rotate 270'
 
+[desktop/keybindings/custom-keybindings/custom22]
+binding=['<Super>v']
+command='code'
+name='VS Code'
+
 [desktop/keybindings/custom-keybindings/custom15]
 binding=['<Alt><Super>Down']
 command='xrandr -o 2'
@@ -185,7 +190,7 @@ name='Screenshot Area + Clipboard'
 
 [desktop/keybindings]
 looking-glass-keybinding=@as []
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21', 'custom22']
 show-desklets=@as []
 
 [desktop/keybindings/media-keys]
