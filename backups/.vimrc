@@ -62,6 +62,7 @@ Plugin 'tpope/vim-surround'                     " surround text with something m
 Plugin 'raimondi/delimitmate'                   " auto close
 "Plugin 'tmhedberg/SimpylFold'                  " code fold
 Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }       " go support; https://github.com/fatih/vim-go-tutorial
+"Plugin 'jodosha/vim-godebug'                    " go debugger in split screen with delve CLI - only for neovim; TODO: check later
 Plugin 'janko-m/vim-test'                       " polyglot test runner
 
 call vundle#end()                               " stop - all plugins above
