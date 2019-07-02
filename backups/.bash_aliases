@@ -25,6 +25,7 @@
 ##
 
 # git
+alias gcm='git commit -m'
 alias gits='git status'
 alias gpull='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git pull origin $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
 #alias gpush='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git push origin $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
@@ -40,8 +41,9 @@ grdiff(){
 }
 alias glogo='git log --graph --oneline'
 alias glog='git log --graph'
-alias py.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -O .gitignore'
-alias java.gi='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Java.gitignore -O .gitignore'
+alias gi.py='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -O .gitignore'
+alias gi.go='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Go.gitignore -O .gitignore'
+alias gi.java='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Java.gitignore -O .gitignore'
 alias gitrepo='print -z "$(<~/.personalized/.gitrepo)"'
 alias gch='git checkout'
 alias ghtokencpy='cpy $WORKSPACE/recovery/github-access-token.txt'
