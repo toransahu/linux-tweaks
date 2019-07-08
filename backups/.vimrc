@@ -99,11 +99,14 @@ let g:email = "toran.sahu@yahoo.com"
 let g:user = "Toran Sahu"
 
 " nerd commenter setting
-filetype plugin on
+filetype plugin on                                      " turn on filetype, plugin detection
+let g:NERDSpaceDelims = 1                               " put a space 
+let g:NERDCustomDelimiters = {'python': {'left': '#'}}  " to fix double space issue with g:NERDSpaceDelims=1
+let g:NERDDefaultAlign = 'left'
 
 
 " vim-jedi (disable)
-let g:jedi#completions_enabled = 1
+" let g:jedi#completions_enabled = 1
 
 " YCM Config
 nnoremap <F5> :YcmCompleter GoToDefinition<CR>
