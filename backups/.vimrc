@@ -1,5 +1,8 @@
 "~/.vimrc
 
+"========================= CONSTS ===========================
+let MAX_LINE_COL=120
+
 
 "===================== General Settings =====================
 set encoding=utf-8                              " encoding
@@ -62,7 +65,7 @@ Plugin 'tpope/vim-surround'                     " surround text with something m
 Plugin 'raimondi/delimitmate'                   " auto close
 "Plugin 'tmhedberg/SimpylFold'                  " code fold
 Plugin 'fatih/vim-go', { 'do': ':GoInstallBinaries' }       " go support; https://github.com/fatih/vim-go-tutorial
-"Plugin 'jodosha/vim-godebug'                    " go debugger in split screen with delve CLI - only for neovim; TODO: check later
+"Plugin 'jodosha/vim-godebug'                   " go debugger in split screen with delve CLI - only for neovim; TODO: check later
 Plugin 'janko-m/vim-test'                       " polyglot test runner
 
 call vundle#end()                               " stop - all plugins above
@@ -70,13 +73,11 @@ call vundle#end()                               " stop - all plugins above
 
 "============= Plugin Configs
 
-" highlight search patterns
-set hlsearch
-
-" set color
-colorscheme gruvbox
-set background=dark
-set colorcolumn=80
+set hlsearch                                    " highlight search patterns
+colorscheme gruvbox                             " set colorscheme
+set background=dark                             " set bg color
+" set column limit/line length limit
+execute 'set colorcolumn='.MAX_LINE_COL         
 
 " lightline fix
 set laststatus=2
