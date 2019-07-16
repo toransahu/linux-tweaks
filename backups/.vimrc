@@ -20,6 +20,10 @@ filetype plugin indent on                       " filetype func on
 " execute python code usin F9
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>   
 
+" switch between tabs
+nnoremap <C-Up> :tabprevious<CR>                                                                            
+nnoremap <C-Down> :tabnext<CR>
+
 "========================== Plugins ===========================
 call vundle#begin()                             " start- all plugins below
 
@@ -31,6 +35,7 @@ Plugin 'itchyny/lightline.vim'                  " Botton Status Bar
 Plugin 'itchyny/vim-gitbranch'                  " lightline uses it
 Plugin 'mhinz/vim-signify'                      " VCS - git, svn diff 
 Plugin 'scrooloose/nerdtree.git'                " CLI File Manager 
+Plugin 'Nopik/vim-nerdtree-direnter'            " Fix dir opening in new tab on enter if let g:NERDTreeMapOpenInTab='<ENTER>'
 Plugin 'editorconfig/editorconfig-vim'          " Editor properties
 Plugin 'tpope/vim-abolish'                      " Easily search for, substitute, and abbreviate multiple variants of a word
 Plugin 'justinmk/vim-gtfo'                      " GOTO PWD via file Manager or Terminal;  Usage: got; gof; goT; goF
@@ -94,6 +99,9 @@ let g:lightline = {
 " NERDTree shortcut
 map <C-n> :NERDTreeToggle<CR>
 map <C-f> :NERDTreeFind<CR>
+
+" open files in new tab - DIR FIX: see plugins
+let g:NERDTreeMapOpenInTab='<ENTER>'
 
 " Customize the settings for vim-template plugin
 let g:email = "toran.sahu@yahoo.com"
