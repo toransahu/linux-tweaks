@@ -5,7 +5,7 @@ desktop-effects-maximize-transition='easeInExpo'
 applet-cache-updated=1564742921
 desktop-effects-map-effect='traditional'
 workspace-osd-x=50
-command-history=['gconf-editor', 'cinnamon', 'XKILL', 'gnome-terminal', 'xkill']
+command-history=['gconf-editor', 'cinnamon', 'XKILL', 'gnome-terminal', 'kill', 'xkill', 'r']
 alttab-switcher-show-all-workspaces=false
 desktop-effects-close-effect='traditional'
 workspace-osd-duration=400
@@ -223,7 +223,7 @@ exec='gnome-terminal'
 [desktop/notifications]
 fade-opacity=40
 bottom-notifications=true
-fade-on-mouseover=true
+fade-on-mouseover=false
 remove-old=false
 
 [desktop/session]
@@ -236,6 +236,8 @@ remember-recent-files=true
 [desktop/wm/preferences]
 min-window-opacity=30
 theme='Mint-Y-Dark'
+num-workspaces=4
+workspace-names=['1. Main', '2. Production', '3. OpenConfig', '4. Personal']
 
 [desktop/a11y/applications]
 screen-keyboard-enabled=true
@@ -282,7 +284,7 @@ last-translator='Google.TranslateTS'
 translate-from-selection-keybinding=['<Shift><Super>g']
 
 [theme]
-theme-cache-updated=1531229134
+theme-cache-updated=1566993755
 name='Mint-Y-Dark'
 
 [settings-daemon/plugins/power]
@@ -332,5 +334,6 @@ double-click=400
 middle-button-enabled=false
 
 [cinnamon-session]
+auto-save-session=true
 prefer-hybrid-sleep=true
 quit-time-delay=60
