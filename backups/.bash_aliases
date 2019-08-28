@@ -188,7 +188,7 @@ alias gpager-vim='git config --global core.pager "vim -"'
 alias gpager-less='git config --global core.pager "less"'
 alias vim-mode-on='set -o vi'
 alias vim-mode-off='set -o emacs'
-alias cdt='cd ~/.temp'
+alias cdt='cd ~/.test'
 gomsync() {
     for i in "$@"
     do 
