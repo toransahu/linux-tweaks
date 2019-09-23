@@ -33,3 +33,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # eclipse/eclim
 export ECLIPSE_HOME=$HOME/.eclipse/org.eclipse.platform_4.8.0_1473617060_linux_gtk_x86_64
 
+# set IP ADDRESS
+export MY_IP_ADDR=$(ifconfig wlp2s0 | awk '/inet / {print $2}') 
