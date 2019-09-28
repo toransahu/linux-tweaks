@@ -181,4 +181,4 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # export ZSH_TMUX_AUTOSTART=true  # DO NOT USE - issue to timer emoji
 
 # start tmux automatically 
-if [ "$TMUX" = "" ]; then tmux; fi
+# if [ "$TMUX" = "" ]; then tmux; fi
