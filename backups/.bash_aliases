@@ -224,3 +224,5 @@ alias glistall='git for-each-ref --format=" %(authorname) %09 %(refname)" --sort
 alias pyfmt='black -l 120'
 alias freeram='sudo $WORKSPACE/linux-tweaks/scripts/freeram.sh'
 alias cdgnoi='cd $GOPATH/src/github.com/mistsys/mist-openconfig-gnoi'
+alias cdm='cd $WORKSPACE/mist'
+alias cdlb='cd $WORKSPACE/linux-tweaks/backups'
