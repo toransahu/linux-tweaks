@@ -58,6 +58,7 @@ Plugin 'junegunn/fzf.vim'                       " fuzzy finder
 Plugin 'mileszs/ack.vim'                        " Ack - search patterns; need: sudo apt-get install ack-grep
 Plugin 'rking/ag.vim'                           " (Depricated) Ag - Ack alternative; need: sudo apt install silversearcher-ag
 Plugin 'google/vim-searchindex'                 " Search index/number
+Plugin 'tpope/vim-sensible'                     " Default configs everyone can agree on
 
 "------------------------ Prog utils ---------------------------
 
