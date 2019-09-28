@@ -177,4 +177,5 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # set -o vi
 
 # autostart tmux - pre-requiiste - oh-my-zsh's plugin `tmux` installed
-ZSH_TMUX_AUTOSTART=true
+# export ZSH_TMUX_AUTOSTART=true
+
