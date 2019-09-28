@@ -1,6 +1,3 @@
-# start tmux automatically - KEEP ON THE TOP LINE ~/.zshrc
-if [ "$TMUX" = "" ]; then tmux; fi
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -69,6 +66,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -180,5 +178,7 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # set -o vi
 
 # autostart tmux - pre-requiiste - oh-my-zsh's plugin `tmux` installed
-# export ZSH_TMUX_AUTOSTART=true
+# export ZSH_TMUX_AUTOSTART=true  # DO NOT USE - issue to timer emoji
 
+# start tmux automatically 
+if [ "$TMUX" = "" ]; then tmux; fi
