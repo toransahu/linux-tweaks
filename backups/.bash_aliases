@@ -230,3 +230,10 @@ alias ttt='tmux && tmux set -g pane-border-status top && tmux set -g pane-border
 alias tpnum='tmux bind Left select-pane -L \; display-pane -d 5000'
 alias tks='tmux kill-server'
 alias cdp='cd //home/toransahu/disk/E/workspace/post-linux-install'
+
+gcdiff(){
+    GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2)
+    COMMENT="_$1"
+    STAMP=="$(date +"%Y-%m-%d-%I:%M:%S")"
+    git diff > "$GIT_TEMP_BRANCH$COMMENT_$STAMP
+}
