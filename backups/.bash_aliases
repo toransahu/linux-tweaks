@@ -233,7 +233,13 @@ alias cdp='cd //home/toransahu/disk/E/workspace/post-linux-install'
 
 gcdiff(){
     GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2)
+    if [[ -z "$1" ]] 
+    # then
+    #     COMMENT="_$1"
+    # fi
     COMMENT="_$1"
-    STAMP=="$(date +"%Y-%m-%d-%I:%M:%S")"
-    git diff > "$GIT_TEMP_BRANCH$COMMENT_$STAMP
+    STAMP="$(date +"%Y-%m-%d-%I:%M:%S")"
+    git diff > ${GIT_TEMP_BRANCH}${COMMENT}_${STAMP}.diff
 }
+alias cdgog='cd $GOPATH/src/github.com'
+alias gh2fa='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
