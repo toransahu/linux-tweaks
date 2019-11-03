@@ -217,7 +217,7 @@ gomsync() {
 }
 alias todo='vim ~/TODO.md'
 alias reload='. ~/.zshrc'
-alias cdoc='cd /home/toransahu/go//src/github.com/mistsys/mist-openconfig'
+alias cdoc='cd ~/go/src/github.com/mistsys/mist-openconfig'
 alias m='gch master'
 alias epoch='date +%s'
 alias glistall='git for-each-ref --format=" %(authorname) %09 %(refname)" --sort=authorname'
@@ -225,11 +225,12 @@ alias pyfmt='black -l 120'
 alias freeram='sudo $WORKSPACE/linux-tweaks/scripts/freeram.sh'
 alias cdgnoi='cd $GOPATH/src/github.com/mistsys/mist-openconfig-gnoi'
 alias cdm='cd $WORKSPACE/mist'
+alias cdom='cd $WORKSPACE/office-repos/mist'
 alias cdlb='cd $WORKSPACE/linux-tweaks/backups'
 alias ttt='tmux && tmux set -g pane-border-status top && tmux set -g pane-border-format "#[bg=green] #[fg=white] #{pane_index} #(ps --no-headers -t #{pane_tty} -o args -O-c)"'
 alias tpnum='tmux bind Left select-pane -L \; display-pane -d 5000'
 alias tks='tmux kill-server'
-alias cdp='cd //home/toransahu/disk/E/workspace/post-linux-install'
+alias cdp='cd ~/disk/E/workspace/post-linux-install'
 
 gcdiff(){
     GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2)
