@@ -64,7 +64,7 @@ edge-tiling=true
 [desktop/interface]
 cursor-size=24
 first-day-of-week=1
-clock-use-24h=false
+clock-use-24h=true
 toolkit-accessibility=true
 clock-show-seconds=true
 cursor-blink-time=1200
