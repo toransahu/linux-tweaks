@@ -33,6 +33,7 @@ cp "$SOURCE_DIR/.vimrc" "$TMP_BAK_DIR/"
 cp "$SOURCE_DIR/.zshrc" "$TMP_BAK_DIR/"
 cp "$SOURCE_DIR/.commonrc" "$TMP_BAK_DIR/"
 cp -r "$SOURCE_DIR/.personalized" "$TMP_BAK_DIR/"
+dconf dump /org/gnome/terminal/legacy/profiles:/ > "$TMP_BAK_DIR/gnome-terminal-profiles.dconf" # terminal profile backup
 
 substr="cinnamon"
 
@@ -60,6 +61,7 @@ cp "$TARGET_DIR/.vimrc" "$SOURCE_DIR/"
 cp "$TARGET_DIR/.zshrc" "$SOURCE_DIR/"
 cp "$TARGET_DIR/.commonrc" "$SOURCE_DIR/"
 cp -r "$TARGET_DIR/.personalized" "$SOURCE_DIR/"
+dconf load /org/gnome/terminal/legacy/profiles:/ < "$TARGET_DIR/gnome-terminal-profiles.dconf"
 
 substr="cinnamon"
 

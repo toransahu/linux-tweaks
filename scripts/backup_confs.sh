@@ -21,6 +21,7 @@ cp "$SOURCE_DIR/.vimrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.zshrc" "$TARGET_DIR/"
 cp "$SOURCE_DIR/.commonrc" "$TARGET_DIR/"
 cp -r "$SOURCE_DIR/.personalized" "$TARGET_DIR/"
+dconf dump /org/gnome/terminal/legacy/profiles:/ > "$TARGET_DIR/gnome-terminal-profiles.dconf" # terminal profile backup
 
 substr="cinnamon"
 
