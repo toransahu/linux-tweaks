@@ -91,7 +91,7 @@ name='Calc'
 [desktop/keybindings/custom-keybindings/custom3]
 binding=['Print']
 command='gnome-screenshot'
-name='Screenshot'
+name='Screenshot - full monitors - PrtScn'
 
 [desktop/keybindings/custom-keybindings/custom4]
 binding=['<Super>e']
@@ -158,10 +158,10 @@ binding=['<Alt><Super>Down']
 command='xrandr -o 2'
 name='Rotate 180'
 
-[desktop/keybindings/custom-keybindings/custom8]
-binding=['PowerOff']
-command='sudo pm-suspend&'
-name='Suspend pm-suspend&'
+[desktop/keybindings/custom-keybindings/custom23]
+binding=['<Primary>Insert']
+command='gnome-screenshot -w'
+name='Screenshot - selected window - prtScn+w'
 
 [desktop/keybindings/custom-keybindings/custom16]
 binding=['<Alt><Super>Right']
@@ -178,6 +178,11 @@ binding=['<Super>f']
 command='snap run firefox'
 name='Firefox'
 
+[desktop/keybindings/custom-keybindings/custom8]
+binding=['PowerOff']
+command='sudo pm-suspend&'
+name='Suspend pm-suspend&'
+
 [desktop/keybindings/custom-keybindings/custom18]
 binding=['<Super>m']
 command='thunderbird'
@@ -190,7 +195,7 @@ name='Screenshot Area + Clipboard'
 
 [desktop/keybindings]
 looking-glass-keybinding=@as []
-custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21', 'custom22']
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21', 'custom22', 'custom23']
 show-desklets=@as []
 
 [desktop/keybindings/media-keys]
