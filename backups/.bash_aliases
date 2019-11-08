@@ -240,7 +240,8 @@ gcdiff(){
     # fi
     COMMENT="_$1"
     STAMP="$(date +"%Y-%m-%d-%I:%M:%S")"
-    git diff > ${GIT_TEMP_BRANCH}${COMMENT}_${STAMP}.diff
+    mkdir -p .diff
+    git diff > .diff/${GIT_TEMP_BRANCH}${COMMENT}_${STAMP}.diff
 }
 alias cdgog='cd $GOPATH/src/github.com'
 alias gh2fa='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
