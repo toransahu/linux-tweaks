@@ -41,6 +41,7 @@ call vundle#begin()                             " start- all plugins below
 
 Plugin 'VundleVim/Vundle.vim'                   " Plugin Manager
 Plugin 'morhetz/gruvbox'                        " Color Scheme
+Plugin 'NLKNguyen/papercolor-theme'             " Color Scheme - Materal Design 
 Plugin 'itchyny/lightline.vim'                  " Botton Status Bar
 Plugin 'itchyny/vim-gitbranch'                  " lightline uses it
 Plugin 'mhinz/vim-signify'                      " VCS - git, svn diff 
@@ -91,8 +92,10 @@ call vundle#end()                               " stop - all plugins above
 "============= Plugin Configs
 
 set hlsearch                                    " highlight search patterns
-colorscheme gruvbox                             " set colorscheme
-set background=dark                             " set bg color
+" colorscheme gruvbox                             " set colorscheme
+" set background=dark                             " set bg color
+colorscheme PaperColor                             " set colorscheme
+set background=light                             " set bg color
 " set column limit/line length limit
 execute 'set colorcolumn='.MAX_LINE_COL         
 
@@ -106,7 +109,9 @@ let g:lightline = {
       \ 'component_function': {
       \   'gitbranch': 'gitbranch#name'
       \ },
+      \ 'colorscheme': 'PaperColor',  
       \ }
+" g:lighline.colorscheme: if PaperColor installed & enabled
 
 " NERDTree shortcut
 map <C-n> :NERDTreeToggle<CR>
