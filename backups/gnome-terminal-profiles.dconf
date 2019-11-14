@@ -1,6 +1,6 @@
 [/]
 list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'ce86e17d-bdc6-490c-9718-812fc48852f2', '50f04436-b33a-4f76-a245-86e6d43a6f82', '6774866f-f717-4739-ae50-17cd61f82db0']
-default='50f04436-b33a-4f76-a245-86e6d43a6f82'
+default='ce86e17d-bdc6-490c-9718-812fc48852f2'
 
 [:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 foreground-color='rgb(46,52,54)'

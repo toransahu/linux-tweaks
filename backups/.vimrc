@@ -92,10 +92,10 @@ call vundle#end()                               " stop - all plugins above
 "============= Plugin Configs
 
 set hlsearch                                    " highlight search patterns
-" colorscheme gruvbox                             " set colorscheme
-" set background=dark                             " set bg color
-colorscheme PaperColor                             " set colorscheme
-set background=light                             " set bg color
+colorscheme gruvbox                             " set colorscheme
+set background=dark                             " set bg color
+" colorscheme PaperColor                        " set colorscheme
+" set background=light                          " set bg color
 " set column limit/line length limit
 execute 'set colorcolumn='.MAX_LINE_COL         
 
