@@ -1,6 +1,6 @@
 [/]
 list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'ce86e17d-bdc6-490c-9718-812fc48852f2', '50f04436-b33a-4f76-a245-86e6d43a6f82', '6774866f-f717-4739-ae50-17cd61f82db0']
-default='ce86e17d-bdc6-490c-9718-812fc48852f2'
+default='50f04436-b33a-4f76-a245-86e6d43a6f82'
 
 [:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 foreground-color='rgb(46,52,54)'
@@ -21,18 +21,19 @@ scrollbar-policy='never'
 visible-name='experimental'
 
 [:ce86e17d-bdc6-490c-9718-812fc48852f2]
-palette=['rgb(46,52,54)', 'rgb(204,48,48)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(177,61,196)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(111,113,109)', 'rgb(184,77,77)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-theme-colors=true
+palette=['rgb(46,52,54)', 'rgb(204,48,48)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(177,61,196)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(111,113,109)', 'rgb(194,9,9)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-theme-transparency=false
 visible-name='light_on_grey'
 
 [:50f04436-b33a-4f76-a245-86e6d43a6f82]
 foreground-color='rgb(32,32,32)'
 visible-name='grey_on_light_grey'
-palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(38,139,210)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(202,51,124)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(139,44,5)', 'rgb(6,115,11)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(64,156,34)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(202,51,124)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(104,116,119)', 'rgb(139,44,5)', 'rgb(6,115,11)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
 bold-is-bright=true
 cursor-colors-set=false
 highlight-colors-set=false
 use-theme-colors=false
 use-theme-transparency=false
 bold-color-same-as-fg=true
-background-color='rgb(240,240,240)'
+background-color='rgb(224,224,224)'

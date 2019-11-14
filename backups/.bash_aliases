@@ -245,3 +245,5 @@ gcdiff(){
 }
 alias cdgog='cd $GOPATH/src/github.com'
 alias gh2fa='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
+alias night='xdotool key Shift+F10 r Down  Down Down Return'
+alias day='xdotool key Shift+F10 r Down  Return'
