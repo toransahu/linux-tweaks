@@ -54,6 +54,10 @@ ENABLE_CORRECTION="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # HIST_STAMPS="mm/dd/yyyy"
 
+# HISTORY FILE
+# unsetopt EXTENDED_HISTORY # to stop prefixing with epoch - not working
+# HISTFILE=~/.bash_history  # keep bash and zsh in sync
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
