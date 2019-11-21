@@ -247,3 +247,9 @@ alias cdgog='cd $GOPATH/src/github.com'
 alias gh2fa='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
 alias night='xdotool key Shift+F10 r Down  Down Down Return'
 alias day='xdotool key Shift+F10 r Down  Return'
+alias freeaptcache='sudo apt-get clean'
+alias mist='source $WORKSPACE/secret/mist/envs/.mist_aliases'
+alias eshead='cd $WORKSPACE/elasticsearch-head && npm run start & sleep 2s && firefox http://localhost:9100'
+alias eshead-stop='pkill grunt > /dev/null'
+
+# TODO: whoisusingport :port -> kill that service
