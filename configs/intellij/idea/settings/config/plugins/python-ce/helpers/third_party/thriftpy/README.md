@@ -1,1 +1,0 @@
-#Thriftpy with dependencies
