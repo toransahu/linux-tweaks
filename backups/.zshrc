@@ -187,4 +187,5 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 unsetopt extended_history # to stop prefixing with epoch - not working
 # HISTFILE=~/.bash_history  # keep bash and zsh in sync
 
-
+# source env vars
+mist
