@@ -179,7 +179,6 @@ alias vpnstag='cd ~/vpns/mist/openVpn/toran.sahu@mistsys.com_stag && sudo openvp
 alias vpnprod='cd ~/vpns/mist/openVpn/toran.sahu@mistsys.com_prod && sudo openvpn --config production-toran.sahu@mistsys.com.ovpn'
 alias clearswap='sudo swapoff -a && sudo swapon -a'
 alias freeswap='sudo swapoff -a && sudo swapon -a'
-alias veil='~/veil'
 alias uninstall-go='sudo rm -rvf /usr/local/go/'
 alias cdgo='cd $GOPATH/src/'
 alias cdgopkg='cd $GOPATH/pkg/'
