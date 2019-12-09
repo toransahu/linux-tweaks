@@ -177,6 +177,10 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # vim mode
 # set -o vi
 
+# Edit line in vim with ctrl+e
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
 # autostart tmux - pre-requiiste - oh-my-zsh's plugin `tmux` installed
 # export ZSH_TMUX_AUTOSTART=true  # DO NOT USE - issue to timer emoji
 
