@@ -175,7 +175,7 @@ name='Reboot'
 
 [desktop/keybindings/custom-keybindings/custom17]
 binding=['<Super>f']
-command='snap run firefox'
+command='firefox'
 name='Firefox'
 
 [desktop/keybindings/custom-keybindings/custom8]

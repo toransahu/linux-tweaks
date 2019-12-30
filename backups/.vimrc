@@ -60,6 +60,7 @@ Plugin 'mileszs/ack.vim'                        " Ack - search patterns; need: s
 Plugin 'rking/ag.vim'                           " (Depricated) Ag - Ack alternative; need: sudo apt install silversearcher-ag
 Plugin 'google/vim-searchindex'                 " Search index/number
 Plugin 'tpope/vim-sensible'                     " Default configs everyone can agree on
+Plugin 'vim-scripts/DrawIt'                     " For ASCII arts
 
 "------------------------ Prog utils ---------------------------
 
