@@ -1,0 +1,17 @@
+{
+    "python.jediEnabled": false, // to use MPLS (Microsoft Python Language Server) instead of Jedi
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": ["go.mod", ".git/"],
+            "filetypes": ["go"]
+        }
+    },
+    "coc.preferences.formatOnSaveFiletypes": [
+        "html",
+        "css",
+        "javascript",
+        "Markdown",
+        "json"
+    ]
+}
