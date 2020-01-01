@@ -137,7 +137,7 @@ fu! ConfigureALE()
     "let g:ale_python_pylint_options = '--load-plugins pylint_django'
 endfunction
 
-" call ConfigureALE()
+call ConfigureALE()
 
 fu! ConfigureVimGo()
     "================vim-go config============

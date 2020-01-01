@@ -45,7 +45,7 @@ Plug 'toransahu/vim-template'                 " Template System
 "Plug 'ambv/black'
 "Plug 'Chiel92/vim-autoformat'
 "Plug 'google/vim-codefmt'
-" Plug 'w0rp/ale'                             " Asynchronous Linting Enging - ALE
+Plug 'w0rp/ale'                             " Asynchronous Linting Enging - ALE
 Plug 'SirVer/ultisnips'                       " Snippet Engine
 Plug 'honza/vim-snippets'                     " Snippet files - Snippets are separated from the engine
 Plug 'heavenshell/vim-pydocstring'            " Python docstring gen
