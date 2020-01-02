@@ -9,6 +9,7 @@ set title                                       " set filename in terminal windo
 " set nowritebackup
 " set noswapfile
 set clipboard=unnamedplus                       " this supports only vim-gnome not vim or vim-tiny
+set relativenumber                              " relative line number ON
 
 fu! PyAutoActivateVenv()
 "python with virtualenv support
@@ -81,3 +82,25 @@ fu! ConfigureRunFile()
 endfunction
 
 call ConfigureRunFile()
+
+fu! ConfigureManualCodeFolding()
+    " zo opens a fold at the cursor.
+    " zShift+o opens all folds at the cursor.
+    " zc closes a fold at the cursor.
+    " zm increases the foldlevel by one.
+    " zShift+m closes all open folds.
+    " zr decreases the foldlevel by one.
+    " zShift+r decreases the foldlevel to zero == opens all folds
+    set foldmethod=indent
+    set foldnestmax=10
+    set nofoldenable
+    set foldlevel=2
+endfunction
+
+" call ConfigureManualCodeFolding()
+
+fu! ConfigureCodeFoldKeymap()
+    noremap <C-F5> :exe "normal zM"<CR>
+endfunction
+
+call ConfigureCodeFoldKeymap()

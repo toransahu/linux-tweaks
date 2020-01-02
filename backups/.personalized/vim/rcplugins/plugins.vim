@@ -437,7 +437,36 @@ fu! ConfigureCOCCustom()
     " range format/prettify file with :f in normal mode
     nmap <leader>f  <Plug>(coc-format-selected)
     nmap <leader>f  :<C-u>CocCommand prettier.formatFile<cr>
+    " fix ctrl-Space autocomplete keymap issue
+    " inoremap <silent><expr> <c-space>
+    "       \ pumvisible() ? "\<C-n>" :
+    "       \ <SID>check_back_space() ? "\<c-space>" :
+    "       \ coc#refresh()
+    " inoremap <expr><S-c-space> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+    " function! s:check_back_space() abort
+    "   let col = col('.') - 1
+    "   return !col || getline('.')[col - 1]  =~# '\s'
+    " endfunction
+
+    " Use <c-space> to trigger completion.
+    " inoremap <silent><expr> <C-Space> coc#refresh()
+    " noremap <silent><expr> <C-Space> coc#refresh()
+    " imap <C-Space> <Tab>
+
 endfunction
 
 call ConfigureCOCCustom()
 
+fu! ConfigureVimAnyFold()
+    filetype plugin indent on " required
+    syntax on                 " required
+    autocmd Filetype * AnyFoldActivate               " activate for all filetypes
+    " or
+    " autocmd Filetype <your-filetype> AnyFoldActivate " activate for a specific filetype
+    set foldlevel=0  " close all folds
+    " or
+    set foldlevel=99 " Open all folds
+endfunction
+
+call ConfigureVimAnyFold()

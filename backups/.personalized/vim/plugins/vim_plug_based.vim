@@ -53,7 +53,8 @@ Plug 'scrooloose/nerdcommenter'               " for easy comments
 Plug 'tpope/vim-fugitive'                     " git commands in VIM
 Plug 'tpope/vim-surround'                     " surround text with something manually
 Plug 'raimondi/delimitmate'                   " auto close
-"Plug 'tmhedberg/SimpylFold'                  " code fold
+"Plug 'tmhedberg/SimpylFold'                  " python code fold
+Plug 'pseewald/anyfold'                       " code fold
 "Plug 'myitcv/govim'                          " new plugin for go written in go feature > vim-go
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }       " go support; https://github.com/fatih/vim-go-tutorial
 "Plug 'jodosha/vim-godebug'                   " go debugger in split screen with delve CLI - only for neovim; TODO: check later
