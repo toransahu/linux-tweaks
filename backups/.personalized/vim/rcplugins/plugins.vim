@@ -11,11 +11,14 @@ fu! ConfigureLightline()
           \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
           \ },
           \ 'component_function': {
-          \   'gitbranch': 'gitbranch#name'
+          \   'gitbranch': 'gitbranch#name',
+	      \   'cocstatus': 'coc#status'
           \ },
           \ 'colorscheme': 'PaperColor',  
           \ }
     " g:lighline.colorscheme: if PaperColor installed & enabled
+    " Use auocmd to force lightline update.
+    autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 endfunction
 
 call ConfigureLightline()
@@ -181,6 +184,7 @@ call ConfigureVimGo()
 
 fu! ConfigureUntiship()
     "===============untisnip configs
+    " Untisnip uses Tab for autocompletion - hence changing the keymap
     " Trigger configuration. Do not use <tab> if you use
     " https://github.com/Valloric/YouCompleteMe.
     let g:UltiSnipsExpandTrigger="<c-t>"
@@ -192,7 +196,7 @@ fu! ConfigureUntiship()
     let g:UltiSnipsEditSplit="vertical"
     
     "eclim configs for java and other langs using eclipse
-    let g:EclimCompletionMethod = 'omnifunc'
+    " let g:EclimCompletionMethod = 'omnifunc' " not usinf eclim anymore - using coc-java now - hence commented out
 endfunction
 
 call ConfigureUntiship()
@@ -326,8 +330,8 @@ fu! ConfigureCOCBase()
       return !col || getline('.')[col - 1]  =~# '\s'
     endfunction
     
-    " Use <c-space> to trigger completion.
-    inoremap <silent><expr> <c-space> coc#refresh()
+    " Use <c-space> to trigger completion. - this works on neovim only - hence commented out - Toran
+    " inoremap <silent><expr> <c-space> coc#refresh()
     
     " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
     " Coc only does snippet and additional edit on confirm.
@@ -437,22 +441,14 @@ fu! ConfigureCOCCustom()
     " range format/prettify file with :f in normal mode
     nmap <leader>f  <Plug>(coc-format-selected)
     nmap <leader>f  :<C-u>CocCommand prettier.formatFile<cr>
-    " fix ctrl-Space autocomplete keymap issue
-    " inoremap <silent><expr> <c-space>
-    "       \ pumvisible() ? "\<C-n>" :
-    "       \ <SID>check_back_space() ? "\<c-space>" :
-    "       \ coc#refresh()
-    " inoremap <expr><S-c-space> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-    " function! s:check_back_space() abort
-    "   let col = col('.') - 1
-    "   return !col || getline('.')[col - 1]  =~# '\s'
-    " endfunction
-
-    " Use <c-space> to trigger completion.
-    " inoremap <silent><expr> <C-Space> coc#refresh()
-    " noremap <silent><expr> <C-Space> coc#refresh()
-    " imap <C-Space> <Tab>
+    
+    " Ctrl-Space for completions. Heck Yeah!
+    inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+            \ "\<lt>C-n>" :
+            \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+            \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+            \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+    imap <C-@> <C-Space>
 
 endfunction
 
@@ -460,7 +456,7 @@ call ConfigureCOCCustom()
 
 fu! ConfigureVimAnyFold()
     filetype plugin indent on " required
-    syntax on                 " required
+    " syntax on                 " required
     autocmd Filetype * AnyFoldActivate               " activate for all filetypes
     " or
     " autocmd Filetype <your-filetype> AnyFoldActivate " activate for a specific filetype
