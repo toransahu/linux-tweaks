@@ -59,3 +59,4 @@ Plug 'pseewald/anyfold'                       " code fold
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }       " go support; https://github.com/fatih/vim-go-tutorial
 "Plug 'jodosha/vim-godebug'                   " go debugger in split screen with delve CLI - only for neovim; TODO: check later
 Plug 'janko-m/vim-test'                       " polyglot test runner
+Plug 'sheerun/vim-polyglot'                   " syntax highlighter - language pack
