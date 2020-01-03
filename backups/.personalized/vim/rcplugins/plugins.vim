@@ -243,21 +243,22 @@ fu! ConfigureVimTest()
     " vim-test
     let g:test#runner_commands = ['Django', 'Nose', 'Nose2', 'PyTest', 'PyUnit', 'Maven', 'Gradle']
     
-    let test#java#runner = 'maventest'
-    let test#java#maventest#options = {
+    " let g:test#java#runner = 'maventest' " not defining explicitly; vim-test algo with decide
+    let g:test#java#maventest#options = {
       \ 'nearest': '--fail-fast',
       \ 'file':    '--fail-fast', 
       \ 'suite':   '--fail-fast',
     \}
     
-    "let test#python#runner = 'pytest'
-    let test#python#djangotest#options = {
+    "let test#python#runner = 'pytest' " not defining explicitly; vim-test algo with decide
+    let g:test#python#djangotest#options = {
       \ 'nearest': '--failfast --keepdb',
       \ 'file':    '--failfast --keepdb',
       \ 'suite':   '--failfast --keepdb',
     \}
-    
-    let test#vim#term_position = "belowright"
+
+    " let g:test#python#djangotest#executable = 'python manage.py test --failfast --keepdb' " not required - already ^^
+    let g:test#vim#term_position = "belowright"
 endfunction
 
 call ConfigureVimTest()
