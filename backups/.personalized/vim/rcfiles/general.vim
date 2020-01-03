@@ -94,7 +94,7 @@ fu! ConfigureManualCodeFolding()
     set foldlevel=2
 endfunction
 
-" call ConfigureManualCodeFolding()
+" call ConfigureManualCodeFolding()  " turning it off as VimAnyFold does better
 
 fu! ConfigureCodeFoldKeymap()
     noremap <C-F5> :exe "normal zM"<CR>

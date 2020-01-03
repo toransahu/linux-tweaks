@@ -455,6 +455,12 @@ endfunction
 call ConfigureCOCCustom()
 
 fu! ConfigureVimAnyFold()
+    " zo opens a fold at the cursor.
+    " zShift+o opens all folds at the cursor.
+    " zc closes a fold at the cursor.
+    " zShift+m closes all open folds.
+    " zShift+r opens all folds - decreases the foldlevel to zero
+
     filetype plugin indent on " required
     " syntax on               " required - messing up with json comments highligh
     autocmd Filetype * AnyFoldActivate               " activate for all filetypes
@@ -463,8 +469,6 @@ fu! ConfigureVimAnyFold()
     set foldlevel=0  " close all folds
     " or
     set foldlevel=99 " Open all folds
-
-    " TODO: change key mapping
 endfunction
 
 call ConfigureVimAnyFold()
