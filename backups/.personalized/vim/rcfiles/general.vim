@@ -70,12 +70,9 @@ fu! ConfigureRunFile()
     autocmd filetype python nnoremap <F4> :w <bar> exec '!python '.shellescape('%')<CR>
     autocmd filetype c nnoremap <F4> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
     autocmd filetype cpp nnoremap <F4> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
-    "autocmd filetype java nnoremap <Leader>c :w <CR>:!javac % :r&& java %:r<CR>
-    " TODO: F4
-    autocmd filetype java nnoremap <Leader>c :w <CR>:!javac % :r&& java %:r<CR>
-    "autocmd filetype php nnoremap <Leader>c :w <CR>:!clear && php  %<CR>
-    " TODO: F4
-    autocmd filetype php nnoremap <Leader>c :w <CR>:!clear && php  %<CR>
+    autocmd filetype java nnoremap <F4> :w <bar> exec '!javac '.shellescape('%').' && java '.shellescape('%:r')<CR>
+    " TODO: F4 
+    " autocmd filetype php nnoremap <Leader>c :w <CR>:!clear && php  %<CR>
     autocmd filetype go nnoremap <F4> :GoRun <CR>
     " execute python code usin F9
     nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
