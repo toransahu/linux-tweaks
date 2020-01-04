@@ -39,7 +39,8 @@ dconf dump /org/gnome/terminal/legacy/profiles:/ > "$TMP_BAK_DIR/gnome-terminal-
 substr="cinnamon"
 
 if [ "$DESKTOP_SESSION" = $substr ]; then
-	dconf dump /org/cinnamon/ > "$TMP_BAK_DIR/cinnamon_backup_$HOSTNAME"
+	dconf dump /org/cinnamon/ > "$TMP_BAK_DIR/cinnamon/cinnamon_backup_$HOSTNAME"
+    cp -r "$SOURCE_DIR/.cinnamon/configs" "$TMP_BAK_DIR/cinnamon/"
 fi	
 
 echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Files temporarily backed up at' $TMP_BAK_DIR'.'
@@ -69,7 +70,8 @@ substr="cinnamon"
 
 if [ "$DESKTOP_SESSION" = $substr ]; then
 	echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " Found $DESKTOP_SESSION desktop environment, restoring configs...
-	dconf load /org/cinnamon/ < "$TARGET_DIR/cinnamon_backup"
+	dconf load /org/cinnamon/ < "$TARGET_DIR/cinnamon/cinnamon_backup"
+    cp -r "$TARGET_DIR/cinnamon/configs" "$SOURCE_DIR/.cinnamon/"
 fi
 
 echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Configs Restore Completed.'

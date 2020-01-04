@@ -28,7 +28,8 @@ substr="cinnamon"
 
 if [ "$DESKTOP_SESSION" = $substr ]; then
 	echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " Found $DESKTOP_SESSION desktop environment, backing up configs...
-	dconf dump /org/cinnamon/ > "$TARGET_DIR/cinnamon_backup"
+	dconf dump /org/cinnamon/ > "$TARGET_DIR/cinnamon/cinnamon_backup"
+    cp -r "$SOURCE_DIR/.cinnamon/configs" "$TARGET_DIR/cinnamon/"
 fi	
 
 echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Files backed up at' $TARGET_DIR'.'
