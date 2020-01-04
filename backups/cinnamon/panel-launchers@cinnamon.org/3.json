@@ -1,0 +1,29 @@
+{
+    "section1": {
+        "type": "section",
+        "description": "Behavior"
+    },
+    "launcherList": {
+        "type": "generic",
+        "default": [
+            "firefox.desktop",
+            "gnome-terminal.desktop",
+            "nemo.desktop"
+        ],
+        "value": [
+            "gnome-terminal.desktop",
+            "nemo.desktop",
+            "firefox_firefox.desktop",
+            "kazam.desktop",
+            "shutter.desktop",
+            "chrome-bgejknldbmbjknepfkakfbemenkgaack-Default.desktop"
+        ]
+    },
+    "allow-dragging": {
+        "type": "switch",
+        "default": true,
+        "description": "Allow dragging of launchers",
+        "value": true
+    },
+    "__md5__": "11474ba983ca660d140dedf9e087884c"
+}

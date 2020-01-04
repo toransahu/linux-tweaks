@@ -1,0 +1,344 @@
+[/]
+extension-cache-updated=1544028495
+desktop-effects-unmaximize-transition='easeNone'
+desktop-effects-maximize-transition='easeInExpo'
+applet-cache-updated=1572791602
+desktop-effects-map-effect='traditional'
+workspace-osd-x=50
+command-history=['gconf-editor', 'cinnamon', 'XKILL', 'gnome-terminal', 'kill', 'r', 'xkill']
+alttab-switcher-show-all-workspaces=false
+desktop-effects-close-effect='traditional'
+workspace-osd-duration=400
+desktop-effects-unmaximize-time=100
+enabled-desklets=@as []
+desktop-effects-map-time=175
+panel-zone-icon-sizes='[{"panelId":1,"left":0,"center":0,"right":24},{"panelId":2,"left":0,"center":0,"right":0}]'
+desktop-effects-minimize-effect='traditional'
+panels-scale-text-icons=['1:true', '2:true']
+desklet-snap-interval=25
+panels-height=['1:25', '2:25']
+next-applet-id=23
+panel-launchers=['DEPRECATED']
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-maximize-time=100
+desktop-effects-unmaximize-effect='none'
+panels-enabled=['1:0:left', '2:0:bottom']
+desktop-effects-tile-transition='easeInQuad'
+panels-resizable=['1:true', '2:true']
+desktop-effects-maximize-effect='none'
+enabled-applets=['panel1:left:0:panel-launchers@cinnamon.org:3', 'panel1:right:4:systray@cinnamon.org:0', 'panel1:right:5:sound@cinnamon.org:13', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel2:right:4:notifications@cinnamon.org:6', 'panel1:right:9:user@cinnamon.org:8', 'panel1:right:10:network@cinnamon.org:9', 'panel2:left:0:menu@cinnamon.org:1', 'panel2:right:1:power@cinnamon.org:11', 'panel2:right:2:separator@cinnamon.org:15', 'panel2:right:5:calendar@cinnamon.org:12', 'panel2:right:6:show-desktop@cinnamon.org:2', 'panel2:center:0:IcingTaskManager@json:17', 'panel2:right:3:multicore-sys-monitor@ccadeptic23:21:orient']
+desktop-effects-minimize-time=200
+alttab-switcher-delay=100
+desktop-effects-tile-effect='none'
+desktop-effects-close-transition='easeOutQuad'
+desktop-effects-minimize-transition='easeInQuad'
+panel-edit-mode=false
+panels-show-delay=['1:0', '2:0']
+panels-hide-delay=['1:0', '2:0']
+desktop-effects-close-time=175
+next-desklet-id=1
+workspace-osd-y=50
+favorite-apps=['cinnamon-settings.desktop', 'pidgin.desktop', 'org.gnome.Terminal.desktop', 'nemo.desktop', 'firefox_firefox.desktop']
+show-media-keys-osd='medium'
+desktop-effects-tile-time=100
+panels-autohide=['1:false', '2:false']
+device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=SANYO 45N1159']
+no-adjacent-panel-barriers=true
+
+[sounds]
+tile-enabled=false
+login-enabled=false
+logout-enabled=false
+unplug-enabled=false
+notification-enabled=true
+plug-enabled=false
+switch-enabled=false
+
+[muffin]
+button-layout=':minimize,maximize,close'
+unredirect-fullscreen-windows=true
+resize-threshold=24
+tile-hud-threshold=25
+edge-tiling=true
+
+[desktop/interface]
+cursor-size=24
+first-day-of-week=1
+clock-use-24h=true
+toolkit-accessibility=true
+clock-show-seconds=true
+cursor-blink-time=1200
+icon-theme='Mint-X-Dark'
+gtk-overlay-scrollbars=false
+gtk-theme='Mint-Y-Dark'
+clock-show-date=true
+
+[desktop/keybindings/custom-keybindings/custom0]
+binding=['<Super>w']
+command="sh -c '~/.personalized/workspace_nemo.sh'"
+name='Workspace'
+
+[desktop/keybindings/custom-keybindings/custom1]
+binding=['<Super>t']
+command='gnome-terminal'
+name='Terminal'
+
+[desktop/keybindings/custom-keybindings/custom2]
+binding=['<Super>c']
+command='gnome-calculator'
+name='Calc'
+
+[desktop/keybindings/custom-keybindings/custom3]
+binding=['Print']
+command='gnome-screenshot'
+name='Screenshot - full monitors - PrtScn'
+
+[desktop/keybindings/custom-keybindings/custom4]
+binding=['<Super>e']
+command='nemo '
+name='Home'
+
+[desktop/keybindings/custom-keybindings/custom5]
+binding=['<Primary><Super>h']
+command='systemctl hibernate'
+name='Hibernate'
+
+[desktop/keybindings/custom-keybindings/custom10]
+binding=['<Super>space']
+command="sh -c '~/.personalized/rightclick.sh'"
+name='Right Click Keyboard'
+
+[desktop/keybindings/custom-keybindings/custom6]
+binding=['<Primary><Super>s']
+command='systemctl suspend'
+name='Suspend systemctl suspend'
+
+[desktop/keybindings/custom-keybindings/custom11]
+binding=@as []
+command='gnome-do'
+name='gnome-do'
+
+[desktop/keybindings/custom-keybindings/custom7]
+binding=['<Primary><Super>space']
+command="sh -c '~/.personalized/mouserightclick.sh'"
+name='Right Click Mouse Cursor Based'
+
+[desktop/keybindings/custom-keybindings/custom12]
+binding=['<Super>z']
+command='nemo $HOME'
+name='test'
+
+[desktop/keybindings/custom-keybindings/custom20]
+binding=['<Super>Print']
+command='gnome-screenshot -i'
+name='Screenshot Option'
+
+[desktop/keybindings/custom-keybindings/custom13]
+binding=['<Alt><Super>Up']
+command='xrandr -o 0'
+name='Rotate 0'
+
+[desktop/keybindings/custom-keybindings/custom21]
+binding=['<Super>i']
+command='idea'
+name='IntelliJ idea'
+
+[desktop/keybindings/custom-keybindings/custom14]
+binding=['<Alt><Super>Left']
+command='xrandr -o 1'
+name='Rotate 270'
+
+[desktop/keybindings/custom-keybindings/custom22]
+binding=['<Super>v']
+command='code'
+name='VS Code'
+
+[desktop/keybindings/custom-keybindings/custom15]
+binding=['<Alt><Super>Down']
+command='xrandr -o 2'
+name='Rotate 180'
+
+[desktop/keybindings/custom-keybindings/custom23]
+binding=['<Primary>Insert']
+command='gnome-screenshot -w'
+name='Screenshot - selected window - prtScn+w'
+
+[desktop/keybindings/custom-keybindings/custom16]
+binding=['<Alt><Super>Right']
+command='xrandr -o 3'
+name='Rotate 90'
+
+[desktop/keybindings/custom-keybindings/custom9]
+binding=['<Primary><Super>r']
+command='sudo reboot 00'
+name='Reboot'
+
+[desktop/keybindings/custom-keybindings/custom17]
+binding=['<Super>f']
+command='firefox'
+name='Firefox'
+
+[desktop/keybindings/custom-keybindings/custom8]
+binding=['PowerOff']
+command='sudo pm-suspend&'
+name='Suspend pm-suspend&'
+
+[desktop/keybindings/custom-keybindings/custom18]
+binding=['<Super>m']
+command='thunderbird'
+name='Thuderbird Mail'
+
+[desktop/keybindings/custom-keybindings/custom19]
+binding=['<Super>s']
+command='gnome-screenshot -ac'
+name='Screenshot Area + Clipboard'
+
+[desktop/keybindings]
+looking-glass-keybinding=@as []
+custom-list=['custom0', 'custom1', 'custom2', 'custom3', 'custom4', 'custom5', 'custom6', 'custom8', 'custom9', 'custom7', 'custom10', 'custom11', 'custom12', 'custom13', 'custom14', 'custom15', 'custom16', 'custom17', 'custom18', 'custom19', 'custom20', 'custom21', 'custom22', 'custom23']
+show-desklets=@as []
+
+[desktop/keybindings/media-keys]
+screensaver=['<Control><Alt>l', '<Super>l']
+home=['XF86Explorer']
+screenshot=@as []
+
+[desktop/keybindings/wm]
+push-snap-left=@as []
+switch-to-workspace-right=['<Primary><Super>Right']
+push-snap-right=@as []
+switch-to-workspace-left=['<Primary><Super>Left']
+move-to-workspace-left=['<Primary><Alt><Super>Left']
+move-to-workspace-right=['<Primary><Alt><Super>Right']
+
+[desktop/media-handling]
+autorun-x-content-start-app=@as []
+autorun-never=false
+autorun-x-content-ignore=@as []
+autorun-x-content-open-folder=['x-content/bootable-media', 'x-content/image-dcf']
+
+[desktop/screensaver]
+screensaver-name=''
+layout-group=1
+lock-enabled=true
+
+[desktop/applications/terminal]
+exec='gnome-terminal'
+
+[desktop/notifications]
+fade-opacity=40
+bottom-notifications=true
+fade-on-mouseover=false
+remove-old=false
+
+[desktop/session]
+idle-delay=uint32 0
+
+[desktop/privacy]
+recent-files-max-age=5
+remember-recent-files=true
+
+[desktop/wm/preferences]
+min-window-opacity=30
+theme='Mint-Y-Dark'
+num-workspaces=4
+workspace-names=['1. Main', '2. Production', '3. OpenConfig', '4. Personal']
+
+[desktop/a11y/applications]
+screen-keyboard-enabled=true
+screen-reader-enabled=false
+
+[desktop/a11y/keyboard]
+togglekeys-enable-osd=true
+togglekeys-enable-beep=true
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+mousekeys-accel-time=300
+bouncekeys-delay=300
+slowkeys-delay=300
+
+[desktop/a11y/mouse]
+secondary-click-enabled=false
+secondary-click-time=1.2
+dwell-time=1.2
+dwell-threshold=10
+dwell-click-enabled=false
+
+[desktop/sound]
+volume-sound-enabled=false
+event-sounds=false
+
+[desktop/background]
+picture-uri='file:///home/toran/Pictures/black-wallpaper-1.jpg'
+primary-color='#000000000000'
+picture-options='none'
+
+[desktop/background/slideshow]
+image-source='directory:///home/toran/Pictures'
+delay=15
+
+[extensions/0dyseus@MultiTranslatorExtension]
+translate-from-clipboard-keybinding=['<Shift><Super>g']
+window-height=500
+window-width=700
+all-dependencies-met=false
+remember-last-translator=true
+open-translator-dialog-keybinding=['<Super>g']
+translators-prefs='{"Google.Translate":{"last_target":"","default_source":"auto","default_target":"en","last_source":"","remember_last_lang":true},"Google.TranslateTS":{"last_target":"en","default_source":"auto","default_target":"hi","last_source":"auto","remember_last_lang":true},"Bing.TranslatorTS":{"last_target":"","default_source":"auto","default_target":"en","last_source":"","remember_last_lang":true},"Yandex.Translate":{"last_target":"","default_source":"auto","default_target":"en","last_source":"","remember_last_lang":true},"Apertium.TS":{"last_target":"","default_source":"auto","default_target":"en","last_source":"","remember_last_lang":true},"Transltr":{"last_target":"","default_source":"auto","default_target":"en","last_source":"","remember_last_lang":true}}'
+last-translator='Google.TranslateTS'
+translate-from-selection-keybinding=['<Shift><Super>g']
+
+[theme]
+theme-cache-updated=1566993755
+name='Mint-Y-Dark'
+
+[settings-daemon/plugins/power]
+button-power='suspend'
+critical-battery-action='nothing'
+lid-close-suspend-with-external-monitor=true
+sleep-inactive-battery-timeout=1800
+lid-close-ac-action='nothing'
+lid-close-battery-action='nothing'
+sleep-inactive-ac-timeout=0
+sleep-display-ac=600
+sleep-display-battery=300
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=true
+menus-have-icons=true
+
+[settings-daemon/peripherals/touchpad]
+tap-to-click=true
+natural-scroll=true
+horizontal-edge-scrolling=true
+horizontal-scrolling=true
+motion-acceleration=3.0276679841897232
+custom-acceleration=true
+clickpad-click=2
+custom-threshold=false
+scrolling-method=3
+disable-while-typing=true
+horizontal-two-finger-scrolling=false
+motion-threshold=9
+touchpad-enabled=true
+
+[settings-daemon/peripherals/touchscreen]
+orientation-lock=false
+
+[settings-daemon/peripherals/keyboard]
+repeat-interval=uint32 30
+delay=uint32 500
+numlock-state='on'
+
+[settings-daemon/peripherals/mouse]
+drag-threshold=8
+custom-acceleration=false
+motion-acceleration=3.7565922920892492
+motion-threshold=1
+double-click=400
+middle-button-enabled=false
+
+[cinnamon-session]
+auto-save-session=true
+prefer-hybrid-sleep=true
+quit-time-delay=60
