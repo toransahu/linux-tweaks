@@ -12,11 +12,10 @@ free_ram () {
     sudo $WORKSPACE/linux-tweaks/scripts/freeram.sh
 }
 
-kill_apps () {
-    APPS_TO_CLOSE='firefox '
-
+kill_firefox () {
+    APPS_TO_CLOSE='firefox'
     for app in $APPS_TO_CLOSE; do
-        pid=$(pidof $app | awk '{print $NF}')
+        pid=$(pidof $app | awk '{$NF=""; print $0}')  # kill subtasks
         echo "Will kill $app[pid: $pid]"
         kill $pid
     done
@@ -36,12 +35,12 @@ run() {
         if python -c "exit(0 if $RAM_FREE <= $THRESHOLD_FIRST else 1)"; then
             notify-send "Low Memory" "$RAM_FREE% free only"
             free_ram
+            kill_firefox
         fi
     
-        if python -c "exit(0 if $RAM_FREE <= $THRESHOLD_SECOND else 1)"; then
-            notify-send "Low Memory" "$RAM_FREE% free only"
-            kill_apps
-        fi
+        # if python -c "exit(0 if $RAM_FREE <= $THRESHOLD_SECOND else 1)"; then
+        #     notify-send "Low Memory" "$RAM_FREE% free only"
+        # fi
         
         sleep 5;
     done
