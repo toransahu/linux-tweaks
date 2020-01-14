@@ -16,9 +16,9 @@ kill_firefox () {
     APPS_TO_CLOSE='firefox'
     for app in $APPS_TO_CLOSE; do
         pids=$(pidof $app | awk '{$NF=""; print $0}')  # kill subtasks
-        echo "Will kill $app[pids: $pids]"
+        # echo "Will kill $app[pids: $pids]"
         kill $pids
-        echo "Killed $app[pids: $pids]"
+        # echo "Killed $app[pids: $pids]"
     done
 }
 
@@ -34,12 +34,14 @@ run() {
         THRESHOLD_SECOND=5.0
         
         if python -c "exit(0 if $RAM_FREE <= $THRESHOLD_FIRST else 1)"; then
-            notify-send "Low Memory" "$RAM_FREE%. Freeing up some RAM."
+            # notify-send "Low Memory" "$RAM_FREE%. Freeing up some RAM."
+            # echo "[Low Memory] $RAM_FREE%. Freeing up some RAM."
             free_ram
         fi
     
         if python -c "exit(0 if $RAM_FREE <= $THRESHOLD_SECOND else 1)"; then
-            notify-send "Low Memory" "$RAM_FREE%. Killing firefox tabs."
+            # notify-send "Low Memory" "$RAM_FREE%. Killing firefox tabs."
+            # echo "[Very Low Memory] $RAM_FREE%. Killing firefox tabs."
             kill_firefox
         fi
         
