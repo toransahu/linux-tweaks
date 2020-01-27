@@ -8,13 +8,15 @@
 
 source ~/paths.sh
 
-TIMESTAMP=$(date +"%Y-%m-%d-%H:%M:%S")
-THRESHOLD_FIRST=10.0
-THRESHOLD_SECOND=5.0
+THRESHOLD1=20.0
+THRESHOLD2=15.0
+THRESHOLD3=10.0
 TICK=3
 
-free_ram () {
+free_cached_ram () {
+    echo Freeing up some RAM.
     sudo $WORKSPACE/linux-tweaks/scripts/freeram.sh
+    echo done!
 }
 
 kill_firefox () {
@@ -27,8 +29,15 @@ kill_firefox () {
     done
 }
 
+kill_java () {
+    echo Killing java
+    kill $(pidof java)
+    echo done!
+}
+
 run() {
     while true; do
+        TIMESTAMP=$(date +"%Y-%m-%d-%H:%M:%S")
         RAM_USGAE=$(free | grep Mem | awk '{print $3/$2 * 100.0}')
         # RAM_FREE=$(free | grep Mem | awk '{print $4/$2 * 100.0}') # total - used - cahed - buffer
         RAM_FREE=$(python -c "print(100 - $RAM_USGAE)") # total - used
@@ -36,15 +45,17 @@ run() {
         SWAP_USGAE=$(free | grep Swap | awk '{print $3/$2 * 100.0}')
         SWAP_FREE=$(free | grep Swap | awk '{print $4/$2 * 100.0}')
         
-        echo "[$TIMESTAMP] Usage: $RAM_USGAE%, Free: $RAM_FREE%."
+        echo "[$TIMESTAMP] Usage: $RAM_USGAE%,\tFree: $RAM_FREE%."
 
-        if python -c "exit(0 if $RAM_FREE <= $THRESHOLD_FIRST else 1)"; then
-            echo Freeing up some RAM.
-            free_ram
+        if python -c "exit(0 if $RAM_FREE <= $THRESHOLD1 else 1)"; then
+            free_cached_ram
         fi
     
-        if python -c "exit(0 if $RAM_FREE <= $THRESHOLD_SECOND else 1)"; then
-            echo Killing firefox tabs.
+        if python -c "exit(0 if $RAM_FREE <= $THRESHOLD2 else 1)"; then
+            kill_java
+        fi
+
+        if python -c "exit(0 if $RAM_FREE <= $THRESHOLD3 else 1)"; then
             kill_firefox
         fi
         
@@ -53,3 +64,8 @@ run() {
 }
 
 run
+
+
+
+# good-to-read
+# - https://www.linuxatemyram.com/
