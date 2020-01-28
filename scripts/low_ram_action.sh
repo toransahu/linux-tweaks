@@ -35,6 +35,12 @@ kill_java () {
     echo done!
 }
 
+kill_TabNine () {
+    echo Killing TabNine
+    kill $(pidof TabNine)
+    echo done
+}
+
 run() {
     while true; do
         TIMESTAMP=$(date +"%Y-%m-%d-%H:%M:%S")
@@ -53,6 +59,7 @@ run() {
     
         if python -c "exit(0 if $RAM_FREE <= $THRESHOLD2 else 1)"; then
             kill_java
+            kill_TabNine
         fi
 
         if python -c "exit(0 if $RAM_FREE <= $THRESHOLD3 else 1)"; then
