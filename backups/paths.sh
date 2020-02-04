@@ -60,8 +60,8 @@ else
     IS_NEW=true
 fi
 
-WORKSPACE="$EROOT/workspace"
-TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
+export WORKSPACE="$EROOT/workspace"
+export TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
 
 if [ $IS_NEW = false ] ; then
     echo "All seems good. You're on computer: $(hostname)"
