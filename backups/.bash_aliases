@@ -175,8 +175,11 @@ alias cdgi='$WORKSPACE/gitignore'
 alias show='less +F'
 alias cdo='$WORKSPACE/office-repos'
 alias cleardns='sudo /etc/init.d/networking restart'
-alias vpnstag='cd ~/vpns/mist/openVpn/toran.sahu@mistsys.com_stag && sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn'
-alias vpnprod='cd ~/vpns/mist/openVpn/toran.sahu@mistsys.com_prod && sudo openvpn --config production-toran.sahu@mistsys.com.ovpn'
+alias vpnstag='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_stag && sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn'
+alias vpnprod='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_prod && sudo openvpn --config production-toran.sahu@mistsys.com.ovpn'
+alias vpneu='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_eu && sudo openvpn --config eu-toran.sahu@mistsys.com.ovpn'
+alias vpngcpstag='cd ~/vpns/mist/openVpn/gcp/toran.sahu@mistsys.com_stag && sudo openvpn --config gcp-staging-toran.sahu@mistsys.com.ovpn'
+alias vpngcpprod='cd ~/vpns/mist/openVpn/gcp/toran.sahu@mistsys.com_prod && sudo openvpn --config gcp-production-toran.sahu@mistsys.com.ovpn'
 alias clearswap='sudo swapoff -a && sudo swapon -a'
 alias freeswap='sudo swapoff -a && sudo swapon -a'
 alias uninstall-go='sudo rm -rvf /usr/local/go/'
@@ -247,7 +250,7 @@ alias gh2fa='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
 alias night='xdotool key Shift+F10 r Down  Down Down Return'
 alias day='xdotool key Shift+F10 r Down  Return'
 alias freeaptcache='sudo apt-get clean'
-alias mist='source $WORKSPACE/secret/mist/envs/.mist_aliases'
+alias mist='source $WORKSPACE/secret/mist/envs/.mist_aliases && source $WORKSPACE/secret/mist/envs/.mist_local_aliases'
 alias eshead='cd $WORKSPACE/elasticsearch-head && npm run start & sleep 2s && firefox http://localhost:9100'
 alias eshead-stop='pkill grunt > /dev/null'
 
@@ -255,6 +258,19 @@ alias eshead-stop='pkill grunt > /dev/null'
 alias 2fa-juniper='2fa $(cat $WORKSPACE/recovery/juniper_totp_2fa_secret_code.txt)'
 alias 2fa-github='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
 alias gchp='git cherry-pick'
-alias vpngcpstag='cd ~/vpns/mist/openVpn/gcp/toran.sahu@mistsys.com_stag && sudo openvpn --config gcp-staging-toran.sahu@mistsys.com.ovpn'
 alias mmdc='~/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
+
+kbash() {
+    app=$1
+    found=$(kubectl get pods --all-namespaces | grep $app | awk '{$NF=""; print $2}')
+    kubectl -n $app exec -it $found -- /bin/bash
+}
+
+var() {
+    ~/.personalized/parse_envvars.py --cmd=var $@ 
+}
+
+unvar() {
+    ~/.personalized/parse_envvars.py --cmd=unvar $@ 
+}
