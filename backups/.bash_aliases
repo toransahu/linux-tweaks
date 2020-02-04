@@ -269,8 +269,10 @@ kbash() {
 
 var() {
     ~/.personalized/parse_envvars.py --cmd=var $@ 
+    . ~/.zshrc
 }
 
 unvar() {
-    ~/.personalized/parse_envvars.py --cmd=unvar $@ 
+    ~/.personalized/parse_envvars.py --cmd=unvar $@
+    . ~/.zshrc
 }
