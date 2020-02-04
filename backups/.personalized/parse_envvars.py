@@ -5,75 +5,94 @@
 
 """Parse Envvars."""
 
-import os
 import argparse
+import os
 from gettext import gettext as _
 
-
-__author__ = 'Toran Sahu <toran.sahu@yahoo.com>'
-__license__ = 'Distributed under terms of the MIT license'
+__author__ = "Toran Sahu <toran.sahu@yahoo.com>"
+__license__ = "Distributed under terms of the MIT license"
 
 
 WORKSPACE = os.environ["WORKSPACE"]
 ROOT_ENV = os.path.join(WORKSPACE, "secret")
 ENV = "envs"
+SELF = "self"
 
 
 class ParseKeyVal(argparse.Action):
     """ParseKeyVal parses key value pair in dict format."""
+
     def __init__(self, option_strings, dest, nargs=None, **kwargs):
         super(ParseKeyVal, self).__init__(option_strings, dest, **kwargs)
 
     def __call__(self, parser, namespace, values, option_string=None):
         namespace.kv = dict()
         try:
-            k, v = values.split('=')
+            k, v = values.split("=")
             namespace.kv[k] = v
         except ValueError:
-            print("Error while parsing key-val pair %s" % values)
+            pass
 
 
-def get_common_parser():
-    parser = argparse.ArgumentParser(description=_("Save an ENV var"))
-    parser.add_argument(
-        "-c", "--ctx", help=_("Context")  # TODO: default me
-    )
-    parser.add_argument(
-        "-e", "--env", help=_("Environment")  # TODO: for me
-    )
-    parser.add_argument(
-        "--cmd", help=_("Command: var/unvar")
-    )
-    return parser
+class EnvParser:
+    def __init__(self):
+        parser = argparse.ArgumentParser(description=_("Save an ENV var"))
+        parser.add_argument("-c", "--ctx", default=SELF, help=_("Context"))  # TODO: default me
+        parser.add_argument("-e", "--env", help=_("Environment"))  # TODO: for me
+        parser.add_argument("--cmd", help=_("Command: var/unvar"))
+        parser.add_argument("kv", nargs="*", action=ParseKeyVal, help=_("key=value pair"))
+        parser.add_argument("k", nargs="*", help=_("keys to be actioned"))
+        args = parser.parse_args()
+        full_env = args.env
 
+        self.org = str(args.ctx).lower()
+        self.env, self.provider = None, None
+        if full_env:
+            full_env = str(args.env).lower()
+            try:
+                self.env, self.provider = full_env.split("@")
+            except ValueError:
+                self.env = full_env
+                self.provider = None
 
-def var():
-    parser = get_common_parser()
-    parser.add_argument("kv", nargs=1, action=ParseKeyVal, help=_("key=value pair"))
-    args = parser.parse_args()
-    org = str(args.ctx).lower()
-    full_env = str(args.env).lower()
-    env, provider = None, None
-    try:
-        env, provider = full_env.split('@')
-    except ValueError:
-        env = full_env
-        provider = None
-    cmds = []
-    for k, v in args.kv.items():
-        k = "_".join([o.upper() for o in [k, org, env, provider] if o is not None])
-        cmds.append("export %s=%s\n" % (k, v))
-    org_env_dir = os.path.join(ROOT_ENV, org, ENV)
-    alias_file = '.' + org + '_local_aliases'
-    alias_file_path = os.path.join(org_env_dir, alias_file)
-    with open(alias_file_path, "a+") as f:
-        for cmd in cmds:
-            f.write(cmd)
+        self.org_env_dir = os.path.join(ROOT_ENV, self.org, ENV)
+        self.alias_file = "." + self.org + "_local_aliases"
+        self.alias_file_path = os.path.join(self.org_env_dir, self.alias_file)
 
+        self.cmd_name = args.cmd
+        self.cmds = []
 
-def unvar():
-    pass
+        def KEY(k):
+            suffix_list = [self.org, self.env, self.provider] if self.org != SELF else []
+            return "_".join([o.upper() for o in [k] + suffix_list if o is not None])
+
+        for k, v in args.kv.items():
+            self.cmds.append("export %s=%s\n" % (KEY(k), v))
+
+        for k in list(args.k):
+            self.cmds.append("export %s=\n" % KEY(k))
+
+        self._run()
+
+    def _run(self):
+        if self.cmd_name == "var":
+            self.var()
+        elif self.cmd_name == "unvar":
+            self.unvar()
+
+    def var(self):
+        with open(self.alias_file_path, "a+") as f:
+            for cmd in self.cmds:
+                f.write(cmd)  # not handling duplicates for performance
+
+    def unvar(self):
+        with open(self.alias_file_path, "r") as f:
+            lines = f.readlines()
+        with open(self.alias_file_path, "w") as f:
+            for cmd in self.cmds:
+                if cmd not in lines:
+                    f.write(cmd)
 
 
 if __name__ == "__main__":
-    var()
+    EnvParser()
