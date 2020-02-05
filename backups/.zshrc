@@ -193,6 +193,7 @@ unsetopt extended_history # to stop prefixing with epoch - not working
 
 # source env vars
 mist
+. $WORKSPACE/secret/self/envs/.self_local_aliases
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
