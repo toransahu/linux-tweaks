@@ -89,9 +89,10 @@ class EnvParser:
         with open(self.alias_file_path, "r") as f:
             lines = f.readlines()
         with open(self.alias_file_path, "w") as f:
-            for cmd in self.cmds:
-                if cmd not in lines:
-                    f.write(cmd)
+            for line in lines:
+                for cmd in self.cmds:
+                    if cmd not in line:
+                        f.write(line)
 
 
 if __name__ == "__main__":
