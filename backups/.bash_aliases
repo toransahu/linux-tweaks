@@ -237,9 +237,9 @@ alias cdp='cd ~/disk/E/workspace/post-linux-install'
 gcdiff(){
     GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2)
     if [[ -z "$1" ]] 
-    # then
-    #     COMMENT="_$1"
-    # fi
+    then
+        COMMENT="_$1"
+    fi
     COMMENT="_$1"
     STAMP="$(date +"%Y-%m-%d-%I:%M:%S")"
     mkdir -p .diff
