@@ -51,6 +51,7 @@ Plug 'honza/vim-snippets'                     " Snippet files - Snippets are sep
 Plug 'heavenshell/vim-pydocstring'            " Python docstring gen
 Plug 'scrooloose/nerdcommenter'               " for easy comments
 Plug 'tpope/vim-fugitive'                     " git commands in VIM
+Plug 'tpope/vim-rhubarb'                      " git in browser
 Plug 'tpope/vim-surround'                     " surround text with something manually
 Plug 'raimondi/delimitmate'                   " auto close
 "Plug 'tmhedberg/SimpylFold'                  " python code fold
