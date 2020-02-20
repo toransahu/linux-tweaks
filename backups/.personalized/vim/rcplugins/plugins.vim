@@ -245,10 +245,15 @@ fu! ConfigureVimTest()
     
     " let g:test#java#runner = 'maventest' " not defining explicitly; vim-test algo with decide
     let g:test#java#maventest#options = {
-      \ 'nearest': '--fail-fast',
-      \ 'file':    '--fail-fast', 
-      \ 'suite':   '--fail-fast',
+      \ 'nearest': '--fail-fast -Dmaven.test.skip=false',
+      \ 'file':    '--fail-fast -Dmaven.test.skip=false', 
+      \ 'suite':   '--fail-fast -Dmaven.test.skip=false',
     \}
+
+    " maven specific: this commit
+    " https://github.com/janko/vim-test/commit/8e137f223df427e620496f02f0fda6363a76435f#diff-de9502e2cc9bf7533b5e918d295734cb
+    " requires Surefire Plugin 2.19.1 (https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html)
+    " TODO: send PR to use test pattern based on Surefire version.
     
     "let test#python#runner = 'pytest' " not defining explicitly; vim-test algo with decide
     let g:test#python#djangotest#options = {
@@ -259,6 +264,13 @@ fu! ConfigureVimTest()
 
     " let g:test#python#djangotest#executable = 'python manage.py test --failfast --keepdb' " not required - already ^^
     let g:test#vim#term_position = "belowright"
+
+    " these "Ctrl mappings" work well when Caps Lock is mapped to Ctrl
+    nmap <silent> t<C-t> :TestNearest<CR>
+    " nmap <silent> t<C-f> :TestFile<CR>
+    " nmap <silent> t<C-s> :TestSuite<CR>
+    " nmap <silent> t<C-l> :TestLast<CR>
+    " nmap <silent> t<C-g> :TestVisit<CR>
 endfunction
 
 call ConfigureVimTest()
