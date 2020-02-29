@@ -52,6 +52,7 @@ elif [ "$(hostname)" = ToranS-UB ]; then
 elif [ "$(hostname)" = ToranS-ublp ]; then
     SOURCE_DIR="/home/toransahu"
     EROOT="/home/toransahu/disk/E"
+    DROOT="/home/toransahu/disk/D"
 elif [ "$(hostname)" = raspberrypi ]; then
     SOURCE_DIR="/home/pi"
     EROOT="/home/pi/main-storage/E"
