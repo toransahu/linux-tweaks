@@ -188,8 +188,15 @@ bindkey '^e' edit-command-line
 # if [ "$TMUX" = "" ]; then tmux; fi
 
 # HISTORY FILE
-unsetopt extended_history # to stop prefixing with epoch - not working
-# HISTFILE=~/.bash_history  # keep bash and zsh in sync
+# unsetopt extended_history # to stop prefixing with epoch - not working
+setopt noextendedhistory
+setopt nosharehistory  # https://unix.stackexchange.com/questions/399527/why-does-zsh-timestamp-history
+HISTFILE=~/.bash_history  # keep bash and zsh in sync
+# HISTFILE=~/.zsh_history
+export HISTFILE=$HISTFILE  # to avail as ENV VAR
+
+# remove duplicates & keep last once in the HISTFILE - NOT working as expected for multiline cmds
+# tac "$HISTFILE" | awk '!x[$0]++' > /tmp/tmpfile  && tac /tmp/tmpfile > "$HISTFILE"
 
 # source env vars
 mist
@@ -202,3 +209,6 @@ if [ -f '/home/toransahu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/toransa
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/toransahu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/toransahu/google-cloud-sdk/completion.zsh.inc'; fi
+
+# setup autocomplete in zsh into the current shell
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
