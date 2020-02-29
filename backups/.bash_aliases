@@ -261,7 +261,7 @@ alias gchp='git cherry-pick'
 alias mmdc='~/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
 
-kbash() {
+k8s-bash() {
     app=$1
     found=$(kubectl get pods --all-namespaces | grep $app | awk '{$NF=""; print $2}')
     kubectl -n $app exec -it $found -- /bin/bash
@@ -276,3 +276,4 @@ unvar() {
     ~/.personalized/parse_envvars.py --cmd=unvar $@
     exec zsh
 }
+alias k8s-list-context='kubectl config view -o jsonpath="{.contexts[*].name}" | tr " " "\n"'
