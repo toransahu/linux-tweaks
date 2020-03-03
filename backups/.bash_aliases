@@ -262,9 +262,10 @@ alias mmdc='~/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
 
 k8s-bash() {
-    app=$1
-    found=$(kubectl get pods --all-namespaces | grep $app | awk '{$NF=""; print $2}')
-    kubectl -n $app exec -it $found -- /bin/bash
+    namespace=$1
+    # pod=$(kubectl get pods --all-namespaces | grep $namespace | awk '{$NF=""; print $2}')
+    pod=$(kubectl get pods --all-namespaces | grep "^$namespace .*" | awk 'NR==1 {print $2}')
+    kubectl -n $namespace exec -it $pod -- /bin/bash
 }
 
 var() {
