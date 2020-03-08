@@ -211,4 +211,4 @@ if [ -f '/home/toransahu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/toransa
 if [ -f '/home/toransahu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/toransahu/google-cloud-sdk/completion.zsh.inc'; fi
 
 # setup autocomplete in zsh into the current shell
-if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
+if [ -f '/usr/local/bin/kubectl' ]; then source <(kubectl completion zsh); fi
