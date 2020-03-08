@@ -281,3 +281,4 @@ alias k8s-list-context='kubectl config view -o jsonpath="{.contexts[*].name}" | 
 
 alias dedupe-hist='python $WORKSPACE/linux-tweaks/scripts/dedupe_sh_history.py'
 alias bak-hist='dedupe-hist && cp ~/.bash_history $WORKSPACE/secret/self'
+alias res-hist='cp $WORKSPACE/secret/self/.bash_history ~/.bash_history'
