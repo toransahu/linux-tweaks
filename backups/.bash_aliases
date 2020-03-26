@@ -263,9 +263,14 @@ alias myip='echo $MY_IP_ADDR'
 
 k8s-bash() {
     namespace=$1
-    # pod=$(kubectl get pods --all-namespaces | grep $namespace | awk '{$NF=""; print $2}')
     pod=$(kubectl get pods --all-namespaces | grep "^$namespace .*" | awk 'NR==1 {print $2}')
     kubectl -n $namespace exec -it $pod -- /bin/bash
+}
+
+k8s-log() {
+    namespace=$1
+    app=$1
+    kubectl logs -n $namespace -l app=$app -f
 }
 
 var() {
