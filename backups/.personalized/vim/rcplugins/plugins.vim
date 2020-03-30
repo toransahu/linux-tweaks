@@ -485,3 +485,11 @@ fu! ConfigureVimAnyFold()
 endfunction
 
 call ConfigureVimAnyFold()
+
+fu! ConfigureCodeFMT()
+    call glaive#Install()
+    Glaive codefmt plugin[mappings]
+    Glaive codefmt google_java_executable="java -jar /home/toransahu/.vim/google-java-format-1.7-all-deps.jar"
+endfunction
+
+call ConfigureCodeFMT()

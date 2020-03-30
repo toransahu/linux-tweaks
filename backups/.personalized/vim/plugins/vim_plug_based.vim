@@ -63,3 +63,6 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }       " go support; https://
 "Plug 'jodosha/vim-godebug'                   " go debugger in split screen with delve CLI - only for neovim; TODO: check later
 Plug 'janko-m/vim-test'                       " polyglot test runner
 Plug 'sheerun/vim-polyglot'                   " syntax highlighter - language pack
+Plug 'google/vim-maktaba'                     " vim-codefmt dep: Add maktaba and codefmt to the runtimepath.
+Plug 'google/vim-codefmt'                     " code fmt by google
+Plug 'google/vim-glaive'                      " vim-codefmt dep: Also add Glaive, which is used to configure codefmt's maktaba flags.
