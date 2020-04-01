@@ -61,7 +61,9 @@ Plug 'pseewald/anyfold'                       " code fold
 "Plug 'myitcv/govim'                          " new plugin for go written in go feature > vim-go
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }       " go support; https://github.com/fatih/vim-go-tutorial
 "Plug 'jodosha/vim-godebug'                   " go debugger in split screen with delve CLI - only for neovim; TODO: check later
-Plug 'janko-m/vim-test'                       " polyglot test runner
+" Plug 'janko-m/vim-test'                       " polyglot test runner
+" Plug 'toransahu/vim-test', { 'branch': 'java-test-file-pattern-before-Surefire-Plugin-2.19.1' }                       " with java#maven fqcn option support
+Plug 'toransahu/vim-test', { 'commit': 'fa0d09ea4b9ca9b4fa555695bc2beaa09d81dc52' }                       " with java#maven fqcn option support
 Plug 'sheerun/vim-polyglot'                   " syntax highlighter - language pack
 Plug 'google/vim-maktaba'                     " vim-codefmt dep: Add maktaba and codefmt to the runtimepath.
 Plug 'google/vim-codefmt'                     " code fmt by google

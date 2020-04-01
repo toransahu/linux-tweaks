@@ -254,6 +254,7 @@ fu! ConfigureVimTest()
     " https://github.com/janko/vim-test/commit/8e137f223df427e620496f02f0fda6363a76435f#diff-de9502e2cc9bf7533b5e918d295734cb
     " requires Surefire Plugin 2.19.1 (https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html)
     " TODO: send PR to use test pattern based on Surefire version.
+    let g:test#java#maventest#fqcn = 0
     
     "let test#python#runner = 'pytest' " not defining explicitly; vim-test algo with decide
     let g:test#python#djangotest#options = {
