@@ -8,9 +8,9 @@
         }
     },
     "coc.preferences.formatOnSaveFiletypes": [
-        "html",
-        "css",
-        "javascript",
+        // "html",
+        // "css",
+        // "javascript",
         "Markdown"
     ]
 }
