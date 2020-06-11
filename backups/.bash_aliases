@@ -251,6 +251,7 @@ alias night='xdotool key Shift+F10 r Down  Down Down Return'
 alias day='xdotool key Shift+F10 r Down  Return'
 alias freeaptcache='sudo apt-get clean'
 alias mist='source $WORKSPACE/secret/mist/envs/.mist_aliases && source $WORKSPACE/secret/mist/envs/.mist_local_aliases'
+alias talentica='source $WORKSPACE/secret/talentica/envs/.talentica_local_aliases'
 alias eshead='cd $WORKSPACE/elasticsearch-head && npm run start & sleep 2s && firefox http://localhost:9100'
 alias eshead-stop='pkill grunt > /dev/null'
 
@@ -270,7 +271,8 @@ k8s-bash() {
 k8s-log() {
     namespace=$1
     app=$1
-    kubectl logs -n $namespace -l app=$app -f
+    # kubectl logs --max-log-requests 8 -n $namespace -l app=$app -f
+    kubectl logs --max-log-requests 12 -n $namespace -l app=$app -f
 }
 
 var() {
@@ -287,3 +289,4 @@ alias k8s-list-context='kubectl config view -o jsonpath="{.contexts[*].name}" | 
 alias dedupe-hist='python $WORKSPACE/linux-tweaks/scripts/dedupe_sh_history.py'
 alias bak-hist='dedupe-hist && cp ~/.bash_history $WORKSPACE/secret/self'
 alias res-hist='cp $WORKSPACE/secret/self/.bash_history ~/.bash_history'
+alias calc='gnome-calculator'

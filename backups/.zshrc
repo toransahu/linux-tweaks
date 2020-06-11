@@ -200,6 +200,7 @@ export HISTFILE=$HISTFILE  # to avail as ENV VAR
 
 # source env vars
 mist
+talentica
 . $WORKSPACE/secret/self/envs/.self_local_aliases
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
