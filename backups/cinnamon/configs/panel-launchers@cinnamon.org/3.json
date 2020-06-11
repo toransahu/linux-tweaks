@@ -16,7 +16,8 @@
             "firefox_firefox.desktop",
             "kazam.desktop",
             "shutter.desktop",
-            "chrome-bgejknldbmbjknepfkakfbemenkgaack-Default.desktop"
+            "chrome-bgejknldbmbjknepfkakfbemenkgaack-Default.desktop",
+            "spotify.desktop"
         ]
     },
     "allow-dragging": {
