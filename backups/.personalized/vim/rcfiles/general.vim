@@ -12,6 +12,14 @@ set clipboard=unnamedplus                       " this supports only vim-gnome n
 set relativenumber                              " relative line number ON
 set autoread                                    " automatically refresh any files that haven't been edited by Vim
 
+
+"===================== Issue Fix =====================
+" Issue: https://stackoverflow.com/questions/62148994/strange-character-since-last-update-42m-in-vim
+let &t_TI = ""
+let &t_TE = ""
+
+"===================== Other =====================
+
 fu! PyAutoActivateVenv()
 "python with virtualenv support
     py3 << EOF
