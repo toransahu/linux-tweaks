@@ -259,7 +259,7 @@ alias eshead-stop='pkill grunt > /dev/null'
 alias 2fa-juniper='2fa $(cat $WORKSPACE/recovery/juniper_totp_2fa_secret_code.txt)'
 alias 2fa-github='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
 alias gchp='git cherry-pick'
-alias mmdc='~/node_modules/.bin/mmdc'
+alias mmdc='$WORKSPACE/mermaid-cli/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
 
 k8s-bash() {
@@ -290,3 +290,4 @@ alias dedupe-hist='python $WORKSPACE/linux-tweaks/scripts/dedupe_sh_history.py'
 alias bak-hist='dedupe-hist && cp ~/.bash_history $WORKSPACE/secret/self'
 alias res-hist='cp $WORKSPACE/secret/self/.bash_history ~/.bash_history'
 alias calc='gnome-calculator'
+alias lsvenvs='ls $HOME/.local/share/virtualenvs'
