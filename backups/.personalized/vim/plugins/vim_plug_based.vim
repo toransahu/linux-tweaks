@@ -21,7 +21,12 @@ Plug 'editorconfig/editorconfig-vim'          " Editor properties
 Plug 'tpope/vim-abolish'                      " Easily search for, substitute, and abbreviate multiple variants of a word
 Plug 'justinmk/vim-gtfo'                      " GOTO PWD via file Manager or Terminal;  Usage: got; gof; goT; goF
 "Plug 'shime/vim-livedown'                    " markdown live preview in mini server browser
-Plug 'suan/vim-instant-markdown'              " markdown live preview in mini server browser
+" Plug 'suan/vim-instant-markdown',             " markdown live preview in mini server browser
+            " \ {'for': 'markdown'} 
+" If you don't have nodejs and yarn
+" use pre build, add 'vim-plug' to the filetype list so vim-plug can update this plugin
+" see: https://github.com/iamcco/markdown-preview.nvim/issues/50
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 "Plug 'ctrlpvim/ctrlp.vim'                    " super search
 Plug 'junegunn/fzf'                           " fuzzy finder
 Plug 'junegunn/fzf.vim'                       " fuzzy finder
