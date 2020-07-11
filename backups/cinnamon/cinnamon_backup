@@ -332,7 +332,7 @@ numlock-state='on'
 
 [settings-daemon/peripherals/mouse]
 drag-threshold=8
-custom-acceleration=false
+custom-acceleration=true
 motion-acceleration=3.7565922920892492
 motion-threshold=1
 double-click=400
