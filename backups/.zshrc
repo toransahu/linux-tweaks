@@ -171,7 +171,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export GIT_EDITOR=vim
 
 # Set default term to xterm
-export TERM=xterm-256color
+export TERM=xterm-256color              # `xterm*` is default as well; see ~/.bashrc
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # vim mode
