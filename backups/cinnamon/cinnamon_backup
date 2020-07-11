@@ -62,14 +62,17 @@ tile-hud-threshold=25
 edge-tiling=true
 
 [desktop/interface]
+text-scaling-factor=1.25
 cursor-size=24
 first-day-of-week=1
 clock-use-24h=true
 toolkit-accessibility=true
 clock-show-seconds=true
 cursor-blink-time=1200
+gtk-theme-backup='Mint-Y-Dark'
 icon-theme='Mint-X-Dark'
 gtk-overlay-scrollbars=false
+icon-theme-backup='Mint-X-Dark'
 gtk-theme='Mint-Y-Dark'
 clock-show-date=true
 
@@ -240,6 +243,7 @@ remember-recent-files=true
 
 [desktop/wm/preferences]
 min-window-opacity=30
+theme-backup='Mint-Y-Dark'
 theme='Mint-Y-Dark'
 num-workspaces=4
 workspace-names=['1. Main', '2. Production', '3. OpenConfig', '4. Personal']
@@ -249,13 +253,14 @@ screen-keyboard-enabled=true
 screen-reader-enabled=false
 
 [desktop/a11y/keyboard]
-togglekeys-enable-osd=true
-togglekeys-enable-beep=true
-mousekeys-init-delay=300
-mousekeys-max-speed=10
 mousekeys-accel-time=300
+togglekeys-enable-beep=true
 bouncekeys-delay=300
+mousekeys-max-speed=10
+togglekeys-enable-osd=true
+mousekeys-enable=false
 slowkeys-delay=300
+mousekeys-init-delay=300
 
 [desktop/a11y/mouse]
 secondary-click-enabled=false
@@ -332,8 +337,8 @@ numlock-state='on'
 
 [settings-daemon/peripherals/mouse]
 drag-threshold=8
-custom-acceleration=true
-motion-acceleration=3.7565922920892492
+custom-acceleration=false
+motion-acceleration=4.2233400402414487
 motion-threshold=1
 double-click=400
 middle-button-enabled=false
