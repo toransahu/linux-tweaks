@@ -92,8 +92,7 @@ ghrepo(){
 
 # utils
 alias pdf='evince'
-# alias tmux='tmux -u'
-# alias tmux='TERM=screen-256color tmux -u'
+# alias tmux='tmux -u'                      # explicitely ask to support UTF-8
 alias cpy='xclip -sel clip'
 alias ls='ls -ltrhFa'
 alias t='gnome-terminal'
@@ -291,3 +290,4 @@ alias bak-hist='dedupe-hist && cp ~/.bash_history $WORKSPACE/secret/self'
 alias res-hist='cp $WORKSPACE/secret/self/.bash_history ~/.bash_history'
 alias calc='gnome-calculator'
 alias lsvenvs='ls $HOME/.local/share/virtualenvs'
+alias fcompiled='find . | grep -E "(__pycache__|\.pyc|\.pyo|\.swo|\.swp$)"'
