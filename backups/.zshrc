@@ -1,3 +1,5 @@
+# Doc: http://zsh.sourceforge.net/Doc/Release/Options.html
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -171,7 +173,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export GIT_EDITOR=vim
 
 # Set default term to xterm
-export TERM=xterm-256color              # `xterm*` is default as well; see ~/.bashrc
+export TERM=xterm-256color              # `xterm*` is default as well; see ~/.bashrc; though not recommanded to set explicitely
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # vim mode
@@ -187,16 +189,67 @@ bindkey '^e' edit-command-line
 # start tmux automatically 
 # if [ "$TMUX" = "" ]; then tmux; fi
 
-# HISTORY FILE
-# unsetopt extended_history # to stop prefixing with epoch - not working
-setopt noextendedhistory
-setopt nosharehistory  # https://unix.stackexchange.com/questions/399527/why-does-zsh-timestamp-history
-HISTFILE=~/.bash_history  # keep bash and zsh in sync
-# HISTFILE=~/.zsh_history
-export HISTFILE=$HISTFILE  # to avail as ENV VAR
+unsetopt beep                                               # stop bell sound on invalid operation
+
+# -----------shell history related
 
 # remove duplicates & keep last once in the HISTFILE - NOT working as expected for multiline cmds
 # tac "$HISTFILE" | awk '!x[$0]++' > /tmp/tmpfile  && tac /tmp/tmpfile > "$HISTFILE"
+
+# HISTORY FILE
+HISTFILE=~/.bash_history  # keep bash and zsh in sync
+# HISTFILE=~/.zsh_history
+# HISTFILE=~/.all_hists  # backup
+export HISTFILE=$HISTFILE  # to avail as ENV VAR
+
+HISTSIZE=100000                                         # default:30
+HISTFILESIZE=100000                                     # default:not-set
+
+# FIXME - move to ~/.commonrc
+# FIXME - functionality
+COMMONIGNORE="clear:tmux:pwd:du:df"
+ALIASIGNORE="t:c:tks:ttt"
+GITIGNORE="gch:master:gpull:gpush"
+export HISTIGNORE="$COMMONIGNORE:$ALIASIGNORE:$GITIGNORE"
+
+# HISTCONTROL equivalents
+setopt HIST_IGNORE_ALL_DUPS                             # HISTCONTROL=erasedups
+setopt HIST_IGNORE_SPACE                                # HISTCONTROL=ignorespace
+# setopt HIST_IGNORE_DUPS                                 # HISTCONTROL=ignoredups
+setopt HIST_FIND_NO_DUPS                                # when searching for history entries in the line editor, do not display duplicates of a line previously found, even if the duplicates are not contiguous
+setopt HIST_EXPIRE_DUPS_FIRST                           # delete duplicates first when HISTFILE size exceeds HISTSIZE
+
+# History Sharing across multiple sessionshow
+# By default the history files are written when the shell closes
+# the following allows the shells to write and read from the history file after each command
+# setopt INC_APPEND_HISTORY                               # shopt -s histappend
+setopt inc_append_history                               # shopt -s histappend
+setopt share_history                                    # PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# stop prefixing with epoch
+# setopt nosharehistory                                   # drawback will be no automatic history syncup across multiple session 
+setopt noextendedhistory                                # extendedhistory is not enabled by default, but making sure to disable it; extendedhistory feature tells how long a command took in addition to when it ran
+
+setopt NO_HIST_BEEP                                     # turn off beep signal when trying scroll up/down beyond history search results
+
+# setopt HIST_REDUCE_BLANKS                               # tidy up the line when it is entered into the history by removing any excess blanks that mean nothing to the shell (including multiline cmd --> single line)
+
+setopt HIST_VERIFY                                      # whenever the user enters a line with history expansion, don’t execute the line directly; instead, perform history expansion and reload the line into the editing buffer. 
+
+
+# PROMPT_COMMAND="history -n; history -w; history -c;"
+# prmptcmd() { eval "$PROMPT_COMMAND" }
+# precmd_functions=(prmptcmd)
+
+# Ref:
+# - Official
+#   - http://zsh.sourceforge.net/Guide/zshguide02.html#l18
+# - All bash equivalents
+#   - https://kevinjalbert.com/more-shell-history/
+# - sharehistory and extendedhistory
+#   - https://unix.stackexchange.com/questions/399527/why-does-zsh-timestamp-history
+
+# --------------------------------------------
 
 # source env vars
 mist
