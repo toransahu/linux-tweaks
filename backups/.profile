@@ -35,3 +35,10 @@ export ECLIPSE_HOME=$HOME/.eclipse/org.eclipse.platform_4.8.0_1473617060_linux_g
 
 # set IP ADDRESS
 export MY_IP_ADDR=$(ifconfig wlp2s0 | awk '/inet / {print $2}') 
+
+# HISTFILE, HISTSIZE, HISTFILESIZE are common to bash & zsh - should be here
+
+
+# Ref:
+# - overall good stuff
+#   - https://justin.abrah.ms/dotfiles/zsh.html
