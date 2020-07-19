@@ -185,8 +185,8 @@
       0.6
      ]
     ],
-    "up": 50305,
-    "down": 50305,
+    "up": 64990,
+    "down": 64990,
     "tooltipUp": 0,
     "tooltipDown": 0,
     "lastReading": [
@@ -213,8 +213,8 @@
       0.6
      ]
     ],
-    "up": 133710,
-    "down": 5257080,
+    "up": 0,
+    "down": 0,
     "tooltipUp": 0,
     "tooltipDown": 0,
     "lastReading": [
@@ -250,8 +250,8 @@
      ]
     ],
     "path": "/",
-    "read": 14635802624,
-    "write": 4026695680,
+    "read": 17906376704,
+    "write": 1541865472,
     "lastReading": [
      0,
      0

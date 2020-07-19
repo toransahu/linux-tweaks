@@ -62,7 +62,7 @@ tile-hud-threshold=25
 edge-tiling=true
 
 [desktop/interface]
-text-scaling-factor=1.25
+text-scaling-factor=1.0
 cursor-size=24
 first-day-of-week=1
 clock-use-24h=true
@@ -250,6 +250,7 @@ workspace-names=['1. Main', '2. Production', '3. OpenConfig', '4. Personal']
 
 [desktop/a11y/applications]
 screen-keyboard-enabled=true
+screen-magnifier-enabled=false
 screen-reader-enabled=false
 
 [desktop/a11y/keyboard]
@@ -333,11 +334,11 @@ orientation-lock=false
 [settings-daemon/peripherals/keyboard]
 repeat-interval=uint32 30
 delay=uint32 500
-numlock-state='on'
+numlock-state='off'
 
 [settings-daemon/peripherals/mouse]
 drag-threshold=8
-custom-acceleration=false
+custom-acceleration=true
 motion-acceleration=4.2233400402414487
 motion-threshold=1
 double-click=400
