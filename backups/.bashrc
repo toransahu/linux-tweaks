@@ -1,3 +1,5 @@
+# Doc: https://www.gnu.org/software/bash/manual/bash.pdf
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -8,16 +10,37 @@ case $- in
       *) return;;
 esac
 
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
+# ----------- shell history related
+COMMONIGNORE="clear:tmux:pwd:du:df"
+ALIASIGNORE="t:c:tks:ttt"
+GITIGNORE="gch:master:gpull:gpush"
+export HISTIGNORE="$COMMONIGNORE:$ALIASIGNORE:$GITIGNORE"
 
-# append to the history file, don't overwrite it
-shopt -s histappend
+# export HISTTIMEFORMAT=""
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=100000                            # limits the number of commands shown by the command history; default:500
+HISTFILESIZE=100000                       # limits the number of commands which can be saved in $HISTFILE; default:500
+
+# HISTCONTROL=ignoredups                  # ignoredups causes lines matching the previous history entry to not be saved
+# HISTCONTROL=erasedups                   # erasedups causes lines matching the previous history entry to not be saved
+# HISTCONTROL=ignorespace                 # ignoredups causes to ignore commands starting with whitespace
+# HISTCONTROL=ignoreboth                  # don't put duplicate lines or lines starting with space
+                                          # in the history; 
+                                          # ignoreboth == shorthand for `ignorespace` and `ignoredups`
+HISTCONTROL=ignorespace:erasedups         # until I clean all duplicates; after that I'll think about `ignoredups`
+shopt -s histappend                         # append to the history file, don't overwrite it
+shopt -s cmdhist                            # multiline commands are a single command in history
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+
+# Ref:
+# - HISTFILE vs HISTFILESIZE
+#   - https://stackoverflow.com/questions/19454837/bash-histsize-vs-histfilesize
+# - HISTCONTROL (everything I wanted)
+#   - https://unix.stackexchange.com/questions/163371/how-long-do-the-contents-of-the-bash-history-file-last
+# - PROMPT_COMMAND (everything I wanted)
+#   - https://unix.stackexchange.com/questions/18212/bash-history-ignoredups-and-erasedups-setting-conflict-with-common-history
+
+# -------------
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
