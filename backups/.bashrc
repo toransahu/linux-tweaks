@@ -16,7 +16,9 @@ ALIASIGNORE="t:c:tks:ttt"
 GITIGNORE="gch:master:gpull:gpush"
 export HISTIGNORE="$COMMONIGNORE:$ALIASIGNORE:$GITIGNORE"
 
-# export HISTTIMEFORMAT=""
+# TODO: give more try to keep zsh and bash history epoch stamp in sync
+# export HISTTIMEFORMAT=": %s:0;"           # this is just about display, however time is always stored as epoch in the file like:
+                                            # `# 159454837
 
 HISTSIZE=100000                            # limits the number of commands shown by the command history; default:500
 HISTFILESIZE=100000                       # limits the number of commands which can be saved in $HISTFILE; default:500

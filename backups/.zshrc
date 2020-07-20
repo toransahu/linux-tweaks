@@ -1,4 +1,6 @@
-# Doc: http://zsh.sourceforge.net/Doc/Release/Options.html
+# Docs: 
+# - http://zsh.sourceforge.net/Doc/zsh_us.pdf
+# - http://zsh.sourceforge.net/Doc/Release/Options.html
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -220,15 +222,21 @@ setopt HIST_FIND_NO_DUPS                                # when searching for his
 setopt HIST_EXPIRE_DUPS_FIRST                           # delete duplicates first when HISTFILE size exceeds HISTSIZE
 
 # History Sharing across multiple sessionshow
+
 # By default the history files are written when the shell closes
 # the following allows the shells to write and read from the history file after each command
-# setopt INC_APPEND_HISTORY                               # shopt -s histappend
-setopt inc_append_history                               # shopt -s histappend
-setopt share_history                                    # PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+setopt INC_APPEND_HISTORY                               # shopt -s histappend
+
+# 1. cons: does not write to file untill session terminates
+# 2. pros: on current terminal session, hist from other sessions are synced (on enter - new prompt) BUT via hist cache
+# 3. I'll prefer `INC_APPEND_HISTORY` + `exec zsh` than SHARE_HISTORY
+# setopt SHARE_HISTORY                                    # default: ON; PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# setopt EXTENDED_HISTORY                                # default: OFF (but found it ON; see `$ setopt`
 
 # stop prefixing with epoch
-# setopt nosharehistory                                   # drawback will be no automatic history syncup across multiple session 
-setopt noextendedhistory                                # extendedhistory is not enabled by default, but making sure to disable it; extendedhistory feature tells how long a command took in addition to when it ran
+setopt NOSHAREHISTORY                                   # drawback will be no automatic history syncup across multiple session 
+setopt NOEXTENDEDHISTORY                                # extendedhistory feature tells how long a command took in addition to when it ran; default it is off but it doing this to be sure
 
 setopt NO_HIST_BEEP                                     # turn off beep signal when trying scroll up/down beyond history search results
 
