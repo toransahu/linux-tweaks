@@ -43,7 +43,8 @@ Plug 'tpope/vim-sensible'                     " Default configs everyone can agr
 Plug 'vim-scripts/DrawIt'                     " For ASCII arts
 Plug 'ryanoasis/nerd-fonts'                   " To support vim-devicons
 Plug 'ryanoasis/vim-devicons'                 " Add icons to diff files/extensions
-Plug 'rhysd/vim-grammarous'                   " Grammar check
+Plug 'rhysd/vim-grammarous'                   " Grammar check - based on www.languagetool.org tool
+" Plug 'kamykn/spelunker.vim'                   " spell check - made easy
 " Plug 'benmills/vimux'                         " Interact with tmux from vim
 
 "------------------------ Prog utils ---------------------------
@@ -86,3 +87,4 @@ Plug 'sheerun/vim-polyglot'                   " syntax highlighter - language pa
 Plug 'google/vim-maktaba'                     " vim-codefmt dep: Add maktaba and codefmt to the runtimepath.
 Plug 'google/vim-codefmt'                     " code fmt by google
 Plug 'google/vim-glaive'                      " vim-codefmt dep: Also add Glaive, which is used to configure codefmt's maktaba flags.
+Plug 'puremourning/vimspector'                " polyglot debugger

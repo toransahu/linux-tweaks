@@ -601,3 +601,10 @@ fu! ConfigureMarkdownPreview()
 endfunction
 
 call ConfigureMarkdownPreview()
+
+fu! ConfigureVimSpector()
+    let g:vimspector_enable_mappings = 'HUMAN'
+    " packadd! vimspector
+endfunction
+
+call ConfigureVimSpector()
