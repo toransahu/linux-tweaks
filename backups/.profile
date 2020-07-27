@@ -40,10 +40,11 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export ECLIPSE_HOME=$HOME/.eclipse/org.eclipse.platform_4.8.0_1473617060_linux_gtk_x86_64
 
 # set LAN active-interface
-export LANIFACE=$(ip route get 1.1.1.1 | grep -Po '(?<=dev\s)\w+' | cut -f1 -d ' ')
+export LANIFACE=$(ip route get 1.1.1.1 2>&- | grep -Po '(?<=dev\s)\w+' | cut -f1 -d ' ')
 
 # set LAN IP ADDRESS
-export LANIP=$(ifconfig $LANIFACE | awk '/inet / {print $2}')
+export LANIP=$([ -z "$LANIFACE" ] && echo '127.0.0.1' || echo $(ifconfig $LANIFACE | awk '/inet / {print $2}'))
+
 export MY_IP_ADDR=$LANIP
 
 # HISTFILE, HISTSIZE, HISTFILESIZE are common to bash & zsh - should be here
