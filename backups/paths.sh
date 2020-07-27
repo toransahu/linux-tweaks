@@ -56,6 +56,14 @@ elif [ "$(hostname)" = ToranS-ublp ]; then
 elif [ "$(hostname)" = raspberrypi ]; then
     SOURCE_DIR="/home/pi"
     EROOT="/home/pi/main-storage/E"
+elif [ "$(hostname)" = $RANDY_MC_MIST_PRODUCTION ]; then
+    SOURCE_DIR="/home/$USER"
+    EROOT="/home/$USER/disk/E"
+    DROOT="/home/$USER/disk/D"
+elif [ "$(hostname)" = $RANDY_MC_MIST_STAGING ]; then
+    SOURCE_DIR="/home/$USER"
+    EROOT="/home/$USER/disk/E"
+    DROOT="/home/$USER/disk/D"
 else
     echo "New device found. Make entry in the script.."
     IS_NEW=true
