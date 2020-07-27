@@ -89,3 +89,4 @@ Plug 'google/vim-codefmt'                     " code fmt by google
 Plug 'google/vim-glaive'                      " vim-codefmt dep: Also add Glaive, which is used to configure codefmt's maktaba flags.
 Plug 'puremourning/vimspector'                " polyglot debugger
 Plug 'majutsushi/tagbar'                      " to browse tags of current file; dependency: exuberant-ctags
+Plug 'turbio/bracey.vim'                      " preview markup files; html, css, js
