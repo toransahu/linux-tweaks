@@ -14,11 +14,6 @@
 #alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 
-##
-# Include/source PATHs
-##
-. ~/paths.sh
-
 
 ##
 # application aliases
@@ -249,8 +244,6 @@ alias gh2fa='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
 alias night='xdotool key Shift+F10 r Down  Down Down Return'
 alias day='xdotool key Shift+F10 r Down  Return'
 alias freeaptcache='sudo apt-get clean'
-alias mist='source $WORKSPACE/secret/mist/envs/.mist_aliases && source $WORKSPACE/secret/mist/envs/.mist_local_aliases'
-alias talentica='source $WORKSPACE/secret/talentica/envs/.talentica_local_aliases'
 alias eshead='cd $WORKSPACE/elasticsearch-head && npm run start & sleep 2s && firefox http://localhost:9100'
 alias eshead-stop='pkill grunt > /dev/null'
 
@@ -311,5 +304,27 @@ extract () {
         esac
     else
         echo "'$1' is not a valid file"
+    fi
+}
+
+self() {
+    if [ -f $WORKSPACE/secret/self/envs/.self_local_aliases ]; then
+        . $WORKSPACE/secret/self/envs/.self_local_aliases
+    fi
+}
+
+mist() {
+    if [ -f $WORKSPACE/secret/mist/envs/.mist_aliases ]; then
+        source $WORKSPACE/secret/mist/envs/.mist_aliases
+    fi
+
+    if [ -f $WORKSPACE/secret/mist/envs/.mist_local_aliases ]; then
+        source $WORKSPACE/secret/mist/envs/.mist_local_aliases
+    fi
+}
+
+talentica() {
+    if [ -f $WORKSPACE/secret/talentica/envs/.talentica_local_aliases ]; then
+        source $WORKSPACE/secret/talentica/envs/.talentica_local_aliases
     fi
 }

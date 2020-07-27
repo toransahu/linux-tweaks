@@ -66,7 +66,7 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions zsh-syntax-highlighting redis-cli aws celery django docker mvn python supervisor systemd pip
+  git zsh-autosuggestions redis-cli aws celery django docker mvn python supervisor systemd pip zsh-syntax-highlighting # zsh-syntax-highlighting in last
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -176,7 +176,7 @@ export GIT_EDITOR=vim
 
 # Set default term to xterm
 export TERM=xterm-256color              # `xterm*` is default as well; see ~/.bashrc; though not recommanded to set explicitely
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh          # required only when installed manually
 
 # vim mode
 # set -o vi
@@ -260,9 +260,9 @@ setopt HIST_VERIFY                                      # whenever the user ente
 # --------------------------------------------
 
 # source env vars
+self
 mist
 talentica
-. $WORKSPACE/secret/self/envs/.self_local_aliases
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
