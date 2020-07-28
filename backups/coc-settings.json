@@ -1,5 +1,7 @@
 {
-    "python.jediEnabled": false, // to use MPLS (Microsoft Python Language Server) instead of Jedi
+    "python.jediEnabled": true,
+    // "python.jediPath": "/home/toransahu/miniconda3/lib/python3.7/site-packages/",
+    // "python.jediEnabled": false, // to use MPLS (Microsoft Python Language Server) instead of Jedi
     "languageserver": {
         "golang": {
             "command": "gopls",
