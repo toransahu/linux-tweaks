@@ -7,8 +7,12 @@ fu! ConfigureLightline()
     set laststatus=2
     let g:lightline = {
           \ 'active': {
-          \   'left': [ [ 'mode', 'paste' ],
-          \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+          \   'left': [ [ 'paste' ],
+          \             [ 'gitbranch', 'readonly', 'filename', 'modified'], 
+          \             [ 'tagbar' ] ]
+          \ },
+          \ 'component': {
+          \         'tagbar': '%{tagbar#currenttag("%s", "", "f")}',
           \ },
           \ 'component_function': {
           \   'gitbranch': 'gitbranch#name',
