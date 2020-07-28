@@ -32,7 +32,7 @@ if 'VIRTUAL_ENV' in os.environ:
 EOF
 endfunction
 
-call PyAutoActivateVenv()
+" call PyAutoActivateVenv()  "OBSOLETE: coc-python takes care of auto venv - supports virtualenv + pipenv
 
 fu! ConfigureIDEDesign()
     set hlsearch                                    " highlight search patterns
