@@ -14,7 +14,7 @@
   0.1
  ],
  "cpu": {
-  "enabled": false,
+  "enabled": true,
   "width": 40,
   "colors": [
    [
@@ -112,9 +112,9 @@
   "width": 40,
   "devices": [
    {
-    "id": "docker0",
+    "id": "lo",
     "enabled": false,
-    "show": 4,
+    "show": true,
     "colors": [
      [
       1,
@@ -128,21 +128,31 @@
       0,
       0.6
      ]
-    ],
-    "up": 0,
-    "down": 0,
-    "tooltipUp": 0,
-    "tooltipDown": 0,
-    "lastReading": [
-     0,
-     0
-    ],
-    "readingRatesList": []
+    ]
+   },
+   {
+    "id": "docker0",
+    "enabled": false,
+    "show": true,
+    "colors": [
+     [
+      1,
+      1,
+      1,
+      0.8
+     ],
+     [
+      0,
+      0,
+      0,
+      0.6
+     ]
+    ]
    },
    {
     "id": "enp0s31f6",
     "enabled": false,
-    "show": 4,
+    "show": true,
     "colors": [
      [
       1,
@@ -156,49 +166,12 @@
       0,
       0.6
      ]
-    ],
-    "up": 0,
-    "down": 0,
-    "tooltipUp": 0,
-    "tooltipDown": 0,
-    "lastReading": [
-     0,
-     0
-    ],
-    "readingRatesList": []
-   },
-   {
-    "id": "lo",
-    "enabled": false,
-    "show": 4,
-    "colors": [
-     [
-      1,
-      1,
-      1,
-      0.8
-     ],
-     [
-      0,
-      0,
-      0,
-      0.6
-     ]
-    ],
-    "up": 64990,
-    "down": 64990,
-    "tooltipUp": 0,
-    "tooltipDown": 0,
-    "lastReading": [
-     0,
-     0
-    ],
-    "readingRatesList": []
+    ]
    },
    {
     "id": "wlp2s0",
     "enabled": false,
-    "show": 4,
+    "show": true,
     "colors": [
      [
       1,
@@ -212,16 +185,7 @@
       0,
       0.6
      ]
-    ],
-    "up": 0,
-    "down": 0,
-    "tooltipUp": 0,
-    "tooltipDown": 0,
-    "lastReading": [
-     0,
-     0
-    ],
-    "readingRatesList": []
+    ]
    }
   ]
  },
@@ -250,8 +214,8 @@
      ]
     ],
     "path": "/",
-    "read": 17906376704,
-    "write": 1541865472,
+    "read": 18591719424,
+    "write": 1288339456,
     "lastReading": [
      0,
      0
