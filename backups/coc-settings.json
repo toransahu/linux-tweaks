@@ -1,6 +1,6 @@
 {
-    "python.jediEnabled": true,
-    // "python.jediPath": "/home/toransahu/miniconda3/lib/python3.7/site-packages/",
+    "python.jediEnabled": true, // do: `pip install jedi>=0.17.0` globally
+    "python.jediPath": "/home/toransahu/miniconda3/lib/python3.7/site-packages", // for path see: `pip show jedi`
     // "python.jediEnabled": false, // to use MPLS (Microsoft Python Language Server) instead of Jedi
     "languageserver": {
         "golang": {
