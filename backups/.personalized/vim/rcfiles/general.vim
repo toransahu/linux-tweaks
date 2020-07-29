@@ -36,7 +36,7 @@ endfunction
 
 fu! ConfigureIDEDesign()
     set hlsearch                                    " highlight search patterns
-    colorscheme gruvbox                             " set colorscheme
+    colorscheme gruvbox                             " set colorscheme; dependency=Plug
     set background=dark                             " set bg color
     " colorscheme PaperColor                        " set colorscheme
     " set background=light                          " set bg color
