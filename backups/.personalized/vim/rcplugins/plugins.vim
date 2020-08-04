@@ -637,3 +637,12 @@ fu! ConfigureVimSpector()
 endfunction
 
 call ConfigureVimSpector()
+
+fu! ConfigurePyDocString()
+    let l:doq_path = g:VIM_PYTHON_VENV
+    let l:doq_path .= '/bin/doq'
+    let g:pydocstring_doq_path = l:doq_path
+    " let g:pydocstring_doq_path = '/home/toransahu/miniconda3/bin/doq'
+endfunction
+
+call ConfigurePyDocString()

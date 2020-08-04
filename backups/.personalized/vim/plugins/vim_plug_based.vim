@@ -66,7 +66,8 @@ Plug 'SirVer/ultisnips'                       " Snippet Engine
 Plug 'honza/vim-snippets'                     " Snippet files - Snippets are separated from the engine
 "Plug 'aperezdc/vim-template'
 Plug 'toransahu/vim-template'                 " Template System
-Plug 'heavenshell/vim-pydocstring'            " Python docstring gen
+Plug 'heavenshell/vim-pydocstring',           " Python docstring gen
+            \ { 'do': 'make install' }
 Plug 'scrooloose/nerdcommenter'               " for easy comments
 Plug 'tpope/vim-fugitive'                     " git commands in VIM
 Plug 'tpope/vim-rhubarb'                      " git in browser

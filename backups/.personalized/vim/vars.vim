@@ -1,5 +1,6 @@
 "========================= CONSTS ===========================
 let MAX_LINE_COL=120
+let VIM_PYTHON_VENV='/home/toransahu/miniconda3'
 
 
 "========================= FUNCS ===========================
