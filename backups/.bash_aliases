@@ -254,7 +254,7 @@ alias gchp='git cherry-pick'
 alias mmdc='$WORKSPACE/mermaid-cli/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
 
-k8s-bash() {
+k8s-ssh() {
     namespace=$1
     pod=$(kubectl get pods --all-namespaces | grep "^$namespace .*" | awk 'NR==1 {print $2}')
     kubectl -n $namespace exec -it $pod -- /bin/bash
@@ -305,6 +305,14 @@ extract () {
     else
         echo "'$1' is not a valid file"
     fi
+}
+
+t-childof () {
+    APPS_TO_CLOSE=$1
+    for app in $APPS_TO_CLOSE; do
+        pids=$(pidof $app | awk '{$NF=""; print $0}')  # kill subtasks
+        echo $pids
+    done
 }
 
 self() {
