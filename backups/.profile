@@ -47,9 +47,15 @@ export LANIP=$([ -z "$LANIFACE" ] && echo '127.0.0.1' || echo $(ifconfig $LANIFA
 
 export MY_IP_ADDR=$LANIP
 
+# mist - kafkaclient auto complete
+# $WORKSPACE/mist/mist-ap/cmd/kafkaclient/bash-complete-kafkaclient.inc
+
 # HISTFILE, HISTSIZE, HISTFILESIZE are common to bash & zsh - should be here
 
 
 # Ref:
 # - overall good stuff
 #   - https://justin.abrah.ms/dotfiles/zsh.html
+
+# for MS SQL Server client tool
+export PATH="/opt/mssql-tools/bin:$PATH"
