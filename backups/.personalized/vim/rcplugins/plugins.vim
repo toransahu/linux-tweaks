@@ -643,6 +643,8 @@ fu! ConfigurePyDocString()
     let l:doq_path .= '/bin/doq'
     let g:pydocstring_doq_path = l:doq_path
     " let g:pydocstring_doq_path = '/home/toransahu/miniconda3/bin/doq'
+    " choice[pydocstring_formatter] = Sphinx, Numpy, Google
+    let g:pydocstring_formatter = 'sphinx'
 endfunction
 
 call ConfigurePyDocString()
