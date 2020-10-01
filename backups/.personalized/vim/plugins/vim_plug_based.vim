@@ -29,7 +29,7 @@ Plug 'justinmk/vim-gtfo'                      " GOTO PWD via file Manager or Ter
 " Plug 'iamcco/markdown-preview.nvim', 
 "             \ { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug'], 
 "             \ 'on': ['MarkdownPreview', 'MarkdownPreviewStop', 'MarkdownPreviewToggle']}
-Plug 'iamcco/markdown-preview.nvim', 
+Plug 'toransahu/markdown-preview.nvim',
             \ { 'do': 'cd app & yarn install',
             \ 'on': ['MarkdownPreview', 'MarkdownPreviewStop', 'MarkdownPreviewToggle']}
 "Plug 'ctrlpvim/ctrlp.vim'                    " super search
