@@ -9,6 +9,12 @@
             "filetypes": ["go"]
         }
     },
+    "java.configuration.runtimes": [
+        {
+            "name": "OpenJDK-1.8.0_265",
+            "path": "/usr/lib/jvm/java-8-openjdk-amd64/"
+        }
+    ],
     "coc.preferences.formatOnSaveFiletypes": [
         // "html",
         // "css",
