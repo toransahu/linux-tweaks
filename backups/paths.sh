@@ -6,7 +6,11 @@
 # Distributed under terms of the MIT license.
 #
 
-
+RED='\033[0;31m'
+BLUE='\033[0;34m'
+GREEN='\033[0;32m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
 
 ##
 # PATHs
@@ -65,7 +69,7 @@ elif [ "$(hostname)" = $RANDY_MC_MIST_STAGING ]; then
     EROOT="/home/$USER/disk/E"
     DROOT="/home/$USER/disk/D"
 else
-    echo "New device found. Make entry in the script.."
+    echo "[$REDx$NC] New device found. Make entry in the script.."
     IS_NEW=true
 fi
 
@@ -73,5 +77,5 @@ export WORKSPACE="$EROOT/workspace"
 export TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
 
 if [ $IS_NEW = false ] ; then
-    echo "All seems good. You're on computer: $(hostname)"
+    echo -e "$GREEN[✓] $CYAN$(whoami)@$(hostname)"
 fi
