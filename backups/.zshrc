@@ -189,7 +189,7 @@ bindkey '^e' edit-command-line
 # export ZSH_TMUX_AUTOSTART=true  # DO NOT USE - issue to timer emoji
 
 # start tmux automatically 
-# if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux; fi
 
 unsetopt beep                                               # stop bell sound on invalid operation
 
