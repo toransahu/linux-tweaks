@@ -88,7 +88,7 @@ ghrepo(){
 # utils
 alias pdf='evince'
 # alias tmux='tmux -u'                      # explicitely ask to support UTF-8
-alias cpy='xclip -sel clip'
+alias cpy='tr -d "\n" | xclip -sel clip'
 alias ls='ls -ltrhFa'
 alias t='gnome-terminal'
 alias terminal='gnome-terminal'
@@ -240,7 +240,6 @@ gcdiff(){
     git diff > .diff/${GIT_TEMP_BRANCH}${COMMENT}_${STAMP}.diff
 }
 alias cdgog='cd $GOPATH/src/github.com'
-alias gh2fa='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
 alias night='xdotool key Shift+F10 r Down  Down Down Return'
 alias day='xdotool key Shift+F10 r Down  Return'
 alias freeaptcache='sudo apt-get clean'
@@ -248,8 +247,8 @@ alias eshead='cd $WORKSPACE/elasticsearch-head && npm run start & sleep 2s && fi
 alias eshead-stop='pkill grunt > /dev/null'
 
 # TODO: whoisusingport :port -> kill that service
-alias 2fa-juniper='2fa $(cat $WORKSPACE/recovery/juniper_totp_2fa_secret_code.txt)'
-alias 2fa-github='2fa $(cat $WORKSPACE/recovery/github_totp_2fa_secret_code.txt)'
+alias 2fa-juniper='2fa -clip juniper'
+alias 2fa-github='2fa -clip github'
 alias gchp='git cherry-pick'
 alias mmdc='$WORKSPACE/mermaid-cli/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
