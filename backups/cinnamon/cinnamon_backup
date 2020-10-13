@@ -17,7 +17,7 @@ desktop-effects-minimize-effect='traditional'
 panels-scale-text-icons=['1:true', '2:true']
 desklet-snap-interval=25
 panels-height=['1:25', '2:25']
-next-applet-id=23
+next-applet-id=24
 panel-launchers=['DEPRECATED']
 desktop-effects-map-transition='easeOutQuad'
 desktop-effects-maximize-time=100
@@ -26,7 +26,7 @@ panels-enabled=['1:0:left', '2:0:bottom']
 desktop-effects-tile-transition='easeInQuad'
 panels-resizable=['1:true', '2:true']
 desktop-effects-maximize-effect='none'
-enabled-applets=['panel1:left:0:panel-launchers@cinnamon.org:3', 'panel1:right:4:systray@cinnamon.org:0', 'panel1:right:5:sound@cinnamon.org:13', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel2:right:4:notifications@cinnamon.org:6', 'panel1:right:9:user@cinnamon.org:8', 'panel1:right:10:network@cinnamon.org:9', 'panel2:left:0:menu@cinnamon.org:1', 'panel2:right:1:power@cinnamon.org:11', 'panel2:right:2:separator@cinnamon.org:15', 'panel2:right:5:calendar@cinnamon.org:12', 'panel2:right:6:show-desktop@cinnamon.org:2', 'panel2:center:0:IcingTaskManager@json:17', 'panel2:right:3:multicore-sys-monitor@ccadeptic23:21:orient']
+enabled-applets=['panel1:left:0:panel-launchers@cinnamon.org:3', 'panel1:right:4:systray@cinnamon.org:0', 'panel1:right:5:sound@cinnamon.org:13', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel2:right:5:notifications@cinnamon.org:6', 'panel1:right:9:user@cinnamon.org:8', 'panel1:right:10:network@cinnamon.org:9', 'panel2:left:0:menu@cinnamon.org:1', 'panel2:right:2:power@cinnamon.org:11', 'panel2:right:3:separator@cinnamon.org:15', 'panel2:right:6:calendar@cinnamon.org:12', 'panel2:right:7:show-desktop@cinnamon.org:2', 'panel2:center:0:IcingTaskManager@json:17', 'panel2:right:4:multicore-sys-monitor@ccadeptic23:21:orient', 'panel2:right:0:keyboard@cinnamon.org:23']
 desktop-effects-minimize-time=200
 alttab-switcher-delay=100
 desktop-effects-tile-effect='none'
@@ -295,7 +295,7 @@ last-translator='Google.TranslateTS'
 translate-from-selection-keybinding=['<Shift><Super>g']
 
 [theme]
-theme-cache-updated=1601830047
+theme-cache-updated=1602522395
 name='Mint-Y-Dark'
 
 [settings-daemon/plugins/power]
@@ -334,7 +334,7 @@ orientation-lock=false
 [settings-daemon/peripherals/keyboard]
 repeat-interval=uint32 30
 delay=uint32 500
-numlock-state='off'
+numlock-state='on'
 
 [settings-daemon/peripherals/mouse]
 drag-threshold=8
