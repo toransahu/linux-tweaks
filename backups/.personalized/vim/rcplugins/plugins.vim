@@ -2,23 +2,34 @@
 
 " ================= Plugin Configs ================
 
+fu! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+
 fu! ConfigureLightline()
     " lightline fix
     set laststatus=2
     let g:lightline = {
           \ 'active': {
-          \   'left': [ [ 'paste' ],
-          \             [ 'gitbranch', 'readonly', 'filename', 'modified'], 
-          \             [ 'tagbar' ] ]
+          \   'left': [
+          \         [ 'paste', ],
+          \         [ 'gitbranch', 'readonly', 'filename', 'modified', ],
+          \         [ 'tagbar', ],
+          \   ],
+          \   'right': [ [ 'lineinfo' ],
+          \              [ 'percent' ],
+          \              [ 'fileformat', 'fileencoding', 'filetype', ]
+          \   ]
           \ },
           \ 'component': {
           \         'tagbar': '%{tagbar#currenttag("%s", "", "f")}',
           \ },
           \ 'component_function': {
           \   'gitbranch': 'gitbranch#name',
-	      \   'cocstatus': 'coc#status'
+	      \   'cocstatus': 'coc#status',
+	      \   'currentfunction': 'CocCurrentFunction',
           \ },
-          \ 'colorscheme': 'PaperColor',  
+          \ 'colorscheme': 'seoul256',
           \ }
     " g:lighline.colorscheme: if PaperColor installed & enabled
     " Use auocmd to force lightline update.
