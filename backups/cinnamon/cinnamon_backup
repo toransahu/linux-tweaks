@@ -41,7 +41,7 @@ workspace-osd-y=50
 favorite-apps=['cinnamon-settings.desktop', 'pidgin.desktop', 'org.gnome.Terminal.desktop', 'nemo.desktop', 'firefox_firefox.desktop']
 show-media-keys-osd='medium'
 desktop-effects-tile-time=100
-panels-autohide=['1:false', '2:false']
+panels-autohide=['1:intel', '2:false']
 device-aliases=['/org/freedesktop/UPower/devices/battery_BAT0:=SANYO 45N1159']
 no-adjacent-panel-barriers=true
 
