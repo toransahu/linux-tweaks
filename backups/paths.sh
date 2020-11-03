@@ -69,7 +69,7 @@ elif [ "$(hostname)" = $RANDY_MC_MIST_STAGING ]; then
     EROOT="/home/$USER/disk/E"
     DROOT="/home/$USER/disk/D"
 else
-    echo "[$REDx$NC] New device found. Make entry in the script.."
+    echo "[$REDx$NC] New device found. Make entry in the script..$NC"
     IS_NEW=true
 fi
 
@@ -77,5 +77,5 @@ export WORKSPACE="$EROOT/workspace"
 export TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
 
 if [ $IS_NEW = false ] ; then
-    echo -e "$GREEN[✓] $CYAN$(whoami)@$(hostname)"
+    echo -e "$GREEN[✓] $CYAN$(whoami)@$(hostname)i$NC"
 fi
