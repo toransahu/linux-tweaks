@@ -249,6 +249,7 @@ alias eshead-stop='pkill grunt > /dev/null'
 # TODO: whoisusingport :port -> kill that service
 alias 2fa-juniper='2fa -clip juniper'
 alias 2fa-github='2fa -clip github'
+alias 2fa-mist-okta='2fa -clip mist-okta'
 alias gchp='git cherry-pick'
 alias mmdc='$WORKSPACE/mermaid-cli/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
@@ -334,4 +335,31 @@ talentica() {
     if [ -f $WORKSPACE/secret/talentica/envs/.talentica_local_aliases ]; then
         source $WORKSPACE/secret/talentica/envs/.talentica_local_aliases
     fi
+}
+alias now='echo $(date +%s) | xargs -I {} sh -c "echo {} && date -d @{} &&  TZ=GMT date -d @{}"'
+alias curl-fmt='curl -w @/home/toransahu/.personalized/curl.format'
+
+urlencode() {
+    # urlencode <string>
+
+    old_lc_collate=$LC_COLLATE
+    LC_COLLATE=C
+
+    local length="${#1}"
+    for (( i = 0; i < length; i++ )); do
+        local c="${1:$i:1}"
+        case $c in
+            [a-zA-Z0-9.~_-]) printf '%s' "$c" ;;
+            *) printf '%%%02X' "'$c" ;;
+        esac
+    done
+
+    LC_COLLATE=$old_lc_collate
+}
+
+urldecode() {
+    # urldecode <string>
+
+    local url_encoded="${1//+/ }"
+    printf '%b' "${url_encoded//%/\\x}"
 }
