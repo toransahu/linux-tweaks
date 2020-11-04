@@ -1,2 +1,9 @@
-export PATH="/home/toran/anaconda/bin:$PATH"
+export PATH="$HOME/anaconda/bin:$PATH"
 
+# if git-delta is installed, prefer it as default git pager
+if [ -z "$GIT_PAGER" ]; then
+    # include .bashrc if it exists
+    if [ -f "/usr/bin/delta" ]; then
+	export GIT_PAGER=delta
+    fi
+fi
