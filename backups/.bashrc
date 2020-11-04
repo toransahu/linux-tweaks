@@ -150,9 +150,9 @@ if [ -x /usr/bin/mint-fortune ]; then
 fi
 
 
-## custom common shell configs                                                  
-if [ -f ~/.commonrc ]; then                                                     
-          . ~/.commonrc                                                      
+## custom common shell configs
+if [ -f ~/.commonrc ]; then
+          . ~/.commonrc
 fi
 
 # added by Anaconda3 installer
