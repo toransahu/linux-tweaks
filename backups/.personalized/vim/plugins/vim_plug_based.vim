@@ -46,6 +46,7 @@ Plug 'ryanoasis/vim-devicons'                 " Add icons to diff files/extensio
 Plug 'rhysd/vim-grammarous'                   " Grammar check - based on www.languagetool.org tool
 " Plug 'kamykn/spelunker.vim'                   " spell check - made easy
 " Plug 'benmills/vimux'                         " Interact with tmux from vim
+Plug 'farconics/victionary'                   " Dictionary
 
 "------------------------ Prog utils ---------------------------
 
