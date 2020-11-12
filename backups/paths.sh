@@ -1,7 +1,7 @@
-#! /bin/sh
+#!/usr/bin/env bash
 #
 # paths.sh
-# Copyright (C) 2018 Toran Sahu <toran.sahu@yahoo.com>
+# Copyright (C) 2020 Toran Sahu <toran.sahu@yahoo.com>
 #
 # Distributed under terms of the MIT license.
 #
@@ -15,19 +15,20 @@ NC='\033[0m' # No Color
 ##
 # PATHs
 ##
-SOURCE_DIR="/home/toran"
-REPO_DIR="linux-tweaks"
+SOURCE_DIR="/home/$USER"
+EROOT="/home/$USER/disk/E"
+DROOT="/home/$USER/disk/D"
 
-##
-# backup_confs.sh
-##
+REPO_DIR="linux-tweaks"
+BAK_DIR="backups" # backup_confs.sh
 # BAK_DIR="$(date +"%Y-%m-%d-%I:%M:%S")"
-BAK_DIR="backups"
 
 IS_NEW=false
 
-
-if  [ "$(hostname)" = mint-ThinkPad-L440 ]; then
+if  [ -d "$EROOT" ] || [ -d "$DROOT" ]; then
+    mkdir -p $EROOT
+    mkdir -p $DROOT
+elif  [ "$(hostname)" = mint-ThinkPad-L440 ]; then
     EROOT="/mnt/ExternalHDD/E"
     DROOT="/mnt/ExternalHDD/D"
 elif [ "$(hostname)" = mint-ethereal ]; then
