@@ -42,6 +42,8 @@ fu! ConfigureIDEDesign()
     " set background=light                          " set bg color
     " set column limit/line length limit
     execute 'set colorcolumn=' .g:MAX_LINE_COL
+    " set cursorcolumn                              " highlight cursor column
+    " set cursorline                                " highlight cursor row
 endfunction
 
 call ConfigureIDEDesign()
