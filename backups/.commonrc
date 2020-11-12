@@ -1,4 +1,42 @@
-export PATH="$HOME/anaconda/bin:$PATH"
+export PATH=$PATH:$HOME/miniconda3/bin:$HOME/anaconda3/bin:$HOME/anaconda/bin:$HOME/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$HOME/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+# set GO paths
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go/
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+##
+# Init - Include/source PATHs
+##
+. ~/paths.sh
+
+
+# eclipse/eclim
+export ECLIPSE_HOME=$HOME/.eclipse/org.eclipse.platform_4.8.0_1473617060_linux_gtk_x86_64
+
+# set LAN active-interface
+export LANIFACE=$(ip route get 1.1.1.1 2>&- | grep -Po '(?<=dev\s)\w+' | cut -f1 -d ' ')
+
+# set LAN IP ADDRESS
+export LANIP=$([ -z "$LANIFACE" ] && echo '127.0.0.1' || echo $(ifconfig $LANIFACE | awk '/inet / {print $2}'))
+
+export MY_IP_ADDR=$LANIP
+
+# mist - kafkaclient auto complete
+# $WORKSPACE/mist/mist-ap/cmd/kafkaclient/bash-complete-kafkaclient.inc
+
+# HISTFILE, HISTSIZE, HISTFILESIZE are common to bash & zsh - should be here
+
+# Ref:
+# - overall good stuff
+#   - https://justin.abrah.ms/dotfiles/zsh.html
+
+# for MS SQL Server client tool
+export PATH="/opt/mssql-tools/bin:$PATH"
 
 # if git-delta is installed, prefer it as default git pager
 if [ -z "$GIT_PAGER" ]; then
