@@ -363,3 +363,4 @@ urldecode() {
     local url_encoded="${1//+/ }"
     printf '%b' "${url_encoded//%/\\x}"
 }
+alias es-sql-cli='sudo /usr/share/elasticsearch/bin/elasticsearch-sql-cli'
