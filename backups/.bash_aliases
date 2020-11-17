@@ -87,7 +87,6 @@ ghrepo(){
 
 # utils
 alias pdf='evince'
-# alias tmux='tmux -u'                      # explicitely ask to support UTF-8
 alias cpy='tr -d "\n" | xclip -sel clip'
 alias ls='ls -ltrhFa'
 alias t='gnome-terminal'
@@ -224,7 +223,7 @@ alias cdm='cd $WORKSPACE/mist'
 alias cdom='cd $WORKSPACE/office-repos/mist'
 alias cdlb='cd $WORKSPACE/linux-tweaks/backups'
 alias tpnum='tmux bind Left select-pane -L \; display-pane -d 5000'
-alias tmux='tmux -u'
+alias tmux='tmux -u -c "#{pane_current_path}"'
 alias tks='tmux kill-server'
 alias cdp='cd $WORKSPACE/post-linux-install'
 
