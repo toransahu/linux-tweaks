@@ -19,9 +19,9 @@
             "chrome-bgejknldbmbjknepfkakfbemenkgaack-Default.desktop",
             "chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop",
             "spotify.desktop",
-            "chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop",
             "chrome-lljldmnnhjkandejalbjlndemhlcjepa-Default.desktop",
-            "chromium-browser.desktop"
+            "chromium-browser.desktop",
+            "chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"
         ]
     },
     "allow-dragging": {

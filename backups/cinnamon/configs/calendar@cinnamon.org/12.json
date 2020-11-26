@@ -24,7 +24,7 @@
         "indent": true,
         "dependency": "use-custom-format",
         "tooltip": "Set your custom format here.",
-        "value": "%s %a %b %e, %H:%M:%S"
+        "value": "%s | %a %b %e, %H:%M:%S %Z"
     },
     "format-button": {
         "type": "button",
