@@ -223,7 +223,7 @@ alias cdm='cd $WORKSPACE/mist'
 alias cdom='cd $WORKSPACE/office-repos/mist'
 alias cdlb='cd $WORKSPACE/linux-tweaks/backups'
 alias tpnum='tmux bind Left select-pane -L \; display-pane -d 5000'
-alias tmux='tmux -u -c "#{pane_current_path}"'
+alias tmux='tmux -u'
 alias tks='tmux kill-server'
 alias cdp='cd $WORKSPACE/post-linux-install'
 
@@ -336,6 +336,28 @@ talentica() {
     fi
 }
 alias now='echo $(date +%s) | xargs -I {} sh -c "echo {} && date -d @{} &&  TZ=GMT date -d @{}"'
+epoch_at() {
+    epoch=$1
+    echo $epoch
+    echo $(date -d @$epoch)
+    echo $(TZ=GMT date -d @$epoch)
+}
+iso_at() {
+    zone=$2
+    if [ -z "$2" ]; then
+        epoch=$(date -d "$1" +"%s")
+    else
+        epoch=$(TZ=$zone date -d "$1" +"%s")
+    fi
+    epoch_at $epoch
+}
+time_at() {
+    if [[ $@ == *":"*  ]]; then
+        iso_at $@
+    else
+        epoch_at $@
+    fi
+}
 alias curl-fmt='curl -w @/home/toransahu/.personalized/curl.format'
 
 urlencode() {
