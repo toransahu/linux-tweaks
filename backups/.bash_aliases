@@ -250,7 +250,7 @@ alias 2fa-juniper='2fa -clip juniper'
 alias 2fa-github='2fa -clip github'
 alias 2fa-mist-okta='2fa -clip mist-okta'
 alias gchp='git cherry-pick'
-alias mmdc='$WORKSPACE/mermaid-cli/node_modules/.bin/mmdc'
+alias mmdc='~/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
 
 k8s-ssh() {
@@ -385,3 +385,4 @@ urldecode() {
     printf '%b' "${url_encoded//%/\\x}"
 }
 alias es-sql-cli='sudo /usr/share/elasticsearch/bin/elasticsearch-sql-cli'
+alias gcz='git cz'
