@@ -57,5 +57,5 @@ highlight-colors-set=false
 use-theme-colors=false
 use-theme-transparency=false
 bold-color-same-as-fg=true
-background-color='rgb(224,224,224)'
+background-color='rgb(229,224,224)'
 audible-bell=false
