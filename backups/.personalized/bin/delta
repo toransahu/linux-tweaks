@@ -1,0 +1,2 @@
+#!/bin/bash
+exec delta --light --commit-style box --commit-color="red" --theme 'GitHub' "$@"
