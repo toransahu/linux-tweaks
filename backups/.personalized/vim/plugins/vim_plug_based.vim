@@ -29,9 +29,12 @@ Plug 'justinmk/vim-gtfo'                      " GOTO PWD via file Manager or Ter
 " Plug 'iamcco/markdown-preview.nvim', 
 "             \ { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug'], 
 "             \ 'on': ['MarkdownPreview', 'MarkdownPreviewStop', 'MarkdownPreviewToggle']}
+" Plug 'toransahu/markdown-preview.nvim',
+"             \ { 'do': 'cd app & yarn install',
+"             \ 'on': ['MarkdownPreview', 'MarkdownPreviewStop', 'MarkdownPreviewToggle']}
 Plug 'toransahu/markdown-preview.nvim',
-            \ { 'do': 'cd app & yarn install',
-            \ 'on': ['MarkdownPreview', 'MarkdownPreviewStop', 'MarkdownPreviewToggle']}
+            \ { 'do': 'cd app & yarn install'}
+
 "Plug 'ctrlpvim/ctrlp.vim'                    " super search
 Plug 'junegunn/fzf'                           " fuzzy finder
 Plug 'junegunn/fzf.vim'                       " fuzzy finder
@@ -41,7 +44,7 @@ Plug 'rking/ag.vim'                           " (Depricated) Ag - Ack alternativ
 Plug 'google/vim-searchindex'                 " Search index/number
 Plug 'tpope/vim-sensible'                     " Default configs everyone can agree on
 Plug 'vim-scripts/DrawIt'                     " For ASCII arts
-Plug 'ryanoasis/nerd-fonts'                   " To support vim-devicons
+" Plug 'ryanoasis/nerd-fonts'                   " To support vim-devicons
 Plug 'ryanoasis/vim-devicons'                 " Add icons to diff files/extensions
 Plug 'rhysd/vim-grammarous'                   " Grammar check - based on www.languagetool.org tool
 " Plug 'kamykn/spelunker.vim'                   " spell check - made easy

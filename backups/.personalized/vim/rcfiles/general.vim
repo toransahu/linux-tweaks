@@ -37,8 +37,8 @@ endfunction
 fu! ConfigureIDEDesign()
     set hlsearch                                    " highlight search patterns
     colorscheme gruvbox                             " set colorscheme; dependency=Plug
-    set background=dark                             " set bg color
     " colorscheme PaperColor                        " set colorscheme
+    set background=dark                             " set bg color
     " set background=light                          " set bg color
     " set column limit/line length limit
     execute 'set colorcolumn=' .g:MAX_LINE_COL
