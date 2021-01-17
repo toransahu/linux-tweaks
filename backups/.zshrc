@@ -163,8 +163,8 @@ export FZF_DEFAULT_OPS="--extended --height=70% --preview 'bat --color=always --
 # if using fd an find alternative used by git"
 #export FZF_DEFAULT_COMMAND="fd --type f"
 # if using ripgrep
-#export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!{.git,venv,venv3.5}/*" 2> /dev/null'
-export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,venv,venv3.5}/*" 2> /dev/null'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!{.git,venv,venv3.5}/*" 2> /dev/null'
+# export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{.git,venv,venv3.5}/*" 2> /dev/null'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :500 {}'"   #failing in terminal
 
