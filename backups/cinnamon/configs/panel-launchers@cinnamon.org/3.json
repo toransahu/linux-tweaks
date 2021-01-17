@@ -16,12 +16,13 @@
             "firefox_firefox.desktop",
             "kazam.desktop",
             "shutter.desktop",
-            "chrome-bgejknldbmbjknepfkakfbemenkgaack-Default.desktop",
-            "chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop",
             "spotify.desktop",
-            "chrome-lljldmnnhjkandejalbjlndemhlcjepa-Default.desktop",
             "chromium-browser.desktop",
-            "chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop"
+            "chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop",
+            "chrome-dapegfjghhebkefbhoodfgajoefocljn-Default.desktop",
+            "msedge-lljldmnnhjkandejalbjlndemhlcjepa-Default.desktop",
+            "msedge-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop",
+            "msedge-fmpeogjilmkgcolmjmaebdaebincaebh-Default.desktop"
         ]
     },
     "allow-dragging": {
