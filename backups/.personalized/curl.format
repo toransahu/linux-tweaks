@@ -1,3 +1,4 @@
+\n## latency (in seconds)\n
 time_namelookup: %{time_namelookup}\n
 time_connect: %{time_connect}\n
 time_appconnect: %{time_appconnect}\n
