@@ -53,6 +53,20 @@ fu! ConfigureVimTemplate()
     " Customize the settings for vim-template plugin
     let g:email = "toran.sahu@yahoo.com"
     let g:user = "Toran Sahu"
+    
+    let g:templates_user_variables = [
+		\   ['FULLPATH', 'GetFullPath'],
+		\   ['CURRDIRNAME', 'GetCurrDirName'],
+		\ ]
+
+	function! GetFullPath()
+		return expand('%:p')
+	endfunction
+
+    fu! GetCurrDirName()
+        return fnamemodify(fnamemodify(expand('%'), ':h'), ':t')
+    endfunction
+
 endfunction
 
 call ConfigureVimTemplate()
