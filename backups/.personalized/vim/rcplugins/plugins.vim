@@ -293,6 +293,13 @@ fu! ConfigureVimTest()
     \}
 
     " let g:test#python#djangotest#executable = 'python manage.py test --failfast --keepdb' " not required - already ^^
+    
+    let g:test#go#gotest#options = {
+      \ 'nearest': '-v',
+      \ 'file':    '-v',
+      \ 'suite':   '-v',
+    \}
+
     let g:test#vim#term_position = "belowright"
 
     " these "Ctrl mappings" work well when Caps Lock is mapped to Ctrl
