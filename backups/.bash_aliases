@@ -87,7 +87,7 @@ ghrepo(){
 
 # utils
 alias pdf='evince'
-alias cpy='tr -d "\n" | xclip -sel clip'
+alias cpy='python -c "import sys; data = sys.stdin.read(); print(data.strip(), end=\"\")" | xclip -sel clip'
 alias ls='ls -ltrhFa'
 alias t='gnome-terminal'
 alias terminal='gnome-terminal'
@@ -263,7 +263,7 @@ k8s-log() {
     namespace=$1
     app=$1
     # kubectl logs --max-log-requests 8 -n $namespace -l app=$app -f
-    kubectl logs --max-log-requests 12 -n $namespace -l app=$app -f
+    kubectl logs -n $namespace -l app=$app -f --max-log-requests=40
 }
 
 var() {
