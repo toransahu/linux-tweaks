@@ -170,6 +170,7 @@ alias cdo='$WORKSPACE/office-repos'
 alias cleardns='sudo /etc/init.d/networking restart'
 alias vpnstag='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_stag && sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn'
 alias vpnprod='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_prod && sudo openvpn --config production-toran.sahu@mistsys.com.ovpn'
+alias vpnac2='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_prod_ac2 && sudo openvpn --config use1prod2-toran.sahu@mistsys.com.ovpn'
 alias vpneu='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_eu && sudo openvpn --config eu-toran.sahu@mistsys.com.ovpn'
 alias vpngcpstag='cd ~/vpns/mist/openVpn/gcp/toran.sahu@mistsys.com_stag && sudo openvpn --config gcp-staging-toran.sahu@mistsys.com.ovpn'
 alias vpngcpprod='cd ~/vpns/mist/openVpn/gcp/toran.sahu@mistsys.com_prod && sudo openvpn --config gcp-production-toran.sahu@mistsys.com.ovpn'
@@ -339,15 +340,15 @@ alias now='echo $(date +%s) | xargs -I {} sh -c "echo {} && date -d @{} &&  TZ=G
 epoch_at() {
     epoch=$1
     echo $epoch
-    echo $(date -d @$epoch)
-    echo $(TZ=GMT date -d @$epoch)
+    echo $(date -d @$epoch +"%G-%m-%eT%H:%M:%S.%3N%z %Z")
+    echo $(TZ=GMT date -d @$epoch +"%G-%m-%eT%H:%M:%S.%3N%z %Z")
 }
 iso_at() {
     zone=$2
     if [ -z "$2" ]; then
-        epoch=$(date -d "$1" +"%s")
+        epoch=$(date -d "$1" +"%s.%3N")
     else
-        epoch=$(TZ=$zone date -d "$1" +"%s")
+        epoch=$(TZ=$zone date -d "$1" +"%s.%3N")
     fi
     epoch_at $epoch
 }
