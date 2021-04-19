@@ -13,7 +13,7 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 ##
-# PATHs
+# PATHs: init - default 
 ##
 SOURCE_DIR="/home/$USER"
 EROOT="/home/$USER/disk/E"
@@ -58,7 +58,7 @@ elif [ "$(hostname)" = raspberrypi ]; then
     SOURCE_DIR="/home/pi"
     EROOT="/home/pi/main-storage/E"
 else
-    echo "[$REDx$NC] New device found. Make entry in the script..$NC"
+    echo "[$REDx$NC] New device found. Adjust the vars accrodingly (if required)..$NC"
     IS_NEW=true
 fi
 
