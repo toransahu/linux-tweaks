@@ -340,8 +340,8 @@ alias now='echo $(date +%s) | xargs -I {} sh -c "echo {} && date -d @{} &&  TZ=G
 epoch_at() {
     epoch=$1
     echo $epoch
-    echo $(date -d @$epoch +"%G-%m-%eT%H:%M:%S.%3N%z %Z")
-    echo $(TZ=GMT date -d @$epoch +"%G-%m-%eT%H:%M:%S.%3N%z %Z")
+    echo $(date -d @$epoch +"%G-%m-%dT%H:%M:%S.%3N%z %Z")
+    echo $(TZ=GMT date -d @$epoch +"%G-%m-%dT%H:%M:%S.%3N%z %Z")
 }
 iso_at() {
     zone=$2
