@@ -14,7 +14,7 @@ __license__ = "Distributed under terms of the MIT license"
 
 
 WORKSPACE = os.environ["WORKSPACE"]
-ROOT_ENV = os.path.join(WORKSPACE, "secret")
+ROOT_ENV = os.path.join(WORKSPACE, "aliases")
 ENV = "envs"
 SELF = "self"
 
@@ -55,9 +55,8 @@ class EnvParser:
                 self.env = full_env
                 self.provider = None
 
-        self.org_env_dir = os.path.join(ROOT_ENV, self.org, ENV)
-        self.alias_file = "." + self.org + "_local_aliases"
-        self.alias_file_path = os.path.join(self.org_env_dir, self.alias_file)
+        self.alias_file = "." + self.org + "_pvt_aliases"
+        self.alias_file_path = os.path.join(ROOT_ENV, self.alias_file)
 
         self.cmd_name = args.cmd
         self.cmds = []

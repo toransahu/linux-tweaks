@@ -317,24 +317,20 @@ t-childof () {
 }
 
 self() {
-    if [ -f $WORKSPACE/secret/self/envs/.self_local_aliases ]; then
-        . $WORKSPACE/secret/self/envs/.self_local_aliases
+    if [ -f $WORKSPACE/aliases/.self_pvt_aliases ]; then
+        . $WORKSPACE/aliases/.self_pvt_aliases
     fi
 }
 
 mist() {
-    if [ -f $WORKSPACE/secret/mist/envs/.mist_aliases ]; then
-        source $WORKSPACE/secret/mist/envs/.mist_aliases
-    fi
-
-    if [ -f $WORKSPACE/secret/mist/envs/.mist_local_aliases ]; then
-        source $WORKSPACE/secret/mist/envs/.mist_local_aliases
+    if [ -f $WORKSPACE/aliases/.mist_pvt_aliases ]; then
+        source $WORKSPACE/aliases/.mist_pvt_aliases
     fi
 }
 
 talentica() {
-    if [ -f $WORKSPACE/secret/talentica/envs/.talentica_local_aliases ]; then
-        source $WORKSPACE/secret/talentica/envs/.talentica_local_aliases
+    if [ -f $WORKSPACE/aliases/.talentica_pvt_aliases ]; then
+        source $WORKSPACE/aliases/.talentica_pvt_aliases
     fi
 }
 alias now='echo $(date +%s) | xargs -I {} sh -c "echo {} && date -d @{} &&  TZ=GMT date -d @{}"'
