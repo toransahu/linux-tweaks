@@ -24,7 +24,10 @@
             "msedge-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop",
             "msedge-fmpeogjilmkgcolmjmaebdaebincaebh-Default.desktop",
             "teams.desktop",
-            "msedge-fdpmmebolibhkidjkfpgakbgiickdaml-Default.desktop"
+            "msedge-fdpmmebolibhkidjkfpgakbgiickdaml-Default.desktop",
+            "slack.desktop",
+            "skypeforlinux.desktop",
+            "chrome-ocdlmjhbenodhlknglojajgokahchlkk-Default.desktop"
         ]
     },
     "allow-dragging": {

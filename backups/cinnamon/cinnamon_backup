@@ -334,7 +334,7 @@ orientation-lock=false
 [settings-daemon/peripherals/keyboard]
 repeat-interval=uint32 30
 delay=uint32 500
-numlock-state='on'
+numlock-state='off'
 
 [settings-daemon/peripherals/mouse]
 drag-threshold=8
