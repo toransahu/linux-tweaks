@@ -263,9 +263,11 @@ k8s-ssh() {
 
 k8s-log() {
     namespace=$1
-    app=$1
+    app=$2
+    app=${app:-$namespace}
     # kubectl logs --max-log-requests 8 -n $namespace -l app=$app -f
-    kubectl logs -n $namespace -l app=$app -f --max-log-requests=40
+    # kubectl logs -n $namespace -l app=$app -f --max-log-requests=40
+    kubectl -n $namespace logs -f deployment/$app --all-containers=true
 }
 
 var() {
