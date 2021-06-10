@@ -335,7 +335,14 @@ talentica() {
         source $WORKSPACE/aliases/.talentica_pvt_aliases
     fi
 }
-alias now='echo $(date +%s) | xargs -I {} sh -c "echo {} && date -d @{} &&  TZ=GMT date -d @{}"'
+now() {
+    zone=$1
+    if [ -z "$1" ]; then
+        echo $(date +%s) | xargs -I {} sh -c "echo {} && date -d @{} &&  TZ=GMT date -d @{}"
+    else
+        echo $(date +%s) | xargs -I {} sh -c "echo {} &&  TZ=$zone date -d @{} && date -d @{} &&  TZ=GMT date -d @{}"
+    fi
+}
 epoch_at() {
     epoch=$1
     echo $epoch
