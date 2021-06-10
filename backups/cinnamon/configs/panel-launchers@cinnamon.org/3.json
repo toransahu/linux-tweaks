@@ -17,17 +17,17 @@
             "kazam.desktop",
             "shutter.desktop",
             "spotify.desktop",
-            "chromium-browser.desktop",
-            "chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop",
-            "chrome-dapegfjghhebkefbhoodfgajoefocljn-Default.desktop",
             "msedge-lljldmnnhjkandejalbjlndemhlcjepa-Default.desktop",
             "msedge-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop",
             "msedge-fmpeogjilmkgcolmjmaebdaebincaebh-Default.desktop",
-            "teams.desktop",
             "msedge-fdpmmebolibhkidjkfpgakbgiickdaml-Default.desktop",
+            "teams.desktop",
             "slack.desktop",
             "skypeforlinux.desktop",
-            "chrome-ocdlmjhbenodhlknglojajgokahchlkk-Default.desktop"
+            "chrome-faolnafnngnfdaknnbpnkhgohbobgegn-Default.desktop",
+            "chrome-dapegfjghhebkefbhoodfgajoefocljn-Default.desktop",
+            "cinnamon-custom-launcher-1.desktop",
+            "chrome-kdakphmaigkeipmfnmgbafimmofpoicd-Default.desktop"
         ]
     },
     "allow-dragging": {
