@@ -22,11 +22,11 @@ panel-launchers=['DEPRECATED']
 desktop-effects-map-transition='easeOutQuad'
 desktop-effects-maximize-time=100
 desktop-effects-unmaximize-effect='none'
-panels-enabled=['1:0:left', '2:0:bottom']
+panels-enabled=['1:0:top', '2:0:bottom']
 desktop-effects-tile-transition='easeInQuad'
 panels-resizable=['1:true', '2:true']
 desktop-effects-maximize-effect='none'
-enabled-applets=['panel1:left:0:panel-launchers@cinnamon.org:3', 'panel1:right:4:systray@cinnamon.org:0', 'panel1:right:5:sound@cinnamon.org:13', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel2:right:5:notifications@cinnamon.org:6', 'panel1:right:9:user@cinnamon.org:8', 'panel1:right:10:network@cinnamon.org:9', 'panel2:left:0:menu@cinnamon.org:1', 'panel2:right:2:power@cinnamon.org:11', 'panel2:right:3:separator@cinnamon.org:15', 'panel2:right:6:calendar@cinnamon.org:12', 'panel2:right:7:show-desktop@cinnamon.org:2', 'panel2:center:0:IcingTaskManager@json:17', 'panel2:right:4:multicore-sys-monitor@ccadeptic23:21:orient', 'panel2:right:0:keyboard@cinnamon.org:23']
+enabled-applets=['panel1:left:0:panel-launchers@cinnamon.org:3', 'panel1:right:0:systray@cinnamon.org:0', 'panel1:right:1:sound@cinnamon.org:13', 'panel1:right:2:removable-drives@cinnamon.org:7', 'panel2:right:5:notifications@cinnamon.org:6', 'panel1:right:5:user@cinnamon.org:8', 'panel1:right:4:network@cinnamon.org:9', 'panel2:left:0:menu@cinnamon.org:1', 'panel2:right:2:power@cinnamon.org:11', 'panel2:right:3:separator@cinnamon.org:15', 'panel2:right:6:calendar@cinnamon.org:12', 'panel2:right:7:show-desktop@cinnamon.org:2', 'panel2:center:0:IcingTaskManager@json:17', 'panel2:right:4:multicore-sys-monitor@ccadeptic23:21:orient', 'panel2:right:0:keyboard@cinnamon.org:23']
 desktop-effects-minimize-time=200
 alttab-switcher-delay=100
 desktop-effects-tile-effect='none'
@@ -329,12 +329,12 @@ motion-threshold=9
 touchpad-enabled=true
 
 [settings-daemon/peripherals/touchscreen]
-orientation-lock=false
+orientation-lock=true
 
 [settings-daemon/peripherals/keyboard]
 repeat-interval=uint32 30
 delay=uint32 500
-numlock-state='off'
+numlock-state='on'
 
 [settings-daemon/peripherals/mouse]
 drag-threshold=8
