@@ -6,6 +6,7 @@ echo "[$(date +"%Y-%m-%d-%I:%M:%S")] " 'Configs backup started.'
 
 
 mkdir -p $TARGET_DIR
+mkdir -p ~/.vim
 
 # backups following items
 cp "$SOURCE_DIR/paths.sh" "$TARGET_DIR/"

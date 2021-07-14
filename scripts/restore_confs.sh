@@ -10,6 +10,7 @@
 
 . ~/paths.sh
 HOSTNAME=$(hostname)
+mkdir -p ~/.vim
 
 
 ##
