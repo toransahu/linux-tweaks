@@ -14,7 +14,8 @@
             "firefox.desktop",
             "org.gnome.Terminal.desktop",
             "nemo.desktop",
-            "msedge-hnpfjngllnobngcgfapefoaidbinmjnm-Profile_1.desktop"
+            "msedge-hnpfjngllnobngcgfapefoaidbinmjnm-Profile_1.desktop",
+            "spotify.desktop"
         ]
     },
     "allow-dragging": {
