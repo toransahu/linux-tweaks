@@ -40,30 +40,6 @@
     1,
     1,
     1
-   ],
-   [
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1
-   ],
-   [
-    1,
-    1,
-    1,
-    1
    ]
   ]
  },
@@ -129,64 +105,8 @@
       0.6
      ]
     ],
-    "up": 58254,
-    "down": 58254,
-    "tooltipUp": 0,
-    "tooltipDown": 0,
-    "lastReading": [
-     0,
-     0
-    ],
-    "readingRatesList": []
-   },
-   {
-    "id": "docker0",
-    "enabled": false,
-    "show": 4,
-    "colors": [
-     [
-      1,
-      1,
-      1,
-      0.8
-     ],
-     [
-      0,
-      0,
-      0,
-      0.6
-     ]
-    ],
-    "up": 0,
-    "down": 0,
-    "tooltipUp": 0,
-    "tooltipDown": 0,
-    "lastReading": [
-     0,
-     0
-    ],
-    "readingRatesList": []
-   },
-   {
-    "id": "enp0s31f6",
-    "enabled": false,
-    "show": 4,
-    "colors": [
-     [
-      1,
-      1,
-      1,
-      0.8
-     ],
-     [
-      0,
-      0,
-      0,
-      0.6
-     ]
-    ],
-    "up": 0,
-    "down": 0,
+    "up": 1552298,
+    "down": 1552298,
     "tooltipUp": 0,
     "tooltipDown": 0,
     "lastReading": [
@@ -213,8 +133,8 @@
       0.6
      ]
     ],
-    "up": 107869,
-    "down": 289929,
+    "up": 102315520,
+    "down": 2078229833,
     "tooltipUp": 0,
     "tooltipDown": 0,
     "lastReading": [
@@ -222,6 +142,25 @@
      0
     ],
     "readingRatesList": []
+   },
+   {
+    "id": "enp0s25",
+    "enabled": false,
+    "show": true,
+    "colors": [
+     [
+      1,
+      1,
+      1,
+      0.8
+     ],
+     [
+      0,
+      0,
+      0,
+      0.6
+     ]
+    ]
    }
   ]
  },
@@ -250,8 +189,8 @@
      ]
     ],
     "path": "/",
-    "read": 22474039296,
-    "write": 815030272,
+    "read": 7670505472,
+    "write": 4513497088,
     "lastReading": [
      0,
      0

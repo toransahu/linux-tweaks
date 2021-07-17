@@ -41,7 +41,7 @@ alias gi.go='wget https://raw.githubusercontent.com/toransahu/gitignore/master/G
 alias gi.java='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Java.gitignore -O .gitignore'
 alias gitrepo='print -z "$(<~/.personalized/.gitrepo)"'
 alias gch='git checkout'
-alias ghtokencpy='cat $WORKSPACE/recovery/github-access-token.txt | cpy'
+alias ghtokencpy='cpy $WORKSPACE/recovery/github-access-token.txt'
 alias gbd='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git checkout master && git branch -d $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
 alias gbdf='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git checkout master && git branch -D $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
 alias gls='git log --stat'
