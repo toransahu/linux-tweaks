@@ -66,5 +66,5 @@ export WORKSPACE="$EROOT/workspace"
 export TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
 
 if [ $IS_NEW = false ] ; then
-    echo -e "$GREEN\b[✓] $CYAN$(whoami)@$(hostname)$NC"
+    echo -e "$GREEN\b[✓] $CYAN$(whoami)@$(hostname)i$NC"
 fi
