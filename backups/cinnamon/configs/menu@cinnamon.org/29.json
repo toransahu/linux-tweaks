@@ -72,7 +72,7 @@
         "default": false,
         "description": "Use a custom icon and label",
         "tooltip": "Check this to specify a custom icon and label",
-        "value": true
+        "value": false
     },
     "menu-icon": {
         "type": "iconfilechooser",
@@ -81,7 +81,7 @@
         "tooltip": "Select an icon to show in the panel.",
         "dependency": "menu-custom",
         "indent": true,
-        "value": "linuxmint-logo-ring-symbolic"
+        "value": "cinnamon-symbolic"
     },
     "menu-label": {
         "type": "entry",
@@ -90,7 +90,7 @@
         "tooltip": "Enter custom text to show in the panel.",
         "dependency": "menu-custom",
         "indent": true,
-        "value": ""
+        "value": "Menu"
     },
     "favbox-min-height": {
         "type": "spinbutton",
