@@ -391,5 +391,11 @@ urldecode() {
     local url_encoded="${1//+/ }"
     printf '%b' "${url_encoded//%/\\x}"
 }
+
+dashed_mac() {
+    res=$(python3 -c "import sys; data = sys.stdin.read(); mac=data.strip(); print('-'.join([f'{mac[i]}{mac[i+1]}' for i in range(0, len(mac), 2)]))")
+    echo $res
+}
+
 alias es-sql-cli='sudo /usr/share/elasticsearch/bin/elasticsearch-sql-cli'
 alias gcz='git cz'
