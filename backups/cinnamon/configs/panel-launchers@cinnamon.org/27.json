@@ -15,7 +15,10 @@
             "org.gnome.Terminal.desktop",
             "nemo.desktop",
             "msedge-hnpfjngllnobngcgfapefoaidbinmjnm-Profile_1.desktop",
-            "spotify.desktop"
+            "spotify.desktop",
+            "chrome-kdakphmaigkeipmfnmgbafimmofpoicd-Default.desktop",
+            "cinnamon-custom-launcher-3.desktop",
+            "cinnamon-custom-launcher-2.desktop"
         ]
     },
     "allow-dragging": {
