@@ -267,10 +267,13 @@ talentica
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/toransahu/google-cloud-sdk/path.zsh.inc' ]; then . '/home/toransahu/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f $HOME/google-cloud-sdk/path.zsh.inc ]; then source $HOME/google-cloud-sdk/path.zsh.inc; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/toransahu/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/toransahu/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f $HOME/google-cloud-sdk/completion.zsh.inc ]; then source $HOME/google-cloud-sdk/completion.zsh.inc; fi
 
 # setup autocomplete in zsh into the current shell
 if [ -f '/usr/local/bin/kubectl' ]; then source <(kubectl completion zsh); fi
+
+# setup `aws-okta` autocomplete in zsh
+if [ -f $GOPATH/bin/aws-okta ]; then source <(aws-okta completion zsh); fi

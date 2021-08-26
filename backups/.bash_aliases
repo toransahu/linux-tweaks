@@ -399,3 +399,4 @@ dashed_mac() {
 
 alias es-sql-cli='sudo /usr/share/elasticsearch/bin/elasticsearch-sql-cli'
 alias gcz='git cz'
+alias cdn='cd $WORKSPACE/notes'
