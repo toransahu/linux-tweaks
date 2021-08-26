@@ -129,8 +129,8 @@
       0.6
      ]
     ],
-    "up": 98472934,
-    "down": 98472934,
+    "up": 1148965007,
+    "down": 1148965007,
     "tooltipUp": 0,
     "tooltipDown": 0,
     "lastReading": [
@@ -157,8 +157,8 @@
       0.6
      ]
     ],
-    "up": 749726164,
-    "down": 4431999071,
+    "up": 4826899455,
+    "down": 22961772914,
     "tooltipUp": 0,
     "tooltipDown": 0,
     "lastReading": [
@@ -185,8 +185,8 @@
       0.6
      ]
     ],
-    "up": 2791346,
-    "down": 70017242,
+    "up": 18163086,
+    "down": 87174081,
     "tooltipUp": 0,
     "tooltipDown": 0,
     "lastReading": [
@@ -222,25 +222,6 @@
      0
     ],
     "readingRatesList": []
-   },
-   {
-    "id": "tun0",
-    "enabled": false,
-    "show": true,
-    "colors": [
-     [
-      1,
-      1,
-      1,
-      0.8
-     ],
-     [
-      0,
-      0,
-      0,
-      0.6
-     ]
-    ]
    }
   ]
  },
@@ -269,8 +250,8 @@
      ]
     ],
     "path": "/",
-    "read": 334375231488,
-    "write": 1112402661376,
+    "read": 2508214083584,
+    "write": 3311743909888,
     "lastReading": [
      0,
      0

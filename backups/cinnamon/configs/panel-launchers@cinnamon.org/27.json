@@ -16,9 +16,12 @@
             "nemo.desktop",
             "msedge-hnpfjngllnobngcgfapefoaidbinmjnm-Profile_1.desktop",
             "spotify.desktop",
+            "msedge-emacdpakoihlgkpbekbfnhinbipjbepd-Profile_1.desktop",
             "chrome-kdakphmaigkeipmfnmgbafimmofpoicd-Default.desktop",
             "cinnamon-custom-launcher-3.desktop",
-            "cinnamon-custom-launcher-2.desktop"
+            "cinnamon-custom-launcher-2.desktop",
+            "shutter.desktop",
+            "kazam.desktop"
         ]
     },
     "allow-dragging": {
