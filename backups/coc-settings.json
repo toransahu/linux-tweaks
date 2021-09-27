@@ -1,7 +1,7 @@
 {
-    "python.jediEnabled": true, // do: `pip install jedi>=0.17.0` globally
-    "python.jediPath": "/home/toransahu/miniconda3/lib/python3.7/site-packages", // for path see: `pip show jedi`
+    // "python.jediEnabled": true, // do: `pip install jedi>=0.17.0` globally
     // "python.jediEnabled": false, // to use MPLS (Microsoft Python Language Server) instead of Jedi
+    // "python.jediPath": "/home/toransahu/miniconda3/lib/python3.7/site-packages", // for path see: `pip show jedi`
     "languageserver": {
         "golang": {
             "command": "gopls",
@@ -11,7 +11,7 @@
     },
     "java.configuration.runtimes": [
         {
-            "name": "OpenJDK-1.8.0_265",
+            "name": "JavaSE-1.8",
             "path": "/usr/lib/jvm/java-8-openjdk-amd64/"
         }
     ],
