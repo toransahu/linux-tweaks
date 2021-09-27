@@ -21,7 +21,8 @@
             "cinnamon-custom-launcher-3.desktop",
             "cinnamon-custom-launcher-2.desktop",
             "shutter.desktop",
-            "kazam.desktop"
+            "kazam.desktop",
+            "firefoxDeveloperEdition.desktop"
         ]
     },
     "allow-dragging": {
