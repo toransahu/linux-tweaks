@@ -66,7 +66,7 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions redis-cli aws celery django docker mvn python supervisor systemd pip zsh-syntax-highlighting # zsh-syntax-highlighting in last
+  git zsh-autosuggestions redis-cli aws celery docker mvn python supervisor systemd pip zsh-syntax-highlighting # zsh-syntax-highlighting in last
 )
 
 source $ZSH/oh-my-zsh.sh
