@@ -45,8 +45,6 @@
                 "scroll-behavior",
                 "left-click-action",
                 "middle-click-action",
-                "system-favorites",
-                "list-monitor-windows",
                 "show-all-workspaces"
             ]
         },
@@ -56,11 +54,8 @@
             "keys": [
                 "title-display",
                 "launcher-animation-effect",
-                "icon-spacing",
                 "number-display",
                 "pinned-apps",
-                "show-alerts",
-                "show-pinned",
                 "enable-app-button-dragging"
             ]
         },
@@ -70,7 +65,8 @@
             "keys": [
                 "cycleMenusHotkey",
                 "show-apps-order-hotkey",
-                "show-apps-order-timeout"
+                "show-apps-order-timeout",
+                "super-num-hotkeys"
             ]
         },
         "thumbnailsSection": {
@@ -175,24 +171,6 @@
         "description": "Group windows by application",
         "value": true
     },
-    "show-alerts": {
-        "type": "checkbox",
-        "default": true,
-        "description": "Blink on app alerts",
-        "value": true
-    },
-    "show-pinned": {
-        "type": "checkbox",
-        "default": true,
-        "description": "Show pinned apps",
-        "value": true
-    },
-    "system-favorites": {
-        "type": "checkbox",
-        "default": false,
-        "description": "Pin system favorites",
-        "value": false
-    },
     "show-all-workspaces": {
         "type": "checkbox",
         "default": false,
@@ -207,7 +185,7 @@
     },
     "launcher-animation-effect": {
         "type": "combobox",
-        "default": 1,
+        "default": 3,
         "description": "Launcher animation",
         "options": {
             "None": 1,
@@ -215,12 +193,6 @@
             "Scale": 3
         },
         "value": 1
-    },
-    "list-monitor-windows": {
-        "type": "checkbox",
-        "default": true,
-        "description": "Only list windows from the current monitor",
-        "value": true
     },
     "cycleMenusHotkey": {
         "type": "keybinding",
@@ -243,6 +215,12 @@
         "units": "milliseconds",
         "description": "Duration of the apps order display on hotkey press",
         "value": 2500
+    },
+    "super-num-hotkeys": {
+        "type": "checkbox",
+        "default": true,
+        "description": "Enable Super+<number> shortcut to switch/open apps",
+        "value": true
     },
     "thumbnail-timeout": {
         "dependency": "!onclick-thumbnails",
@@ -378,15 +356,5 @@
         "description": "Window opacity",
         "value": 100
     },
-    "icon-spacing": {
-        "type": "spinbutton",
-        "default": 6,
-        "min": 0,
-        "max": 15,
-        "step": 1,
-        "units": "px",
-        "description": "Space between icons",
-        "value": 6
-    },
-    "__md5__": "787a5a1e29beb01a6e5edc39878c35bd"
+    "__md5__": "a8bd266f01474817e50162d841192d67"
 }
