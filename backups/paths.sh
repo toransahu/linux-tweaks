@@ -24,13 +24,15 @@ BAK_DIR="backups" # backup_confs.sh
 # BAK_DIR="$(date +"%Y-%m-%d-%I:%M:%S")"
 
 IS_NEW=false
-
-if  [ -d "$EROOT" ] || [ -d "$DROOT" ]; then
+if  ! [ -d "$EROOT" ] || ! [ -d "$DROOT" ]; then
     mkdir -p $EROOT
     mkdir -p $DROOT
 elif  [ "$(hostname)" = mint-ThinkPad-L440 ]; then
-    EROOT="/mnt/ExternalHDD/E"
-    DROOT="/mnt/ExternalHDD/D"
+    EROOT=~/disk/E
+    DROOT=~/disk/D
+    GITHUB=$EROOT/workspace/github.com
+    WORKSPACE=$GITHUB/toransahu
+    OFFICE=$GITHUB/mistsys
 elif [ "$(hostname)" = mint-ethereal ]; then
     EROOT="/mnt/Other/toran/E"
 elif [ "$(hostname)" = ip-172-31-24-111 ]; then
@@ -62,8 +64,9 @@ else
     IS_NEW=true
 fi
 
-export WORKSPACE="$EROOT/workspace"
+export WORKSPACE=${WORKSPACE:-$EROOT/workspace}
 export TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
+export OFFICE=${OFFICE:-$WORKSPACE/mist}
 
 if [ $IS_NEW = false ] ; then
     echo -e "$GREEN\b[✓] $CYAN$(whoami)@$(hostname)$NC"
