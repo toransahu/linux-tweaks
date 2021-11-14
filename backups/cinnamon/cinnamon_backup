@@ -328,6 +328,7 @@ orientation-lock=false
 [settings-daemon/plugins/power]
 button-power='suspend'
 critical-battery-action='nothing'
+idle-brightness=10
 lid-close-ac-action='nothing'
 lid-close-battery-action='suspend'
 lid-close-suspend-with-external-monitor=true
