@@ -40,7 +40,7 @@ call ConfigureLightline()
 
 fu! ConfigureNerdTree()
     " NERDTree shortcut
-    map <C-n> :NERDTreeToggle<CR>
+    map <C-l> :NERDTreeToggle<CR>
     map <C-f> :NERDTreeFind<CR>
     
     " open files in new tab - DIR FIX: see plugins
