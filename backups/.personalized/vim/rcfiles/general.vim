@@ -48,25 +48,78 @@ endfunction
 
 call ConfigureIDEDesign()
 
-fu! ConfigureTabKeyBindings()
-    " Tabs keybinding
-    map <C-t><C-n> :tabnew<cr>
-    map <C-t><up> :tabr<cr>
-    map <C-t><down> :tabl<cr>
-    map <C-t><left> :tabp<cr>
-    map <C-t><right> :tabn<cr>
+" Switch into the specified Tab number.
+"
+" @param direction.
+fu! TabSwitch(direction)
+    execute "tabnext ".a:direction
+endfunction
 
-    " switch between tabs
+" Move current tab into the specified direction.
+"
+" @param direction -1 for left, 1 for right.
+fu! TabMove(direction)
+    " get number of tab pages.
+    let ntp=tabpagenr("$")
+    " move tab, if necessary.
+    if ntp <= 1
+        return
+    endif
+    " get number of current tab page.
+    let ctpn=tabpagenr()
+    let new_idx = a:direction
+
+    if a:direction > 0
+        let new_idx = "+1"
+        if ctpn+1>ntp
+            let new_idx = "0"
+        endif
+    elseif a:direction < 0
+        let new_idx = "-1"
+        if ctpn-1<1
+            let new_idx="$"
+        endif
+    endif
+
+    " execute "echo 'ntp' ntp 'ctpn' ctpn 'I' new_idx"
+    " move tab page.
+    execute "tabmove ".new_idx
+endfunction
+
+fu! ConfigureTabKeyBindings()
+    " TABS KEYBINDING
+
+    " OPEN NEW TAB
+    map <C-n> :tabnew<cr>
+
+    " SWITCH BETWEEN TABS
     nnoremap <C-Up> :tabprevious<CR>
     nnoremap <C-Down> :tabnext<CR>
+    " map <C-t><up> :tabr<cr>
+    " map <C-t><down> :tabl<cr>
+    " map <C-t><left> :tabp<cr>
+    " map <C-t><right> :tabn<cr>
     
-    " open every buffer in a new tab
+    " SWITCH tabs by number (0 & 1 are not detected)
+    "map <C-@> :call TabSwitch(2)<CR>
+    "map <C-[> :call TabSwitch(3)<CR>
+    " map <C-\> :call TabSwitch(4)<CR>
+    " map <C-]> :call TabSwitch(5)<CR>
+   
+    " RELOCATE TABS RELATIVELY
+    map <C-t><Left> :call TabMove(-1)<CR>
+    map <C-t><Right> :call TabMove(1)<CR>
+    
+    " OPEN EVERY BUFFER IN A NEW TAB
     " https://vim.fandom.com/wiki/Open_every_buffer_in_its_own_tabpage
     " :au BufAdd,BufNewFile,BufRead * nested tab sball
     " :au BufRead * nested tab sball
+
 endfunction
 
 call ConfigureTabKeyBindings()
+
+" TODO: save current session with dir structure
 
 fu! ConfigureIntelliJAlikeKeyBinding()
     :nnoremap <C-A-Left> <C-o>
