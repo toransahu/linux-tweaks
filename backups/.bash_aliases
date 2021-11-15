@@ -43,7 +43,13 @@ alias gitrepo='print -z "$(<~/.personalized/.gitrepo)"'
 alias gch='git checkout'
 alias ghtokencpy='cat $WORKSPACE/recovery/github-access-token.txt | cpy'
 alias gbd='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git checkout master && git branch -d $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
-alias gbdf='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git checkout master && git branch -D $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
+gbdf(){
+    BRANCH_NAME=${1:-$(git branch | grep \* | cut -d " " -f2)}
+    export GIT_TEMP_BRANCH=$BRANCH_NAME
+    git checkout master 
+    git branch -D $GIT_TEMP_BRANCH 
+    unset GIT_TEMP_BRANCH
+}
 alias gls='git log --stat'
 alias gfa='git fetch --all'
 alias master='git checkout master'
