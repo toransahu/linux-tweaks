@@ -56,7 +56,8 @@ Plug 'farconics/victionary'                   " Dictionary
 " Auto completion engine
 Plug 'Valloric/YouCompleteMe',                " Auto completion engine 
             \ { 'dir': '~/.vim/plugged/YouCompleteMe', 'do': 'python3 install.py --clang-completer' } 
-Plug 'codota/tabnine-vim'                     " AI based autocompletion - alt.: coc-tabnine
+" Plug 'codota/tabnine-vim'                     " AI based autocompletion - alt.: coc-tabnine
+Plug 'github/copilot.vim'                     " AI based autocompletion - Your AI pair programmer by Github
 Plug 'neoclide/coc.nvim', 
             \ {'branch': 'release'}           " Auto completion engine
 "Plug 'davidhalter/jedi-vim'                  " Auto completion engine for python only
