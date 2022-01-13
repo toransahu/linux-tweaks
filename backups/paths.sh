@@ -15,9 +15,16 @@ NC='\033[0m' # No Color
 ##
 # PATHs: init - default 
 ##
-SOURCE_DIR="/home/$USER"
-EROOT="/home/$USER/disk/E"
-DROOT="/home/$USER/disk/D"
+SOURCE_DIR=~/
+EROOT=$SOURCE_DIR/disk/E
+DROOT=$SOURCE_DIR/disk/D
+
+WORKSPACE=$EROOT/workspace
+GITHUB=$WORKSPACE/github.com
+ME=$GITHUB/toransahu
+OFFICE_NAME=aristanetworks
+OFFICE_WORKSPACE=gerrit.corp.arista.io
+OFFICE=$WORKSPACE/$OFFICE_WORKSPACE
 
 REPO_DIR="linux-tweaks"
 BAK_DIR="backups" # backup_confs.sh
@@ -30,32 +37,19 @@ if  ! [ -d "$EROOT" ] || ! [ -d "$DROOT" ]; then
 elif  [ "$(hostname)" = mint-ThinkPad-L440 ]; then
     EROOT=~/disk/E
     DROOT=~/disk/D
-    GITHUB=$EROOT/workspace/github.com
-    WORKSPACE=$GITHUB/toransahu
-    OFFICE=$GITHUB/mistsys
-elif [ "$(hostname)" = mint-ethereal ]; then
-    EROOT="/mnt/Other/toran/E"
-elif [ "$(hostname)" = ip-172-31-24-111 ]; then
-    SOURCE_DIR="/home/ubuntu"
-    EROOT="/home/ubuntu"
+elif  [ "$(hostname)" = Torans-MacBook-Pro.local ]; then
+    EROOT=~/disk/E
+    DROOT=~/disk/D
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home
+    export PATH=$PATH:$JAVA_HOME/bin
+    export M2_HOME=$HOME/apache-maven-3.6.3
+    export MVN_HOME=$M2_HOME 
+    export PATH=$MVN_HOME/bin:$PATH
+    export GPG_TTY=$(tty)
+    export PATH=$PATH:$HOME/usr/local/go/bin
 elif [ "$(hostname)" = DESKTOP-35VDAC5 ] && [ "$(uname)" = Linux ]; then
     SOURCE_DIR="/home/toran"
     EROOT="/mnt/g/toran/E"
-elif [ "$(hostname)" = DESKTOP-35VDAC5 ]; then
-    SOURCE_DIR="/c/Users/Toran"
-    EROOT="/g/toran/E"
-elif [ "$(hostname)" = ip-172-31-18-37 ]; then
-    SOURCE_DIR="/home/ubuntu"
-    EROOT="/home/ubuntu/toran"
- elif [ "$(hostname)" = ip-172-31-18-57 ]; then
-    SOURCE_DIR="/home/ubuntu"
-    EROOT="/home/ubuntu/toran"
-elif [ "$(hostname)" = ToranS-PC ]; then
-    SOURCE_DIR="/c/Users/torans"
-    EROOT="/e/E"
-elif [ "$(hostname)" = ToranS-UB ]; then
-    SOURCE_DIR="/home/torans"
-    EROOT="/mnt/Other/E"
 elif [ "$(hostname)" = raspberrypi ]; then
     SOURCE_DIR="/home/pi"
     EROOT="/home/pi/main-storage/E"
@@ -66,7 +60,7 @@ fi
 
 export WORKSPACE=${WORKSPACE:-$EROOT/workspace}
 export TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
-export OFFICE=${OFFICE:-$WORKSPACE/mist}
+export OFFICE=${OFFICE:-$WORKSPACE/$OFFICE_NAME}
 
 if [ $IS_NEW = false ] ; then
     echo -e "$GREEN\b[✓] $CYAN$(whoami)@$(hostname)$NC"
