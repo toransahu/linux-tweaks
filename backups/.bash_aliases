@@ -104,16 +104,12 @@ alias lsA='ls -A'
 alias lsa='ls -a'
 alias rdi='rmdir --ignore-fail-on-non-empty '
 
+# personalized dir ops
 alias cdd='cd $DROOT/'
 alias cdw='cd $WORKSPACE/'
-alias cdresume='cd $DROOT/Clouds/Dropbox/Toran/Resume'
+alias cdm='cd $ME/'
+alias cdresume='cd $ME/resume'
 alias cde='cd $EROOT'
-
-# personalized dir ops
-alias cdeth='cd $WORKSPACE/ethereal-machines/'
-alias cdeee='$WORKSPACE/ethereal-machines/ethereal-machines-site/ethereal-machines-backend'
-alias cderp='cd $WORKSPACE/ethereal-machines/ethereal-erp'
-alias cdhalo='$WORKSPACE/ethereal-machines/halo'
 
 # coding related
 alias pgadmin4='. ~/.virtualenvs/pgadmin4/bin/activate &&  sudo python3 ~/.virtualenvs/pgadmin4/lib/python2.7/site-packages/pgadmin4/pgAdmin4.py'
@@ -156,13 +152,12 @@ aliasit()
     echo "[Alias Created:] alias $1='$2'";
 }
 
-alias cdww='cd $WORKSPACE/'
 alias hdp='sudo hdparm -q -S 120 -Y /dev/sda'
 alias zbinon='subst z: /g/toran/E/workspace/zbin'
 alias zbin='subst z: /g/toran/E/workspace/zbin'
 alias zbinoff='subst /D z:'
 alias rmbuild='rm -r build dist *.egg-info'
-alias cdl='cd $WORKSPACE/linux-tweaks'
+alias cdl='cd $ME/linux-tweaks'
 
 alias installvundle='git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim'
 alias installohmyzsh='sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"'
@@ -338,6 +333,14 @@ talentica() {
         source $WORKSPACE/aliases/.talentica_pvt_aliases
     fi
 }
+
+arista() {
+    if [ -f $WORKSPACE/aliases/.arista_pvt_aliases ]; then
+        source $WORKSPACE/aliases/.arista_pvt_aliases
+    fi
+}
+arista
+
 now() {
     zone=$1
     if [ -z "$1" ]; then
