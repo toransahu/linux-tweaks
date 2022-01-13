@@ -44,7 +44,7 @@ Plug 'rking/ag.vim'                           " (Depricated) Ag - Ack alternativ
 Plug 'google/vim-searchindex'                 " Search index/number
 Plug 'tpope/vim-sensible'                     " Default configs everyone can agree on
 Plug 'vim-scripts/DrawIt'                     " For ASCII arts
-" Plug 'ryanoasis/nerd-fonts'                   " To support vim-devicons
+Plug 'ryanoasis/nerd-fonts'                   " To support vim-devicons
 Plug 'ryanoasis/vim-devicons'                 " Add icons to diff files/extensions
 Plug 'rhysd/vim-grammarous'                   " Grammar check - based on www.languagetool.org tool
 " Plug 'kamykn/spelunker.vim'                   " spell check - made easy

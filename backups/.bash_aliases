@@ -169,7 +169,7 @@ alias installohmyzsh='sh -c "$(curl -fsSL https://raw.githubusercontent.com/robb
 alias fixcinnamon='export DISPLAY=:0; cinnamon --replace &'
 alias installsublime='sh -c "~/.personalized/installsublime.sh"'
 alias pm='python manage.py'
-alias cdss='cd ~/cloud/Dropbox/Toran/Salary\ Slip'
+alias cdss='cd $ME/ss'
 alias cdgi='$WORKSPACE/gitignore'
 alias show='less +F'
 alias cdo='cd $OFFICE'

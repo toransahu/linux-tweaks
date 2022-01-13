@@ -3,13 +3,15 @@
 	name = Toran Sahu
 	sigingkey = 989892661D11D494
 [commit]
-	gpgsign = true
+    gpgsign = true
+[includeIf "gitdir:~/disk/E/workspace/github.com/aristanetworks/"]
+    path = ~/.gitconfig-aristanetworks
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [url "git://"]
     insteadOf = https://
 [core]
-	pager = less
+    pager = less
 [interactive]
     diffFilter = delta --color-only
 [delta]
