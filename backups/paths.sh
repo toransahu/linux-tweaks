@@ -15,20 +15,21 @@ NC='\033[0m' # No Color
 ##
 # PATHs: init - default 
 ##
-SOURCE_DIR=~/
-EROOT=$SOURCE_DIR/disk/E
-DROOT=$SOURCE_DIR/disk/D
+export SOURCE_DIR=~/
+export EROOT=$SOURCE_DIR/disk/E
+export DROOT=$SOURCE_DIR/disk/D
 
-WORKSPACE=$EROOT/workspace
-GITHUB=$WORKSPACE/github.com
-ME=$GITHUB/toransahu
-OFFICE_NAME=aristanetworks
-OFFICE_WORKSPACE=gerrit.corp.arista.io
-OFFICE=$WORKSPACE/$OFFICE_WORKSPACE
+export WORKSPACE=$EROOT/workspace
+export GITHUB=$WORKSPACE/github.com
+export ME=$GITHUB/toransahu
+export OFFICE_NAME=aristanetworks
+export OFFICE_WORKSPACE=gerrit.corp.arista.io
+export OFFICE=$WORKSPACE/$OFFICE_WORKSPACE
 
 REPO_DIR="linux-tweaks"
 BAK_DIR="backups" # backup_confs.sh
 # BAK_DIR="$(date +"%Y-%m-%d-%I:%M:%S")"
+TARGET_DIR=$ME/$REPO_DIR/$BAK_DIR
 
 IS_NEW=false
 if  ! [ -d "$EROOT" ] || ! [ -d "$DROOT" ]; then
@@ -57,10 +58,6 @@ else
     echo "[$REDx$NC] New device found. Adjust the vars accrodingly (if required)..$NC"
     IS_NEW=true
 fi
-
-export WORKSPACE=${WORKSPACE:-$EROOT/workspace}
-export TARGET_DIR="$WORKSPACE/$REPO_DIR/$BAK_DIR"
-export OFFICE=${OFFICE:-$WORKSPACE/$OFFICE_NAME}
 
 if [ $IS_NEW = false ] ; then
     echo -e "$GREEN\b[✓] $CYAN$(whoami)@$(hostname)$NC"
