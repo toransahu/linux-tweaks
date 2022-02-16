@@ -71,14 +71,14 @@ else
 fi
 }
 gsize(){
-#curl https://api.github.com/repos/$1/$2 | grep size
-if [ "$3" = -a ]; then
-    curl -u toransahu -s https://api.github.com/repos/$1/$2 | \
-    python -c 'import sys, json; size = json.load(sys.stdin)["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
-else
-curl -s https://api.github.com/repos/$1/$2 | \
-python -c 'import sys, json; size = json.load(sys.stdin)["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
-fi
+    #curl https://api.github.com/repos/$1/$2 | grep size
+    if [ "$3" = -a ]; then
+        curl -u toransahu -s https://api.github.com/repos/$1/$2 | \
+        python -c 'import sys, json; size = json.load(sys.stdin)["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+    else
+        curl -s https://api.github.com/repos/$1/$2 | \
+        python -c 'import sys, json; size = json.load(sys.stdin)["size"]; print(size/1024, "Mb") if(size>=1024)  else print(size, "Kb")'
+    fi
 }
 
 grepo(){
@@ -169,12 +169,6 @@ alias cdgi='$ME/gitignore'
 alias show='less +F'
 alias cdo='cd $OFFICE'
 alias cleardns='sudo /etc/init.d/networking restart'
-alias vpnstag='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_stag && sudo openvpn --config staging-toran.sahu@mistsys.com.ovpn'
-alias vpnprod='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_prod && sudo openvpn --config production-toran.sahu@mistsys.com.ovpn'
-alias vpnac2='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_prod_ac2 && sudo openvpn --config use1prod2-toran.sahu@mistsys.com.ovpn'
-alias vpneu='cd ~/vpns/mist/openVpn/aws/toran.sahu@mistsys.com_eu && sudo openvpn --config eu-toran.sahu@mistsys.com.ovpn'
-alias vpngcpstag='cd ~/vpns/mist/openVpn/gcp/toran.sahu@mistsys.com_stag && sudo openvpn --config gcp-staging-toran.sahu@mistsys.com.ovpn'
-alias vpngcpprod='cd ~/vpns/mist/openVpn/gcp/toran.sahu@mistsys.com_prod && sudo openvpn --config gcp-production-toran.sahu@mistsys.com.ovpn'
 alias clearswap='sudo swapoff -a && sudo swapon -a'
 alias freeswap='sudo swapoff -a && sudo swapon -a'
 alias uninstall-go='sudo rm -rvf /usr/local/go/'
@@ -245,10 +239,6 @@ alias eshead='cd $WORKSPACE/elasticsearch-head && npm run start & sleep 2s && fi
 alias eshead-stop='pkill grunt > /dev/null'
 
 # TODO: whoisusingport :port -> kill that service
-alias 2fa-juniper='2fa -clip juniper'
-alias 2fa-github='2fa -clip github'
-alias 2fa-mist-okta='2fa -clip mist-okta'
-alias 2fa-mist-lastpass='2fa -clip mist-lastpass'
 alias gchp='git cherry-pick'
 alias mmdc='~/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
@@ -315,31 +305,6 @@ t-childof () {
         echo $pids
     done
 }
-
-self() {
-    if [ -f $ME/aliases/.self_pvt_aliases ]; then
-        . $ME/aliases/.self_pvt_aliases
-    fi
-}
-
-mist() {
-    if [ -f $ME/aliases/.mist_pvt_aliases ]; then
-        source $ME/aliases/.mist_pvt_aliases
-    fi
-}
-
-talentica() {
-    if [ -f $ME/aliases/.talentica_pvt_aliases ]; then
-        source $ME/aliases/.talentica_pvt_aliases
-    fi
-}
-
-arista() {
-    if [ -f $ME/aliases/.arista_pvt_aliases ]; then
-        source $ME/aliases/.arista_pvt_aliases
-    fi
-}
-arista
 
 now() {
     zone=$1
