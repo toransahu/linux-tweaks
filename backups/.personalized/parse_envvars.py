@@ -13,7 +13,7 @@ __author__ = "Toran Sahu <toran.sahu@yahoo.com>"
 __license__ = "Distributed under terms of the MIT license"
 
 
-WORKSPACE = os.environ["WORKSPACE"]
+WORKSPACE = os.environ["ME"]
 ROOT_ENV = os.path.join(WORKSPACE, "aliases")
 ENV = "envs"
 SELF = "self"
@@ -55,7 +55,7 @@ class EnvParser:
                 self.env = full_env
                 self.provider = None
 
-        self.alias_file = "." + self.org + "_pvt_aliases"
+        self.alias_file = "." + self.org + "_pvt_rc"
         self.alias_file_path = os.path.join(ROOT_ENV, self.alias_file)
 
         self.cmd_name = args.cmd
