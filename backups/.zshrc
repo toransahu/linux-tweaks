@@ -101,12 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-#aliases
-if [ -f ~/.bash_aliases ]; then
-      . ~/.bash_aliases
-fi
-
 # added by Pew
 # source $(pew shell_config)
 
@@ -260,10 +254,6 @@ setopt HIST_VERIFY                                      # whenever the user ente
 # --------------------------------------------
 
 # source env vars
-self
-mist
-talentica
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
