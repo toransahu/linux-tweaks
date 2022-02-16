@@ -41,7 +41,7 @@ alias gi.go='wget https://raw.githubusercontent.com/toransahu/gitignore/master/G
 alias gi.java='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Java.gitignore -O .gitignore'
 alias gitrepo='print -z "$(<~/.personalized/.gitrepo)"'
 alias gch='git checkout'
-alias ghtokencpy='cat $WORKSPACE/recovery/github-access-token.txt | cpy'
+alias ghtokencpy='cat $ME/recovery/github-access-token.txt | cpy'
 alias gbd='export GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2) && git checkout master && git branch -d $GIT_TEMP_BRANCH && unset GIT_TEMP_BRANCH'
 gbdf(){
     BRANCH_NAME=${1:-$(git branch | grep \* | cut -d " " -f2)}
@@ -129,10 +129,10 @@ mvnnew(){
 }
 
 # routine jobs
-alias bak='$WORKSPACE/linux-tweaks/scripts/backup_confs.sh'
-alias res='$WORKSPACE/linux-tweaks/scripts/restore_confs.sh'
-alias bkp='$WORKSPACE/linux-tweaks/scripts/backup_confs.sh'
-alias bashrc-bkp='cp ~/.bashrc $WORKSPACE/linux-tweaks/bashrc-bkp/mint/'
+alias bak='$ME/linux-tweaks/scripts/backup_confs.sh'
+alias bkp=bak
+alias res='$ME/linux-tweaks/scripts/restore_confs.sh'
+alias bashrc-bkp='cp ~/.bashrc $ME/linux-tweaks/bashrc-bkp/mint/'
 
 ##
 # functions
@@ -165,7 +165,7 @@ alias fixcinnamon='export DISPLAY=:0; cinnamon --replace &'
 alias installsublime='sh -c "~/.personalized/installsublime.sh"'
 alias pm='python manage.py'
 alias cdss='cd $ME/ss'
-alias cdgi='$WORKSPACE/gitignore'
+alias cdgi='$ME/gitignore'
 alias show='less +F'
 alias cdo='cd $OFFICE'
 alias cleardns='sudo /etc/init.d/networking restart'
@@ -218,13 +218,13 @@ alias m='gch master'
 alias epoch='date +%s'
 alias glistall='git for-each-ref --format=" %(authorname) %09 %(refname)" --sort=authorname'
 alias pyfmt='black -l 120'
-alias freeram='sudo $WORKSPACE/linux-tweaks/scripts/freeram.sh'
+alias freeram='sudo $ME/linux-tweaks/scripts/freeram.sh'
 alias cdgnoi='cd $GOPATH/src/github.com/mistsys/mist-openconfig-gnoi'
-alias cdlb='cd $WORKSPACE/linux-tweaks/backups'
+alias cdlb='cd $ME/linux-tweaks/backups'
 alias tpnum='tmux bind Left select-pane -L \; display-pane -d 5000'
 alias tmux='tmux -u'
 alias tks='tmux kill-server'
-alias cdp='cd $WORKSPACE/post-linux-install'
+alias cdp='cd $ME/post-linux-install'
 
 gcdiff(){
     GIT_TEMP_BRANCH=$(git branch | grep \* | cut -d " " -f2)
@@ -279,9 +279,9 @@ unvar() {
 }
 alias k8s-list-context='kubectl config view -o jsonpath="{.contexts[*].name}" | tr " " "\n"'
 
-alias dedupe-hist='python $WORKSPACE/linux-tweaks/scripts/dedupe_sh_history.py'
-alias bak-hist='dedupe-hist && cp ~/.bash_history $WORKSPACE/secret/self'
-alias res-hist='cp $WORKSPACE/secret/self/.bash_history ~/.bash_history'
+alias dedupe-hist='python $ME/linux-tweaks/scripts/dedupe_sh_history.py'
+alias bak-hist='dedupe-hist && cp ~/.bash_history $ME/secret/self'
+alias res-hist='cp $ME/secret/self/.bash_history ~/.bash_history'
 alias calc='gnome-calculator'
 alias lsvenvs='ls $HOME/.local/share/virtualenvs'
 alias fcompiled='find . | grep -E "(__pycache__|\.pyc|\.pyo|\.swo|\.swp$)"'
@@ -317,26 +317,26 @@ t-childof () {
 }
 
 self() {
-    if [ -f $WORKSPACE/aliases/.self_pvt_aliases ]; then
-        . $WORKSPACE/aliases/.self_pvt_aliases
+    if [ -f $ME/aliases/.self_pvt_aliases ]; then
+        . $ME/aliases/.self_pvt_aliases
     fi
 }
 
 mist() {
-    if [ -f $WORKSPACE/aliases/.mist_pvt_aliases ]; then
-        source $WORKSPACE/aliases/.mist_pvt_aliases
+    if [ -f $ME/aliases/.mist_pvt_aliases ]; then
+        source $ME/aliases/.mist_pvt_aliases
     fi
 }
 
 talentica() {
-    if [ -f $WORKSPACE/aliases/.talentica_pvt_aliases ]; then
-        source $WORKSPACE/aliases/.talentica_pvt_aliases
+    if [ -f $ME/aliases/.talentica_pvt_aliases ]; then
+        source $ME/aliases/.talentica_pvt_aliases
     fi
 }
 
 arista() {
-    if [ -f $WORKSPACE/aliases/.arista_pvt_aliases ]; then
-        source $WORKSPACE/aliases/.arista_pvt_aliases
+    if [ -f $ME/aliases/.arista_pvt_aliases ]; then
+        source $ME/aliases/.arista_pvt_aliases
     fi
 }
 arista
@@ -405,4 +405,4 @@ dashed_mac() {
 
 alias es-sql-cli='sudo /usr/share/elasticsearch/bin/elasticsearch-sql-cli'
 alias gcz='git cz'
-alias cdn='cd $WORKSPACE/notes'
+alias cdn='cd $ME/notes'
