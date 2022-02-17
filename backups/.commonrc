@@ -42,7 +42,7 @@ export ECLIPSE_HOME=$HOME/.eclipse/org.eclipse.platform_4.8.0_1473617060_linux_g
 ## git-delta (if git-delta is installed, prefer it as default git pager)
 if [ -z "$GIT_PAGER" ]; then
     # include .bashrc if it exists
-    if [ -f "/usr/bin/delta" ]; then
+    if [ -f "/usr/bin/delta" || -f "/usr/local/bin/delta" ]; then
 	export GIT_PAGER=delta
     fi
 fi
