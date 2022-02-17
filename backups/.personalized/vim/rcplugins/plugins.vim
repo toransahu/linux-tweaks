@@ -682,4 +682,11 @@ endfunction
 
 call ConfigurePyDocString()
 
+fu! ConfigureTpopeRhubarb()
+    let g:github_enterprise_urls = ['https://gerrit.corp.arista.io']
+endfunction
+
+call ConfigureTpopeRhubarb()
+
+set guifont=:h
 

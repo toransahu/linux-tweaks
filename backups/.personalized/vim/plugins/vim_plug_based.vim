@@ -32,8 +32,9 @@ Plug 'justinmk/vim-gtfo'                      " GOTO PWD via file Manager or Ter
 " Plug 'toransahu/markdown-preview.nvim',
 "             \ { 'do': 'cd app & yarn install',
 "             \ 'on': ['MarkdownPreview', 'MarkdownPreviewStop', 'MarkdownPreviewToggle']}
-Plug 'toransahu/markdown-preview.nvim',
-            \ { 'do': 'cd app & yarn install'}
+" Plug 'toransahu/markdown-preview.nvim',
+"             \ { 'do': 'cd app & yarn install'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 "Plug 'ctrlpvim/ctrlp.vim'                    " super search
 Plug 'junegunn/fzf'                           " fuzzy finder
@@ -67,8 +68,8 @@ Plug 'neoclide/coc.nvim',
 "Plug 'Chiel92/vim-autoformat'                " fmt - All?
 "Plug 'google/vim-codefmt'                    " fmt - All?
 Plug 'w0rp/ale'                               " Asynchronous Linting Enging - ALE
-Plug 'SirVer/ultisnips'                       " Snippet Engine
-Plug 'honza/vim-snippets'                     " Snippet files - Snippets are separated from the engine
+" Plug 'SirVer/ultisnips'                       " Snippet Engine
+" Plug 'honza/vim-snippets'                     " Snippet files - Snippets are separated from the engine
 "Plug 'aperezdc/vim-template'
 Plug 'toransahu/vim-template'                 " Template System
 Plug 'heavenshell/vim-pydocstring',           " Python docstring gen
