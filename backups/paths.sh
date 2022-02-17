@@ -15,7 +15,7 @@ NC='\033[0m' # No Color
 ##
 # PATHs: init - default 
 ##
-export SOURCE_DIR=~/
+export SOURCE_DIR=$HOME
 export EROOT=$SOURCE_DIR/disk/E
 export DROOT=$SOURCE_DIR/disk/D
 
