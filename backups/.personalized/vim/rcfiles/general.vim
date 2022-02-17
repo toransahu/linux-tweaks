@@ -8,7 +8,7 @@ set title                                       " set filename in terminal windo
 " set nobackup
 " set nowritebackup
 " set noswapfile
-set clipboard=unnamedplus                       " this supports only vim-gnome not vim or vim-tiny
+set clipboard^=unnamed,unnamedplus                       " this supports only vim-gnome not vim or vim-tiny
 set relativenumber                              " relative line number ON
 set autoread                                    " automatically refresh any files that haven't been edited by Vim
 
