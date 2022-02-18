@@ -66,7 +66,8 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git zsh-autosuggestions redis-cli aws celery docker mvn python supervisor systemd pip zsh-syntax-highlighting # zsh-syntax-highlighting in last
+  # git redis-cli aws celery docker mvn python supervisor systemd pip 
+  zsh-autosuggestions zsh-syntax-highlighting # zsh-syntax-highlighting in last
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -92,20 +93,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# added by Pew
-# source $(pew shell_config)
-
-
-
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
 
 
@@ -113,42 +100,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.commonrc ]; then
       . ~/.commonrc
 fi
-
-export PATH=/usr/bin:$PATH  # to set python2 default
-# added by Anaconda3 installer
-export PATH=~/anaconda3/bin:$PATH
-export PATH=~/miniconda3/bin:$PATH
-# added by Miniconda3 4.5.12 installer 
-# >>> conda init >>> 
-# !! Contents within this block are managed by 'conda init' !! 
-#__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/toran/miniconda3/bin/conda    ' shell.bash hook 2> /dev/null)"
-#if [ $? -eq 0 ]; then 
-    #\eval "$__conda_setup" 
-#else 
-    #if [ -f "/home/toran/miniconda3/etc/profile.d/conda.sh" ]; then 
-## . "/home/toran/miniconda3/etc/profile.d/conda.sh"   # commented out by conda initialize
-        #CONDA_CHANGEPS1=false conda activate base 
-    #else 
-        #\export PATH="/home/toran/miniconda3/bin:$PATH" 
-    #fi 
-#fi 
-#unset __conda_setup 
-# <<< conda init <<<
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="$HOME/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 # fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -162,9 +113,6 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!{.
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 #export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :500 {}'"   #failing in terminal
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export GIT_EDITOR=vim
 
