@@ -4,7 +4,7 @@
 	sigingkey = 989892661D11D494
 [commit]
     gpgsign = true
-[includeIf "gitdir:~/disk/E/workspace/github.com/aristanetworks/"]
+[includeIf "gitdir:~/disk/E/workspace/gerrit.corp.arista.io/"]
     path = ~/.gitconfig-aristanetworks
 [url "git@github.com:"]
 	insteadOf = https://github.com/
@@ -22,3 +22,7 @@
     commit-decoration-style = yellow
     file-style = bold yellow
     file-decoration-style = none
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
