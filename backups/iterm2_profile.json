@@ -9,7 +9,7 @@
     "Blue Component" : 1
   },
   "Has Hotkey" : false,
-  "Normal Font" : "MesloLGMDZNerdFontCompleteM-Regular 16",
+  "Normal Font" : "MesloLGSDZNerdFontCompleteM-Regular 16",
   "Bold Color" : {
     "Green Component" : 1,
     "Red Component" : 1,
@@ -262,6 +262,7 @@
     }
   },
   "Window Type" : 0,
+  "Blink Allowed" : false,
   "Background Image Location" : "",
   "Blur" : false,
   "Scrollback Lines" : 1000,
@@ -276,6 +277,7 @@
     "Red Component" : 0.3333333432674408,
     "Blue Component" : 1
   },
+  "ASCII Ligatures" : false,
   "Name" : "iterm2_profile",
   "Cursor Text Color" : {
     "Green Component" : 1,
