@@ -15,7 +15,7 @@ fi
 # export EDITOR=/usr/bin/vim  # bug: https://stackoverflow.com/questions/18683252/tmux-copy-does-not-work
 
 ## python
-export PATH=/usr/bin:$PATH  # to set python2 default
+# export PATH=/usr/bin:$PATH  # to set python2 default
 
 ## anaconda/miniconda - macos
 export PATH=$PATH:$HOME/opt/miniconda3/bin
