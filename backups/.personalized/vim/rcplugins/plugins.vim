@@ -44,7 +44,11 @@ fu! ConfigureNerdTree()
     map <C-f> :NERDTreeFind<CR>
     
     " open files in new tab - DIR FIX: see plugins
-    let g:NERDTreeMapOpenInTab='<ENTER>'
+    " let g:NERDTreeMapOpenInTab='<ENTER>'
+    " let g:NERDTreeMapActivateNode='<ENTER>'
+    " let NERDTreeCustomOpenArgs = {'file':{'reuse':'all', 'where': '<ENTER>', 'keepopen': 1}}
+    " TODO: introduce NERDTreeMapActivateNodeOrOpenInTab
+    " TODO: open the existing NERDTree on each new tab, and toggle NERDTree should toggle in all the tabs
 endfunction
 
 call ConfigureNerdTree()
