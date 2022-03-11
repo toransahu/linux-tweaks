@@ -5,11 +5,6 @@
 ## basics
 export PATH=$PATH:$HOME/bin:$HOME/.local/bin:$HOME/bin:/usr/local/bin:$HOME/bin:$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
-# aliases
-if [ -f ~/.bash_aliases ]; then
-      . ~/.bash_aliases
-fi
-
 
 ## Default Editor
 # export EDITOR=/usr/bin/vim  # bug: https://stackoverflow.com/questions/18683252/tmux-copy-does-not-work
@@ -106,9 +101,19 @@ export MY_IP_ADDR=$LANIP
 ## init - include/source PATHs
 . ~/paths.sh
 
-# load public & private RCs
-if [ -f $ME/aliases/.pvt_rc ]; then
-    . $ME/aliases/.pvt_rc
+# load public RCs
+if [ -f $ME/aliases/.main_rc ]; then
+    . $ME/aliases/.main_rc
+fi
+
+# load private RCs
+if [ -f $ME/aliases.pvt/.main_rc ]; then
+    . $ME/aliases.pvt/.main_rc
+fi
+
+# aliases
+if [ -f ~/.bash_aliases ]; then
+      . ~/.bash_aliases
 fi
 
 # HISTFILE, HISTSIZE, HISTFILESIZE are common to bash & zsh - should be here
