@@ -16,6 +16,10 @@ ZSH_THEME="amuse"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="robbyrussell"
 
+# in case using utf-8 fonts
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
