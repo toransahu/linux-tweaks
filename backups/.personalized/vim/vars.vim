@@ -1,6 +1,7 @@
 "========================= CONSTS ===========================
 let MAX_LINE_COL=120
-let VIM_PYTHON_VENV='/home/toransahu/miniconda3'
+" not being used
+let VIM_PYTHON_VENV='~/miniconda3'  
 
 
 "========================= FUNCS ===========================

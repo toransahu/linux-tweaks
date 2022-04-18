@@ -676,10 +676,9 @@ endfunction
 call ConfigureVimSpector()
 
 fu! ConfigurePyDocString()
-    let l:doq_path = g:VIM_PYTHON_VENV
-    let l:doq_path .= '/bin/doq'
-    let g:pydocstring_doq_path = l:doq_path
-    " let g:pydocstring_doq_path = '/home/toransahu/miniconda3/bin/doq'
+    " TODO: automate it, e.g.: system('which doq')
+    let g:pydocstring_doq_path = '~/.local/bin/doq'
+    
     " choice[pydocstring_formatter] = Sphinx, Numpy, Google
     let g:pydocstring_formatter = 'sphinx'
     nmap <silent> <C-_> <Plug>(pydocstring)
