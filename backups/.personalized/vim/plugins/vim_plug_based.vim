@@ -34,7 +34,8 @@ Plug 'justinmk/vim-gtfo'                      " GOTO PWD via file Manager or Ter
 "             \ 'on': ['MarkdownPreview', 'MarkdownPreviewStop', 'MarkdownPreviewToggle']}
 " Plug 'toransahu/markdown-preview.nvim',
 "             \ { 'do': 'cd app & yarn install'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'toransahu/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 "Plug 'ctrlpvim/ctrlp.vim'                    " super search
 Plug 'junegunn/fzf'                           " fuzzy finder
