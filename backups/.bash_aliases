@@ -243,6 +243,7 @@ alias gchp='git cherry-pick'
 alias mmdc='~/node_modules/.bin/mmdc'
 alias myip='echo $MY_IP_ADDR'
 
+# k8s (kubernetes)
 k8s-ssh() {
     namespace=$1
     pod=$(kubectl get pods --all-namespaces | grep "^$namespace .*" | awk 'NR==1 {print $2}')
