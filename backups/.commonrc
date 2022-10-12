@@ -59,6 +59,10 @@ export PATH=$PATH:$GOBIN
 ## rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
+## java
+eval "$(jenv init -)"
+export JAVA_HOME=  # let user decide through `jenv`
+
 ## sdkman
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
