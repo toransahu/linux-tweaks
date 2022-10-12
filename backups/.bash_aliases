@@ -321,14 +321,26 @@ epoch_at() {
     echo $(date -d @$epoch +"%G-%m-%dT%H:%M:%S.%3N%z %Z")
     echo $(TZ=GMT date -d @$epoch +"%G-%m-%dT%H:%M:%S.%3N%z %Z")
 }
-iso_at() {
+iso_to_epoch_simple() {
+    zone=$2
+    if [ -z "$2" ]; then
+        epoch=$(date -d "$1" +"%s")
+    else
+        epoch=$(TZ=$zone date -d "$1" +"%s")
+    fi
+    echo $epoch
+}
+iso_to_epoch() {
     zone=$2
     if [ -z "$2" ]; then
         epoch=$(date -d "$1" +"%s.%3N")
     else
         epoch=$(TZ=$zone date -d "$1" +"%s.%3N")
     fi
-    epoch_at $epoch
+    echo $epoch
+}
+iso_at() {
+    epoch_at $(iso_to_epoch $@)
 }
 time_at() {
     if [[ $@ == *":"*  ]]; then
