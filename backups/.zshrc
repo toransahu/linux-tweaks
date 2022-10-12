@@ -219,3 +219,7 @@ if [ -f '/usr/local/bin/kubectl' ]; then source <(kubectl completion zsh); fi
 
 # setup `aws-okta` autocomplete in zsh
 if [ -f $GOPATH/bin/aws-okta ]; then source <(aws-okta completion zsh); fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/toran/.sdkman"
+[[ -s "/Users/toran/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/toran/.sdkman/bin/sdkman-init.sh"
