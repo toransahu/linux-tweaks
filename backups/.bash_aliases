@@ -36,9 +36,9 @@ grdiff(){
 }
 alias glogo='git log --graph --oneline'
 alias glog='git log --graph'
-alias gi.py='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -O .gitignore'
-alias gi.go='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Go.gitignore -O .gitignore'
-alias gi.java='wget https://raw.githubusercontent.com/toransahu/gitignore/master/Java.gitignore -O .gitignore'
+alias gi.py='curl https://raw.githubusercontent.com/toransahu/gitignore/master/Python.gitignore -o .gitignore'
+alias gi.go='curl https://raw.githubusercontent.com/toransahu/gitignore/master/Go.gitignore -o .gitignore'
+alias gi.java='curl https://raw.githubusercontent.com/toransahu/gitignore/master/Java.gitignore -o .gitignore'
 alias gitrepo='print -z "$(<~/.personalized/.gitrepo)"'
 alias gch='git checkout'
 alias ghtokencpy='cat $ME/recovery/github-access-token.txt | cpy'
