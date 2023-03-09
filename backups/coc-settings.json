@@ -6,31 +6,24 @@
         // "javascript",
         // "Markdown"
     ],
-
     // ---PYTHON LANGUAGE SERVER---
     // "python.jediEnabled": true, // do: `pip install jedi>=0.17.0` globally
     // "python.jediEnabled": false, // to use MPLS (Microsoft Python Language Server) instead of Jedi
     // "python.jediPath": "/home/toransahu/miniconda3/lib/python3.7/site-packages", // for path see: `pip show jedi`
-
     // PYTHON LINT
     "python.linting.enabled": true,
-
     // "python.linting.pylintEnabled": true,
-
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
         "--max-line-length=120"
     ],
-
     // PYTHON FMT
     "python.formatting.provider": "black",
-
     "python.formatting.blackPath": "black",
     "python.formatting.blackArgs": [
         "--skip-string-normalization", // single to double qoutes
         "--line-length=120"
     ],
-
     // ---JAVA---
     "java.configuration.runtimes": [
         {
@@ -38,13 +31,13 @@
             "path": "/usr/lib/jvm/java-8-openjdk-amd64/"
         }
     ],
-
     // ---LANGUAGE SERVERS--
     "languageserver": {
-        "golang": {
-            "command": "gopls",
-            "rootPatterns": ["go.mod", ".git/"],
-            "filetypes": ["go"]
-        }
-    }
+    //     "golang": {
+    //         "command": "gopls",
+    //         "args": ["-remote=auto"],
+    //         "rootPatterns": ["go.mod", ".git/"],
+    //         "filetypes": ["go"]
+    //     }
+    },
 }
