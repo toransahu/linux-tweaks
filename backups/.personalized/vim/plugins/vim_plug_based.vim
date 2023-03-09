@@ -56,8 +56,8 @@ Plug 'farconics/victionary'                   " Dictionary
 "------------------------ Prog utils ---------------------------
 
 " Auto completion engine
-Plug 'Valloric/YouCompleteMe',                " Auto completion engine 
-            \ { 'dir': '~/.vim/plugged/YouCompleteMe', 'do': 'python3 install.py --clang-completer' } 
+" Plug 'Valloric/YouCompleteMe',                " Auto completion engine 
+"             \ { 'dir': '~/.vim/plugged/YouCompleteMe', 'do': 'python3 install.py --clang-completer' } 
 " Plug 'codota/tabnine-vim'                     " AI based autocompletion - alt.: coc-tabnine
 Plug 'github/copilot.vim'                     " AI based autocompletion - Your AI pair programmer by Github
 Plug 'neoclide/coc.nvim', 
@@ -68,7 +68,7 @@ Plug 'neoclide/coc.nvim',
 "Plug 'ambv/black'                            " fmt - Python
 "Plug 'Chiel92/vim-autoformat'                " fmt - All?
 "Plug 'google/vim-codefmt'                    " fmt - All?
-Plug 'w0rp/ale'                               " Asynchronous Linting Enging - ALE
+" Plug 'w0rp/ale'                               " Asynchronous Linting Enging - ALE
 " Plug 'SirVer/ultisnips'                       " Snippet Engine
 " Plug 'honza/vim-snippets'                     " Snippet files - Snippets are separated from the engine
 "Plug 'aperezdc/vim-template'
@@ -83,8 +83,8 @@ Plug 'raimondi/delimitmate'                   " auto close
 "Plug 'tmhedberg/SimpylFold'                  " python code fold
 Plug 'pseewald/anyfold'                       " code fold
 "Plug 'myitcv/govim'                          " new plugin for go written in go feature > vim-go
-Plug 'fatih/vim-go',                          " go support; https://github.com/fatih/vim-go-tutorial
-            \ { 'do': ':GoInstallBinaries' }  
+" Plug 'fatih/vim-go',                          " go support; https://github.com/fatih/vim-go-tutorial
+"             \ { 'do': ':GoInstallBinaries' }  
 " Plug 'jodosha/vim-godebug'                  " go debugger in split screen with delve CLI - only for neovim; TODO: check later
 " Plug 'janko-m/vim-test'                     " polyglot test runner
 " Plug 'toransahu/vim-test',                  " with java#maven fqcn option support
@@ -96,6 +96,6 @@ Plug 'google/vim-maktaba'                     " vim-codefmt dep: Add maktaba and
 Plug 'google/vim-codefmt'                     " code fmt by google
 Plug 'google/vim-glaive'                      " vim-codefmt dep: Also add Glaive, which is used to configure codefmt's maktaba flags.
 Plug 'puremourning/vimspector'                " polyglot debugger
-Plug 'sebdah/vim-delve'                       " golang debugger using Delve
+" Plug 'sebdah/vim-delve'                       " golang debugger using Delve
 Plug 'majutsushi/tagbar'                      " to browse tags of current file; dependency: exuberant-ctags
 Plug 'turbio/bracey.vim'                      " preview markup files; html, css, js
