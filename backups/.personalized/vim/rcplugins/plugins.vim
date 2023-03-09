@@ -536,7 +536,10 @@ fu! ConfigureCOCCustom()
             \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
             \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
     imap <C-@> <C-Space>
-
+    " mimic intellij
+    :nnoremap <C-A-Left> <C-o>
+    :nnoremap <C-A-Right> <C-i>
+    nmap <silent> <C-b> <Plug>(coc-definition) 
 endfunction
 
 call ConfigureCOCCustom()

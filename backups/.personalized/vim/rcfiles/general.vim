@@ -121,14 +121,6 @@ call ConfigureTabKeyBindings()
 
 " TODO: save current session with dir structure
 
-fu! ConfigureIntelliJAlikeKeyBinding()
-    :nnoremap <C-A-Left> <C-o>
-    :nnoremap <C-A-Right> <C-i>
-    nmap <silent> <C-b> <Plug>(coc-definition) 
-endfunction
-
-call ConfigureIntelliJAlikeKeyBinding()
-
 fu! ConfigureRunFile()
     "vim-run <F4> 
     autocmd filetype python nnoremap <F4> :w <bar> exec '!python '.shellescape('%')<CR>
