@@ -60,8 +60,10 @@ Plug 'farconics/victionary'                   " Dictionary
 "             \ { 'dir': '~/.vim/plugged/YouCompleteMe', 'do': 'python3 install.py --clang-completer' } 
 " Plug 'codota/tabnine-vim'                     " AI based autocompletion - alt.: coc-tabnine
 Plug 'github/copilot.vim'                     " AI based autocompletion - Your AI pair programmer by Github
-Plug 'neoclide/coc.nvim', 
-            \ {'branch': 'release'}           " Auto completion engine
+Plug 'neoclide/coc.nvim',                     " Auto completion engine
+            \ {'branch': 'release'}           
+Plug 'yaegassy/coc-ansible',                  " Ansible Language Server
+            \ {'do': 'yarn install --frozen-lockfile'}
 "Plug 'davidhalter/jedi-vim'                  " Auto completion engine for python only
 "Plug 'vim-syntastic/syntastic'               " Syntax Checking
 "Plug 'google/yapf', { 'rtp': 'plugins/vim' } " fmt - Python

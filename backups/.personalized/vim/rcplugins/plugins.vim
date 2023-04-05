@@ -544,6 +544,14 @@ endfunction
 
 call ConfigureCOCCustom()
 
+fu! ConfigureCOCAnsible()
+    let g:coc_filetype_map = {
+        \ 'yaml.ansible': 'ansible',
+        \ }
+endfunction
+
+call ConfigureCOCAnsible()
+
 fu! ConfigureVimAnyFold()
     " zo opens a fold at the cursor.
     " zShift+o opens all folds at the cursor.
