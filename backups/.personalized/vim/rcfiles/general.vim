@@ -11,7 +11,7 @@ set title                                       " set filename in terminal windo
 set clipboard^=unnamed,unnamedplus                       " this supports only vim-gnome not vim or vim-tiny
 set relativenumber                              " relative line number ON
 set autoread                                    " automatically refresh any files that haven't been edited by Vim
-
+set mouse=nicra
 
 "===================== Issue Fix =====================
 " Issue: https://stackoverflow.com/questions/62148994/strange-character-since-last-update-42m-in-vim
