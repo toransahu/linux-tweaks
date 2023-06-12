@@ -259,6 +259,18 @@ k8s-log() {
     kubectl -n $namespace logs -f deployment/$app --all-containers=true
 }
 
+join_by() {
+  local d=${1-} f=${2-}
+  if shift 2; then
+    printf %s "$f" "${@/#/$d}"
+  fi
+}
+
+get_var() {
+    temp=$(join_by _ $@)
+    eval "echo \$$temp"
+}
+
 var() {
     ~/.personalized/parse_envvars.py --cmd=var $@ 
     exec zsh
@@ -268,6 +280,7 @@ unvar() {
     ~/.personalized/parse_envvars.py --cmd=unvar $@
     exec zsh
 }
+
 alias k8s-list-context='kubectl config view -o jsonpath="{.contexts[*].name}" | tr " " "\n"'
 
 alias dedupe-hist='python $ME/linux-tweaks/scripts/dedupe_sh_history.py'
