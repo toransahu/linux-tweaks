@@ -38,7 +38,7 @@ if  ! [ -d "$EROOT" ] || ! [ -d "$DROOT" ]; then
 elif  [ "$(hostname)" = mint-ThinkPad-L440 ]; then
     EROOT=~/disk/E
     DROOT=~/disk/D
-elif  [ "$(hostname)" = Torans-MacBook-Pro.local ]; then
+elif  [ "$(hostname)" = Torans-MacBook-Pro-2.local ]; then
     EROOT=~/disk/E
     DROOT=~/disk/D
     export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home
