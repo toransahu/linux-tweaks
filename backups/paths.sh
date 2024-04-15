@@ -55,7 +55,7 @@ elif [ "$(hostname)" = raspberrypi ]; then
     SOURCE_DIR="/home/pi"
     EROOT="/home/pi/main-storage/E"
 else
-    echo "[$REDx$NC] New device found. Adjust the vars accrodingly (if required)..$NC"
+    echo "[$REDx$NC] New device "$(hostname)" found. Adjust the vars accrodingly (if required)..$NC"
     IS_NEW=true
 fi
 
